@@ -92,9 +92,43 @@ npm run dev
 - 「📝 予想履歴」で過去の予想と結果を確認
 - 「📊 的中実績」で的中率・回収率・収支を確認
 
-## データ管理
+## データ取得
 
-### レース登録（管理者用）
+### 自動データ収集（NAR公式サイトから）
+
+```bash
+# 未来のレース（今月・来月の出馬表）を取得
+docker compose exec backend python -m app.fetch_races --future
+
+# 過去のレース結果を取得
+docker compose exec backend python -m app.fetch_races --past
+
+# 特定日のレースを取得
+docker compose exec backend python -m app.fetch_races --date 2025-01-15
+```
+
+**注意事項:**
+- NAR公式サイト（keiba.go.jp）から取得
+- リクエスト間隔3秒（サーバーに負荷をかけない）
+- 1日1回の実行を推奨
+- スクレイピングのため、サイト構造変更時は要修正
+
+### 定期実行（cron設定例）
+
+```bash
+# 毎朝7時に未来のレースを取得
+0 7 * * * cd /path/to/project && docker compose exec backend python -m app.fetch_races --future
+
+# 毎晩21時に当日の結果を確認
+0 21 * * * cd /path/to/project && docker compose exec backend python -m app.fetch_races --date $(date +%Y-%m-%d)
+```
+
+### データベース
+
+- SQLite: `backend/kanazawa_dirt_one_spear.db`
+- バックアップ: DBファイルをコピーするだけ
+
+### 手動レース登録（管理API）
 
 ```bash
 # APIでレースを登録
@@ -105,11 +139,6 @@ curl -X POST http://localhost:8000/api/admin/races \
 # 予想を生成
 curl -X POST http://localhost:8000/api/admin/predictions/{race_id}
 ```
-
-### データベース
-
-- SQLite: `backend/kanazawa_dirt_one_spear.db`
-- バックアップ: DBファイルをコピーするだけ
 
 ## 今後の実装予定
 
