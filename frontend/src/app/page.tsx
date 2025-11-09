@@ -10,7 +10,7 @@ import DailyRaces from '@/components/DailyRaces'
 type Page = 'home' | 'race-detail' | 'stats' | 'history' | 'daily-races'
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState<Page>('home')
+  const [currentPage, setCurrentPage] = useState<'home' | 'race-detail' | 'stats' | 'history' | 'daily-races'>('home')
   const [races, setRaces] = useState<Race[]>([])
   const [selectedRace, setSelectedRace] = useState<Race | null>(null)
   const [selectedDate, setSelectedDate] = useState<string | null>(null)
@@ -75,11 +75,21 @@ export default function Home() {
     }
   }
 
-  if (currentPage === 'race-detail' && selectedRace) {
+  if (currentPage === 'race-detail') {
+    if (!selectedRace) {
+      return <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-gray-600">レース情報を読み込み中...</div>
+      </div>
+    }
     return <RaceDetail race={selectedRace} onBack={handleBackToHome} />
   }
 
-  if (currentPage === 'daily-races' && selectedDate) {
+  if (currentPage === 'daily-races') {
+    if (!selectedDate) {
+      return <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-gray-600">日付を選択してください</div>
+      </div>
+    }
     return <DailyRaces date={selectedDate} onBack={handleBackToHome} />
   }
 
@@ -102,7 +112,12 @@ export default function Home() {
     )
   }
 
-  if (currentPage === 'stats' && statistics) {
+  if (currentPage === 'stats') {
+    if (!statistics) {
+      return <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-gray-600">統計情報を読み込み中...</div>
+      </div>
+    }
     return (
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50 p-8">
         <button
@@ -225,8 +240,9 @@ export default function Home() {
     )
   }
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50">
+  if (currentPage === 'home') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50">
       {/* ヘッダー */}
       <header className="bg-gradient-to-r from-yellow-600 to-orange-600 text-white p-8 shadow-lg">
         <div className="max-w-7xl mx-auto">
@@ -248,31 +264,19 @@ export default function Home() {
         <div className="flex gap-4 mb-6 flex-wrap">
           <button
             onClick={() => setCurrentPage('home')}
-            className={`px-6 py-3 rounded-lg font-bold transition-colors ${
-              currentPage === 'home'
-                ? 'bg-yellow-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-yellow-100'
-            }`}
+            className="px-6 py-3 rounded-lg font-bold transition-colors bg-yellow-600 text-white"
           >
             📋 レース一覧
           </button>
           <button
             onClick={handleShowHistory}
-            className={`px-6 py-3 rounded-lg font-bold transition-colors ${
-              currentPage === 'history'
-                ? 'bg-yellow-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-yellow-100'
-            }`}
+            className="px-6 py-3 rounded-lg font-bold transition-colors bg-white text-gray-700 hover:bg-yellow-100"
           >
             📝 予想履歴
           </button>
           <button
             onClick={handleShowStats}
-            className={`px-6 py-3 rounded-lg font-bold transition-colors ${
-              currentPage === 'stats'
-                ? 'bg-yellow-600 text-white'
-                : 'bg-white text-gray-700 hover:bg-yellow-100'
-            }`}
+            className="px-6 py-3 rounded-lg font-bold transition-colors bg-white text-gray-700 hover:bg-yellow-100"
           >
             📊 的中実績
           </button>
@@ -304,5 +308,9 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+    )
+  }
+
+  // Fallback (should never reach here)
+  return null
 }
