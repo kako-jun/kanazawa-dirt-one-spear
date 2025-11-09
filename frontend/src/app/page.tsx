@@ -5,13 +5,15 @@ import { Race, Statistics, Result, apiClient } from '@/lib/api-client'
 import RaceList from '@/components/RaceList'
 import RaceDetail from '@/components/RaceDetail'
 import ResultHistory from '@/components/ResultHistory'
+import DailyRaces from '@/components/DailyRaces'
 
-type Page = 'home' | 'race-detail' | 'stats' | 'history'
+type Page = 'home' | 'race-detail' | 'stats' | 'history' | 'daily-races'
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<Page>('home')
   const [races, setRaces] = useState<Race[]>([])
   const [selectedRace, setSelectedRace] = useState<Race | null>(null)
+  const [selectedDate, setSelectedDate] = useState<string | null>(null)
   const [statistics, setStatistics] = useState<Statistics | null>(null)
   const [results, setResults] = useState<Result[]>([])
   const [loading, setLoading] = useState(true)
@@ -45,6 +47,12 @@ export default function Home() {
   const handleBackToHome = () => {
     setCurrentPage('home')
     setSelectedRace(null)
+    setSelectedDate(null)
+  }
+
+  const handleShowDailyRaces = (date: string) => {
+    setSelectedDate(date)
+    setCurrentPage('daily-races')
   }
 
   const handleShowStats = async () => {
@@ -69,6 +77,10 @@ export default function Home() {
 
   if (currentPage === 'race-detail' && selectedRace) {
     return <RaceDetail race={selectedRace} onBack={handleBackToHome} />
+  }
+
+  if (currentPage === 'daily-races' && selectedDate) {
+    return <DailyRaces date={selectedDate} onBack={handleBackToHome} />
   }
 
   if (currentPage === 'history') {
@@ -272,7 +284,11 @@ export default function Home() {
             <div className="text-xl text-gray-600">読み込み中...</div>
           </div>
         ) : (
-          <RaceList races={races} onRaceSelect={handleRaceSelect} />
+          <RaceList
+            races={races}
+            onRaceSelect={handleRaceSelect}
+            onDateSelect={handleShowDailyRaces}
+          />
         )}
       </div>
 
