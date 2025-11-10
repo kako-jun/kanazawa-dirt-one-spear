@@ -1,0 +1,211 @@
+# 2025年 金沢競馬 開催スケジュール
+# 取得日: 2025-11-10
+# ソース: NAR公式サイト (https://www.keiba.go.jp/KeibaWeb)
+
+year: 2025
+track_name: "金沢競馬場"
+track_code: "22"
+
+# URL templates
+url_templates:
+  race_list: "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceList?k_raceDate={date}&k_babaCode={track_code}"
+  deba_table: "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/DebaTable?k_raceDate={date}&k_raceNo={race_no}&k_babaCode={track_code}"
+  result: "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate={date}&k_raceNo={race_no}&k_babaCode={track_code}"
+
+schedule:
+  - date: "2025-04-06"
+    weekday: "日"
+
+  - date: "2025-04-08"
+    weekday: "火"
+
+  - date: "2025-04-13"
+    weekday: "日"
+
+  - date: "2025-04-15"
+    weekday: "火"
+
+  - date: "2025-04-20"
+    weekday: "日"
+
+  - date: "2025-04-22"
+    weekday: "火"
+
+  - date: "2025-04-27"
+    weekday: "日"
+
+  - date: "2025-04-29"
+    weekday: "火"
+
+  - date: "2025-05-05"
+    weekday: "月"
+
+  - date: "2025-05-06"
+    weekday: "火"
+
+  - date: "2025-05-11"
+    weekday: "日"
+
+  - date: "2025-05-13"
+    weekday: "火"
+
+  - date: "2025-05-18"
+    weekday: "日"
+
+  - date: "2025-05-20"
+    weekday: "火"
+
+  - date: "2025-05-26"
+    weekday: "月"
+
+  - date: "2025-05-27"
+    weekday: "火"
+
+  - date: "2025-06-02"
+    weekday: "月"
+
+  - date: "2025-06-03"
+    weekday: "火"
+
+  - date: "2025-06-08"
+    weekday: "日"
+
+  - date: "2025-06-10"
+    weekday: "火"
+
+  - date: "2025-06-15"
+    weekday: "日"
+
+  - date: "2025-06-17"
+    weekday: "火"
+
+  - date: "2025-06-23"
+    weekday: "月"
+
+  - date: "2025-06-24"
+    weekday: "火"
+
+  - date: "2025-06-29"
+    weekday: "日"
+
+  - date: "2025-07-01"
+    weekday: "火"
+
+  - date: "2025-07-07"
+    weekday: "月"
+
+  - date: "2025-07-08"
+    weekday: "火"
+
+  - date: "2025-07-13"
+    weekday: "日"
+
+  - date: "2025-07-15"
+    weekday: "火"
+
+  - date: "2025-07-20"
+    weekday: "日"
+
+  - date: "2025-07-21"
+    weekday: "月"
+
+  - date: "2025-07-27"
+    weekday: "日"
+
+  - date: "2025-07-29"
+    weekday: "火"
+
+  - date: "2025-08-04"
+    weekday: "月"
+
+  - date: "2025-08-05"
+    weekday: "火"
+
+  - date: "2025-09-07"
+    weekday: "日"
+
+  - date: "2025-09-08"
+    weekday: "月"
+
+  - date: "2025-09-13"
+    weekday: "土"
+
+  - date: "2025-09-14"
+    weekday: "日"
+
+  - date: "2025-09-20"
+    weekday: "土"
+
+  - date: "2025-09-23"
+    weekday: "火"
+
+  - date: "2025-09-29"
+    weekday: "月"
+
+  - date: "2025-09-30"
+    weekday: "火"
+
+  - date: "2025-10-06"
+    weekday: "月"
+
+  - date: "2025-10-07"
+    weekday: "火"
+
+  - date: "2025-10-11"
+    weekday: "土"
+
+  - date: "2025-10-12"
+    weekday: "日"
+
+  - date: "2025-10-14"
+    weekday: "火"
+
+  - date: "2025-10-19"
+    weekday: "日"
+
+  - date: "2025-10-21"
+    weekday: "火"
+
+  - date: "2025-10-25"
+    weekday: "土"
+
+  - date: "2025-10-27"
+    weekday: "月"
+
+  - date: "2025-10-28"
+    weekday: "火"
+
+  - date: "2025-11-04"
+    weekday: "火"
+
+  - date: "2025-11-05"
+    weekday: "水"
+
+  - date: "2025-11-09"
+    weekday: "日"
+
+  - date: "2025-11-10"
+    weekday: "月"
+
+  - date: "2025-11-11"
+    weekday: "火"
+
+statistics:
+  total_days: 59
+  by_month:
+    april: 8
+    may: 8
+    june: 9
+    july: 9
+    august: 2
+    september: 8
+    october: 10
+    november: 5
+  by_weekday:
+    monday: 12
+    tuesday: 25
+    wednesday: 1
+    thursday: 0
+    friday: 0
+    saturday: 4
+    sunday: 17

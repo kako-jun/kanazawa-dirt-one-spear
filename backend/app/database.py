@@ -36,6 +36,7 @@ class DBRace(Base):
     distance = Column(Integer, nullable=False)
     track_condition = Column(String, nullable=False)
     weather = Column(String, nullable=False)
+    direction = Column(String, nullable=True)  # 左回り/右回り
 
     entries = relationship("DBEntry", back_populates="race", cascade="all, delete-orphan")
     prediction = relationship("DBPrediction", back_populates="race", uselist=False)
@@ -79,11 +80,26 @@ class DBResult(Base):
 
     result_id = Column(String, primary_key=True, index=True)
     race_id = Column(String, ForeignKey("races.race_id"), nullable=False, unique=True, index=True)
-    first = Column(Integer, nullable=False)
-    second = Column(Integer, nullable=False)
-    third = Column(Integer, nullable=False)
+
+    # 全着順（JSON配列で保存: [1位馬番, 2位馬番, ...]）
+    finish_order = Column(JSON, nullable=True)
+
+    # コーナー通過順（JSON形式: {corner_1: "7,9,1,...", corner_2: "7,9,1,...", ...}）
+    corner_positions = Column(JSON, nullable=True)
+
+    # 1-3着（後方互換性のため残す）
+    first = Column(Integer, nullable=True)
+    second = Column(Integer, nullable=True)
+    third = Column(Integer, nullable=True)
+
+    # 全配当（JSON形式で保存）
+    payouts = Column(JSON, nullable=True)  # {win: {...}, place: {...}, exacta: {...}, trifecta: {...}, etc}
+
+    # 三連単配当（後方互換性のため残す）
     payout_trifecta = Column(Integer, nullable=True)
-    prediction_hit = Column(Boolean, nullable=False)
+
+    # 予想関連
+    prediction_hit = Column(Boolean, nullable=False, default=False)
     purchased = Column(Boolean, nullable=False, default=False)
     bet_amount = Column(Integer, nullable=True)
     return_amount = Column(Integer, nullable=True)
