@@ -1,0 +1,2519 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="出馬表｜地方競馬情報サイト" name="title">
+<meta content="KEIBA.GO.JP | 地方競馬情報サイトです。" name="description">
+<meta content="競馬,ケイバ,地方,ばんえい,ダート,レース,騎手,馬,シリーズ・重賞競走" name="keywords">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<title>出馬表｜地方競馬情報サイト</title>
+<link rel="stylesheet" href="../resources/css/reset.css?bld=20240319134801" type="text/css" media="all" />
+<link rel="stylesheet" href="../resources/css/common2.css?bld=20240319134801" type="text/css" media="all" />
+
+<link rel="stylesheet" href="../resources/css/raceinfo2.css?bld=20240319134801" type="text/css" media="all" />
+<script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js?bld=20240319134801"></script>
+<script type="text/javascript" src="../resources/js/common2.js?bld=20240319134801"></script>
+
+<link rel="shortcut icon" href="/images/nar.ico">
+<script>
+$(function () {
+  $('select#selectRaceNo').on('change', function(e) {
+    window.location.href = '../TodayRaceInfo/DebaTable?k_raceDate=2020-11-17&k_raceNo=' + e.target.value + '&k_babaCode=22';
+  });
+});
+</script>
+</head>
+<body>
+
+
+<header>
+    <div class="headerInner">
+        <div class="titleArea">
+            <h1>
+                <span>地方競馬情報サイト</span>
+                <a href="/index.html">
+                    <img src="/KeibaWeb/resources/img/mainlogo.png?bld=20240319134801" alt="">
+                </a>
+            </h1>
+            <div class="vote">
+                <img id="headerbanner00" src="/KeibaWeb/resources/img/header_banner_00.png?bld=20240319134801" alt="">
+            </div>
+            <ul class="bannerArea clearfix">
+                <li>
+                    <a href="https://www.keiba.go.jp/jranet/" target="_blank">
+                        <img class="normal" src="/KeibaWeb/resources/img/header_banner_01.png?bld=20240319134801">
+                        <img class="min" src="/KeibaWeb/resources/img/header_banner_01_min.png?bld=20240319134801">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spat4.jp/keiba/pc" target="_blank">
+                        <img class="normal" src="/KeibaWeb/resources/img/header_banner_02.png?bld=20240319134801">
+                        <img class="min" src="/KeibaWeb/resources/img/header_banner_02_min.png?bld=20240319134801">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://grp02.id.rakuten.co.jp/rms/nid/loginfwd?__event=LOGIN&service_id=n57&return_url=%2F%3Fl-id%3Dkeiba_globalNavi_myTop" target="_blank">
+                        <img class="normal" src="/KeibaWeb/resources/img/header_banner_03.png?bld=20240319134801">
+                        <img class="min" src="/KeibaWeb/resources/img/header_banner_03_min.png?bld=20240319134801">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.oddspark.com/keiba/auth/VoteKeibaTop.do" target="_blank">
+                        <img class="normal" src="/KeibaWeb/resources/img/header_banner_04.png?bld=20240319134801">
+                        <img class="min" src="/KeibaWeb/resources/img/header_banner_04_min.png?bld=20240319134801">
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <div class="topSearch clearfix">
+                <form id="cse-search-box" action="https://google.com/cse">
+                    <input type="hidden" name="cx" value="000374752549361390111:sr3uzpcoe-q" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" size="31" class="searchBox"/ placeholder="サイト内検索">
+                    <input type="submit" name="sa" value="" class="searchBtn"/>
+                </form>
+                <script type="text/javascript"
+                                src="https://www.google.com/coop/cse/brand?form=cse-search-boxamp;lang=ja"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="globalNavi">
+        <ul class="gNavi clearfix">
+            <li class="gNaviitem1">
+                <a href="/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_08.png?bld=20240319134801" alt="">
+                    <p>レース情報</p>
+                </a>
+            </li>
+            <li class="gNaviitem2">
+                <a href="/KeibaWeb/MonthlyConveneInfo/MonthlyConveneInfoTop">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_01.png?bld=20240319134801" alt="">
+                    <p>開催日程</p>
+                </a>
+            </li>
+            <li class="gNaviitem3">
+                <a href="/live/" target="_blank">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_02.png?bld=20240319134801" alt="">
+                    <p>ライブ中継</p>
+                </a>
+            </li>
+            <li class="gNaviitem4">
+                <a href="/dirtgraderace/">
+                    <img class="dart" src="/KeibaWeb/resources/img/icon_gnavi_12.png?bld=20240319134801" alt="">
+                    <p>ダートグレード競走</p>
+                </a>
+            </li>
+            <li class="gNaviitem5">
+                <a href="/gradedrace/">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_04.png?bld=20240319134801" alt="">
+                    <p>シリーズ･重賞競走</p>
+                </a>
+            </li>
+            <li class="gNaviitem6">
+                <a href="/KeibaWeb/DataRoom/DataRoomTop">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_05.png?bld=20240319134801" alt="">
+                    <p>データ検索</p>
+                </a>
+            </li>
+            <li class="gNaviitem7">
+                <a href="/guide/index.html">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_06.png?bld=20240319134801" alt="">
+                    <p>競馬場ガイド</p>
+                </a>
+            </li>
+            <!--<li>
+                <a href="about/">
+                    <img src="/KeibaWeb/resources/img/icon_gnavi_07.png?bld=20240319134801" alt="">
+                    <p>もっと！地方競馬</p>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+</header>
+
+
+<div class="breadCrumb"></div>
+
+<div class="subMenu">
+<ul class="clearfix">
+<li><a href="../TodayRaceInfo/TodayRaceInfoTop" id="TodayRaceInfoTop">本日のレース情報</a></li>
+<li><a href="../MonthlyConveneInfo/MonthlyConveneInfoTop" id="MonthlyConveneInfoTop">月別開催日程</a></li>
+<li><a href="../TodayRaceInfo/RaceList?k_raceDate=2020-11-17&k_babaCode=22" id="RaceList">当日メニュー</a></li>
+<li><a href="../TodayRaceInfo/RefundMoneyList?k_raceDate=2020-11-17&k_babaCode=22" id="RefundList">当日払戻金</a></li>
+</ul>
+</div>
+
+
+<div id="mainContainer">
+<article class="raceCard">
+<div class="innerWrapper">
+<h4>2020年11月17日（火）　金　沢　第9競走　15:15発走</h4>
+<p class="racetime"><br/><br/></p>
+<section class="raceTitle">
+<p class="roundInfo"></p>
+<p class="date"></p>
+<p class="subTitle">ＪＲＡ交流</p>
+<h3>加賀四湯賞Ａ２以下Ｂ１以上中央３歳以上１勝クラス</h3>
+<ul class="dataArea">
+<li>ダート　1500ｍ（右）　　天候：晴　　馬場：良　　サラブレッド系　3歳以上 別定　　＊電話投票コード：41#</li>
+<li>賞金　1着800,000円　2着224,000円　3着112,000円　4着80,000円　5着64,000円　</li>
+</ul>
+</section>
+<nav class="clearfix noWrapNav">
+<div class="chartNavi clearfix">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="cNaviBtn prev" href= "../TodayRaceInfo/DebaTable?k_raceDate=2020-11-17&k_raceNo=8&k_babaCode=22">前レース</a>
+
+
+
+
+<p class="cNaviBtnselect">
+<select class="short" id="selectRaceNo">
+<option value="1" >1R</option><option value="2" >2R</option><option value="3" >3R</option><option value="4" >4R</option><option value="5" >5R</option><option value="6" >6R</option><option value="7" >7R</option><option value="8" >8R</option><option value="9" selected>9R</option><option value="10" >10R</option>
+</select>
+</p>
+
+
+<a class="cNaviBtn next" href= "../TodayRaceInfo/DebaTable?k_raceDate=2020-11-17&k_raceNo=10&k_babaCode=22">次レース</a>
+
+
+</div>
+<div class="chartNavi clearfix">
+<a class="cNaviBtn" href="../TodayRaceInfo/CompeteTable?k_raceDate=2020-11-17&k_raceNo=9&k_babaCode=22">対戦表</a>
+<a class="cNaviBtn" target="_blank" href="../TodayRaceInfo/DebaTableSmall?k_raceDate=2020-11-17&k_raceNo=9&k_babaCode=22">印刷用出馬表</a>
+
+
+<a class="cNaviBtn" target="_blank" href="http://keiba-lv-st.jp/movie/player?date=20201117&race=9&track=kanazawa">レース映像</a>
+
+
+
+
+
+<a class="cNaviBtn" href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020-11-17&k_raceNo=9&k_babaCode=22">競走成績</a>
+
+</div>
+
+</nav>
+<section class="cardTable">
+<table>
+<tbody>
+<tr>
+<th rowspan="2" class="a">枠番</th>
+<th rowspan="2" class="b">馬番</th>
+<th colspan="3" rowspan="2" class="c">競走馬</th>
+<th colspan="1" rowspan="2" class="d">騎手・調教師<br>馬主・生産牧場</th>
+<th rowspan="2" class="e">オッズ<br>馬体重<br>変更情報</th>
+<th rowspan="2" class="k">着別成績<br>最高タイム</th>
+<th colspan="5" class="l">競走成績</th>
+</tr>
+<tr>
+<th class="f">前走</th>
+<th class="g">前々走</th>
+<th class="h">3走前</th>
+<th class="i">4走前</th>
+<th class="rBorder j">5走前</th>
+</tr>
+<tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_01">1</td>
+
+
+<td rowspan="5" class="horseNum">1</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30094403026">サンレイファミリー</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31099">
+青柳正<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">6-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">23</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">2</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">6-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">21</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">14</span>
+
+
+20.10.10　不良　14頭
+
+
+<br>Ｊ京都　右1200　9番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">15</span>
+
+
+20.05.16　良　15頭
+
+
+<br>Ｊ新潟　左1800　11番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">15</span>
+
+
+19.12.08　良　15頭
+
+
+<br>Ｊ中京　左1200　5番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+19.11.10　良　12頭
+
+
+<br>Ｊ京都　右1800　10番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">8</span>
+
+
+19.09.03　良　10頭
+
+
+<br>名古屋　右1400　9番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+<span class="male">牝5</span>
+
+</td>
+<td class="noBorder">栗毛</td>
+<td>02.18生</td>
+<td> 54.0　0-0-0-0</td>
+<td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">４歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2019%2f09%2f03&k_raceNo=11&k_babaCode=24" class="race">うみへび座特別Ｂ１</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">スズカフェニックス</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40226">
+西橋豊（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">402<br>(-10)</td>
+<td class="">
+14人　412　國分優 55.0
+</td><td class="">
+15人　402　岩崎翼 55.0
+</td><td class="">
+15人　396　▲亀田温 52.0
+</td><td class="">
+12人　396　加藤祥 55.0
+</td><td class="rBorder">
+6人　397　今井貴 54.0
+</td>
+</tr>
+<tr>
+<td colspan="3">スズカフローラ</td>
+<td colspan="1">永井啓弍</td>
+<td class="">
+1:13.8　12-13　38.8
+</td><td class="">
+1:58.6　10-11-14-15　42.5
+</td><td class="">
+1:14.7　12-15　37.9
+</td><td class="">
+1:55.8　11-11-11-11　40.3
+</td><td class="rBorder">
+1:31.3　4-5-6-6　39.3
+</td>
+</tr>
+<tr>
+<td colspan="3">（フレンチデピュティ）</td>
+<td colspan="1">びらとり牧場</td>
+<td class="info"></td>
+<td class="">
+4.3　オヌシナニモノ
+</td><td class="">
+5.6　アラゴネーゼ
+</td><td class="">
+2.3　スズカカナロア
+</td><td class="">
+4.1　アドマイヤビーナス
+</td><td class="rBorder">
+1.6　スズカハイルーラー
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_02">2</td>
+
+
+<td rowspan="5" class="horseNum">2</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30027408646">アスターコルネット</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31039">
+吉原寛<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">3</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">3</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+20.08.16　稍重　12頭
+
+
+<br>Ｊ札幌　右1700　4番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">6</span>
+
+
+20.02.01　重　8頭
+
+
+<br>Ｊ小倉　右1700　5番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">5</span>
+
+
+20.01.19　重　7頭
+
+
+<br>Ｊ小倉　右1700　5番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+19.11.23　不良　16頭
+
+
+<br>Ｊ東京　左1600　8番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class=" "></span>
+
+
+
+<p>&nbsp;</p>
+
+<br>
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡3
+</td>
+<td class="noBorder">黒鹿毛</td>
+<td>03.23生</td>
+<td> 55.0　0-0-0-0</td>
+<td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">くすのき賞３歳１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">ネモフィラ賞３歳１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">２歳新馬</div>
+</td><td class="rBorder">
+
+<div class="jrarace"></div>
+</td>
+</tr>
+<tr>
+<td colspan="3">マジェスティックウォリアー</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40284">
+南井克（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">478<br>(-14)</td>
+<td class="">
+11人　492　古川吉 54.0
+</td><td class="">
+8人　490　古川吉 56.0
+</td><td class="">
+2人　492　古川吉 56.0
+</td><td class="">
+1人　486　古川吉 55.0
+</td><td class="rBorder">
+
+</td>
+</tr>
+<tr>
+<td colspan="3">オクシペタルム</td>
+<td colspan="1">加藤久枝</td>
+<td class="">
+1:52.0　3-3-11-12　43.8
+</td><td class="">
+1:46.6　5-5-5-6　40.2
+</td><td class="">
+1:48.3　5-5-6-6　40.3
+</td><td class="">
+1:39.4　2-2　37.3
+</td><td class="rBorder">
+
+</td>
+</tr>
+<tr>
+<td colspan="3">（シンボリクリスエス）</td>
+<td colspan="1">高村伸一</td>
+<td class="info"></td>
+<td class="">
+6.9　ディーエスプルーフ
+</td><td class="">
+2.3　メイショウダジン
+</td><td class="">
+2.9　ミヤジコクオウ
+</td><td class="">
+0.2　グーガルドリームズ
+</td><td class="rBorder">
+
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_03">3</td>
+
+
+<td rowspan="5" class="horseNum">3</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30006400785">ペイシャゴンジセ</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=30868">
+沖静男<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">8-</td>
+
+<td class="alignR">9-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">52</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">2-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">14</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">8-</td>
+
+<td class="alignR">7-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">36</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank rank_02">2</span>
+
+
+20.11.10　不良　12頭
+
+
+<br>金沢　右1700　2番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">取消</span>
+
+
+20.10.20　良　11頭
+
+
+<br>金沢　右1500　3番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">7</span>
+
+
+20.09.24　稍重　7頭
+
+
+<br>門別　右1800　1番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">7</span>
+
+
+20.08.27　良　11頭
+
+
+<br>門別　右1800　10番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">5</span>
+
+
+20.07.30　良　7頭
+
+
+<br>門別　右1800　6番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡9
+</td>
+<td class="noBorder">鹿毛</td>
+<td>05.07生</td>
+<td> 56.0　0-1-0-0</td>
+<td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f11%2f10&k_raceNo=9&k_babaCode=22" class="race">楽天競馬杯ポイントもりもＡ１二</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f10%2f20&k_raceNo=9&k_babaCode=22" class="race">Ｊ交 加賀白山Ａ２以下Ｂ１以上</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f09%2f24&k_raceNo=11&k_babaCode=36" class="race">レイデオロ・プレミアムＡ１Ａ２</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f08%2f27&k_raceNo=11&k_babaCode=36" class="race">スマホアプリＪＡ２ＭＰ特別Ａ１</a>
+
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f07%2f30&k_raceNo=12&k_babaCode=36" class="race">優駿の里安平町道の駅あびらＡ１</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">ストーミングホーム</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=11433">
+川添明（金沢）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">493<br>(-10)</td>
+<td class="">
+10人　503　沖静男 56.0
+</td><td class="">
+　－　沖静男 56.0
+</td><td class="">
+7人　498　坂下秀 56.0
+</td><td class="">
+11人　500　岩橋勇 56.0
+</td><td class="rBorder">
+6人　500　加藤誓 56.0
+</td>
+</tr>
+<tr>
+<td colspan="3">ガデスオブマーシー</td>
+<td colspan="1">酒井孝敏</td>
+<td class="">
+1:50.0　7-6-4-3　38.9
+</td><td class="">
+　　 
+</td><td class="">
+1:57.4　7-7-7-7　39.3
+</td><td class="">
+1:57.7　11-11-11-9　39.8
+</td><td class="rBorder">
+1:59.3　7-7-6-6　40.7
+</td>
+</tr>
+<tr>
+<td colspan="3">（ラストタイクーン）</td>
+<td colspan="1">隆栄牧場</td>
+<td class="info"></td>
+<td class="">
+0.6　ファストフラッシュ
+</td><td class="">
+　
+</td><td class="">
+3.6　クインズサターン
+</td><td class="">
+1.6　クインズサターン
+</td><td class="rBorder">
+2.9　メイショウウタゲ
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_04">4</td>
+
+
+<td rowspan="5" class="horseNum">4</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30065406226">ミッキーマラン</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=60384">
+鮫島良<span class="jockeyarea">（JRA）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">21</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">2</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">16</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">1:35.3</td>
+<td colspan="3">良1:35.3</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">8</span>
+
+
+20.10.04　良　16頭
+
+
+<br>Ｊ中京　左1400　3番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_02">2</span>
+
+
+20.07.02　良　11頭
+
+
+<br>園田　右1400　1番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">6</span>
+
+
+20.05.03　良　15頭
+
+
+<br>Ｊ京都　右1400　14番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">7</span>
+
+
+20.03.28　稍重　14頭
+
+
+<br>Ｊ中京　左1400　12番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">6</span>
+
+
+20.03.14　重　11頭
+
+
+<br>Ｊ阪神　右1400　2番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡5
+</td>
+<td class="noBorder">芦毛</td>
+<td>05.26生</td>
+<td> 56.0　0-1-0-4</td>
+<td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f07%2f02&k_raceNo=7&k_babaCode=27" class="race">Ｊ交 淀川特別３歳以上登録馬</a>
+
+</td><td class="">
+
+<div class="jrarace">４歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">４歳上１勝クラス</div>
+</td><td class="rBorder">
+
+<div class="jrarace">４歳上１勝クラス</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">メイショウボーラー</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40408">
+長谷浩（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">484<br>(+10)</td>
+<td class="">
+11人　474　鮫島良 57.0
+</td><td class="">
+3人　487　酒井学 56.0
+</td><td class="">
+6人　480　酒井学 57.0
+</td><td class="">
+8人　478　酒井学 57.0
+</td><td class="rBorder">
+3人　484　鮫島良 57.0
+</td>
+</tr>
+<tr>
+<td colspan="3">クールリーヴ</td>
+<td colspan="1">三木久史</td>
+<td class="">
+1:25.2　14-14　37.0
+</td><td class="">
+1:28.6　4-4-4-3　38.1
+</td><td class="">
+1:26.9　12-11　36.9
+</td><td class="">
+1:25.5　9-9　36.6
+</td><td class="rBorder">
+1:25.4　7-7　37.3
+</td>
+</tr>
+<tr>
+<td colspan="3">（ブライアンズタイム）</td>
+<td colspan="1">宮内牧場</td>
+<td class="info"></td>
+<td class="">
+0.7　リュクスウォリアー
+</td><td class="">
+0.3　ラブリーハッチ
+</td><td class="">
+0.8　ドラセナ
+</td><td class="">
+0.7　スマッシングハーツ
+</td><td class="rBorder">
+0.7　ステラストラータ
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_05">5</td>
+
+
+<td rowspan="5" class="horseNum">5</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30063408436">メイショウイヤサカ</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31038">
+藤田弘<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">10</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">1</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">7</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.06.17　良　9頭
+
+
+<br>園田　右1400　2番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_02">2</span>
+
+
+20.05.22　良　10頭
+
+
+<br>園田　右1400　8番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_02">2</span>
+
+
+20.05.05　良　10頭
+
+
+<br>園田　右1400　5番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.04.09　良　10頭
+
+
+<br>園田　右1400　3番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.03.18　稍重　10頭
+
+
+<br>園田　右1400　9番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+<span class="male">牝4</span>
+
+</td>
+<td class="noBorder">鹿毛</td>
+<td>04.10生</td>
+<td> 54.0　0-0-0-0</td>
+<td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f06%2f17&k_raceNo=5&k_babaCode=27" class="race">Ｃ２一４歳以上</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f05%2f22&k_raceNo=8&k_babaCode=27" class="race">Ｃ２一４歳以上</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f05%2f05&k_raceNo=8&k_babaCode=27" class="race">Ｃ２一４歳以上</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f04%2f09&k_raceNo=4&k_babaCode=27" class="race">Ｃ２三４歳以上</a>
+
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f03%2f18&k_raceNo=2&k_babaCode=27" class="race">Ｃ３二４歳以上</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">クレスコグランド</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40276">
+藤澤則（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">444<br>(-9)</td>
+<td class="">
+2人　453　吉村智 54.0
+</td><td class="">
+2人　453　大柿一 54.0
+</td><td class="">
+1人　447　吉村智 55.0
+</td><td class="">
+1人　449　大柿一 54.0
+</td><td class="rBorder">
+2人　445　下原理 54.0
+</td>
+</tr>
+<tr>
+<td colspan="3">メイショウフロリナ</td>
+<td colspan="1">松本好雄</td>
+<td class="">
+1:32.6　1-1-1-1　40.4
+</td><td class="">
+1:32.7　2-2-2-2　40.6
+</td><td class="">
+1:31.9　4-4-3-2　39.7
+</td><td class="">
+1:31.5　1-1-1-1　39.6
+</td><td class="rBorder">
+1:30.7　4-4-1-1　38.7
+</td>
+</tr>
+<tr>
+<td colspan="3">（クロフネ）</td>
+<td colspan="1">中脇一幸</td>
+<td class="info"></td>
+<td class="">
+0.3　エリアント
+</td><td class="">
+0.5　アワジノサクラ
+</td><td class="">
+0.1　ラストサマー
+</td><td class="">
+1.1　トワノバルド
+</td><td class="rBorder">
+0.6　ランドリュウオー
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="5" class="courseNum course_06">6</td>
+
+
+<td rowspan="5" class="horseNum">6</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30033403246">エイユーイーグル</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=30929">
+堀場裕<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">2-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">3</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">2-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">3</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">16</span>
+
+
+20.07.05　重　16頭
+
+
+<br>Ｊ阪神　右1400　9番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">10</span>
+
+
+20.05.22　良　12頭
+
+
+<br>園田　右1400　11番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.04.16　稍重　6頭
+
+
+<br>園田　右1400　3番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">11</span>
+
+
+20.04.02　重　12頭
+
+
+<br>園田　右1400　9番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.03.12　重　10頭
+
+
+<br>園田　右1230　4番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+<span class="male">牝3</span>
+
+</td>
+<td class="noBorder">黒鹿毛</td>
+<td>05.03生</td>
+<td> 53.0　0-0-0-0</td>
+<td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f05%2f22&k_raceNo=12&k_babaCode=27" class="race">さくらんぼ賞３歳Ｃ１</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f04%2f16&k_raceNo=7&k_babaCode=27" class="race">リミテッド３歳ＢＣ１特別</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f04%2f02&k_raceNo=8&k_babaCode=27" class="race">３歳Ｃ１</a>
+
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f03%2f12&k_raceNo=3&k_babaCode=27" class="race">３歳Ｃ２</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">アサクサキングス</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40304">
+中尾秀（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">445<br>(+5)</td>
+<td class="">
+15人　440　川須栄 52.0
+</td><td class="">
+4人　450　☆長谷駿 54.0
+</td><td class="">
+4人　449　☆長谷駿 53.0
+</td><td class="">
+3人　455　☆長谷駿 53.0
+</td><td class="rBorder">
+1人　452　☆長谷駿 53.0
+</td>
+</tr>
+<tr>
+<td colspan="3">リンダトリアーノ</td>
+<td colspan="1">笹部和子</td>
+<td class="">
+1:27.8　13-14　39.8
+</td><td class="">
+1:35.3　3-4-6-7　44.0
+</td><td class="">
+1:33.1　3-3-3-4　38.9
+</td><td class="">
+1:31.9　3-3-5-5　42.2
+</td><td class="rBorder">
+1:19.0　1-1-1-1　38.0
+</td>
+</tr>
+<tr>
+<td colspan="3">（ロドリゴデトリアーノ）</td>
+<td colspan="1">上井農場</td>
+<td class="info"></td>
+<td class="">
+4.3　タイガーインディ
+</td><td class="">
+3.7　バーゲニングパワー
+</td><td class="">
+0.1　アナト
+</td><td class="">
+3.1　イスズスカーレット
+</td><td class="rBorder">
+1.0　ミヤミヤアイチイ
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="10" class="courseNum course_07">7</td>
+
+
+<td rowspan="5" class="horseNum">7</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30017408516">バリオラージュ</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31298">
+魚住謙<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">2-</td>
+
+<td class="alignR">7-</td>
+
+<td class="alignR">5-</td>
+
+<td class="alignR">22</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">9</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">9</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">2</td>
+
+</tr>
+<tr>
+<td colspan="2">1:38.5</td>
+<td colspan="3">良1:38.9</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">6</span>
+
+
+20.11.01　良　10頭
+
+
+<br>金沢　右1700　7番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_02">2</span>
+
+
+20.10.18　良　9頭
+
+
+<br>金沢　右1700　7番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">4</span>
+
+
+20.10.06　稍重　10頭
+
+
+<br>金沢　右1700　2番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">6</span>
+
+
+20.09.22　良　10頭
+
+
+<br>金沢　右1700　10番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">4</span>
+
+
+20.09.15　稍重　7頭
+
+
+<br>金沢　右1400　3番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡6
+</td>
+<td class="noBorder">鹿毛</td>
+<td>04.11生</td>
+<td>△ 54.0　0-1-0-3</td>
+<td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f11%2f01&k_raceNo=10&k_babaCode=22" class="race">楽天競馬で石川特産品を当Ａ２一</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f10%2f18&k_raceNo=10&k_babaCode=22" class="race">楽天競馬でネット投票特別Ａ２二</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f10%2f06&k_raceNo=10&k_babaCode=22" class="race">ネットで買うなら楽天競馬Ａ２一</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f09%2f22&k_raceNo=11&k_babaCode=22" class="race">楽天でポッイントもらっちＡ２一</a>
+
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f09%2f15&k_raceNo=10&k_babaCode=22" class="race">楽天競馬ＤＡＹポイントもＡ１二</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">ディープインパクト</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=10926">
+松野勝（金沢）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">476<br>(-2)</td>
+<td class="">
+4人　478　△魚住謙 54.0
+</td><td class="">
+2人　482　吉原寛 56.0
+</td><td class="">
+7人　478　△魚住謙 54.0
+</td><td class="">
+7人　479　藤田弘 56.0
+</td><td class="rBorder">
+4人　482　米倉知 56.0
+</td>
+</tr>
+<tr>
+<td colspan="3">ファーストバイオリン</td>
+<td colspan="1">田賀孝昭</td>
+<td class="">
+1:53.5　10-10-10-9　38.0
+</td><td class="">
+1:53.0　9-9-5-3　38.8
+</td><td class="">
+1:52.9　10-10-9-10　38.2
+</td><td class="">
+1:53.2　9-8-9-9　38.7
+</td><td class="rBorder">
+1:31.1　7-6-6-6　38.5
+</td>
+</tr>
+<tr>
+<td colspan="3">（Dixieland Band）</td>
+<td colspan="1">社台ファーム</td>
+<td class="info"></td>
+<td class="">
+2.6　グランジャー
+</td><td class="">
+1.3　フラウティスタ
+</td><td class="">
+1.3　フェルヴィド
+</td><td class="">
+1.6　エンドレスゴールド
+</td><td class="rBorder">
+2.0　ハクサンルドルフ
+</td>
+</tr><tr class="tBorder">
+
+
+
+
+<td rowspan="5" class="horseNum">8</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30032403206">サトノファンタシー</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31242">
+中島龍<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">7-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">12</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">2-</td>
+
+<td class="alignR">3-</td>
+
+<td class="alignR">4</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">4-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">8</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">15</span>
+
+
+20.10.11　重　16頭
+
+
+<br>Ｊ東京　左1400　4番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+20.08.15　良　15頭
+
+
+<br>Ｊ小倉　右1700　9番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">16</span>
+
+
+20.07.12　稍重　16頭
+
+
+<br>Ｊ阪神　右1400　3番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+19.03.30　稍重　16頭
+
+
+<br>Ｊ阪神　右1400　12番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">11</span>
+
+
+19.03.09　稍重　16頭
+
+
+<br>Ｊ阪神　右1400　6番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡7
+</td>
+<td class="noBorder">鹿毛</td>
+<td>05.04生</td>
+<td> 56.0　0-0-0-0</td>
+<td class="">
+
+<div class="jrarace">グリーンチャンネルＣ３歳上オー</div>
+</td><td class="">
+
+<div class="jrarace">阿蘇Ｓ３歳上オープン</div>
+</td><td class="">
+
+<div class="jrarace">プロキオンＳＧIII</div>
+</td><td class="">
+
+<div class="jrarace">コーラルＳ４歳上オープン</div>
+</td><td class="rBorder">
+
+<div class="jrarace">ポラリスＳ４歳上オープン</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">クロフネ</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=11171">
+金田一（金沢）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">500<br>(+10)</td>
+<td class="">
+16人　490　北村宏 58.0
+</td><td class="">
+14人　498　鮫島良 58.0
+</td><td class="">
+16人　500　鮫島良 56.0
+</td><td class="">
+6人　496　岩田康 57.0
+</td><td class="rBorder">
+9人　500　シュタ 58.0
+</td>
+</tr>
+<tr>
+<td colspan="3">ディナーブレイク</td>
+<td colspan="1">伊藤捷一</td>
+<td class="">
+1:23.4　10-10　36.2
+</td><td class="">
+1:47.3　10-10-12-13　39.9
+</td><td class="">
+1:25.8　10-12　38.6
+</td><td class="">
+1:24.6　8-8　37.9
+</td><td class="rBorder">
+1:24.3　4-5　38.2
+</td>
+</tr>
+<tr>
+<td colspan="3">（Tale of the Cat）</td>
+<td colspan="1">下河辺牧場</td>
+<td class="info"></td>
+<td class="">
+1.6　メイショウテンスイ
+</td><td class="">
+3.6　アルドーレ
+</td><td class="">
+4.0　サンライズノヴァ
+</td><td class="">
+1.5　スマートダンディー
+</td><td class="rBorder">
+1.0　ヴェンジェンス
+</td>
+</tr><tr class="tBorder">
+
+
+
+<td rowspan="10" class="courseNum course_08">8</td>
+
+
+<td rowspan="5" class="horseNum">9</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30013401616">ライブスター</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=31283">
+兼子千<span class="jockeyarea">（金沢）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">9-</td>
+
+<td class="alignR">11-</td>
+
+<td class="alignR">10-</td>
+
+<td class="alignR">52</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">9-</td>
+
+<td class="alignR">11-</td>
+
+<td class="alignR">10-</td>
+
+<td class="alignR">52</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">9</span>
+
+
+20.10.28　良　10頭
+
+
+<br>園田　右1700　2番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">10</span>
+
+
+20.10.15　良　11頭
+
+
+<br>園田　右1400　7番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+20.09.30　良　12頭
+
+
+<br>園田　右1230　12番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">11</span>
+
+
+20.09.11　稍重　12頭
+
+
+<br>園田　右1400　2番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">12</span>
+
+
+20.08.26　良　12頭
+
+
+<br>園田　右1700　3番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+<span class="male">牝6</span>
+
+</td>
+<td class="noBorder">鹿毛</td>
+<td>03.24生</td>
+<td>△ 52.0　0-0-0-0</td>
+<td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f10%2f28&k_raceNo=9&k_babaCode=27" class="race">Ｂ２ ３歳以上特別</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f10%2f15&k_raceNo=10&k_babaCode=27" class="race">地鶏日本一の徳島阿波尾鶏杯Ｂ１</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f09%2f30&k_raceNo=10&k_babaCode=27" class="race">Ｂ２ ３歳以上特別</a>
+
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f09%2f11&k_raceNo=11&k_babaCode=27" class="race">園田チャレンジカップ３歳以上登</a>
+
+</td><td class="rBorder">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f08%2f26&k_raceNo=12&k_babaCode=27" class="race">Ｂ２Ｃ１ ３歳以上特別</a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">トーセンファントム</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=11389">
+中川雅（金沢）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">386<br>(-6)</td>
+<td class="">
+10人　392　鴨宮祥 54.0
+</td><td class="">
+11人　395　井上幹 54.0
+</td><td class="">
+12人　398　井上幹 54.0
+</td><td class="">
+11人　398　石堂響 54.0
+</td><td class="rBorder">
+11人　395　鴨宮祥 55.0
+</td>
+</tr>
+<tr>
+<td colspan="3">レプラコンレーン</td>
+<td colspan="1">遠藤喜和</td>
+<td class="">
+1:57.5　4-4-7-8　40.9
+</td><td class="">
+1:34.3　11-10-10-10　42.3
+</td><td class="">
+1:23.4　7-8-10-11　40.9
+</td><td class="">
+1:32.5　10-10-11-11　40.7
+</td><td class="rBorder">
+1:58.8　5-5-8-11　42.9
+</td>
+</tr>
+<tr>
+<td colspan="3">（ファルブラヴ）</td>
+<td colspan="1">有限会社エスティファ</td>
+<td class="info"></td>
+<td class="">
+2.3　シーオブセレニティ
+</td><td class="">
+3.0　オールデン
+</td><td class="">
+2.9　トゥリパ
+</td><td class="">
+4.4　ナリタミニスター
+</td><td class="rBorder">
+4.2　プリンシパルスター
+</td>
+</tr><tr class="tBorder">
+
+
+
+
+<td rowspan="5" class="horseNum">10</td>
+<td colspan="3"><a class="horseName" target="_blank" href="../DataRoom/HorseMarkInfo?k_lineageLoginCode=30087402246">ホウオウジョーカー</a></td>
+<td colspan="1">
+<a class="jockeyName" target="_blank" href="../DataRoom/RiderMark?k_riderLicenseNo=60390">
+岩田康<span class="jockeyarea">（JRA）</span>
+</a>
+</td>
+
+
+<td class="odds_weight" rowspan="2"><span class="odds_Black "></span><br></td>
+<td rowspan="5" class="result rBorder">
+<table class="arrival noBorder">
+<tr>
+<td>全&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">4</td>
+
+</tr>
+<tr>
+<td>左&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">1</td>
+
+</tr>
+<tr>
+<td>右&nbsp;&nbsp;</td>
+
+<td class="alignR">1-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">2</td>
+
+</tr>
+<tr>
+<td>場&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td>距&nbsp;&nbsp;</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0-</td>
+
+<td class="alignR">0</td>
+
+</tr>
+<tr>
+<td colspan="2">－</td>
+<td colspan="3">良－</td>
+</tr>
+</table>
+</td>
+<td>
+<div class="raceInfo">
+<span class="pastRank ">10</span>
+
+
+20.10.17　良　11頭
+
+
+<br>Ｊ新潟　左1800　4番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">13</span>
+
+
+20.09.27　良　14頭
+
+
+<br>Ｊ中京　芝左2000　6番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank rank_01">1</span>
+
+
+20.03.17　良　9頭
+
+
+<br>笠松　右1400　9番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">9</span>
+
+
+20.01.12　稍重　16頭
+
+
+<br>Ｊ京都　右1900　1番
+</div>
+</td><td>
+<div class="raceInfo">
+<span class="pastRank ">5</span>
+
+
+19.12.21　稍重　13頭
+
+
+<br>Ｊ阪神　右1800　13番
+</div>
+</td>
+</tr>
+<tr>
+<td class="noBorder">
+
+牡3
+</td>
+<td class="noBorder">青鹿毛</td>
+<td>05.01生</td>
+<td> 55.0　0-0-0-1</td>
+<td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+
+<div class="jrarace">３歳上１勝クラス</div>
+</td><td class="">
+<a href="../TodayRaceInfo/RaceMarkTable?k_raceDate=2020%2f03%2f17&k_raceNo=9&k_babaCode=23" class="race">Ｊ交 盛春賞３歳２特選（ａ）</a>
+
+</td><td class="">
+
+<div class="jrarace">３歳未勝利</div>
+</td><td class="rBorder">
+
+<div class="jrarace">２歳新馬</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">ルーラーシップ</td>
+<td colspan="1">
+<a  target="_blank" href="../DataRoom/TrainerMark?k_trainerLicenseNo=40399">
+安田翔（JRA）
+</a>
+</td>
+<td rowspan="2" class="odds_weight">499<br>(-9)</td>
+<td class="">
+9人　508　☆齋藤新 54.0
+</td><td class="">
+11人　516　岩田康 54.0
+</td><td class="">
+2人　519　佐藤友 56.0
+</td><td class="">
+9人　520　川田将 56.0
+</td><td class="rBorder">
+2人　518　川田将 55.0
+</td>
+</tr>
+<tr>
+<td colspan="3">ソングバード</td>
+<td colspan="1">小笹芳央</td>
+<td class="">
+1:55.7　9-9-5-8　40.1
+</td><td class="">
+2:03.7　13-13-14-14　36.6
+</td><td class="">
+1:27.3　5-4-4-3　38.0
+</td><td class="">
+2:04.6　10-10-12-12　40.5
+</td><td class="rBorder">
+1:56.4　8-7-4-6　38.9
+</td>
+</tr>
+<tr>
+<td colspan="3">（ダンスインザダーク）</td>
+<td colspan="1">ノーザンファーム</td>
+<td class="info"></td>
+<td class="">
+1.8　サンレイファイト
+</td><td class="">
+3.1　ディアスティマ
+</td><td class="">
+0.2　メイショウフォイル
+</td><td class="">
+3.4　ヒロイックテイル
+</td><td class="rBorder">
+0.9　サンライズラポール
+</td>
+</tr>
+</tbody>
+</table>
+<ul class="dataArea"><li>コースレコード　1:33.3　ダイタクギンガ　55　武　　　　　　豊　2000/10/23</li></ul>
+</section>
+<section class="tableScale">
+<h4>出馬表の見方</h4>
+<table class="sample">
+<tbody>
+<tr>
+<th rowspan="2" class="a">枠番</th>
+<th rowspan="2" class="b">馬番</th>
+<th colspan="3" rowspan="2" class="c">競走馬</th>
+<th colspan="2" rowspan="2" class="d">騎手・調教師<br>馬主・生産牧場</th>
+<th rowspan="2" class="e">オッズ<br>馬体重<br>変更情報</th>
+<th rowspan="2" class="k">着別成績<br>最高タイム</th>
+<th class="l">競走成績</th>
+
+</tr>
+<tr>
+<th class="rBorder j">前走回</th>
+</tr>
+<tr>
+<td rowspan="5" class="courseNum">枠番</td>
+<td rowspan="5" class="horseNum">馬番</td>
+<td colspan="3"><p class="samplehorse">馬名</p></td>
+<td colspan="2"><p class="samplejockey">騎手<span class="jockeyarea">（所属）</span></p></td>
+<td class="odds_weight" rowspan="2"><span class="odds">オッズ</span><br>(人気)</td>
+<td rowspan="5" class="result rBorder">全成績<br>ダート左回り成績<br>ダート右回り成績<br>当競馬場成績<br>うち当距離成績<br>最高タイム&nbsp;&nbsp;良馬場のみ</td>
+<td><div class="raceInfo"><span class="pastRank rank_02">着順</span>競走日　馬場状態（馬場水分）　出走頭数<br>競馬場/ナイター区分　コース区分/距離　馬番</div></td>
+</tr>
+<tr>
+<td class="noBorder">性齢</td>
+<td class="noBorder">毛色</td>
+<td>誕生月日</td>
+<td class="noBorder">負担重量</td>
+<td>騎乗成績</td>
+<td class="rBorder"><p class="race">レース名</p></td>
+</tr>
+<tr>
+<td colspan="3">父名</td>
+<td colspan="2"><p class="samplelink">調教師（所属）</p></td>
+<td rowspan="2" class="odds_weight">馬体重<br>(増減)</td>
+<td class="rBorder">人気　馬体重　減量/騎手/負担重量（積載重量）</td>
+</tr>
+<tr>
+<td colspan="3">母名</td>
+<td colspan="2">馬主</td>
+<td class="rBorder">タイム　コーナー通過順　上がり３Ｆタイム</td>
+</tr>
+<tr>
+<td colspan="3">（母父名）</td>
+<td colspan="2">生産牧場</td>
+<td class="status"><sapn class="info">変更情報</sapn></td>
+<td class="rBorder">1着馬とのタイム差　1着馬名</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</article>
+
+
+
+
+<article class="attention">
+  
+    <div class="innerWrapper">
+      
+        <p>※その他、出馬表の不明点については<a href="/Howtoread/theracecard.html" target="_blank">こちら</a>をご覧ください。</p>
+      
+        <p>※勝馬投票に的中者がいない場合、その式別投票者全員に100円につき　70円または80円の特払いがあります。</p>
+      
+        <p>※勝馬投票券は、必ず正規の窓口または電話投票で購入してください。ノミ行為・代行業は、法律で禁止されています。<br>　20歳未満の者は、勝馬投票券を購入することはできません。出馬表・成績・オッズ等は、主催者発表のものと照合してください。</p>
+      
+    </div>
+  
+</article>
+
+</div>
+
+<div class="innerWrapper2">
+
+<footer class="footer">
+  <ul class="footerMenu">
+    <li>
+      <a href="/index.html">
+        HOME
+      </a>
+    </li>
+    <li>
+      <a href="/association/">
+        地方競馬全国協会（NAR）
+      </a>
+    </li>
+    <li>
+      <a href="/sitemap.html">
+        サイトマップ
+      </a>
+    </li>
+    <li>
+      <a href="/link.html">
+        関連リンク
+      </a>
+    </li>
+    <li>
+      <a href="/terms.html">
+        利用規約
+      </a>
+    </li>
+    <li>
+      <a href="/qa.html">
+				ご意見・ご要望／FAQ
+	</a>
+    </li>
+  </ul>
+
+  <div class="copyright">
+    copyright 1998-NAR (The National Association of Racing) All Rights Reserved
+  </div>
+				<!-- 言語選択 -->
+				<div class="language cp_sl01">
+					<select onChange="location.href=value;">
+						<option value="#">Language</option>
+						<option value="https://www.goracing.jp/english/">English</option>
+						<option value="https://www.goracing.jp/french/">Francais</option>
+						<option value="https://www.goracing.jp/chinese/">中文</option>
+						<option value="https://www.goracing.jp/korea/">한글</option>
+					</select>
+				</div>
+  
+</footer>
+
+</div>
+</body>
+</html>
