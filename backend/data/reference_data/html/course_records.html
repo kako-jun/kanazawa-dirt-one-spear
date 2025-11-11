@@ -1,0 +1,1273 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="コースレコード一覧｜競馬場ガイド｜地方競馬情報サイト" name="title">
+	<meta content="KEIBA.GO.JP | 地方競馬情報サイトです。各地域の競馬場情報を掲載しております。" name="description">
+	<meta content="競馬,ケイバ,地方,ばんえい,ダート,レース,騎手,馬,競馬場ガイド" name="keywords">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes">		<meta name="format-detection" content="telephone=no">
+	<title>コースレコード一覧｜競馬場ガイド｜地方競馬情報サイト</title>
+
+
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js?date=20220401"></script>
+	<script type="text/javascript" src="../../js/common.js?date=20220401"></script>
+	<!--ページ固有JS-->
+	<script type="text/javascript" src="../../js/jquery.matchHeight.js?date=20220401"></script>
+
+	<link rel="shortcut icon" href="../../img/favicon.ico" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111245021-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111245021-1');
+	</script>
+
+<!--共通CSS---------------------------------->
+
+<link rel="stylesheet" href="../../css/sp_reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/sp_common.css" type="text/css" media="all" />
+<!--pc CSS---------------------------------->
+<!--sp CSS---------------------------------->
+<!--<link rel="stylesheet" href="../../css/guide_slick.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/guide_slick-theme.css" type="text/css" media="all" />-->
+<link rel="stylesheet" href="../../css/guide.css" type="text/css" media="all" />
+
+<!--スクロールヒント-->
+<script type="text/javascript" src="../../js/sp_scroll-hint.min.js"></script>
+<link rel="stylesheet" href="../../css/sp_scroll-hint.css">
+
+  <!-- headerとfooterのインクルード-->  
+
+<script type="text/javascript">
+  $(document).ready(function() {
+  $.ajaxSetup({cache:false}); 
+  $('#header').load('../../respons_guide_header.html');
+  $('#footer').load('../../respons_guide_footer.html');
+  });
+</script>
+
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js?date=20220401"></script>
+
+<!--ページ固有JS-->
+<script type="text/javascript" src="../../js/sp_jquery.matchHeight.js"></script>
+
+<link rel="shortcut icon" href="../../img/favicon.ico" />
+
+</head>
+<body>
+<div id="header"></div>
+
+<div class="guideContent">
+  <section class="guideHeader guideCorseRecord" id="infoContainer">
+    <div class="guideHeader__inner">
+      <div class="guideHeader__sp">
+        <h2 class="guideHeader__title">
+          <a href="../" class="guideHeader__titleLink">競馬場ガイド</a>
+        </h2>
+        <div class="btnArea02">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="guideHeader__nav">
+        <ul class="guidenavi">
+          <li class="guidenavi__item"><a href="../" class="guidenavi__link">競馬場</a></li>
+          <li class="guidenavi__item"><a href="../offsite_sales/" class="guidenavi__link">場外発売場</a></li>
+          <li class="guidenavi__item"><a href="../jockey/" class="guidenavi__link">騎手</a></li>
+          <li class="guidenavi__item"><a href="../course/" class="guidenavi__link">コース</a></li>
+          <li class="guidenavi__item is-active"><a href="./" class="guidenavi__link">コースレコード</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+    
+  <section class="guideBody guideCorseRecord" id="mainContainer">
+    <div class="guideBody__inner">
+      <div class="guideBody__header">
+        <h3 class="guideBody__title">コースレコード一覧</h3>
+        <section class="guideSort">
+          <select id="js-sort-course" class="guideSortCourse js-select">
+            <option value="courseAll">競馬場</option>
+            <option value="monb">門別</option>
+            <option value="mori">盛岡</option>
+            <option value="mizu">水沢</option>
+            <option value="uraw">浦和</option>
+            <option value="funa">船橋</option>
+            <option value="ooi">大井</option>
+            <option value="kawa">川崎</option>
+            <option value="kana">金沢</option>
+            <option value="kasa">笠松</option>
+            <option value="nago">名古屋</option>
+            <option value="sono">園田</option>
+            <option value="hime">姫路</option>
+            <option value="kout">高知</option>
+            <option value="saga">佐賀</option>
+          </select>
+          <select id="js-sort-distance" class="guideSortDistance js-select">
+            <option value="distanceAll">距離</option>
+            <option value="800">800m</option>
+            <option value="820">820m</option>
+            <option value="850">850m</option>
+            <option value="900">900m</option>
+            <option value="920">920m</option>
+            <option value="1000">1000m</option>
+            <option value="s1000">芝1000m</option>
+            <option value="1100">1100m</option>
+            <option value="1200">1200m</option>
+            <option value="1230">1230m</option>
+            <option value="1300">1300m</option>
+            <option value="1400">1400m</option>
+            <option value="1500">1500m</option>
+            <option value="1600">1600m</option>
+            <option value="s1600">芝1600m</option>
+            <option value="1650">1650m</option>
+            <option value="1700">1700m</option>
+            <option value="s1700">芝1700m</option>
+            <option value="1750">1750m</option>
+            <option value="1800">1800m</option>
+            <option value="1860">1860m</option>
+            <option value="1870">1870m</option>
+            <option value="1900">1900m</option>
+            <option value="2000">2000m</option>
+            <option value="2100">2100m</option>
+            <option value="2200">2200m</option>
+            <option value="2400">2400m</option>
+            <option value="s2400">芝2400m</option>
+            <option value="2500">2500m</option>
+            <option value="2600">2600m</option>
+            <option value="3000">3000m</option>
+          </select>
+        </section>
+      </div>
+      <div class="guideBody__body">
+        <section class="courseRecord">
+          <table class="courseRecord__tab guideTab js-scrollable">
+            <thead class="guideTab__thead">
+              <tr>
+                <th>競馬場</th>
+                <th>回り</th>
+                <th>距離</th>
+                <th>タイム</th>
+                <th>馬名</th>
+                <th>騎手名</th>
+                <th>日付</th>
+              </tr>
+            </thead>
+            <tbody class="guideTab__tbody">
+
+
+
+
+
+
+
+
+
+              <tr class="courseRecord__record js-course-monb js-distance-1000">
+                <td>門別</td>
+                <td>右</td>
+                <td>1000m</td>
+                <td>0:58.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30034405046&k_activeCode=1" target="_blank" rel="noopener noreferrer">アザワク</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31279" target="_blank" rel="noopener noreferrer">小野　楓馬<span>オノ　フウマ</span></a></td>
+                <td>2020/07/02</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1100">
+                <td>門別</td>
+                <td>右</td>
+                <td>1100m</td>
+                <td>1:05.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30072401307&k_activeCode=1" target="_blank" rel="noopener noreferrer">ベストグリーン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31279" target="_blank" rel="noopener noreferrer">小野　楓馬<span>オノ　フウマ</span></a></td>
+                <td>2025/04/17</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1200">
+                <td>門別</td>
+                <td>右</td>
+                <td>1200m</td>
+                <td>1:09.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30017403385&k_activeCode=1" target="_blank" rel="noopener noreferrer">ニシケンモノノフ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60130" target="_blank" rel="noopener noreferrer">横山　典弘<span>ヨコヤマ　ノリヒロ</span></a></td>
+                <td>2017/06/08</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1500">
+                <td>門別</td>
+                <td>右</td>
+                <td>1500m</td>
+                <td>1:34.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30082401516&k_activeCode=1" target="_blank" rel="noopener noreferrer">センコーファースト</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31226" target="_blank" rel="noopener noreferrer">石川　倭<span>イシカワ　ヤマト</span></a></td>
+                <td>2019/10/10</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1600">
+                <td>門別</td>
+                <td>右</td>
+                <td>1600m</td>
+                <td>1:39.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30003403846&k_activeCode=1" target="_blank" rel="noopener noreferrer">マイネルシスネロス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31137" target="_blank" rel="noopener noreferrer">桑村　真明<span>クワムラ　マサアキ</span></a></td>
+                <td>2021/07/07</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1700">
+                <td>門別</td>
+                <td>右</td>
+                <td>1700m</td>
+                <td>1:44.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30024406115&k_activeCode=1" target="_blank" rel="noopener noreferrer">エイシンイッパツ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30353" target="_blank" rel="noopener noreferrer">坂下　秀樹<span>サカシタ　ヒデキ</span></a></td>
+                <td>2011/09/21</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-1800">
+                <td>門別</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:51.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30087405445&k_activeCode=1" target="_blank" rel="noopener noreferrer">バルーン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30343" target="_blank" rel="noopener noreferrer">井上　俊彦<span>イノウエ　トシヒコ</span></a></td>
+                <td>2013/10/17</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-monb js-distance-2000">
+                <td>門別</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:02.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30071402925&k_activeCode=1" target="_blank" rel="noopener noreferrer">スマートファルコン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60390" target="_blank" rel="noopener noreferrer">岩田　康誠<span>イワタ　ヤスナリ</span></a></td>
+                <td>2009/08/13</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-1000">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>1000m</td>
+                <td>0:58.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30058407156&k_activeCode=1" target="_blank" rel="noopener noreferrer">マッドシェリー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31308" target="_blank" rel="noopener noreferrer">神尾　香澄<span>カミオ　カスミ</span></a></td>
+                <td>2023/10/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-1200">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>1200m</td>
+                <td>1:08.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=40031405916&k_activeCode=1" target="_blank" rel="noopener noreferrer">マテラスカイ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60138" target="_blank" rel="noopener noreferrer">武　豊<span>タケ　ユタカ</span></a></td>
+                <td>2020/08/10</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-1400">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>1400m</td>
+                <td>1:23.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30022408606&k_activeCode=1" target="_blank" rel="noopener noreferrer">タイセイブラスト</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31119" target="_blank" rel="noopener noreferrer">高松　亮<span>タカマツ　リョウ</span></a></td>
+                <td>2020/10/26</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-1600">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>1600m</td>
+                <td>1:32.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30092403126&k_activeCode=1" target="_blank" rel="noopener noreferrer">アルクトス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60330" target="_blank" rel="noopener noreferrer">田邊　裕信<span>タナベ　ヒロノブ</span></a></td>
+                <td>2020/10/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-1800">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>1800m</td>
+                <td>1:49.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30005407465&k_activeCode=1" target="_blank" rel="noopener noreferrer">サンビスタ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60390" target="_blank" rel="noopener noreferrer">岩田　康誠<span>イワタ　ヤスナリ</span></a></td>
+                <td>2014/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-2000">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>2000m</td>
+                <td>2:00.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30028403475&k_activeCode=1" target="_blank" rel="noopener noreferrer">コパノリッキー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60330" target="_blank" rel="noopener noreferrer">田邊　裕信<span>タナベ　ヒロノブ</span></a></td>
+                <td>2014/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-2500">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>2500m</td>
+                <td>2:39.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30042405654&k_activeCode=1" target="_blank" rel="noopener noreferrer">バンケーティング</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30394" target="_blank" rel="noopener noreferrer">菅原　勲<span>スガワラ　イサオ</span></a></td>
+                <td>2002/11/24</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-3000">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>3000m</td>
+                <td>3:20.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30076408305&k_activeCode=1" target="_blank" rel="noopener noreferrer">センリオー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30690" target="_blank" rel="noopener noreferrer">板垣　吉則<span>イタガキ　ヨシノリ</span></a></td>
+                <td>2007/10/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-s1000">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>芝1000m</td>
+                <td>0:57.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30055405766&k_activeCode=1" target="_blank" rel="noopener noreferrer">カルーナブルガリス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31096" target="_blank" rel="noopener noreferrer">山本　政聡<span>ヤマモト　マサトシ</span></a></td>
+                <td>2023/07/11</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-s1600">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>芝1600m</td>
+                <td>1:36.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30003403724&k_activeCode=1" target="_blank" rel="noopener noreferrer">ロイヤルスター</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30386" target="_blank" rel="noopener noreferrer">小林　俊彦<span>コバヤシ　トシヒコ</span></a></td>
+                <td>1999/06/06</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-s1700">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>芝1700m</td>
+                <td>1:43.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30072400166&k_activeCode=1" target="_blank" rel="noopener noreferrer">ウン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31147" target="_blank" rel="noopener noreferrer">本田　正重<span>ホンダ　マサシゲ</span></a></td>
+                <td>2022/07/10</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mori js-distance-s2400">
+                <td>盛岡</td>
+                <td>左</td>
+                <td>芝2400m</td>
+                <td>2:28.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30066408936&k_activeCode=1" target="_blank" rel="noopener noreferrer">アトミックフォース</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31139" target="_blank" rel="noopener noreferrer">山本　聡哉<span>ヤマモト　トシヤ</span></a></td>
+                <td>2022/07/31</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-850">
+                <td>水沢</td>
+                <td>右</td>
+                <td>850m</td>
+                <td>0:49.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30056406056&k_activeCode=1" target="_blank" rel="noopener noreferrer">トンデコパ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30813" target="_blank" rel="noopener noreferrer">村上　忍<span>ムラカミ　シノブ</span></a></td>
+                <td>2021/12/05</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-1300">
+                <td>水沢</td>
+                <td>右</td>
+                <td>1300m</td>
+                <td>1:19.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30052404256&k_activeCode=1" target="_blank" rel="noopener noreferrer">ルチルクォーツ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31002" target="_blank" rel="noopener noreferrer">陶　文峰<span>トウ　ブンホウ</span></a></td>
+                <td>2024/06/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-1400">
+                <td>水沢</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:24.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30068404794&k_activeCode=1" target="_blank" rel="noopener noreferrer">プライドキム</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31178" target="_blank" rel="noopener noreferrer">川島　正太郎<span>カワシマ　ショウタロウ</span></a></td>
+                <td>2008/08/18</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-1600">
+                <td>水沢</td>
+                <td>右</td>
+                <td>1600m</td>
+                <td>1:38.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30023406005&k_activeCode=1" target="_blank" rel="noopener noreferrer">テンショウボス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30386" target="_blank" rel="noopener noreferrer">小林　俊彦<span>コバヤシ　トシヒコ</span></a></td>
+                <td>2007/11/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-1800">
+                <td>水沢</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:53.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30024406115&k_activeCode=1" target="_blank" rel="noopener noreferrer">エイシンイッパツ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30690" target="_blank" rel="noopener noreferrer">板垣　吉則<span>イタガキ　ヨシノリ</span></a></td>
+                <td>2009/12/07</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-1900">
+                <td>水沢</td>
+                <td>右</td>
+                <td>1900m</td>
+                <td>1:58.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30054403145&k_activeCode=1" target="_blank" rel="noopener noreferrer">シャイニングサヤカ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31061" target="_blank" rel="noopener noreferrer">岩橋　勇二<span>イワハシ　ユウジ</span></a></td>
+                <td>2013/09/02</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-2000">
+                <td>水沢</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:04.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30083405416&k_activeCode=1" target="_blank" rel="noopener noreferrer">ハドソンホーネット</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31096" target="_blank" rel="noopener noreferrer">山本　政聡<span>ヤマモト　マサトシ</span></a></td>
+                <td>2019/06/16</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-mizu js-distance-2500">
+                <td>水沢</td>
+                <td>右</td>
+                <td>2500m</td>
+                <td>2:41.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30083403235&k_activeCode=1" target="_blank" rel="noopener noreferrer">ナムラタイタン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31095" target="_blank" rel="noopener noreferrer">坂口　裕一<span>サカグチ　ユウイチ</span></a></td>
+                <td>2014/12/07</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-800">
+                <td>浦和</td>
+                <td>左</td>
+                <td>800m</td>
+                <td>0:45.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30073409686&k_activeCode=1" target="_blank" rel="noopener noreferrer">トッキーホレット</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31352" target="_blank" rel="noopener noreferrer">中山　遥人<span>ナカヤマ　ハルヒト</span></a></td>
+                <td>2025/06/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-1300">
+                <td>浦和</td>
+                <td>左</td>
+                <td>1300m</td>
+                <td>1:20.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30046407814&k_activeCode=1" target="_blank" rel="noopener noreferrer">グランプリクン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30033" target="_blank" rel="noopener noreferrer">石崎　隆之<span>イシザキ　タカユキ</span></a></td>
+                <td>1996/10/15</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-1400">
+                <td>浦和</td>
+                <td>左</td>
+                <td>1400m</td>
+                <td>1:23.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30005403456&k_activeCode=1" target="_blank" rel="noopener noreferrer">シャマル</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60422" target="_blank" rel="noopener noreferrer">川須　栄彦<span>カワス　ハルヒコ</span></a></td>
+                <td>2025/06/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-1500">
+                <td>浦和</td>
+                <td>左</td>
+                <td>1500m</td>
+                <td>1:31.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30074403776&k_activeCode=1" target="_blank" rel="noopener noreferrer">ラブリービュー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31147" target="_blank" rel="noopener noreferrer">本田　正重<span>ホンダ　マサシゲ</span></a></td>
+                <td>2025/06/26</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-1600">
+                <td>浦和</td>
+                <td>左</td>
+                <td>1600m</td>
+                <td>1:37.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30029401524&k_activeCode=1" target="_blank" rel="noopener noreferrer">インテリパワー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30059" target="_blank" rel="noopener noreferrer">張田　京<span>ハリタ　タカシ</span></a></td>
+                <td>1999/04/20</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-1900">
+                <td>浦和</td>
+                <td>左</td>
+                <td>1900m</td>
+                <td>1:57.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30019402434&k_activeCode=1" target="_blank" rel="noopener noreferrer">タイコウレジェンド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30133" target="_blank" rel="noopener noreferrer">的場　文男<span>マトバ　フミオ</span></a></td>
+                <td>2001/05/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-uraw js-distance-2000">
+                <td>浦和</td>
+                <td>左</td>
+                <td>2000m</td>
+                <td>2:04.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=40021400283&k_activeCode=1" target="_blank" rel="noopener noreferrer">キョウトシチー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60128" target="_blank" rel="noopener noreferrer">松永　幹夫<span>マツナガ　ミキオ</span></a></td>
+                <td>1997/12/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1000">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1000m</td>
+                <td>0:57.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30026406225&k_activeCode=1" target="_blank" rel="noopener noreferrer">スパロービート</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30943" target="_blank" rel="noopener noreferrer">戸崎　圭太<span>トサキ　ケイタ</span></a></td>
+                <td>2008/12/11</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1200">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1200m</td>
+                <td>1:11.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30065400005&k_activeCode=1" target="_blank" rel="noopener noreferrer">スカーレットオペラ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30045" target="_blank" rel="noopener noreferrer">桑島　孝春<span>クワジマ　タカハル</span></a></td>
+                <td>2008/07/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1500">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1500m</td>
+                <td>1:32.2</td>
+                <td>ダイジユボーイ</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30062" target="_blank" rel="noopener noreferrer">松代　眞<span>マツシロ　マコト</span></a></td>
+                <td>1979/07/20</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1600">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1600m</td>
+                <td>1:35.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30009400593&k_activeCode=1" target="_blank" rel="noopener noreferrer">アブクマポーロ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30033" target="_blank" rel="noopener noreferrer">石崎　隆之<span>イシザキ　タカユキ</span></a></td>
+                <td>1998/05/27</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1700">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1700m</td>
+                <td>1:43.3</td>
+                <td>マークシート</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30062" target="_blank" rel="noopener noreferrer">松代　眞<span>マツシロ　マコト</span></a></td>
+                <td>1982/08/01</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-1800">
+                <td>船橋</td>
+                <td>左</td>
+                <td>1800m</td>
+                <td>1:47.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30068406394&k_activeCode=1" target="_blank" rel="noopener noreferrer">ボンネビルレコード</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30133" target="_blank" rel="noopener noreferrer">的場　文男<span>マトバ　フミオ</span></a></td>
+                <td>2008/09/23</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-2200">
+                <td>船橋</td>
+                <td>左</td>
+                <td>2200m</td>
+                <td>2:22.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30053403836&k_activeCode=1" target="_blank" rel="noopener noreferrer">ヒルノバーゼル</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31179" target="_blank" rel="noopener noreferrer">澤田　龍哉<span>サワダ　リョウヤ</span></a></td>
+                <td>2021/12/02</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-funa js-distance-2400">
+                <td>船橋</td>
+                <td>左</td>
+                <td>2400m</td>
+                <td>2:29.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30086405744&k_activeCode=1" target="_blank" rel="noopener noreferrer">カネツフルーヴ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60128" target="_blank" rel="noopener noreferrer">松永　幹夫<span>マツナガ　ミキオ</span></a></td>
+                <td>2003/03/26</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1000">
+                <td>大井</td>
+                <td>右</td>
+                <td>1000m</td>
+                <td>0:57.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30038400056&k_activeCode=1" target="_blank" rel="noopener noreferrer">ノアヴィグラス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31253" target="_blank" rel="noopener noreferrer">藤本　現暉<span>フジモト　ゲンキ</span></a></td>
+                <td>2023/06/29</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1200">
+                <td>大井</td>
+                <td>右</td>
+                <td>1200m</td>
+                <td>1:10.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30056404966&k_activeCode=1" target="_blank" rel="noopener noreferrer">ドンフランキー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60275" target="_blank" rel="noopener noreferrer">池添　謙一<span>イケゾエ　ケンイチ</span></a></td>
+                <td>2023/10/04</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1400">
+                <td>大井</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:23.8</td>
+                <td>アガリスピード</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=930210" target="_blank" rel="noopener noreferrer">赤間　清松<span>アカマ　キヨマツ</span></a></td>
+                <td>1977/08/30</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1500">
+                <td>大井</td>
+                <td>右</td>
+                <td>1500m</td>
+                <td>1:31.5</td>
+                <td>キクマツオー</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30187" target="_blank" rel="noopener noreferrer">佐々木　竹見<span>ササキ　タケミ</span></a></td>
+                <td>1980/06/14</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1600">
+                <td>大井</td>
+                <td>右</td>
+                <td>1600m</td>
+                <td>1:37.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30026409484&k_activeCode=1" target="_blank" rel="noopener noreferrer">アジュディミツオー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30635" target="_blank" rel="noopener noreferrer">内田　博幸<span>ウチダ　ヒロユキ</span></a></td>
+                <td>2006/04/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1700">
+                <td>大井</td>
+                <td>右</td>
+                <td>1700m</td>
+                <td>1:43.2</td>
+                <td>ムツヒカリ</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30097" target="_blank" rel="noopener noreferrer">赤嶺　本浩<span>アカミネ　モトヒロ</span></a></td>
+                <td>1977/07/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1800">
+                <td>大井</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:49.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30044408745&k_activeCode=1" target="_blank" rel="noopener noreferrer">ミラクルレジェンド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60390" target="_blank" rel="noopener noreferrer">岩田　康誠<span>イワタ　ヤスナリ</span></a></td>
+                <td>2011/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-2000">
+                <td>大井</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:00.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30071402925&k_activeCode=1" target="_blank" rel="noopener noreferrer">スマートファルコン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60138" target="_blank" rel="noopener noreferrer">武　豊<span>タケ　ユタカ</span></a></td>
+                <td>2010/12/29</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-2400">
+                <td>大井</td>
+                <td>右</td>
+                <td>2400m</td>
+                <td>2:29.7</td>
+                <td>グツドボーイ</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30119" target="_blank" rel="noopener noreferrer">高橋　三郎<span>タカハシ　サブロウ</span></a></td>
+                <td>1977/11/04</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-2600">
+                <td>大井</td>
+                <td>右</td>
+                <td>2600m</td>
+                <td>2:42.8</td>
+                <td>アグネスチカラ</td>
+                <td>高柳恒男<span>タカヤナギ　ツネオ</span></td>
+                <td>1977/05/27</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-ooi js-distance-1650">
+                <td>大井</td>
+                <td>左</td>
+                <td>1650m</td>
+                <td>1:42.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30067402756&k_activeCode=1" target="_blank" rel="noopener noreferrer">ロンコーネ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31231" target="_blank" rel="noopener noreferrer">笹川　翼<span>ササガワ　ツバサ</span></a></td>
+                <td>2023/09/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-900">
+                <td>川崎</td>
+                <td>左</td>
+                <td>900m</td>
+                <td>0:51.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30085400375&k_activeCode=1" target="_blank" rel="noopener noreferrer">ユーリカ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31071" target="_blank" rel="noopener noreferrer">脇田　創<span>ワキタ　ハジメ</span></a></td>
+                <td>2014/06/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-1400">
+                <td>川崎</td>
+                <td>左</td>
+                <td>1400m</td>
+                <td>1:26.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30075404045&k_activeCode=1" target="_blank" rel="noopener noreferrer">タイセイレジェンド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60412" target="_blank" rel="noopener noreferrer">内田　博幸<span>ウチダ　ヒロユキ</span></a></td>
+                <td>2012/11/05</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-1500">
+                <td>川崎</td>
+                <td>左</td>
+                <td>1500m</td>
+                <td>1:31.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30022409355&k_activeCode=1" target="_blank" rel="noopener noreferrer">ハバナマティーニ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30889" target="_blank" rel="noopener noreferrer">杉村　一樹<span>スギムラ　カズキ</span></a></td>
+                <td>2012/06/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-1600">
+                <td>川崎</td>
+                <td>左</td>
+                <td>1600m</td>
+                <td>1:37.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30034407584&k_activeCode=1" target="_blank" rel="noopener noreferrer">ロードライジング</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30635" target="_blank" rel="noopener noreferrer">内田　博幸<span>ウチダ　ヒロユキ</span></a></td>
+                <td>2006/05/17</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-2000">
+                <td>川崎</td>
+                <td>左</td>
+                <td>2000m</td>
+                <td>2:04.8</td>
+                <td>マルイチダイオー</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=930260" target="_blank" rel="noopener noreferrer">角田　次男<span>ツノダ　ツギオ</span></a></td>
+                <td>1975/06/26</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kawa js-distance-2100">
+                <td>川崎</td>
+                <td>左</td>
+                <td>2100m</td>
+                <td>2:10.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30071402925&k_activeCode=1" target="_blank" rel="noopener noreferrer">スマートファルコン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60138" target="_blank" rel="noopener noreferrer">武　豊<span>タケ　ユタカ</span></a></td>
+                <td>2012/01/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-900">
+                <td>金沢</td>
+                <td>右</td>
+                <td>900m</td>
+                <td>0:53.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30062406346&k_activeCode=1" target="_blank" rel="noopener noreferrer">ニュータウンガール</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30835" target="_blank" rel="noopener noreferrer">岡部　誠<span>オカベ　マコト</span></a></td>
+                <td>2021/06/29</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-1300">
+                <td>金沢</td>
+                <td>右</td>
+                <td>1300m</td>
+                <td>1:21.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30012404045&k_activeCode=1" target="_blank" rel="noopener noreferrer">メイショウヘミング</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31057" target="_blank" rel="noopener noreferrer">畑中　信司<span>ハタナカ　シンジ</span></a></td>
+                <td>2012/06/19</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-1400">
+                <td>金沢</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:24.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30067403036&k_activeCode=1" target="_blank" rel="noopener noreferrer">レッドルゼル</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2021/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-1500">
+                <td>金沢</td>
+                <td>右</td>
+                <td>1500m</td>
+                <td>1:32.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30014401236&k_activeCode=1" target="_blank" rel="noopener noreferrer">テオレーマ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2021/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-1700">
+                <td>金沢</td>
+                <td>右</td>
+                <td>1700m</td>
+                <td>1:45.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30065407946&k_activeCode=1" target="_blank" rel="noopener noreferrer">プレシオーソ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31331" target="_blank" rel="noopener noreferrer">加藤　翔馬<span>カトウ　ショウマ</span></a></td>
+                <td>2025/07/01</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-1900">
+                <td>金沢</td>
+                <td>右</td>
+                <td>1900m</td>
+                <td>1:59.8</td>
+                <td>マルケンホープ</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30516" target="_blank" rel="noopener noreferrer">大瀬戸　豊<span>オオセト　ユタカ</span></a></td>
+                <td>1983/07/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-2000">
+                <td>金沢</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:04.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30046402746&k_activeCode=1" target="_blank" rel="noopener noreferrer">ヒロイックテイル</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31039" target="_blank" rel="noopener noreferrer">吉原　寛人<span>ヨシハラ　ヒロト</span></a></td>
+                <td>2024/08/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-2100">
+                <td>金沢</td>
+                <td>右</td>
+                <td>2100m</td>
+                <td>2:10.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30018407546&k_activeCode=1" target="_blank" rel="noopener noreferrer">メイショウカズサ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2021/09/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kana js-distance-2600">
+                <td>金沢</td>
+                <td>右</td>
+                <td>2600m</td>
+                <td>2:49.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30027407856&k_activeCode=1" target="_blank" rel="noopener noreferrer">アンタンスルフレ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30835" target="_blank" rel="noopener noreferrer">岡部　誠<span>オカベ　マコト</span></a></td>
+                <td>2024/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-800">
+                <td>笠松</td>
+                <td>右</td>
+                <td>800m</td>
+                <td>0:47.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30086408266&k_activeCode=1" target="_blank" rel="noopener noreferrer">シルバ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31041" target="_blank" rel="noopener noreferrer">藤原　幹生<span>フジワラ　ミキオ</span></a></td>
+                <td>2021/09/10</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-1400">
+                <td>笠松</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:23.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30057406785&k_activeCode=1" target="_blank" rel="noopener noreferrer">ラブバレット</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31139" target="_blank" rel="noopener noreferrer">山本　聡哉<span>ヤマモト　トシヤ</span></a></td>
+                <td>2016/11/24</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-1600">
+                <td>笠松</td>
+                <td>右</td>
+                <td>1600m</td>
+                <td>1:38.4</td>
+                <td>チアズキョウト</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30494" target="_blank" rel="noopener noreferrer">坂口　重政<span>サカグチ　シゲマサ</span></a></td>
+                <td>1995/04/30</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-1800">
+                <td>笠松</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:52.9</td>
+                <td>ボールドマツクス</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30484" target="_blank" rel="noopener noreferrer">伊藤　強一<span>イトウ　キヨウイチ</span></a></td>
+                <td>1984/06/17</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-1900">
+                <td>笠松</td>
+                <td>右</td>
+                <td>1900m</td>
+                <td>2:00.3</td>
+                <td>ボールドマツクス</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30484" target="_blank" rel="noopener noreferrer">伊藤　強一<span>イトウ　キヨウイチ</span></a></td>
+                <td>1985/04/07</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kasa js-distance-2500">
+                <td>笠松</td>
+                <td>右</td>
+                <td>2500m</td>
+                <td>2:39.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30086405744&k_activeCode=1" target="_blank" rel="noopener noreferrer">カネツフルーヴ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60128" target="_blank" rel="noopener noreferrer">松永　幹夫<span>マツナガ　ミキオ</span></a></td>
+                <td>2003/04/29</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-nago js-distance-900">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>900m</td>
+                <td>0:54.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30013407276&k_activeCode=1" target="_blank" rel="noopener noreferrer">セブンカラーズ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31093" target="_blank" rel="noopener noreferrer">山田　祥雄<span>ヤマダ　サチオ</span></a></td>
+                <td>2022/07/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-nago js-distance-920">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>920m</td>
+                <td>0:54.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30092405416&k_activeCode=1" target="_blank" rel="noopener noreferrer">エッシャー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30869" target="_blank" rel="noopener noreferrer">宮下　瞳<span>ミヤシタ　ヒトミ</span></a></td>
+                <td>2022/08/19</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-nago js-distance-1500">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>1500m</td>
+                <td>1:31.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30054408266&k_activeCode=1" target="_blank" rel="noopener noreferrer">ウィルソンテソーロ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2023/05/02</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-nago js-distance-1700">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>1700m</td>
+                <td>1:46.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30006403966&k_activeCode=1" target="_blank" rel="noopener noreferrer">キャリックアリード</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30983" target="_blank" rel="noopener noreferrer">御神本　訓史<span>ミカモト　ノリフミ</span></a></td>
+                <td>2024/09/05</td>
+              </tr>
+              
+              <tr class="courseRecord__record js-course-nago js-distance-2000">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:07.4</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30097400486&k_activeCode=1" target="_blank" rel="noopener noreferrer">ミッキーファイト</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60458" target="_blank" rel="noopener noreferrer">戸崎　圭太<span>トサキ　ケイタ</span></a></td>
+                <td>2024/12/19</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-nago js-distance-2100">
+                <td>名古屋</td>
+                <td>右</td>
+                <td>2100m</td>
+                <td>2:10.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30093408466&k_activeCode=1" target="_blank" rel="noopener noreferrer">ノットゥルノ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60138" target="_blank" rel="noopener noreferrer">武　豊<span>タケ　ユタカ</span></a></td>
+                <td>2024/05/06</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-820">
+                <td>園田</td>
+                <td>右</td>
+                <td>820m</td>
+                <td>0:48.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=40091403845&k_activeCode=1" target="_blank" rel="noopener noreferrer">エイシンマロニエ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30489" target="_blank" rel="noopener noreferrer">川原　正一<span>カワハラ　ショウイチ</span></a></td>
+                <td>2012/06/21</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-1230">
+                <td>園田</td>
+                <td>右</td>
+                <td>1230m</td>
+                <td>1:15.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30097409594&k_activeCode=1" target="_blank" rel="noopener noreferrer">ベストタイザン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30871" target="_blank" rel="noopener noreferrer">下原　理<span>シモハラ　オサム</span></a></td>
+                <td>2008/05/29</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-1400">
+                <td>園田</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:25.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30004401006&k_activeCode=1" target="_blank" rel="noopener noreferrer">マイタイザン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31205" target="_blank" rel="noopener noreferrer">杉浦　健太<span>スギウラ　ケンタ</span></a></td>
+                <td>2020/03/11</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-1700">
+                <td>園田</td>
+                <td>右</td>
+                <td>1700m</td>
+                <td>1:46.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30014400464&k_activeCode=1" target="_blank" rel="noopener noreferrer">トロットヒーロー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30728" target="_blank" rel="noopener noreferrer">岩田　康誠<span>イワタ　ヤスナリ</span></a></td>
+                <td>2003/08/14</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-1870">
+                <td>園田</td>
+                <td>右</td>
+                <td>1870m</td>
+                <td>1:56.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30052402794&k_activeCode=1" target="_blank" rel="noopener noreferrer">ヴァーミリアン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60138" target="_blank" rel="noopener noreferrer">武　豊<span>タケ　ユタカ</span></a></td>
+                <td>2008/11/03</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-sono js-distance-2400">
+                <td>園田</td>
+                <td>右</td>
+                <td>2400m</td>
+                <td>2:35.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30047406115&k_activeCode=1" target="_blank" rel="noopener noreferrer">マルヨフェニックス</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31040" target="_blank" rel="noopener noreferrer">尾島　徹<span>オジマ　トオル</span></a></td>
+                <td>2011/03/09</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-hime js-distance-800">
+                <td>姫路</td>
+                <td>右</td>
+                <td>800m</td>
+                <td>0:48.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30076403664&k_activeCode=1" target="_blank" rel="noopener noreferrer">ホクザンフィールド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30933" target="_blank" rel="noopener noreferrer">清水　貴行<span>シミズ　タカユキ</span></a></td>
+                <td>2001/07/25</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-hime js-distance-1400">
+                <td>姫路</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:26.3</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30043408635&k_activeCode=1" target="_blank" rel="noopener noreferrer">エーシンビーセルズ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30793" target="_blank" rel="noopener noreferrer">田中　学<span>タナカ　マナブ</span></a></td>
+                <td>2012/07/05</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-hime js-distance-1500">
+                <td>姫路</td>
+                <td>右</td>
+                <td>1500m</td>
+                <td>1:33.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30082400084&k_activeCode=1" target="_blank" rel="noopener noreferrer">モエレトレジャー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30715" target="_blank" rel="noopener noreferrer">永島　太郎<span>ナガシマ　タロウ</span></a></td>
+                <td>2007/07/11</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-hime js-distance-1800">
+                <td>姫路</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:55.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30096405735&k_activeCode=1" target="_blank" rel="noopener noreferrer">ベストラン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30235" target="_blank" rel="noopener noreferrer">松平　幸秀<span>マツヒラ　ユキヒデ</span></a></td>
+                <td>2012/07/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-hime js-distance-2000">
+                <td>姫路</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:11.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30085403094&k_activeCode=1" target="_blank" rel="noopener noreferrer">レッドストーン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30416" target="_blank" rel="noopener noreferrer">倉地　学<span>クラチ　マナブ</span></a></td>
+                <td>2006/03/01</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-800">
+                <td>高知</td>
+                <td>右</td>
+                <td>800m</td>
+                <td>0:47.6</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30077404795&k_activeCode=1" target="_blank" rel="noopener noreferrer">コンドルヒデオ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31136" target="_blank" rel="noopener noreferrer">永森　大智<span>ナガモリ　タイチ</span></a></td>
+                <td>2019/07/20</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-1300">
+                <td>高知</td>
+                <td>右</td>
+                <td>1300m</td>
+                <td>1:20.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30006404663&k_activeCode=1" target="_blank" rel="noopener noreferrer">メモリーキャッチ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30836" target="_blank" rel="noopener noreferrer">赤岡　修次<span>アカオカ　シュウジ</span></a></td>
+                <td>1997/07/12</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-1400">
+                <td>高知</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:26.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=40031404293&k_activeCode=1" target="_blank" rel="noopener noreferrer">テセウスフリーゼ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60082" target="_blank" rel="noopener noreferrer">的場　均<span>マトバ　ヒトシ</span></a></td>
+                <td>1999/03/22</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-1600">
+                <td>高知</td>
+                <td>右</td>
+                <td>1600m</td>
+                <td>1:40.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30097406093&k_activeCode=1" target="_blank" rel="noopener noreferrer">デュークウェイン</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30872" target="_blank" rel="noopener noreferrer">倉兼　育康<span>クラカネ　イクヤス</span></a></td>
+                <td>2000/01/15</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-1800">
+                <td>高知</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:54.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30024403083&k_activeCode=1" target="_blank" rel="noopener noreferrer">マルカイッキュウ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30599" target="_blank" rel="noopener noreferrer">徳留　康豊<span>トクドメ　ヤストヨ</span></a></td>
+                <td>1997/11/17</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-1900">
+                <td>高知</td>
+                <td>右</td>
+                <td>1900m</td>
+                <td>2:01.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30047407273&k_activeCode=1" target="_blank" rel="noopener noreferrer">ブリッジテイオー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30749" target="_blank" rel="noopener noreferrer">中越　豊光<span>ナカゴシ　トヨミツ</span></a></td>
+                <td>1999/02/28</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-kout js-distance-2400">
+                <td>高知</td>
+                <td>右</td>
+                <td>2400m</td>
+                <td>2:36.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30024403083&k_activeCode=1" target="_blank" rel="noopener noreferrer">マルカイッキュウ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30593" target="_blank" rel="noopener noreferrer">鷹野　宏史<span>タカノ　ヒロフミ</span></a></td>
+                <td>1998/01/04</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-900">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>900m</td>
+                <td>0:52.2</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30054409895&k_activeCode=1" target="_blank" rel="noopener noreferrer">ドラゴンゲート</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31105" target="_blank" rel="noopener noreferrer">田中　純<span>タナカ　ジュン</span></a></td>
+                <td>2020/06/21</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-1300">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>1300m</td>
+                <td>1:19.9</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30067401495&k_activeCode=1" target="_blank" rel="noopener noreferrer">ダノングッド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31287" target="_blank" rel="noopener noreferrer">多田羅　誠也<span>タタラ　セイヤ</span></a></td>
+                <td>2023/01/15</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-1400">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>1400m</td>
+                <td>1:23.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=40002407035&k_activeCode=1" target="_blank" rel="noopener noreferrer">スーニ</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2011/08/16</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-1750">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>1750m</td>
+                <td>1:51.1</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30076402075&k_activeCode=1" target="_blank" rel="noopener noreferrer">ダイワボルドー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30567" target="_blank" rel="noopener noreferrer">鮫島　克也<span>サメシマ　カツヤ</span></a></td>
+                <td>2014/11/30</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-1800">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>1800m</td>
+                <td>1:53.7</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30033408695&k_activeCode=1" target="_blank" rel="noopener noreferrer">キングプライド</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31215" target="_blank" rel="noopener noreferrer">川島　拓<span>カワシマ　タク</span></a></td>
+                <td>2018/05/13</td>
+              </tr>
+
+
+              <tr class="courseRecord__record js-course-saga js-distance-1860">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>1860m</td>
+                <td>1:58.8</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30046407786&k_activeCode=1" target="_blank" rel="noopener noreferrer">ビルンバウム</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=31199" target="_blank" rel="noopener noreferrer">石川　慎将<span>イシカワ　シンスケ</span></a></td>
+                <td>2024/09/01</td>
+              </tr>
+
+
+              <tr class="courseRecord__record js-course-saga js-distance-2000">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>2000m</td>
+                <td>2:05.0</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30032401516&k_activeCode=1" target="_blank" rel="noopener noreferrer">クリンチャー</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=60369" target="_blank" rel="noopener noreferrer">川田　将雅<span>カワダ　ユウガ</span></a></td>
+                <td>2021/02/11</td>
+              </tr>
+
+              <tr class="courseRecord__record js-course-saga js-distance-2500">
+                <td>佐賀</td>
+                <td>右</td>
+                <td>2500m</td>
+                <td>2:43.5</td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RaceHorseInfo?k_lineageLoginCode=30086403306&k_activeCode=1" target="_blank" rel="noopener noreferrer">グレイトパール</a></td>
+                <td><a href="https://www.keiba.go.jp/KeibaWeb/DataRoom/RiderMark?k_riderLicenseNo=30567" target="_blank" rel="noopener noreferrer">鮫島　克也<span>サメシマ　カツヤ</span></a></td>
+                <td>2020/10/25</td>
+              </tr>
+
+
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <p class="courseRecord__txt">　</p>
+      <p class="courseRecord__txt">※名古屋競馬場で2024年4月9日(火)から始まる1400mの競走について、地方競馬情報サイト上の出馬表及び競走成績では「レコードタイム」として表示される場合がありますが、実際には、2024年度内開催の1着更新タイムは「基準タイム」として取り扱いますのでご注意ください。</p>
+    </div>
+  </section>
+</div>
+
+
+
+<!--ページトップへ戻る-->
+<div class="backBtn"></div>
+
+<div id="footer" class="footer"></div>
+<script type="text/javascript" src="../../js/guide.js"></script>
+<script type="text/javascript" src="../../js/guide_record.js"></script>
+<script type="text/javascript" src="../../js/scrollhint.js"></script>
+
+</body>
+</html>
