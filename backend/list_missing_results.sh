@@ -22,7 +22,7 @@ for year in 2015 2016 2017 2018 2019 2020 2021 2022; do
             race=$(echo "$deba_file" | grep -oP 'race_\K\d+' | sed 's/^0*//')
             formatted_date="${date:0:4}-${date:4:2}-${date:6:2}"
             
-            url="https://www2.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=${formatted_date}&k_raceNo=${race}&k_babaCode=23"
+            url="https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/RaceMarkTable?k_raceDate=${formatted_date}&k_raceNo=${race}&k_babaCode=22"
             
             echo -e "${result_file}\t${url}" >> missing_results.txt
         fi
