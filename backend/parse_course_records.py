@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-コースレコードHTMLをパースしてJSONに変換
+コースレコードHTMLをパースしてYAMLに変換
 """
-import json
 import re
 from pathlib import Path
 from bs4 import BeautifulSoup
+import yaml
 
 
 def parse_time_to_seconds(time_str: str) -> float:
@@ -108,7 +108,7 @@ def parse_course_records(html_path: Path) -> dict:
 
 def main():
     html_path = Path("data/reference_data/html/course_records.html")
-    json_path = Path("data/reference_data/json/course_records.json")
+    yaml_path = Path("data/reference_data/yaml/course_records.yaml")
 
     if not html_path.exists():
         print(f"HTMLファイルが見つかりません: {html_path}")
@@ -117,14 +117,14 @@ def main():
     print(f"パース中: {html_path}")
     data = parse_course_records(html_path)
 
-    # JSONディレクトリを作成
-    json_path.parent.mkdir(parents=True, exist_ok=True)
+    # YAMLディレクトリを作成
+    yaml_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # JSON保存
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    # YAML保存
+    with open(yaml_path, 'w', encoding='utf-8') as f:
+        yaml.dump(data, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
 
-    print(f"保存完了: {json_path}")
+    print(f"保存完了: {yaml_path}")
     print(f"レコード数: {len(data['records'])}")
 
     # サマリー表示

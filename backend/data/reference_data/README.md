@@ -8,14 +8,14 @@
 reference_data/
 ├── html/                  # 元のHTMLファイル
 │   └── course_records.html
-├── json/                  # パース済みJSONファイル
-│   └── course_records.json
+├── yaml/                  # パース済みYAMLファイル
+│   └── course_records.yaml
 └── README.md
 ```
 
 ## データソース
 
-### コースレコード (course_records.json)
+### コースレコード (course_records.yaml)
 
 **取得元**: https://www.keiba.go.jp/guide/course_record/?course=kana
 
@@ -24,22 +24,17 @@ reference_data/
 **内容**: 金沢競馬場の距離別コースレコード
 
 **データ構造**:
-```json
-{
-  "course": "金沢",
-  "direction": "右回り",
-  "records": [
-    {
-      "distance": 900,
-      "record_time": "0:53.6",
-      "record_seconds": 53.6,
-      "horse_name": "ニュータウンガール",
-      "jockey_name": "岡部　誠",
-      "achieved_date": "2021-06-29"
-    },
-    ...
-  ]
-}
+```yaml
+course: 金沢
+direction: 右回り
+records:
+- distance: 900
+  record_time: '0:53.6'
+  record_seconds: 53.6
+  horse_name: ニュータウンガール
+  jockey_name: 岡部　誠
+  achieved_date: '2021-06-29'
+# ...
 ```
 
 **距離一覧**:
@@ -72,9 +67,9 @@ curl -s "https://www.keiba.go.jp/guide/course_record/?course=kana" -o data/refer
 uv run python parse_course_records.py
 ```
 
-3. JSONファイルを確認:
+3. YAMLファイルを確認:
 ```bash
-cat data/reference_data/json/course_records.json
+cat data/reference_data/yaml/course_records.yaml
 ```
 
 ## 更新頻度
@@ -83,7 +78,7 @@ cat data/reference_data/json/course_records.json
 
 ## データベース統合
 
-`course_records.json` は以下のテーブルに統合される予定:
+`course_records.yaml` は以下のテーブルに統合される予定:
 
 **course_records** テーブル:
 - distance (PK)
