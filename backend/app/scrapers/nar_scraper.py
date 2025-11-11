@@ -7,6 +7,7 @@ NAR公式サイト（keiba.go.jp）スクレイパー
 - robots.txt遵守
 - 1日1回の実行推奨
 """
+import os
 import time
 import uuid
 from datetime import datetime, timedelta
@@ -23,8 +24,13 @@ class NARScraper:
     KANAZAWA_CODE = "22"  # 金沢競馬場コード
 
     def __init__(self, save_html: bool = True, html_dir: str = "data/html"):
+        # プロキシ設定（環境変数から取得）
+        proxy = os.getenv('HTTPS_PROXY') or os.getenv('HTTP_PROXY')
+
         self.session = httpx.Client(
             timeout=30.0,
+            proxy=proxy,
+            verify=False,  # SSL証明書の検証をスキップ（プロキシ経由のため）
             headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
