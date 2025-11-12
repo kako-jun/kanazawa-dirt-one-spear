@@ -1,7 +1,7 @@
 #!/bin/bash
 # エラーチェック付き直列ダウンロード
 
-DELAY=10  # リクエスト間隔（秒） - サーバー負荷を考慮して長めに設定
+DELAY=3  # リクエスト間隔（秒） - NARScraperと同じ間隔
 
 total=$(wc -l < missing_results.txt)
 success=0
