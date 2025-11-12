@@ -1,0 +1,138 @@
+meta:
+  source_file: race_01_result.html
+  extracted_at: '2025-11-12T11:32:07.691765'
+  race_type: result
+race_id: '20170430_01'
+finish_order:
+- 4
+- 6
+- 3
+- 5
+- 1
+- 2
+result_details:
+- finish_position: 1
+  gate_number: '4'
+  horse_number: 4
+  horse_name: カルマクイーン
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 葛山晃(金沢)
+  trainer: 菅原欣
+  horse_weight: '452'
+  weight_diff: '-3'
+  time: '1:35.0'
+  margin: ''
+  last_3f: '42.0'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ライヘンバッハ
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 青柳正(金沢)
+  trainer: 中川雅
+  horse_weight: '423'
+  weight_diff: '0'
+  time: '1:36.2'
+  margin: ６
+  last_3f: '43.2'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '3'
+  horse_number: 3
+  horse_name: イエローセクション
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 西森将(金沢)
+  trainer: 高橋俊
+  horse_weight: '398'
+  weight_diff: '-3'
+  time: '1:36.6'
+  margin: ２
+  last_3f: '42.3'
+  popularity: '2'
+- finish_position: 4
+  gate_number: '5'
+  horse_number: 5
+  horse_name: アクアオーラ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '53.0'
+  jockey: ☆栗原大(金沢)
+  trainer: 菅原欣
+  horse_weight: '448'
+  weight_diff: '0'
+  time: '1:37.1'
+  margin: ２１／２
+  last_3f: '43.1'
+  popularity: '5'
+- finish_position: 5
+  gate_number: '1'
+  horse_number: 1
+  horse_name: デルマアマギゴエ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 沖静男(金沢)
+  trainer: 川添明
+  horse_weight: '452'
+  weight_diff: '-1'
+  time: '1:37.2'
+  margin: １／２
+  last_3f: '42.7'
+  popularity: '3'
+- finish_position: 6
+  gate_number: '2'
+  horse_number: 2
+  horse_name: トーアルーク
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 藤田弘(金沢)
+  trainer: 鈴木長
+  horse_weight: '519'
+  weight_diff: '2'
+  time: '1:39.6'
+  margin: 大差
+  last_3f: '45.2'
+  popularity: '6'
+payouts:
+  win:
+    combo: '4'
+    payout: 170
+    popularity: 1
+  place:
+    combo: '46'
+    payout: 130
+    popularity: 14
+  bracket_quinella:
+    combo: 4-6
+    payout: 740
+    popularity: 4
+  quinella:
+    combo: 4-6
+    payout: 1130
+    popularity: 5
+  bracket_exacta:
+    combo: 4-63-43-6
+    payout: 260
+    popularity: 415
+  exacta:
+    combo: 3-4-6
+    payout: 480
+    popularity: 2
+  wide:
+    combo: 4-6-3
+    payout: 2320
+    popularity: 9
+corner_positions:
+  corner_1: (4,6),5,(2,3),1
+  corner_2: (4,6),5,2,3,1
+  corner_3: (4,6),5,3,(2,1)
+  corner_4: 4,6,5,3,1,2
+last_4f: '55.0'

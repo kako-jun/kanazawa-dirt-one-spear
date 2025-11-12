@@ -1,0 +1,98 @@
+meta:
+  source_file: race_09_result.html
+  extracted_at: '2025-11-12T11:31:44.488798'
+  race_type: result
+race_id: '20161030_09'
+finish_order:
+- 4
+- 8
+- 1
+result_details:
+- finish_position: 1
+  gate_number: '4'
+  horse_number: 4
+  horse_name: リリスモ
+  stable: 金沢
+  sex_age: セン 3
+  weight_carried: '56.0'
+  jockey: 池田敦(金沢)
+  trainer: 川添明
+  horse_weight: '457'
+  weight_diff: '3'
+  time: '1:38.7'
+  margin: ''
+  last_3f: '39.3'
+  popularity: '2'
+- finish_position: 2
+  gate_number: '7'
+  horse_number: 8
+  horse_name: ボーンストーン
+  stable: 金沢
+  sex_age: セン 9
+  weight_carried: '56.0'
+  jockey: 吉原寛(金沢)
+  trainer: 加藤義
+  horse_weight: '490'
+  weight_diff: '11'
+  time: '1:38.8'
+  margin: １／２
+  last_3f: '39.7'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '1'
+  horse_number: 1
+  horse_name: デンカノホウトウ
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 松戸政(金沢)
+  trainer: 井樋一
+  horse_weight: '471'
+  weight_diff: '5'
+  time: '1:39.0'
+  margin: １
+  last_3f: '39.2'
+  popularity: '5'
+payouts:
+  win:
+    combo: '4'
+    payout: 400
+    popularity: 2
+  place:
+    combo: '48110'
+    payout: 100
+    popularity: 2431
+  bracket_quinella:
+    combo: 4-7
+    payout: 1230
+    popularity: 5
+  quinella:
+    combo: 4-8
+    payout: 2000
+    popularity: 8
+  bracket_exacta:
+    combo: 4-7
+    payout: 2460
+    popularity: 8
+  exacta:
+    combo: 4-8
+    payout: 3560
+    popularity: 12
+  wide:
+    combo: 4-81-44-101-88-10
+    payout: 310
+    popularity: 85174
+  trio:
+    combo: 1-4-84-8-10
+    payout: 1710
+    popularity: 132
+  trifecta:
+    combo: 4-8-14-8-10
+    payout: 8260
+    popularity: 5430
+corner_positions:
+  corner_1: 10,7,8,5,11,4,1,3,(2,9),6
+  corner_2: 10,7,8,5,11,4,1,3,9,2,6
+  corner_3: 10,(7,8),5,(4,11),(1,6),3,9,2
+  corner_4: 10,8,4,7,(1,6),5,11,3,9,2
+last_4f: '52.8'

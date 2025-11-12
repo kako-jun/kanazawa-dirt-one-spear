@@ -1,0 +1,102 @@
+meta:
+  source_file: race_11_result.html
+  extracted_at: '2025-11-12T11:32:24.320778'
+  race_type: result
+race_id: '20170611_11'
+finish_order:
+- 3
+- 4
+- 2
+- 1
+result_details:
+- finish_position: 1
+  gate_number: '3'
+  horse_number: 3
+  horse_name: グルームアイランド
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 吉原寛(金沢)
+  trainer: 高橋俊
+  horse_weight: '555'
+  weight_diff: '19'
+  time: '2:05.8'
+  margin: ''
+  last_3f: '39.9'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '4'
+  horse_number: 4
+  horse_name: カフジスター
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 桑野等(金沢)
+  trainer: 鈴木長
+  horse_weight: '482'
+  weight_diff: '-3'
+  time: '2:08.6'
+  margin: 大差
+  last_3f: '41.6'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ウインプリマ
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 鈴木長
+  horse_weight: '447'
+  weight_diff: '-3'
+  time: '2:08.7'
+  margin: １／２
+  last_3f: '42.2'
+  popularity: '3'
+- finish_position: 4
+  gate_number: '1'
+  horse_number: 1
+  horse_name: エムティサラ
+  stable: 金沢
+  sex_age: 牝 5
+  weight_carried: '54.0'
+  jockey: 青柳正(金沢)
+  trainer: 鈴木正
+  horse_weight: '507'
+  weight_diff: '3'
+  time: '2:09.5'
+  margin: ４
+  last_3f: '42.6'
+  popularity: '4'
+payouts:
+  win:
+    combo: '3'
+    payout: 120
+    popularity: 1
+  place:
+    combo: 3-4
+    payout: 160
+    popularity: 1
+  bracket_quinella:
+    combo: 3-4
+    payout: 220
+    popularity: 1
+  quinella:
+    combo: 3-42-32-4
+    payout: 110
+    popularity: 123
+  bracket_exacta:
+    combo: 2-3-4
+    payout: 140
+    popularity: 1
+  exacta:
+    combo: 3-4-2
+    payout: 330
+    popularity: 1
+corner_positions:
+  corner_1: 2,3,1,4
+  corner_2: (2,3),1,4
+  corner_3: 3,2,4,1
+  corner_4: '3'
+last_4f: '52.1'

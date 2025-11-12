@@ -1,0 +1,90 @@
+meta:
+  source_file: race_09_result.html
+  extracted_at: '2025-11-12T11:36:13.511957'
+  race_type: result
+race_id: '20191001_09'
+finish_order:
+- 2
+- 7
+- 6
+result_details:
+- finish_position: 1
+  gate_number: '2'
+  horse_number: 2
+  horse_name: サッキースピネル
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 中島龍(金沢)
+  trainer: 加藤義
+  horse_weight: '472'
+  weight_diff: '-1'
+  time: '1:54.2'
+  margin: ''
+  last_3f: '41.6'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '7'
+  horse_number: 7
+  horse_name: ヒャダルコ
+  stable: 金沢
+  sex_age: セン 6
+  weight_carried: '56.0'
+  jockey: 柴田勇(金沢)
+  trainer: 高橋俊
+  horse_weight: '465'
+  weight_diff: '2'
+  time: '1:54.6'
+  margin: ２
+  last_3f: '41.9'
+  popularity: '3'
+- finish_position: 3
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ナリタノヘア
+  stable: 金沢
+  sex_age: 牝 7
+  weight_carried: '54.0'
+  jockey: 池田敦(金沢)
+  trainer: 高橋道
+  horse_weight: '427'
+  weight_diff: '-3'
+  time: '1:55.1'
+  margin: ２１／２
+  last_3f: '42.4'
+  popularity: '7'
+payouts:
+  win:
+    combo: '2'
+    payout: 240
+    popularity: 1
+  place:
+    combo: '2768'
+    payout: 110
+    popularity: 1573
+  bracket_quinella:
+    combo: 2-7
+    payout: 910
+    popularity: 4
+  quinella:
+    combo: 2-7
+    payout: 1210
+    popularity: 4
+  bracket_exacta:
+    combo: 2-72-62-86-77-8
+    payout: 220
+    popularity: 4132228
+  exacta:
+    combo: 2-6-72-7-8
+    payout: 2760
+    popularity: 228
+  wide:
+    combo: 2-7-62-7-8
+    payout: 7960
+    popularity: 6519
+corner_positions:
+  corner_1: 1,2,6,7,5,8,4,3
+  corner_2: (1,2,6),7,5,8,4,3
+  corner_3: 2,(6,7),5,1,8,4,3
+  corner_4: 1,(2,6),7,5,3,8,4
+last_4f: '54.5'

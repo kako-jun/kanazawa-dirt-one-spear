@@ -1,0 +1,122 @@
+meta:
+  source_file: race_01_result.html
+  extracted_at: '2025-11-12T11:29:08.947561'
+  race_type: result
+race_id: '20150505_01'
+finish_order:
+- 1
+- 2
+- 4
+- 5
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '1'
+  horse_number: 1
+  horse_name: ヒメガミ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 田知弘(金沢)
+  trainer: 金田一
+  horse_weight: '483'
+  weight_diff: '4'
+  time: '1:30.9'
+  margin: ''
+  last_3f: '38.5'
+  popularity: '3'
+- finish_position: 2
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ハッピールミエール
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 平瀬城(金沢)
+  trainer: 金田一
+  horse_weight: '457'
+  weight_diff: '12'
+  time: '1:31.1'
+  margin: １
+  last_3f: '38.2'
+  popularity: '1'
+- finish_position: 3
+  gate_number: '4'
+  horse_number: 4
+  horse_name: プラチナタンポポ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 藤田弘(金沢)
+  trainer: 鈴木長
+  horse_weight: '416'
+  weight_diff: '2'
+  time: '1:31.4'
+  margin: １１／２
+  last_3f: '39.0'
+  popularity: '2'
+- finish_position: 4
+  gate_number: '5'
+  horse_number: 5
+  horse_name: リンノレナチャン
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 桑野等(金沢)
+  trainer: 鈴木長
+  horse_weight: '432'
+  weight_diff: '4'
+  time: '1:31.9'
+  margin: ２１／２
+  last_3f: '38.7'
+  popularity: '5'
+- finish_position: 5
+  gate_number: '3'
+  horse_number: 3
+  horse_name: アポロシャドウ
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 青柳正(金沢)
+  trainer: 鈴木長
+  horse_weight: '458'
+  weight_diff: '-1'
+  time: '1:32.1'
+  margin: ３／４
+  last_3f: '39.7'
+  popularity: '4'
+payouts:
+  win:
+    combo: '1'
+    payout: 520
+    popularity: 3
+  place:
+    combo: '12'
+    payout: 230
+    popularity: 32
+  bracket_quinella:
+    combo: 1-2
+    payout: 390
+    popularity: 2
+  quinella:
+    combo: 1-2
+    payout: 1210
+    popularity: 6
+  bracket_exacta:
+    combo: 1-21-42-4
+    payout: 100
+    popularity: 231
+  exacta:
+    combo: 1-2-4
+    payout: 160
+    popularity: 1
+  wide:
+    combo: 1-2-4
+    payout: 2070
+    popularity: 8
+corner_positions:
+  corner_1: (1,3),2,4,5
+  corner_2: (1,3),4,2,5
+  corner_3: (1,4),3,2,5
+  corner_4: 1,4,2,(5,3)
+last_4f: '50.9'

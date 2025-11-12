@@ -1,0 +1,138 @@
+meta:
+  source_file: race_04_result.html
+  extracted_at: '2025-11-12T11:33:05.973419'
+  race_type: result
+race_id: '20171001_04'
+finish_order:
+- 2
+- 1
+- 5
+- 3
+- 4
+- 6
+result_details:
+- finish_position: 1
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ハクサンラピッド
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 吉原寛(金沢)
+  trainer: 加藤義
+  horse_weight: '433'
+  weight_diff: '-1'
+  time: '1:43.6'
+  margin: ''
+  last_3f: '40.4'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '1'
+  horse_number: 1
+  horse_name: キタフラッグ
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 米倉知(金沢)
+  trainer: 加藤義
+  horse_weight: '399'
+  weight_diff: '5'
+  time: '1:44.6'
+  margin: ５
+  last_3f: '41.4'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '5'
+  horse_number: 5
+  horse_name: ベニノレジーナ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 桑野等(金沢)
+  trainer: 田嶋幸
+  horse_weight: '406'
+  weight_diff: '0'
+  time: '1:44.8'
+  margin: ３／４
+  last_3f: '41.3'
+  popularity: '3'
+- finish_position: 4
+  gate_number: '3'
+  horse_number: 3
+  horse_name: エイジアンハブ
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 青柳正(金沢)
+  trainer: 鋤田誠
+  horse_weight: '422'
+  weight_diff: '1'
+  time: '1:45.2'
+  margin: ２
+  last_3f: '41.3'
+  popularity: '2'
+- finish_position: 5
+  gate_number: '4'
+  horse_number: 4
+  horse_name: シオジミライ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 葛山晃(金沢)
+  trainer: 鋤田誠
+  horse_weight: '394'
+  weight_diff: '1'
+  time: '1:45.6'
+  margin: ２
+  last_3f: '41.1'
+  popularity: '6'
+- finish_position: 6
+  gate_number: '6'
+  horse_number: 6
+  horse_name: バジガクノルン
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 加藤義
+  horse_weight: '396'
+  weight_diff: '3'
+  time: '1:47.4'
+  margin: ９
+  last_3f: '42.9'
+  popularity: '5'
+payouts:
+  win:
+    combo: '2'
+    payout: 120
+    popularity: 1
+  place:
+    combo: '21'
+    payout: 120
+    popularity: 14
+  bracket_quinella:
+    combo: 1-2
+    payout: 810
+    popularity: 3
+  quinella:
+    combo: 2-1
+    payout: 910
+    popularity: 3
+  bracket_exacta:
+    combo: 1-22-51-5
+    payout: 190
+    popularity: 327
+  exacta:
+    combo: 1-2-5
+    payout: 1040
+    popularity: 5
+  wide:
+    combo: 2-1-5
+    payout: 2310
+    popularity: 9
+corner_positions:
+  corner_1: 1,2,3,5,(4,6)
+  corner_2: 1,2,5,3,(4,6)
+  corner_3: 1,2,5,3,4,6
+  corner_4: (1,2),5,3
+last_4f: '53.5'

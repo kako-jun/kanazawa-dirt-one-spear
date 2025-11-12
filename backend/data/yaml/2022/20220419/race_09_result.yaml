@@ -1,0 +1,114 @@
+meta:
+  source_file: race_09_result.html
+  extracted_at: '2025-11-12T11:39:38.219337'
+  race_type: result
+race_id: '20220419_09'
+finish_order:
+- 2
+- 6
+- 7
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '2'
+  horse_number: 2
+  horse_name: サイモンカーチス
+  stable: JRA
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 中島龍(金沢)
+  trainer: 梅田智
+  horse_weight: '474'
+  weight_diff: '-12'
+  time: '1:36.4'
+  margin: ''
+  last_3f: '39.9'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '6'
+  horse_number: 6
+  horse_name: キープクライミング
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 田知弘(金沢)
+  trainer: 中川雅
+  horse_weight: '429'
+  weight_diff: '2'
+  time: '1:36.5'
+  margin: クビ
+  last_3f: '39.6'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '7'
+  horse_number: 7
+  horse_name: スノーフォックス
+  stable: 金沢
+  sex_age: セン 3
+  weight_carried: '56.0'
+  jockey: 松戸政(金沢)
+  trainer: 金田一
+  horse_weight: '431'
+  weight_diff: '4'
+  time: '1:36.5'
+  margin: ハナ
+  last_3f: '38.5'
+  popularity: '3'
+- finish_position: 4
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ワイルドベティ
+  stable: JRA
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 青柳正(金沢)
+  trainer: 今野貞
+  horse_weight: '422'
+  weight_diff: '-2'
+  time: '1:36.5'
+  margin: クビ
+  last_3f: '38.1'
+  popularity: '8'
+payouts:
+  win:
+    combo: '2'
+    payout: 370
+    popularity: 1
+  place:
+    combo: '267'
+    payout: 150
+    popularity: 321
+  bracket_quinella:
+    combo: 2-6
+    payout: 1640
+    popularity: 8
+  quinella:
+    combo: 2-6
+    payout: 1150
+    popularity: 4
+  bracket_exacta:
+    combo: 2-6
+    payout: 2800
+    popularity: 12
+  exacta:
+    combo: 2-6
+    payout: 1840
+    popularity: 4
+  wide:
+    combo: 2-62-76-7
+    payout: 420
+    popularity: 512
+  trio:
+    combo: 2-6-7
+    payout: 2160
+    popularity: 4
+  trifecta:
+    combo: 2-6-7
+    payout: 11030
+    popularity: 20
+corner_positions:
+  corner_1: 1,2,5,6,8,10,7,4,(3,9)
+  corner_2: 1,2,6,5,8,10,7,3,4,9
+  corner_3: (1,2),6,5,8,10,7,3,4,9
+  corner_4: 2,6,8,1,(3,7,5),10,4,9
+last_4f: '51.9'

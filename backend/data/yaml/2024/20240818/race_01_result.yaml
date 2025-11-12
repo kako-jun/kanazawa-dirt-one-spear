@@ -1,0 +1,170 @@
+meta:
+  source_file: race_01_result.html
+  extracted_at: '2025-11-12T11:43:16.803396'
+  race_type: result
+race_id: '20240818_01'
+finish_order:
+- 3
+- 1
+- 2
+- 4
+- 5
+- 7
+- 6
+- 8
+result_details:
+- finish_position: 1
+  gate_number: '3'
+  horse_number: 3
+  horse_name: マテウス
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 栗原大(金沢)
+  trainer: 藤田弘
+  horse_weight: '526'
+  weight_diff: '7'
+  time: '1:28.8'
+  margin: ''
+  last_3f: '37.9'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '1'
+  horse_number: 1
+  horse_name: ブリクシア
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 中島龍(金沢)
+  trainer: 金田一
+  horse_weight: '507'
+  weight_diff: '-3'
+  time: '1:30.8'
+  margin: 大差
+  last_3f: '39.3'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '2'
+  horse_number: 2
+  horse_name: メイショウツガミネ
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 葛山晃(金沢)
+  trainer: 菅原欣
+  horse_weight: '454'
+  weight_diff: '-8'
+  time: '1:31.5'
+  margin: ３
+  last_3f: '39.6'
+  popularity: '6'
+- finish_position: 4
+  gate_number: '4'
+  horse_number: 4
+  horse_name: ナックメジャー
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 田知弘(金沢)
+  trainer: 金田一
+  horse_weight: '485'
+  weight_diff: '5'
+  time: '1:32.4'
+  margin: ４
+  last_3f: '40.2'
+  popularity: '8'
+- finish_position: 5
+  gate_number: '5'
+  horse_number: 5
+  horse_name: リュウノワシントン
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 加藤翔(金沢)
+  trainer: 加藤義
+  horse_weight: '429'
+  weight_diff: '-5'
+  time: '1:32.8'
+  margin: ２
+  last_3f: '39.7'
+  popularity: '4'
+- finish_position: 6
+  gate_number: '7'
+  horse_number: 7
+  horse_name: レッドフェリーチェ
+  stable: 金沢
+  sex_age: 牝 7
+  weight_carried: '54.0'
+  jockey: 松戸政(金沢)
+  trainer: 菅原欣
+  horse_weight: '479'
+  weight_diff: '5'
+  time: '1:33.5'
+  margin: ３
+  last_3f: '41.5'
+  popularity: '3'
+- finish_position: 7
+  gate_number: '6'
+  horse_number: 6
+  horse_name: フェイスタロー
+  stable: 金沢
+  sex_age: 牡 7
+  weight_carried: '56.0'
+  jockey: 服部大(金沢)
+  trainer: 川添明
+  horse_weight: '435'
+  weight_diff: '3'
+  time: '1:33.5'
+  margin: アタマ
+  last_3f: '40.3'
+  popularity: '7'
+- finish_position: 8
+  gate_number: '8'
+  horse_number: 8
+  horse_name: サノノビーチ
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 鈴木太(金沢)
+  trainer: 加藤和
+  horse_weight: '515'
+  weight_diff: '-1'
+  time: '1:34.0'
+  margin: ２１／２
+  last_3f: '41.5'
+  popularity: '5'
+payouts:
+  win:
+    combo: '3'
+    payout: 100
+    popularity: 1
+  place:
+    combo: '312'
+    payout: 100
+    popularity: 125
+  bracket_quinella:
+    combo: 1-3
+    payout: 150
+    popularity: 1
+  quinella:
+    combo: 3-1
+    payout: 160
+    popularity: 1
+  bracket_exacta:
+    combo: 1-32-31-2
+    payout: 110
+    popularity: 127
+  exacta:
+    combo: 1-2-3
+    payout: 500
+    popularity: 2
+  wide:
+    combo: 3-1-2
+    payout: 890
+    popularity: 3
+corner_positions:
+  corner_1: 3,1,7,2,8,4,6,5
+  corner_2: 3,1,7,2,8,4,(5,6)
+  corner_3: 3,1,2,7,4,8,5,6
+  corner_4: 3,1,2,4,7,5,8,6
+last_4f: '50.1'

@@ -1,0 +1,138 @@
+meta:
+  source_file: race_01_result.html
+  extracted_at: '2025-11-12T11:37:26.269420'
+  race_type: result
+race_id: '20200818_01'
+finish_order:
+- 5
+- 3
+- 2
+- 1
+- 4
+- 6
+result_details:
+- finish_position: 1
+  gate_number: '5'
+  horse_number: 5
+  horse_name: レイズアチアー
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 沖静男(金沢)
+  trainer: 加藤和
+  horse_weight: '513'
+  weight_diff: '0'
+  time: '1:32.3'
+  margin: ''
+  last_3f: '38.5'
+  popularity: '4'
+- finish_position: 2
+  gate_number: '3'
+  horse_number: 3
+  horse_name: シュヴァノーティ
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 柴田勇(金沢)
+  trainer: 室井眞
+  horse_weight: '517'
+  weight_diff: '8'
+  time: '1:32.8'
+  margin: ２１／２
+  last_3f: '41.1'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ラスカルグレイ
+  stable: 金沢
+  sex_age: セン 7
+  weight_carried: '56.0'
+  jockey: 堀場裕(金沢)
+  trainer: 加藤和
+  horse_weight: '479'
+  weight_diff: '6'
+  time: '1:32.9'
+  margin: ３／４
+  last_3f: '41.2'
+  popularity: '3'
+- finish_position: 4
+  gate_number: '1'
+  horse_number: 1
+  horse_name: タイセイマリーン
+  stable: 金沢
+  sex_age: 牝 8
+  weight_carried: '54.0'
+  jockey: 畑中信(金沢)
+  trainer: 加藤和
+  horse_weight: '475'
+  weight_diff: '1'
+  time: '1:33.0'
+  margin: １／２
+  last_3f: '39.8'
+  popularity: '1'
+- finish_position: 5
+  gate_number: '4'
+  horse_number: 4
+  horse_name: トーセンヴェント
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '54.0'
+  jockey: △木本直(金沢)
+  trainer: 室井眞
+  horse_weight: '481'
+  weight_diff: '-1'
+  time: '1:34.9'
+  margin: ９
+  last_3f: '42.6'
+  popularity: '6'
+- finish_position: 6
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ナンヨーセゾニエ
+  stable: 金沢
+  sex_age: 牝 5
+  weight_carried: '51.0'
+  jockey: ▲魚住謙(金沢)
+  trainer: 鋤田誠
+  horse_weight: '436'
+  weight_diff: '-3'
+  time: '1:35.8'
+  margin: ４
+  last_3f: '43.5'
+  popularity: '5'
+payouts:
+  win:
+    combo: '5'
+    payout: 1020
+    popularity: 4
+  place:
+    combo: '53'
+    payout: 380
+    popularity: 42
+  bracket_quinella:
+    combo: 3-5
+    payout: 1540
+    popularity: 6
+  quinella:
+    combo: 5-3
+    payout: 3530
+    popularity: 13
+  bracket_exacta:
+    combo: 3-52-52-3
+    payout: 310
+    popularity: 582
+  exacta:
+    combo: 2-3-5
+    payout: 1680
+    popularity: 8
+  wide:
+    combo: 5-3-2
+    payout: 14560
+    popularity: 50
+corner_positions:
+  corner_1: 2,3,4,6,1,5
+  corner_2: (2,3),4,6,1,5
+  corner_3: (2,3),(4,6),1,5
+  corner_4: 2,3,5,1,(4,6)
+last_4f: '52.6'

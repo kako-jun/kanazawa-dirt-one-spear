@@ -1,0 +1,90 @@
+meta:
+  source_file: race_05_result.html
+  extracted_at: '2025-11-12T11:39:10.672888'
+  race_type: result
+race_id: '20211011_05'
+finish_order:
+- 6
+- 3
+- 5
+result_details:
+- finish_position: 1
+  gate_number: '6'
+  horse_number: 6
+  horse_name: チョモランマ
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 栗原大(金沢)
+  trainer: 宗綱泰
+  horse_weight: '519'
+  weight_diff: '6'
+  time: '1:31.9'
+  margin: ''
+  last_3f: '39.8'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ダンクショット
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 堀場裕(金沢)
+  trainer: 松野勝
+  horse_weight: '430'
+  weight_diff: '-10'
+  time: '1:33.5'
+  margin: ８
+  last_3f: '40.2'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '5'
+  horse_number: 5
+  horse_name: アッシュゲイル
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 吉田晃(金沢)
+  trainer: 佐藤茂
+  horse_weight: '455'
+  weight_diff: '-6'
+  time: '1:33.6'
+  margin: １／２
+  last_3f: '41.5'
+  popularity: '3'
+payouts:
+  win:
+    combo: '6'
+    payout: 190
+    popularity: 1
+  place:
+    combo: '6358'
+    payout: 100
+    popularity: 1432
+  bracket_quinella:
+    combo: 3-6
+    payout: 1450
+    popularity: 5
+  quinella:
+    combo: 6-3
+    payout: 2120
+    popularity: 8
+  bracket_exacta:
+    combo: 3-65-66-83-53-8
+    payout: 140
+    popularity: 53164
+  exacta:
+    combo: 3-5-63-6-8
+    payout: 700
+    popularity: 42
+  wide:
+    combo: 6-3-56-3-8
+    payout: 3670
+    popularity: 2217
+corner_positions:
+  corner_1: 8,1,(4,5),6,3,2,7
+  corner_2: 1,8,5,6,4,3
+  corner_3: (5,6),8,1,4,3
+  corner_4: 6,5,8,1,3,4
+last_4f: '51.7'

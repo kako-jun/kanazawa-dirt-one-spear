@@ -1,0 +1,138 @@
+meta:
+  source_file: race_04_result.html
+  extracted_at: '2025-11-12T11:43:10.889797'
+  race_type: result
+race_id: '20240730_04'
+finish_order:
+- 2
+- 3
+- 5
+- 1
+- 6
+- 4
+result_details:
+- finish_position: 1
+  gate_number: '2'
+  horse_number: 2
+  horse_name: エムザックドリーム
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 中川雅
+  horse_weight: '437'
+  weight_diff: '-3'
+  time: '1:29.4'
+  margin: ''
+  last_3f: '39.0'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ベストタンゴ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 魚住謙(金沢)
+  trainer: 鈴木正
+  horse_weight: '420'
+  weight_diff: '-1'
+  time: '1:31.6'
+  margin: 大差
+  last_3f: '40.1'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '5'
+  horse_number: 5
+  horse_name: ホロキキ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 栗原大(金沢)
+  trainer: 井樋一
+  horse_weight: '449'
+  weight_diff: '-4'
+  time: '1:32.1'
+  margin: ２１／２
+  last_3f: '41.2'
+  popularity: '5'
+- finish_position: 4
+  gate_number: '1'
+  horse_number: 1
+  horse_name: サンエイチャコ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 柴田勇(金沢)
+  trainer: 金田一
+  horse_weight: '412'
+  weight_diff: '-6'
+  time: '1:33.2'
+  margin: ５
+  last_3f: '42.0'
+  popularity: '4'
+- finish_position: 5
+  gate_number: '6'
+  horse_number: 6
+  horse_name: トゥーナマッシュ
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 加藤翔(金沢)
+  trainer: 加藤義
+  horse_weight: '464'
+  weight_diff: '0'
+  time: '1:34.4'
+  margin: ６
+  last_3f: '42.9'
+  popularity: '3'
+- finish_position: 6
+  gate_number: '4'
+  horse_number: 4
+  horse_name: ビタミンサマー
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 田知弘(金沢)
+  trainer: 金田一
+  horse_weight: '444'
+  weight_diff: '-3'
+  time: '1:36.5'
+  margin: 大差
+  last_3f: '43.8'
+  popularity: '6'
+payouts:
+  win:
+    combo: '2'
+    payout: 200
+    popularity: 1
+  place:
+    combo: '23'
+    payout: 110
+    popularity: 12
+  bracket_quinella:
+    combo: 2-3
+    payout: 320
+    popularity: 1
+  quinella:
+    combo: 2-3
+    payout: 550
+    popularity: 1
+  bracket_exacta:
+    combo: 2-32-53-5
+    payout: 110
+    popularity: 149
+  exacta:
+    combo: 2-3-5
+    payout: 790
+    popularity: 4
+  wide:
+    combo: 2-3-5
+    payout: 2170
+    popularity: 5
+corner_positions:
+  corner_1: 2,5,6,1,3,4
+  corner_2: 2,5,1,3,6,4
+  corner_3: 2,5,1,(3,6)
+  corner_4: '2'
+last_4f: '51.1'

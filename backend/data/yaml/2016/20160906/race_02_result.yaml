@@ -1,0 +1,170 @@
+meta:
+  source_file: race_02_result.html
+  extracted_at: '2025-11-12T11:31:22.199640'
+  race_type: result
+race_id: '20160906_02'
+finish_order:
+- 2
+- 5
+- 1
+- 6
+- 4
+- 3
+- 7
+- 8
+result_details:
+- finish_position: 1
+  gate_number: '2'
+  horse_number: 2
+  horse_name: エングレイグ
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 畑中信(金沢)
+  trainer: 金田一
+  horse_weight: '423'
+  weight_diff: '3'
+  time: '1:43.2'
+  margin: ''
+  last_3f: '40.7'
+  popularity: '4'
+- finish_position: 2
+  gate_number: '5'
+  horse_number: 5
+  horse_name: ノアタン
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 加藤義
+  horse_weight: '375'
+  weight_diff: '-2'
+  time: '1:43.2'
+  margin: クビ
+  last_3f: '40.5'
+  popularity: '5'
+- finish_position: 3
+  gate_number: '1'
+  horse_number: 1
+  horse_name: ホシコチャン
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 堀場裕(金沢)
+  trainer: 加藤義
+  horse_weight: '436'
+  weight_diff: '3'
+  time: '1:43.8'
+  margin: ３
+  last_3f: '41.4'
+  popularity: '1'
+- finish_position: 4
+  gate_number: '6'
+  horse_number: 6
+  horse_name: アポテオシス
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 田知弘(金沢)
+  trainer: 金田一
+  horse_weight: '439'
+  weight_diff: '4'
+  time: '1:44.5'
+  margin: ３
+  last_3f: '41.2'
+  popularity: '2'
+- finish_position: 5
+  gate_number: '4'
+  horse_number: 4
+  horse_name: ゴールドニコニコ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 沖静男(金沢)
+  trainer: 鋤田誠
+  horse_weight: '367'
+  weight_diff: '-11'
+  time: '1:45.0'
+  margin: ２１／２
+  last_3f: '42.2'
+  popularity: '8'
+- finish_position: 6
+  gate_number: '3'
+  horse_number: 3
+  horse_name: アロンザパール
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 池田敦(金沢)
+  trainer: 川添明
+  horse_weight: '401'
+  weight_diff: '-5'
+  time: '1:45.4'
+  margin: ２
+  last_3f: '42.8'
+  popularity: '3'
+- finish_position: 7
+  gate_number: '7'
+  horse_number: 7
+  horse_name: ヤマサンブラック
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 服部大(金沢)
+  trainer: 井樋一
+  horse_weight: '433'
+  weight_diff: '12'
+  time: '1:45.7'
+  margin: １１／２
+  last_3f: '42.8'
+  popularity: '6'
+- finish_position: 8
+  gate_number: '8'
+  horse_number: 8
+  horse_name: シグラップルイーサ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '53.0'
+  jockey: ☆松木大(金沢)
+  trainer: 佐藤茂
+  horse_weight: '405'
+  weight_diff: '3'
+  time: '1:45.8'
+  margin: １／２
+  last_3f: '42.2'
+  popularity: '7'
+payouts:
+  win:
+    combo: '2'
+    payout: 630
+    popularity: 4
+  place:
+    combo: '251'
+    payout: 150
+    popularity: 351
+  bracket_quinella:
+    combo: 2-5
+    payout: 4120
+    popularity: 10
+  quinella:
+    combo: 2-5
+    payout: 9920
+    popularity: 21
+  bracket_exacta:
+    combo: 2-51-21-5
+    payout: 870
+    popularity: 1046
+  exacta:
+    combo: 1-2-5
+    payout: 1870
+    popularity: 7
+  wide:
+    combo: 2-5-1
+    payout: 24070
+    popularity: 59
+corner_positions:
+  corner_1: 1,2,3,4,(5,7),8,6
+  corner_2: 1,2,3,(5,4),7,8,6
+  corner_3: 1,2,3,(5,4,7),6,8
+  corner_4: (1,2),5,(3,4),7,(8,6)
+last_4f: '54.3'

@@ -1,0 +1,130 @@
+meta:
+  source_file: race_07_result.html
+  extracted_at: '2025-11-12T11:39:09.737923'
+  race_type: result
+race_id: '20211005_07'
+finish_order:
+- 5
+- 7
+- 9
+- 10
+- 1
+result_details:
+- finish_position: 1
+  gate_number: '5'
+  horse_number: 5
+  horse_name: サジェス
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 畑中信(金沢)
+  trainer: 佐藤茂
+  horse_weight: '454'
+  weight_diff: '-2'
+  time: '1:36.4'
+  margin: ''
+  last_3f: '37.7'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '7'
+  horse_number: 7
+  horse_name: パシスタ
+  stable: 金沢
+  sex_age: 牡 4
+  weight_carried: '56.0'
+  jockey: 青柳正(金沢)
+  trainer: 高橋俊
+  horse_weight: '506'
+  weight_diff: '2'
+  time: '1:37.3'
+  margin: ４
+  last_3f: '38.4'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '8'
+  horse_number: 9
+  horse_name: ミハルプリンセス
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 葛山晃(金沢)
+  trainer: 菅原欣
+  horse_weight: '435'
+  weight_diff: '-2'
+  time: '1:38.1'
+  margin: ４
+  last_3f: '38.4'
+  popularity: '6'
+- finish_position: 4
+  gate_number: '8'
+  horse_number: 10
+  horse_name: トゥモロープラン
+  stable: 金沢
+  sex_age: 牝 5
+  weight_carried: '54.0'
+  jockey: 沖静男(金沢)
+  trainer: 川添明
+  horse_weight: '433'
+  weight_diff: '-2'
+  time: '1:38.3'
+  margin: ３／４
+  last_3f: '39.1'
+  popularity: '8'
+- finish_position: 5
+  gate_number: '1'
+  horse_number: 1
+  horse_name: ラウダーテ
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 松戸政(金沢)
+  trainer: 松野勝
+  horse_weight: '461'
+  weight_diff: '0'
+  time: '1:38.4'
+  margin: １／２
+  last_3f: '39.2'
+  popularity: '3'
+payouts:
+  win:
+    combo: '5'
+    payout: 100
+    popularity: 1
+  place:
+    combo: '579'
+    payout: 100
+    popularity: 123
+  bracket_quinella:
+    combo: 5-7
+    payout: 140
+    popularity: 1
+  quinella:
+    combo: 5-7
+    payout: 150
+    popularity: 1
+  bracket_exacta:
+    combo: 5-7
+    payout: 130
+    popularity: 1
+  exacta:
+    combo: 5-7
+    payout: 200
+    popularity: 1
+  wide:
+    combo: 5-75-97-9
+    payout: 100
+    popularity: 1610
+  trio:
+    combo: 5-7-9
+    payout: 590
+    popularity: 2
+  trifecta:
+    combo: 5-7-9
+    payout: 880
+    popularity: 2
+corner_positions:
+  corner_1: 5,7,1,10,6,(2,4),9,3,8
+  corner_2: 5,7,1,(6,10),2,9,4,3,8
+  corner_3: 5,7,(1,6,10),(2,9),(4,3),8
+  corner_4: 5,7
+last_4f: '49.8'

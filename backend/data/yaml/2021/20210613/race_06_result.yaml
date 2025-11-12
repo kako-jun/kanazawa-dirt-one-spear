@@ -1,0 +1,82 @@
+meta:
+  source_file: race_06_result.html
+  extracted_at: '2025-11-12T11:38:31.779420'
+  race_type: result
+race_id: '20210613_06'
+finish_order:
+- 7
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '7'
+  horse_number: 7
+  horse_name: ラフカディオ
+  stable: 金沢
+  sex_age: 牡 6
+  weight_carried: '56.0'
+  jockey: 米倉知(金沢)
+  trainer: 加藤和
+  horse_weight: '514'
+  weight_diff: '2'
+  time: '1:38.9'
+  margin: ''
+  last_3f: '38.1'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ラッキータカチャン
+  stable: 金沢
+  sex_age: 牡 4
+  weight_carried: '56.0'
+  jockey: 堀場裕(金沢)
+  trainer: 加藤和
+  horse_weight: '434'
+  weight_diff: '-1'
+  time: '1:39.8'
+  margin: ４
+  last_3f: '38.4'
+  popularity: '4'
+payouts:
+  win:
+    combo: '7'
+    payout: 110
+    popularity: 1
+  place:
+    combo: '736'
+    payout: 130
+    popularity: 137
+  bracket_quinella:
+    combo: 3-76-7
+    payout: 230
+    popularity: 24
+  quinella:
+    combo: 3-76-7
+    payout: 240
+    popularity: 24
+  bracket_exacta:
+    combo: 7-37-6
+    payout: 340
+    popularity: 34
+  exacta:
+    combo: 7-37-6
+    payout: 260
+    popularity: 35
+  wide:
+    combo: 3-76-73-6
+    payout: 270
+    popularity: 2622
+  trio:
+    combo: 3-6-7
+    payout: 2170
+    popularity: 10
+  trifecta:
+    combo: 7-3-67-6-3
+    payout: 2010
+    popularity: 1512
+corner_positions:
+  corner_1: 7,6,(1,9),2,5,3,4,8,10
+  corner_2: 7,(1,6),(2,9),3,5,4,8,10
+  corner_3: 7,1,6,9,2,3,5,4,8,10
+  corner_4: 7,1,6,3,2,9,(5,8),4,10
+last_4f: '50.6'

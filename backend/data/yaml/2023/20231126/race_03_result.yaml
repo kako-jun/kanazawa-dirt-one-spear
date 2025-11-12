@@ -1,0 +1,138 @@
+meta:
+  source_file: race_03_result.html
+  extracted_at: '2025-11-12T11:42:25.086769'
+  race_type: result
+race_id: '20231126_03'
+finish_order:
+- 6
+- 2
+- 3
+- 4
+- 5
+- 1
+result_details:
+- finish_position: 1
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ハットリ
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '55.0'
+  jockey: ☆加藤翔(金沢)
+  trainer: 加藤義
+  horse_weight: '521'
+  weight_diff: '-2'
+  time: '1:37.3'
+  margin: ''
+  last_3f: '40.5'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ソッケルカーカ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 高橋優
+  horse_weight: '467'
+  weight_diff: '2'
+  time: '1:39.0'
+  margin: ８
+  last_3f: '40.7'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '3'
+  horse_number: 3
+  horse_name: クリノビッグボス
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 青柳正(金沢)
+  trainer: 菅原欣
+  horse_weight: '456'
+  weight_diff: '1'
+  time: '1:39.8'
+  margin: ４
+  last_3f: '42.6'
+  popularity: '4'
+- finish_position: 4
+  gate_number: '4'
+  horse_number: 4
+  horse_name: ベルウッドムツ
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 鈴木太(金沢)
+  trainer: 加藤義
+  horse_weight: '440'
+  weight_diff: '-8'
+  time: '1:40.0'
+  margin: １
+  last_3f: '42.8'
+  popularity: '6'
+- finish_position: 5
+  gate_number: '5'
+  horse_number: 5
+  horse_name: マイネルジュリアン
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '55.0'
+  jockey: ☆兼子千(金沢)
+  trainer: 川添明
+  horse_weight: '485'
+  weight_diff: '6'
+  time: '1:41.3'
+  margin: ６
+  last_3f: '44.5'
+  popularity: '3'
+- finish_position: 6
+  gate_number: '1'
+  horse_number: 1
+  horse_name: カイザーノヴァ
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 服部大(金沢)
+  trainer: 川添明
+  horse_weight: '459'
+  weight_diff: '-7'
+  time: '1:43.7'
+  margin: 大差
+  last_3f: '44.7'
+  popularity: '5'
+payouts:
+  win:
+    combo: '6'
+    payout: 100
+    popularity: 1
+  place:
+    combo: '62'
+    payout: 100
+    popularity: 12
+  bracket_quinella:
+    combo: 2-6
+    payout: 400
+    popularity: 3
+  quinella:
+    combo: 6-2
+    payout: 450
+    popularity: 3
+  bracket_exacta:
+    combo: 2-63-62-3
+    payout: 140
+    popularity: 325
+  exacta:
+    combo: 2-3-6
+    payout: 450
+    popularity: 3
+  wide:
+    combo: 6-2-3
+    payout: 1080
+    popularity: 6
+corner_positions:
+  corner_1: 5,6,(3,4),(2,1)
+  corner_2: 5,6,4,3,2,1
+  corner_3: 6,5,(3,4),2,1
+  corner_4: '6'
+last_4f: '53.3'

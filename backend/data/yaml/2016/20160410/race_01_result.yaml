@@ -1,0 +1,138 @@
+meta:
+  source_file: race_01_result.html
+  extracted_at: '2025-11-12T11:30:24.458113'
+  race_type: result
+race_id: '20160410_01'
+finish_order:
+- 1
+- 6
+- 2
+- 3
+- 5
+- 4
+result_details:
+- finish_position: 1
+  gate_number: '1'
+  horse_number: 1
+  horse_name: ノースショア
+  stable: 金沢
+  sex_age: 牝 5
+  weight_carried: '54.0'
+  jockey: 中島龍(金沢)
+  trainer: 鋤田誠
+  horse_weight: '427'
+  weight_diff: '3'
+  time: '1:36.4'
+  margin: ''
+  last_3f: '42.4'
+  popularity: '3'
+- finish_position: 2
+  gate_number: '6'
+  horse_number: 6
+  horse_name: エイシンシャンプー
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 藤田弘(金沢)
+  trainer: 鈴木長
+  horse_weight: '454'
+  weight_diff: '0'
+  time: '1:37.2'
+  margin: ４
+  last_3f: '42.5'
+  popularity: '4'
+- finish_position: 3
+  gate_number: '2'
+  horse_number: 2
+  horse_name: サワヤカショウ
+  stable: 金沢
+  sex_age: 牡 4
+  weight_carried: '56.0'
+  jockey: 堀場裕(金沢)
+  trainer: 加藤和
+  horse_weight: '483'
+  weight_diff: '1'
+  time: '1:37.6'
+  margin: ２
+  last_3f: '43.5'
+  popularity: '2'
+- finish_position: 4
+  gate_number: '3'
+  horse_number: 3
+  horse_name: マックスムーヴァ
+  stable: 金沢
+  sex_age: 牡 4
+  weight_carried: '56.0'
+  jockey: 松戸政(金沢)
+  trainer: 田嶋幸
+  horse_weight: '501'
+  weight_diff: '-3'
+  time: '1:38.5'
+  margin: ４
+  last_3f: '43.9'
+  popularity: '1'
+- finish_position: 5
+  gate_number: '5'
+  horse_number: 5
+  horse_name: エムズヒット
+  stable: 金沢
+  sex_age: 牡 5
+  weight_carried: '56.0'
+  jockey: 服部大(金沢)
+  trainer: 井樋一
+  horse_weight: '478'
+  weight_diff: '0'
+  time: '1:38.7'
+  margin: １
+  last_3f: '42.4'
+  popularity: '6'
+- finish_position: 6
+  gate_number: '4'
+  horse_number: 4
+  horse_name: マシロ
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 柴田勇(金沢)
+  trainer: 松野勝
+  horse_weight: '450'
+  weight_diff: '3'
+  time: '1:41.2'
+  margin: 大差
+  last_3f: '44.7'
+  popularity: '5'
+payouts:
+  win:
+    combo: '1'
+    payout: 650
+    popularity: 3
+  place:
+    combo: '16'
+    payout: 370
+    popularity: 43
+  bracket_quinella:
+    combo: 1-6
+    payout: 3480
+    popularity: 9
+  quinella:
+    combo: 1-6
+    payout: 8810
+    popularity: 15
+  bracket_exacta:
+    combo: 1-61-22-6
+    payout: 710
+    popularity: 1034
+  exacta:
+    combo: 1-2-6
+    payout: 800
+    popularity: 4
+  wide:
+    combo: 1-6-2
+    payout: 12280
+    popularity: 33
+corner_positions:
+  corner_1: 1,2,6,3,5,4
+  corner_2: 1,2,(6,3),(4,5)
+  corner_3: 1,2,3,6
+  corner_4: 1,(6,2),3
+last_4f: '54.9'

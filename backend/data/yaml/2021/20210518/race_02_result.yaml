@@ -1,0 +1,154 @@
+meta:
+  source_file: race_02_result.html
+  extracted_at: '2025-11-12T11:38:22.599629'
+  race_type: result
+race_id: '20210518_02'
+finish_order:
+- 1
+- 2
+- 4
+- 3
+- 7
+- 5
+- 6
+result_details:
+- finish_position: 1
+  gate_number: '1'
+  horse_number: 1
+  horse_name: シュガーレス
+  stable: 金沢
+  sex_age: セン 3
+  weight_carried: '56.0'
+  jockey: 青柳正(金沢)
+  trainer: 中川雅
+  horse_weight: '421'
+  weight_diff: '-9'
+  time: '1:32.4'
+  margin: ''
+  last_3f: '40.1'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '2'
+  horse_number: 2
+  horse_name: フレンチフィナール
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 中島龍(金沢)
+  trainer: 金田一
+  horse_weight: '453'
+  weight_diff: '-2'
+  time: '1:32.5'
+  margin: １／２
+  last_3f: '39.5'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '4'
+  horse_number: 4
+  horse_name: マイネルサンライト
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 栗原大(金沢)
+  trainer: 菅原欣
+  horse_weight: '455'
+  weight_diff: '0'
+  time: '1:33.0'
+  margin: ２１／２
+  last_3f: '40.3'
+  popularity: '5'
+- finish_position: 4
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ケイツーマナト
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 葛山晃(金沢)
+  trainer: 菅原欣
+  horse_weight: '452'
+  weight_diff: '-6'
+  time: '1:33.1'
+  margin: １／２
+  last_3f: '40.6'
+  popularity: '4'
+- finish_position: 5
+  gate_number: '7'
+  horse_number: 7
+  horse_name: フェスティヴパイカ
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 堀場裕(金沢)
+  trainer: 金田一
+  horse_weight: '448'
+  weight_diff: '3'
+  time: '1:33.6'
+  margin: ２１／２
+  last_3f: '41.1'
+  popularity: '6'
+- finish_position: 6
+  gate_number: '5'
+  horse_number: 5
+  horse_name: ヴァランタイン
+  stable: 金沢
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 柴田勇(金沢)
+  trainer: 金田一
+  horse_weight: '439'
+  weight_diff: '-3'
+  time: '1:34.6'
+  margin: ５
+  last_3f: '41.2'
+  popularity: '7'
+- finish_position: 7
+  gate_number: '6'
+  horse_number: 6
+  horse_name: バードハズフロウン
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 田知弘(金沢)
+  trainer: 金田一
+  horse_weight: '416'
+  weight_diff: '0'
+  time: '1:35.1'
+  margin: ２１／２
+  last_3f: '42.5'
+  popularity: '3'
+payouts:
+  win:
+    combo: '1'
+    payout: 140
+    popularity: 1
+  place:
+    combo: '12'
+    payout: 120
+    popularity: 12
+  bracket_quinella:
+    combo: 1-2
+    payout: 150
+    popularity: 1
+  quinella:
+    combo: 1-2
+    payout: 190
+    popularity: 1
+  bracket_exacta:
+    combo: 1-21-42-4
+    payout: 120
+    popularity: 176
+  exacta:
+    combo: 1-2-4
+    payout: 580
+    popularity: 3
+  wide:
+    combo: 1-2-4
+    payout: 1110
+    popularity: 4
+corner_positions:
+  corner_1: 1,7,6,(2,4),3,5
+  corner_2: 1,(6,7),(2,4),3,5
+  corner_3: (1,3),7,6,4,2,5
+  corner_4: 1,3,(4,2),7,6,5
+last_4f: '52.7'

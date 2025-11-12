@@ -1,0 +1,122 @@
+meta:
+  source_file: race_04_result.html
+  extracted_at: '2025-11-12T11:37:45.662544'
+  race_type: result
+race_id: '20201011_04'
+finish_order:
+- 5
+- 4
+- 1
+- 2
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '5'
+  horse_number: 5
+  horse_name: リードキングダム
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 藤田弘(金沢)
+  trainer: 黒木豊
+  horse_weight: '418'
+  weight_diff: '2'
+  time: '1:39.1'
+  margin: ''
+  last_3f: '39.9'
+  popularity: '3'
+- finish_position: 2
+  gate_number: '4'
+  horse_number: 4
+  horse_name: スツーカ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 池田敦(金沢)
+  trainer: 高橋俊
+  horse_weight: '445'
+  weight_diff: '-2'
+  time: '1:39.5'
+  margin: ２
+  last_3f: '40.4'
+  popularity: '2'
+- finish_position: 3
+  gate_number: '1'
+  horse_number: 1
+  horse_name: マイストック
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 葛山晃(金沢)
+  trainer: 宗綱泰
+  horse_weight: '422'
+  weight_diff: '-4'
+  time: '1:40.5'
+  margin: ５
+  last_3f: '40.5'
+  popularity: '5'
+- finish_position: 4
+  gate_number: '2'
+  horse_number: 2
+  horse_name: エムティモナ
+  stable: 金沢
+  sex_age: 牝 2
+  weight_carried: '54.0'
+  jockey: 吉田晃(金沢)
+  trainer: 佐藤茂
+  horse_weight: '448'
+  weight_diff: '12'
+  time: '1:40.7'
+  margin: １
+  last_3f: '41.5'
+  popularity: '1'
+- finish_position: 5
+  gate_number: '3'
+  horse_number: 3
+  horse_name: カネトシエステラ
+  stable: 金沢
+  sex_age: 牡 2
+  weight_carried: '55.0'
+  jockey: 堀場裕(金沢)
+  trainer: 中川雅
+  horse_weight: '452'
+  weight_diff: '-1'
+  time: '1:41.0'
+  margin: １１／２
+  last_3f: '41.8'
+  popularity: '4'
+payouts:
+  win:
+    combo: '5'
+    payout: 570
+    popularity: 3
+  place:
+    combo: '54'
+    payout: 100
+    popularity: 13
+  bracket_quinella:
+    combo: 4-5
+    payout: 400
+    popularity: 3
+  quinella:
+    combo: 5-4
+    payout: 960
+    popularity: 6
+  bracket_exacta:
+    combo: 4-51-51-4
+    payout: 160
+    popularity: 274
+  exacta:
+    combo: 1-4-5
+    payout: 950
+    popularity: 4
+  wide:
+    combo: 5-4-1
+    payout: 4210
+    popularity: 16
+corner_positions:
+  corner_1: 2,3,4,5,1
+  corner_2: (5,4),2,3,1
+  corner_3: (5,4),2,3,1
+  corner_4: 5,4,2,(3,1)
+last_4f: '52.2'

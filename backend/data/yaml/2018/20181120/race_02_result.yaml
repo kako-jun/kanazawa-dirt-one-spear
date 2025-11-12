@@ -1,0 +1,137 @@
+meta:
+  source_file: race_02_result.html
+  extracted_at: '2025-11-12T11:34:56.819154'
+  race_type: result
+race_id: '20181120_02'
+finish_order:
+- 5
+- 7
+- 1
+- 6
+- 4
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '5'
+  horse_number: 5
+  horse_name: コーラルフィーユ
+  stable: 笠松
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 岡部誠(愛知)
+  trainer: 栗本陽
+  horse_weight: '430'
+  weight_diff: '-1'
+  time: '1:31.3'
+  margin: ''
+  last_3f: '37.9'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '7'
+  horse_number: 7
+  horse_name: チュウワファースト
+  stable: 笠松
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 松本剛(笠松)
+  trainer: 加藤幸
+  horse_weight: '458'
+  weight_diff: '-6'
+  time: '1:31.7'
+  margin: ２
+  last_3f: '37.8'
+  popularity: '3'
+- finish_position: 3
+  gate_number: '1'
+  horse_number: 1
+  horse_name: トーセンアルタイル
+  stable: 笠松
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 藤原幹(笠松)
+  trainer: 後藤正
+  horse_weight: '515'
+  weight_diff: '-19'
+  time: '1:31.8'
+  margin: １／２
+  last_3f: '37.7'
+  popularity: '6'
+- finish_position: 4
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ペイシャアコ
+  stable: 笠松
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 山下雅(笠松)
+  trainer: 栗本陽
+  horse_weight: '461'
+  weight_diff: '4'
+  time: '1:31.9'
+  margin: １／２
+  last_3f: '38.3'
+  popularity: '2'
+- finish_position: 5
+  gate_number: '4'
+  horse_number: 4
+  horse_name: スプリングダイヤ
+  stable: 笠松
+  sex_age: 牝 3
+  weight_carried: '54.0'
+  jockey: 東川公(笠松)
+  trainer: 尾島徹
+  horse_weight: '468'
+  weight_diff: '2'
+  time: '1:31.9'
+  margin: ハナ
+  last_3f: '37.6'
+  popularity: '5'
+- finish_position: 6
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ハッスルボーイ
+  stable: 笠松
+  sex_age: 牡 3
+  weight_carried: '56.0'
+  jockey: 森島貴(笠松)
+  trainer: 水野善
+  horse_weight: '483'
+  weight_diff: '0'
+  time: '1:32.0'
+  margin: １／２
+  last_3f: '38.2'
+  popularity: '4'
+payouts:
+  win:
+    combo: '5'
+    payout: 170
+    popularity: 1
+  place:
+    combo: '57'
+    payout: 150
+    popularity: 24
+  bracket_quinella:
+    combo: 5-7
+    payout: 330
+    popularity: 2
+  quinella:
+    combo: 5-7
+    payout: 670
+    popularity: 4
+  bracket_exacta:
+    combo: 5-71-51-7
+    payout: 250
+    popularity: 3412
+  exacta:
+    combo: 1-5-7
+    payout: 1940
+    popularity: 7
+  wide:
+    combo: 5-7-1
+    payout: 4150
+    popularity: 18
+corner_positions:
+  corner_2: 5,6,3,7,1,4
+  corner_3: 5,(6,7),3,1,4
+  corner_4: 5,7,6,3,1,4
+last_4f: '51.3'

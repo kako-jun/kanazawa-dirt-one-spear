@@ -1,0 +1,90 @@
+meta:
+  source_file: race_12_result.html
+  extracted_at: '2025-11-12T11:42:04.636641'
+  race_type: result
+race_id: '20231002_12'
+finish_order:
+- 6
+- 2
+- 3
+result_details:
+- finish_position: 1
+  gate_number: '6'
+  horse_number: 6
+  horse_name: ダイヤモンドライン
+  stable: 金沢
+  sex_age: 牝 3
+  weight_carried: '53.0'
+  jockey: 栗原大(金沢)
+  trainer: 佐藤茂
+  horse_weight: '422'
+  weight_diff: '1'
+  time: '1:48.8'
+  margin: ''
+  last_3f: '37.9'
+  popularity: '1'
+- finish_position: 2
+  gate_number: '2'
+  horse_number: 2
+  horse_name: ヤイバ
+  stable: 金沢
+  sex_age: 牡 4
+  weight_carried: '56.0'
+  jockey: 吉原寛(金沢)
+  trainer: 加藤義
+  horse_weight: '460'
+  weight_diff: '7'
+  time: '1:48.9'
+  margin: ３／４
+  last_3f: '38.7'
+  popularity: '7'
+- finish_position: 3
+  gate_number: '3'
+  horse_number: 3
+  horse_name: ホイッスルベイト
+  stable: 金沢
+  sex_age: 牝 4
+  weight_carried: '54.0'
+  jockey: 池田敦(金沢)
+  trainer: 高橋俊
+  horse_weight: '452'
+  weight_diff: '-4'
+  time: '1:49.1'
+  margin: １
+  last_3f: '39.8'
+  popularity: '4'
+payouts:
+  win:
+    combo: '6'
+    payout: 120
+    popularity: 1
+  place:
+    combo: '6238'
+    payout: 100
+    popularity: 1742
+  bracket_quinella:
+    combo: 2-6
+    payout: 1520
+    popularity: 6
+  quinella:
+    combo: 6-2
+    payout: 2210
+    popularity: 7
+  bracket_exacta:
+    combo: 2-63-66-82-32-8
+    payout: 240
+    popularity: 7211815
+  exacta:
+    combo: 2-3-62-6-8
+    payout: 1320
+    popularity: 128
+  wide:
+    combo: 6-2-36-2-8
+    payout: 3830
+    popularity: 2821
+corner_positions:
+  corner_1: 3,5,2,1,7,(4,6)
+  corner_2: 3,5,2,1,4,(7,6)
+  corner_3: 3,(2,5),1,6,(4,7),8
+  corner_4: 3,2,5,1,7,(4,6),8
+last_4f: '51.7'
