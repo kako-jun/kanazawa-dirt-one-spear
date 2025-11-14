@@ -347,7 +347,10 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
 
         # 三連単配当を抽出
         trifecta_payout = None
-        if '3連単' in payouts_data:
+        if 'trifecta' in payouts_data:
+            trifecta = payouts_data.get('trifecta', {})
+            trifecta_payout = _parse_payout_amount(trifecta.get('payout', 0))
+        elif '3連単' in payouts_data:
             trifecta = payouts_data.get('3連単', {})
             trifecta_payout = _parse_payout_amount(trifecta.get('amount', '0'))
         elif '三連単' in payouts_data:
