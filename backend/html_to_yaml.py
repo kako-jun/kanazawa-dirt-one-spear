@@ -563,6 +563,24 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
     except Exception as e:
         print(f"上り4F抽出エラー: {e}")
 
+    # 馬場状態を抽出（正規表現で「馬場：」の直後を取得）
+    track_condition = "不明"
+    try:
+        track_match = re.search(r'馬場[：:]\s*(不良|稍重|重|良)', info_text)
+        if track_match:
+            track_condition = track_match.group(1)
+    except Exception as e:
+        print(f"馬場状態抽出エラー: {e}")
+
+    # 天候を抽出（正規表現で「天候：」の直後を取得）
+    weather = "不明"
+    try:
+        weather_match = re.search(r'天候[：:]\s*(雪|雨|曇|晴)', info_text)
+        if weather_match:
+            weather = weather_match.group(1)
+    except Exception as e:
+        print(f"天候抽出エラー: {e}")
+
     # 全配当を抽出
     payouts = {}
 
@@ -597,9 +615,27 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
 
                     for key, name, start_idx in bet_types:
                         if start_idx + 2 < len(cells):
-                            combo = cells[start_idx].get_text(strip=True)
-                            payout_text = cells[start_idx + 1].get_text(strip=True)
-                            popularity = cells[start_idx + 2].get_text(strip=True)
+                            # <BR>タグで区切られた値を分割して最初の値を取得
+                            combo_cell = cells[start_idx]
+                            payout_cell = cells[start_idx + 1]
+                            popularity_cell = cells[start_idx + 2]
+
+                            # <BR>タグを改行に置き換えて分割
+                            for br in combo_cell.find_all('br'):
+                                br.replace_with('\n')
+                            for br in payout_cell.find_all('br'):
+                                br.replace_with('\n')
+                            for br in popularity_cell.find_all('br'):
+                                br.replace_with('\n')
+
+                            combo_lines = combo_cell.get_text().strip().split('\n')
+                            payout_lines = payout_cell.get_text().strip().split('\n')
+                            popularity_lines = popularity_cell.get_text().strip().split('\n')
+
+                            # 最初の値を取得
+                            combo = combo_lines[0].strip() if combo_lines else ''
+                            payout_text = payout_lines[0].strip() if payout_lines else ''
+                            popularity = popularity_lines[0].strip() if popularity_lines else ''
 
                             # 払戻金をパース（カンマ除去、円を除去）
                             payout_match = re.search(r'([\d,]+)', payout_text)
@@ -630,6 +666,8 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
             'race_type': 'result',
         },
         'race_id': race_id,
+        'track_condition': track_condition,  # 馬場状態
+        'weather': weather,  # 天候
         'finish_order': finish_order,
         'result_details': result_details,  # 各馬の詳細情報
         'payouts': payouts,
