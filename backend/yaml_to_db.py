@@ -17,7 +17,8 @@ import re
 from sqlalchemy.orm import Session
 from app.database import (
     SessionLocal, DBRace, DBHorse, DBEntry, DBResult,
-    DBJockey, DBTrainer, engine, Base
+    DBJockey, DBTrainer, DBRacePerformance, DBPayout,
+    engine, Base
 )
 
 # データベース初期化
@@ -291,6 +292,19 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
         # レース情報を取得（存在する場合）
         race_data = data.get('race', {})
 
+        # 日付をrace_dataから取得、なければrace_idから抽出
+        race_date_str = race_data.get('date')
+        if not race_date_str and race_id:
+            # race_idから日付を抽出（例: "20241124_01" → "2024-11-24"）
+            try:
+                date_part = race_id.split('_')[0]
+                if len(date_part) == 8:
+                    race_date_str = f"{date_part[0:4]}-{date_part[4:6]}-{date_part[6:8]}"
+            except:
+                pass
+        if not race_date_str:
+            race_date_str = '2000-01-01'
+
         # レースが存在するか確認
         race = session.query(DBRace).filter_by(race_id=race_id).first()
         if not race:
@@ -298,13 +312,13 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
             # レースを先に作成（最低限の情報で）
             race = DBRace(
                 race_id=race_id,
-                date=datetime.strptime(race_data.get('date', '2000-01-01'), '%Y-%m-%d'),
+                date=datetime.strptime(race_date_str, '%Y-%m-%d'),
                 race_number=race_data.get('race_number', 0),
                 name=race_data.get('name', '不明（結果のみ）'),
                 subtitle=race_data.get('subtitle', None),
                 distance=race_data.get('distance', 0),
-                track_condition=race_data.get('track_condition', '不明'),
-                weather=race_data.get('weather', '不明'),
+                track_condition=data.get('track_condition', race_data.get('track_condition', '不明')),
+                weather=data.get('weather', race_data.get('weather', '不明')),
                 direction=race_data.get('direction', None),
                 prize_money=race_data.get('prize_money', None),
                 race_class=race_data.get('race_class', None),
@@ -313,6 +327,12 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
                 betting_code=race_data.get('betting_code', None),
             )
             session.add(race)
+        else:
+            # 既存レースの馬場状態・天候を更新（トップレベルのデータがあれば）
+            if 'track_condition' in data and data['track_condition'] != '不明':
+                race.track_condition = data['track_condition']
+            if 'weather' in data and data['weather'] != '不明':
+                race.weather = data['weather']
 
         # 結果が既に存在するか確認
         existing_result = session.query(DBResult).filter_by(race_id=race_id).first()
@@ -362,20 +382,17 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
         if not corner_positions:
             corner_positions = data.get('result', {}).get('corner_positions', {})
 
-        # 結果を登録
+        # 結果を登録（JSON型カラムを削除）
         result_id = f"result_{race_id}"
 
         result = DBResult(
             result_id=result_id,
             race_id=race_id,
-            finish_order=finish_order,
-            corner_positions=corner_positions,
             first=first,
             second=second,
             third=third,
-            payouts=payouts_data,
             payout_trifecta=trifecta_payout,
-            prediction_hit=None,
+            prediction_hit=False,
             purchased=False,
             bet_amount=0,
             return_amount=0,
@@ -383,6 +400,118 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
             memo=None,
         )
         session.add(result)
+
+        # 配当情報を登録（payoutsテーブルに正規化）
+        # 既存の配当データを削除
+        session.query(DBPayout).filter_by(race_id=race_id).delete()
+
+        # 配当データを登録
+        payout_idx = 0
+        for payout_type_key, payout_info in payouts_data.items():
+            if isinstance(payout_info, dict):
+                payout_id = f"{race_id}_{payout_type_key}_{payout_idx}"
+                payout_obj = DBPayout(
+                    payout_id=payout_id,
+                    race_id=race_id,
+                    payout_type=payout_type_key,
+                    combo=str(payout_info.get('combo', '')),
+                    payout=_parse_payout_amount(payout_info.get('payout', 0)),
+                    popularity=_parse_int_safe(payout_info.get('popularity')),
+                )
+                session.add(payout_obj)
+                payout_idx += 1
+
+        # result_details内の馬情報を処理（race_performancesテーブルに投入）
+        # 既存のパフォーマンスデータを削除
+        session.query(DBRacePerformance).filter_by(race_id=race_id).delete()
+
+        result_details_data = data.get('result_details', [])
+        if result_details_data:
+            for detail in result_details_data:
+                try:
+                    horse_name = detail.get('horse_name', None)
+                    sex_age = detail.get('sex_age', None)
+                    horse_number = detail.get('horse_number', None)
+                    gate_number = detail.get('gate_number', None)
+                    finish_position = detail.get('finish_position', None)
+                    popularity = detail.get('popularity', None)
+                    time = detail.get('time', None)
+                    margin = detail.get('margin', None)
+                    last_3f = detail.get('last_3f', None)
+
+                    if not horse_name:
+                        continue
+
+                    # 性別・年齢をパース
+                    age, gender = _parse_sex_age(sex_age) if sex_age else (None, None)
+
+                    # このレースのエントリーから馬を特定
+                    entry = None
+                    horse = None
+                    entry_id = None
+
+                    if horse_number:
+                        entry_id = f"{race_id}_{horse_number}"
+                        entry = session.query(DBEntry).filter_by(entry_id=entry_id).first()
+                        if entry:
+                            horse = session.query(DBHorse).filter_by(horse_id=entry.horse_id).first()
+                            if horse:
+                                # 年齢・性別が未設定の場合のみ更新
+                                if age and not horse.age:
+                                    horse.age = age
+                                if gender and not horse.gender:
+                                    horse.gender = gender
+                        else:
+                            # エントリーがない場合は馬名で検索（フォールバック）
+                            horse = session.query(DBHorse).filter_by(name=horse_name).first()
+                            if horse and age and gender:
+                                if age and not horse.age:
+                                    horse.age = age
+                                if gender and not horse.gender:
+                                    horse.gender = gender
+                    else:
+                        # 馬番がない場合は馬名で検索
+                        horse = session.query(DBHorse).filter_by(name=horse_name).first()
+                        if horse and age and gender:
+                            if age and not horse.age:
+                                horse.age = age
+                            if gender and not horse.gender:
+                                horse.gender = gender
+
+                    # race_performanceを登録
+                    if horse and horse_number:
+                        performance_id = f"{race_id}_{horse_number}_perf"
+
+                        # corner_positions からこの馬のコーナー通過順を抽出
+                        corner_1 = _extract_horse_corner_position(corner_positions.get('corner_1', ''), horse_number)
+                        corner_2 = _extract_horse_corner_position(corner_positions.get('corner_2', ''), horse_number)
+                        corner_3 = _extract_horse_corner_position(corner_positions.get('corner_3', ''), horse_number)
+                        corner_4 = _extract_horse_corner_position(corner_positions.get('corner_4', ''), horse_number)
+
+                        performance = DBRacePerformance(
+                            performance_id=performance_id,
+                            race_id=race_id,
+                            entry_id=entry_id,
+                            horse_id=horse.horse_id,
+                            gate_number=_parse_int_safe(gate_number),
+                            horse_number=_parse_int_safe(horse_number),
+                            finish_position=_parse_int_safe(finish_position),
+                            popularity=_parse_int_safe(popularity),
+                            time=time,
+                            margin=margin,
+                            last_3f=last_3f,
+                            last_4f=data.get('last_4f', None),  # レース全体の上がり4F
+                            corner_1_position=corner_1,
+                            corner_2_position=corner_2,
+                            corner_3_position=corner_3,
+                            corner_4_position=corner_4,
+                        )
+                        session.add(performance)
+
+                except Exception as e:
+                    # 個別のエラーはスキップ
+                    print(f"⚠️ パフォーマンス登録エラー ({horse_name}): {e}")
+                    continue
 
         session.commit()
         return True
@@ -458,6 +587,26 @@ def _parse_payout_amount(amount_str: Any) -> Optional[int]:
         return None
     except:
         return None
+
+
+# エイリアス
+_parse_int_safe = _parse_int
+
+
+def _extract_horse_corner_position(corner_str: str, horse_number: int) -> Optional[str]:
+    """
+    コーナー通過順テキストから特定馬番の位置情報を抽出
+
+    Args:
+        corner_str: コーナー通過順（例: "3,5,7,4,(1,9),8,6,2"）
+        horse_number: 馬番
+
+    Returns:
+        位置情報（簡易的にコーナー通過順そのものを返す）
+    """
+    # TODO: より詳細な位置抽出ロジックを実装
+    # 現状はコーナー通過順全体を保存
+    return corner_str if corner_str else None
 
 
 def process_yaml_directory(yaml_dir: Path, race_type: str = 'both'):
