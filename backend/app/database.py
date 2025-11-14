@@ -170,8 +170,64 @@ class DBPrediction(Base):
     race = relationship("DBRace", back_populates="prediction")
 
 
+class DBRacePerformance(Base):
+    """個別馬の結果テーブル（JSON型を排除）"""
+    __tablename__ = "race_performances"
+
+    # 主キー
+    performance_id = Column(String, primary_key=True, index=True, comment="パフォーマンスID")
+
+    # 外部キー
+    race_id = Column(String, ForeignKey("races.race_id"), nullable=False, index=True, comment="レースID")
+    entry_id = Column(String, ForeignKey("entries.entry_id"), nullable=False, index=True, comment="出走ID")
+    horse_id = Column(String, ForeignKey("horses.horse_id"), nullable=False, index=True, comment="馬ID")
+
+    # 基本情報（entriesと重複だが、クエリの便宜上）
+    gate_number = Column(Integer, nullable=True, comment="枠番")
+    horse_number = Column(Integer, nullable=True, comment="馬番")
+
+    # 結果情報
+    finish_position = Column(Integer, nullable=True, comment="着順")
+    popularity = Column(Integer, nullable=True, comment="人気")
+    time = Column(String, nullable=True, comment="タイム（例: 1:30.2）")
+    margin = Column(String, nullable=True, comment="着差")
+    last_3f = Column(String, nullable=True, comment="上がり3F")
+    last_4f = Column(String, nullable=True, comment="上がり4F")
+
+    # コーナー通過順
+    corner_1_position = Column(String, nullable=True, comment="1コーナー通過順")
+    corner_2_position = Column(String, nullable=True, comment="2コーナー通過順")
+    corner_3_position = Column(String, nullable=True, comment="3コーナー通過順")
+    corner_4_position = Column(String, nullable=True, comment="4コーナー通過順")
+
+    # リレーション
+    race = relationship("DBRace")
+    entry = relationship("DBEntry")
+    horse = relationship("DBHorse")
+
+
+class DBPayout(Base):
+    """配当テーブル（JSON型を排除）"""
+    __tablename__ = "payouts"
+
+    # 主キー
+    payout_id = Column(String, primary_key=True, index=True, comment="配当ID")
+
+    # 外部キー
+    race_id = Column(String, ForeignKey("races.race_id"), nullable=False, index=True, comment="レースID")
+
+    # 配当情報
+    payout_type = Column(String, nullable=False, index=True, comment="配当種別（win/place/quinella/exacta/wide/trio/trifecta）")
+    combo = Column(String, nullable=True, comment="組番（例: 3-4-9）")
+    payout = Column(Integer, nullable=True, comment="配当金額（円）")
+    popularity = Column(Integer, nullable=True, comment="人気")
+
+    # リレーション
+    race = relationship("DBRace")
+
+
 class DBResult(Base):
-    """結果テーブル"""
+    """結果テーブル（簡略化・JSON型排除）"""
     __tablename__ = "results"
 
     # 主キー
@@ -180,17 +236,12 @@ class DBResult(Base):
     # 外部キー
     race_id = Column(String, ForeignKey("races.race_id"), nullable=False, unique=True, index=True, comment="レースID (1レース1結果)")
 
-    # 着順情報
-    finish_order = Column(JSON, nullable=True, comment="全着順 (JSON配列: [1位馬番, 2位馬番, ...])")
+    # 着順情報（便宜上残す）
     first = Column(Integer, nullable=True, comment="1着馬番")
     second = Column(Integer, nullable=True, comment="2着馬番")
     third = Column(Integer, nullable=True, comment="3着馬番")
 
-    # レース展開
-    corner_positions = Column(JSON, nullable=True, comment="コーナー通過順 (JSON: {corner_1: '7,9,1,...', ...})")
-
-    # 配当情報
-    payouts = Column(JSON, nullable=True, comment="全配当 (JSON: {win: {...}, place: {...}, trifecta: {...}, ...})")
+    # 配当情報（便宜上残す）
     payout_trifecta = Column(Integer, nullable=True, comment="三連単配当 (円)")
 
     # 予想結果
