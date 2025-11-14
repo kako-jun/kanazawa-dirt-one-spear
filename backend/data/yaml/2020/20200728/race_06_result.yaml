@@ -1,6 +1,6 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-12T11:37:19.043120'
+  extracted_at: '2025-11-14T17:19:22.213136'
   race_type: result
 race_id: '20200728_06'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '7106'
     payout: 120
     popularity: 218
-  bracket_quinella:
-    combo: 7-8
-    payout: 180
-    popularity: 1
   quinella:
-    combo: 7-10
-    payout: 230
-    popularity: 1
-  bracket_exacta:
     combo: 7-8
     payout: 180
     popularity: 1
   exacta:
     combo: 7-10
-    payout: 260
+    payout: 230
     popularity: 1
   wide:
+    combo: 7-8
+    payout: 180
+    popularity: 1
+  trio:
+    combo: 7-10
+    payout: 260
+    popularity: 1
+  trifecta:
     combo: 7-106-76-10
     payout: 150
     popularity: 11415
-  trio:
-    combo: 6-7-10
-    payout: 2750
-    popularity: 8
-  trifecta:
-    combo: 7-10-6
-    payout: 5590
-    popularity: 15
 corner_positions:
   corner_1: 1,2,4,10,7,6,3,5,8,9
   corner_2: 1,2,4,10,7,6,(5,3),8,9

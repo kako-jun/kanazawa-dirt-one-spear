@@ -1,6 +1,6 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-12T11:32:40.076185'
+  extracted_at: '2025-11-14T17:18:12.532567'
   race_type: result
 race_id: '20170723_09'
 finish_order:
@@ -190,34 +190,26 @@ payouts:
     combo: '963'
     payout: 100
     popularity: 149
-  bracket_quinella:
+  quinella:
     combo: 6-7
     payout: 330
     popularity: 1
-  quinella:
+  exacta:
     combo: 6-9
     payout: 970
     popularity: 4
-  bracket_exacta:
+  wide:
     combo: 7-6
     payout: 590
     popularity: 2
-  exacta:
+  trio:
     combo: 9-6
     payout: 1490
     popularity: 8
-  wide:
+  trifecta:
     combo: 6-93-93-6
     payout: 390
     popularity: 5725
-  trio:
-    combo: 3-6-9
-    payout: 3990
-    popularity: 20
-  trifecta:
-    combo: 9-6-3
-    payout: 8540
-    popularity: 24
 corner_positions:
   corner_1: (11,7),10,5,6,(3,8,9),(1,4),2
   corner_2: 11,7,10,5,6,(3,9),8,1,4,2

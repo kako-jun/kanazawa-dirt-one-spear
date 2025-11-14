@@ -1,6 +1,6 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-12T11:39:12.509236'
+  extracted_at: '2025-11-14T17:19:51.273422'
   race_type: result
 race_id: '20211012_10'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '837'
     payout: 100
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 3-8
     payout: 240
     popularity: 1
-  quinella:
+  exacta:
     combo: 3-8
     payout: 230
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 8-3
     payout: 300
     popularity: 1
-  exacta:
+  trio:
     combo: 8-3
     payout: 290
     popularity: 1
-  wide:
+  trifecta:
     combo: 3-87-83-7
     payout: 140
     popularity: 126
-  trio:
-    combo: 3-7-8
-    payout: 340
-    popularity: 1
-  trifecta:
-    combo: 8-3-7
-    payout: 680
-    popularity: 1
 corner_positions:
   corner_1: 8,7,9,(2,5),6,3,(1,4)
   corner_2: 8,7,(5,9),(2,6),3,1,4

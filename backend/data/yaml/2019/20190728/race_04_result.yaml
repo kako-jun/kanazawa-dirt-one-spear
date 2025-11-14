@@ -1,6 +1,6 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-12T11:35:48.200308'
+  extracted_at: '2025-11-14T17:18:59.189504'
   race_type: result
 race_id: '20190728_04'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '149'
     payout: 100
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 1-4
     payout: 130
     popularity: 1
-  quinella:
+  exacta:
     combo: 1-4
     payout: 120
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 1-4
     payout: 250
     popularity: 1
-  exacta:
+  trio:
     combo: 1-4
     payout: 250
     popularity: 2
-  wide:
+  trifecta:
     combo: 1-41-94-9
     payout: 110
     popularity: 175
-  trio:
-    combo: 1-4-9
-    payout: 400
-    popularity: 2
-  trifecta:
-    combo: 1-4-9
-    payout: 910
-    popularity: 2
 corner_positions:
   corner_1: 2,4,9,1,8,3,7,10,6
   corner_2: 2,4,(1,9),8,7,3,10,6

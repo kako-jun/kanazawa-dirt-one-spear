@@ -1,6 +1,6 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-12T11:36:18.626007'
+  extracted_at: '2025-11-14T17:19:06.915445'
   race_type: result
 race_id: '20191015_05'
 finish_order:
@@ -190,34 +190,26 @@ payouts:
     combo: '3910'
     payout: 100
     popularity: 134
-  bracket_quinella:
-    combo: 3-7
-    payout: 570
-    popularity: 2
   quinella:
-    combo: 3-9
-    payout: 570
-    popularity: 2
-  bracket_exacta:
     combo: 3-7
-    payout: 420
+    payout: 570
     popularity: 2
   exacta:
     combo: 3-9
-    payout: 560
+    payout: 570
     popularity: 2
   wide:
+    combo: 3-7
+    payout: 420
+    popularity: 2
+  trio:
+    combo: 3-9
+    payout: 560
+    popularity: 2
+  trifecta:
     combo: 3-93-109-10
     payout: 230
     popularity: 2310
-  trio:
-    combo: 3-9-10
-    payout: 1380
-    popularity: 5
-  trifecta:
-    combo: 3-9-10
-    payout: 2130
-    popularity: 7
 corner_positions:
   corner_1: (4,6),(5,7),3,10,11,9,2,(1,8)
   corner_2: 6,7,(4,3),5,10,2,9,11,8,1

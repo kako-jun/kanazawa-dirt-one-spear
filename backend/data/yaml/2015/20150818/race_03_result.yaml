@@ -1,6 +1,6 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-12T11:29:43.095585'
+  extracted_at: '2025-11-14T17:17:28.005503'
   race_type: result
 race_id: '20150818_03'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '219'
     payout: 100
     popularity: 125
-  bracket_quinella:
+  quinella:
     combo: 1-2
     payout: 300
     popularity: 2
-  quinella:
+  exacta:
     combo: 1-2
     payout: 280
     popularity: 2
-  bracket_exacta:
+  wide:
     combo: 2-1
     payout: 450
     popularity: 2
-  exacta:
+  trio:
     combo: 2-1
     payout: 350
     popularity: 1
-  wide:
+  trifecta:
     combo: 1-22-91-9
     payout: 160
     popularity: 1412
-  trio:
-    combo: 1-2-9
-    payout: 1390
-    popularity: 6
-  trifecta:
-    combo: 2-1-9
-    payout: 3080
-    popularity: 9
 corner_positions:
   corner_1: 2,4,(1,8),6,(3,5),9,7
   corner_2: 2,4,8,1,6,3,5,9,7

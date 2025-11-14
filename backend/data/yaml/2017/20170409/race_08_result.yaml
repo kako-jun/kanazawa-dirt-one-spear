@@ -1,6 +1,6 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-12T11:32:01.166074'
+  extracted_at: '2025-11-14T17:18:02.599105'
   race_type: result
 race_id: '20170409_08'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '254'
     payout: 140
     popularity: 245
-  bracket_quinella:
+  quinella:
     combo: 2-5
     payout: 760
     popularity: 3
-  quinella:
+  exacta:
     combo: 2-5
     payout: 540
     popularity: 3
-  bracket_exacta:
-    combo: 2-5
-    payout: 1150
-    popularity: 5
-  exacta:
-    combo: 2-5
-    payout: 1150
-    popularity: 5
   wide:
+    combo: 2-5
+    payout: 1150
+    popularity: 5
+  trio:
+    combo: 2-5
+    payout: 1150
+    popularity: 5
+  trifecta:
     combo: 2-52-44-5
     payout: 240
     popularity: 347
-  trio:
-    combo: 2-4-5
-    payout: 1970
-    popularity: 5
-  trifecta:
-    combo: 2-5-4
-    payout: 6650
-    popularity: 21
 corner_positions:
   corner_1: 2,4,(1,7),9,5,6,8,3
   corner_2: 2,4,1,5,9,7,3,6,8

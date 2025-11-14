@@ -1,6 +1,6 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-12T11:33:44.511204'
+  extracted_at: '2025-11-14T17:18:28.805343'
   race_type: result
 race_id: '20180513_05'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '241'
     payout: 100
     popularity: 124
-  bracket_quinella:
+  quinella:
     combo: 2-4
     payout: 150
     popularity: 1
-  quinella:
+  exacta:
     combo: 2-4
     payout: 140
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 2-4
     payout: 530
     popularity: 2
-  exacta:
+  trio:
     combo: 2-4
     payout: 230
     popularity: 1
-  wide:
+  trifecta:
     combo: 2-41-21-4
     payout: 120
     popularity: 134
-  trio:
-    combo: 1-2-4
-    payout: 370
-    popularity: 1
-  trifecta:
-    combo: 2-4-1
-    payout: 1260
-    popularity: 3
 corner_positions:
   corner_1: 1,5,2,4,7,(3,8),10,9,6
   corner_2: 1,5,4,2,7,9,3,8,6,10

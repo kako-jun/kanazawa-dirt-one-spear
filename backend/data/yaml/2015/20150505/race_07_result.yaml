@@ -1,6 +1,6 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-12T11:29:09.532684'
+  extracted_at: '2025-11-14T17:17:19.156897'
   race_type: result
 race_id: '20150505_07'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '854'
     payout: 120
     popularity: 137
-  bracket_quinella:
+  quinella:
     combo: 5-7
     payout: 360
     popularity: 2
-  quinella:
+  exacta:
     combo: 5-8
     payout: 390
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 7-5
     payout: 700
     popularity: 4
-  exacta:
+  trio:
     combo: 8-5
     payout: 380
     popularity: 1
-  wide:
+  trifecta:
     combo: 5-84-84-5
     payout: 200
     popularity: 11314
-  trio:
-    combo: 4-5-8
-    payout: 2720
-    popularity: 11
-  trifecta:
-    combo: 8-5-4
-    payout: 4010
-    popularity: 12
 corner_positions:
   corner_1: (4,5,8),(3,9),(1,2,6,7),10
   corner_2: (4,5,8),9,2,3,10,(1,7),6
