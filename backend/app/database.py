@@ -5,7 +5,10 @@ from datetime import datetime
 import os
 
 # データベースファイルのパス
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./kanazawa_dirt_one_spear.db")
+from pathlib import Path
+DB_DIR = Path(__file__).parent.parent / "data"
+DB_DIR.mkdir(exist_ok=True)
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DB_DIR}/kanazawa_dirt_one_spear.db")
 
 engine = create_engine(
     DATABASE_URL,
