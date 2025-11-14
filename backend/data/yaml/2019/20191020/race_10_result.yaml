@@ -1,6 +1,6 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-12T11:36:20.365108'
+  extracted_at: '2025-11-14T17:19:07.353768'
   race_type: result
 race_id: '20191020_10'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '156'
     payout: 120
     popularity: 215
-  bracket_quinella:
+  quinella:
     combo: 1-5
     payout: 390
     popularity: 1
-  quinella:
+  exacta:
     combo: 1-5
     payout: 230
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 1-5
     payout: 800
     popularity: 2
-  exacta:
+  trio:
     combo: 1-5
     payout: 470
     popularity: 2
-  wide:
+  trifecta:
     combo: 1-51-65-6
     payout: 130
     popularity: 1106
-  trio:
-    combo: 1-5-6
-    payout: 820
-    popularity: 4
-  trifecta:
-    combo: 1-5-6
-    payout: 5070
-    popularity: 11
 corner_positions:
   corner_1: 6,1,5,2,3,9,8,7,4
   corner_2: 6,1,5,2,3,8,4,(9,7)

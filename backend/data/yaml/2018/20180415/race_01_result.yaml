@@ -1,6 +1,6 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-12T11:33:33.866457'
+  extracted_at: '2025-11-14T17:18:26.097647'
   race_type: result
 race_id: '20180415_01'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '598'
     payout: 100
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 5-8
     payout: 100
     popularity: 1
-  quinella:
+  exacta:
     combo: 5-9
     payout: 220
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 5-8
     payout: 140
     popularity: 1
-  exacta:
+  trio:
     combo: 5-9
     payout: 230
     popularity: 1
-  wide:
+  trifecta:
     combo: 5-95-88-9
     payout: 130
     popularity: 312
-  trio:
-    combo: 5-8-9
-    payout: 160
-    popularity: 1
-  trifecta:
-    combo: 5-9-8
-    payout: 370
-    popularity: 1
 corner_positions:
   corner_1: 5,9,(7,8),2,6,3,1,4
   corner_2: 5,9,8,7,2,6

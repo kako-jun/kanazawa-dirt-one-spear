@@ -1,6 +1,6 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-12T11:37:10.839199'
+  extracted_at: '2025-11-14T17:19:20.182653'
   race_type: result
 race_id: '20200707_06'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '387'
     payout: 160
     popularity: 319
-  bracket_quinella:
+  quinella:
     combo: 3-7
     payout: 460
     popularity: 1
-  quinella:
+  exacta:
     combo: 3-8
     payout: 520
     popularity: 2
-  bracket_exacta:
+  wide:
     combo: 3-7
     payout: 740
     popularity: 3
-  exacta:
+  trio:
     combo: 3-8
     payout: 940
     popularity: 1
-  wide:
+  trifecta:
     combo: 3-83-77-8
     payout: 250
     popularity: 21817
-  trio:
-    combo: 3-7-8
-    payout: 2030
-    popularity: 6
-  trifecta:
-    combo: 3-8-7
-    payout: 11710
-    popularity: 34
 corner_positions:
   corner_1: (3,8),(4,7,9),10,1,(2,5,6)
   corner_2: 3,8,(4,7),9,(1,10),(5,6),2

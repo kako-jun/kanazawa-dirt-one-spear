@@ -1,6 +1,6 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-12T11:33:03.305716'
+  extracted_at: '2025-11-14T17:18:18.458758'
   race_type: result
 race_id: '20170924_04'
 finish_order:
@@ -190,34 +190,26 @@ payouts:
     combo: '6104'
     payout: 120
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 6-8
     payout: 340
     popularity: 1
-  quinella:
+  exacta:
     combo: 6-10
     payout: 260
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 6-8
     payout: 630
     popularity: 1
-  exacta:
+  trio:
     combo: 6-10
     payout: 590
     popularity: 1
-  wide:
+  trifecta:
     combo: 6-104-64-10
     payout: 180
     popularity: 135
-  trio:
-    combo: 4-6-10
-    payout: 530
-    popularity: 2
-  trifecta:
-    combo: 6-10-4
-    payout: 1620
-    popularity: 2
 corner_positions:
   corner_1: 6,10,9,2,4,8,(3,5),11,7,1
   corner_2: 6,10,2,9,4,(3,5),11,8,7,1

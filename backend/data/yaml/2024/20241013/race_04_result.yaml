@@ -1,6 +1,6 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-12T11:43:38.288776'
+  extracted_at: '2025-11-14T17:21:01.244978'
   race_type: result
 race_id: '20241013_04'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '9410'
     payout: 180
     popularity: 413
-  bracket_quinella:
+  quinella:
     combo: 4-8
     payout: 350
     popularity: 2
-  quinella:
+  exacta:
     combo: 4-9
     payout: 640
     popularity: 5
-  bracket_exacta:
+  wide:
     combo: 8-4
     payout: 870
     popularity: 5
-  exacta:
+  trio:
     combo: 9-4
     payout: 1030
     popularity: 3
-  wide:
+  trifecta:
     combo: 4-99-104-10
     payout: 280
     popularity: 521
-  trio:
-    combo: 4-9-10
-    payout: 540
-    popularity: 1
-  trifecta:
-    combo: 9-4-10
-    payout: 2530
-    popularity: 5
 corner_positions:
   corner_1: 9,10,4,(2,3),6,7,8,1,5
   corner_2: 9,(4,10),2,3,6,7,8,1,5

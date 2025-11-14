@@ -1,6 +1,6 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-12T11:39:28.558909'
+  extracted_at: '2025-11-14T17:19:55.376315'
   race_type: result
 race_id: '20211128_01'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '342'
     payout: 100
     popularity: 214
-  bracket_quinella:
+  quinella:
     combo: 3-4
     payout: 130
     popularity: 1
-  quinella:
+  exacta:
     combo: 3-4
     payout: 110
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 3-4
     payout: 250
     popularity: 2
-  exacta:
+  trio:
     combo: 3-4
     payout: 290
     popularity: 2
-  wide:
+  trifecta:
     combo: 3-42-32-4
     payout: 110
     popularity: 162
-  trio:
-    combo: 2-3-4
-    payout: 460
-    popularity: 2
-  trifecta:
-    combo: 3-4-2
-    payout: 1380
-    popularity: 5
 corner_positions:
   corner_1: 9,3,4,5,2,(1,6),7,8
   corner_2: 9,(3,4)

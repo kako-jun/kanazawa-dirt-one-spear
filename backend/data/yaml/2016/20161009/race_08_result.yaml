@@ -1,6 +1,6 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-12T11:31:35.778665'
+  extracted_at: '2025-11-14T17:17:56.426930'
   race_type: result
 race_id: '20161009_08'
 finish_order:
@@ -190,34 +190,26 @@ payouts:
     combo: '192'
     payout: 100
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 1-7
     payout: 480
     popularity: 2
-  quinella:
+  exacta:
     combo: 1-9
     payout: 590
     popularity: 3
-  bracket_exacta:
+  wide:
     combo: 1-7
     payout: 570
     popularity: 1
-  exacta:
+  trio:
     combo: 1-9
     payout: 810
     popularity: 3
-  wide:
+  trifecta:
     combo: 1-91-22-9
     payout: 360
     popularity: 418
-  trio:
-    combo: 1-2-9
-    payout: 1060
-    popularity: 1
-  trifecta:
-    combo: 1-9-2
-    payout: 2690
-    popularity: 4
 corner_positions:
   corner_1: 1,4,8,10,9,3,(5,11),2,7,6
   corner_2: 1,4,8,10,9,11,3,(5,2),7,6

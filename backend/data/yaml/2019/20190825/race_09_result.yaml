@@ -1,6 +1,6 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-12T11:35:59.053643'
+  extracted_at: '2025-11-14T17:19:01.964513'
   race_type: result
 race_id: '20190825_09'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '495'
     payout: 100
     popularity: 123
-  bracket_quinella:
+  quinella:
     combo: 4-8
     payout: 170
     popularity: 1
-  quinella:
+  exacta:
     combo: 4-9
     payout: 160
     popularity: 1
-  bracket_exacta:
+  wide:
     combo: 4-8
     payout: 160
     popularity: 1
-  exacta:
+  trio:
     combo: 4-9
     payout: 210
     popularity: 1
-  wide:
+  trifecta:
     combo: 4-94-55-9
     payout: 110
     popularity: 123
-  trio:
-    combo: 4-5-9
-    payout: 250
-    popularity: 1
-  trifecta:
-    combo: 4-9-5
-    payout: 460
-    popularity: 1
 corner_positions:
   corner_1: 9,4,5,6,7,1,2,3,8
   corner_2: 9,4,5,6,7,1,2,(3,8)

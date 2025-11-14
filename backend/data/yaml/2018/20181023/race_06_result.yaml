@@ -1,6 +1,6 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-12T11:34:46.752811'
+  extracted_at: '2025-11-14T17:18:44.360039'
   race_type: result
 race_id: '20181023_06'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '168'
     payout: 100
     popularity: 123
-  bracket_quinella:
-    combo: 1-6
-    payout: 220
-    popularity: 1
   quinella:
     combo: 1-6
-    payout: 210
-    popularity: 1
-  bracket_exacta:
-    combo: 1-6
-    payout: 210
+    payout: 220
     popularity: 1
   exacta:
     combo: 1-6
     payout: 210
     popularity: 1
   wide:
+    combo: 1-6
+    payout: 210
+    popularity: 1
+  trio:
+    combo: 1-6
+    payout: 210
+    popularity: 1
+  trifecta:
     combo: 1-61-86-8
     payout: 140
     popularity: 1411
-  trio:
-    combo: 1-6-8
-    payout: 770
-    popularity: 3
-  trifecta:
-    combo: 1-6-8
-    payout: 1250
-    popularity: 4
 corner_positions:
   corner_1: 8,9,6,7,1,4,10,(3,5),2
   corner_2: 8,1,6,9,7,4,10,5,3,2

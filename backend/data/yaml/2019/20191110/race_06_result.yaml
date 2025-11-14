@@ -1,6 +1,6 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-12T11:36:27.363773'
+  extracted_at: '2025-11-14T17:19:09.077668'
   race_type: result
 race_id: '20191110_06'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '819'
     payout: 100
     popularity: 124
-  bracket_quinella:
-    combo: 1-8
-    payout: 130
-    popularity: 1
   quinella:
     combo: 1-8
     payout: 130
     popularity: 1
-  bracket_exacta:
+  exacta:
+    combo: 1-8
+    payout: 130
+    popularity: 1
+  wide:
     combo: 8-1
     payout: 150
     popularity: 1
-  exacta:
+  trio:
     combo: 8-1
     payout: 140
     popularity: 1
-  wide:
+  trifecta:
     combo: 1-88-91-9
     payout: 100
     popularity: 132
-  trio:
-    combo: 1-8-9
-    payout: 220
-    popularity: 1
-  trifecta:
-    combo: 8-1-9
-    payout: 410
-    popularity: 1
 corner_positions:
   corner_1: 4,1,8,(5,9),6,(2,7),3
   corner_2: 4,1,8,5,9,6,2,7,3

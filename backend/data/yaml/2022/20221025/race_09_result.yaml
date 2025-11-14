@@ -1,6 +1,6 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-12T11:40:45.834698'
+  extracted_at: '2025-11-14T17:20:15.548355'
   race_type: result
 race_id: '20221025_09'
 finish_order:
@@ -174,34 +174,26 @@ payouts:
     combo: '3510'
     payout: 100
     popularity: 231
-  bracket_quinella:
+  quinella:
     combo: 3-5
     payout: 1250
     popularity: 4
-  quinella:
+  exacta:
     combo: 3-5
     payout: 1580
     popularity: 5
-  bracket_exacta:
+  wide:
     combo: 3-5
     payout: 2580
     popularity: 9
-  exacta:
+  trio:
     combo: 3-5
     payout: 2830
     popularity: 9
-  wide:
+  trifecta:
     combo: 3-53-105-10
     payout: 310
     popularity: 412
-  trio:
-    combo: 3-5-10
-    payout: 380
-    popularity: 1
-  trifecta:
-    combo: 3-5-10
-    payout: 4800
-    popularity: 11
 corner_positions:
   corner_1: 2,3,8,4,(5,9),10,1,7,6
   corner_2: 2,3,8,4,5,9,(1,10),7,6

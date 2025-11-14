@@ -1,6 +1,6 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-12T11:44:17.333066'
+  extracted_at: '2025-11-14T17:21:11.485025'
   race_type: result
 race_id: '20250526_03'
 finish_order:
@@ -190,34 +190,26 @@ payouts:
     combo: '496'
     payout: 150
     popularity: 247
-  bracket_quinella:
+  quinella:
     combo: 4-7
     payout: 1520
     popularity: 6
-  quinella:
+  exacta:
     combo: 4-9
     payout: 1330
     popularity: 6
-  bracket_exacta:
+  wide:
     combo: 4-7
     payout: 2680
     popularity: 12
-  exacta:
+  trio:
     combo: 4-9
     payout: 2760
     popularity: 12
-  wide:
+  trifecta:
     combo: 4-94-66-9
     payout: 390
     popularity: 42417
-  trio:
-    combo: 4-6-9
-    payout: 9440
-    popularity: 36
-  trifecta:
-    combo: 4-9-6
-    payout: 46500
-    popularity: 177
 corner_positions:
   corner_1: 5,6,11,2,9,3,4,1,7,8,10
   corner_2: 5,6,11,2,9,3,4,1,7,(10,8)

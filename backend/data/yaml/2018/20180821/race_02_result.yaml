@@ -1,6 +1,6 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-12T11:34:20.960426'
+  extracted_at: '2025-11-14T17:18:38.162045'
   race_type: result
 race_id: '20180821_02'
 finish_order:
@@ -158,34 +158,26 @@ payouts:
     combo: '693'
     payout: 100
     popularity: 126
-  bracket_quinella:
+  quinella:
     combo: 6-8
     payout: 140
-    popularity: 1
-  quinella:
-    combo: 6-9
-    payout: 250
-    popularity: 1
-  bracket_exacta:
-    combo: 6-8
-    payout: 170
     popularity: 1
   exacta:
     combo: 6-9
-    payout: 330
+    payout: 250
     popularity: 1
   wide:
+    combo: 6-8
+    payout: 170
+    popularity: 1
+  trio:
+    combo: 6-9
+    payout: 330
+    popularity: 1
+  trifecta:
     combo: 6-93-63-9
     payout: 140
     popularity: 1412
-  trio:
-    combo: 3-6-9
-    payout: 1050
-    popularity: 3
-  trifecta:
-    combo: 6-9-3
-    payout: 2200
-    popularity: 3
 corner_positions:
   corner_1: 6,9,8,3,5,4,2,1,7
   corner_2: 6,9,8,3,5,4,2,1,7
