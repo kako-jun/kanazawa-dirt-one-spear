@@ -583,17 +583,16 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
                     cells = data_row.find_all('td')
 
                     # 列の対応: 列0はRなのでスキップ、列1から開始
-                    # 列1-3: 単勝, 列4-6: 複勝, 列7-9: 枠連複, ...
+                    # 列1-3: 単勝, 列4-6: 複勝, 列7-9: 馬連複, ...
+                    # 注: 枠連複・枠連単は金沢競馬では発売されていない
                     bet_types = [
                         ('win', '単勝', 1),
                         ('place', '複勝', 4),
-                        ('bracket_quinella', '枠連複', 7),
-                        ('quinella', '馬連複', 10),
-                        ('bracket_exacta', '枠連単', 13),
-                        ('exacta', '馬連単', 16),
-                        ('wide', 'ワイド', 19),
-                        ('trio', '三連複', 22),
-                        ('trifecta', '三連単', 25),
+                        ('quinella', '馬連複', 7),
+                        ('exacta', '馬連単', 10),
+                        ('wide', 'ワイド', 13),
+                        ('trio', '三連複', 16),
+                        ('trifecta', '三連単', 19),
                     ]
 
                     for key, name, start_idx in bet_types:
