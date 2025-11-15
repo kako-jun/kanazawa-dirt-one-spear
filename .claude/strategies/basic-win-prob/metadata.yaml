@@ -1,0 +1,97 @@
+strategy_id: "basic-win-prob"
+display_name: "王道"
+display_name_en: "Royal Road"
+version: "1.0.0"
+
+hypothesis:
+  title: "勝率予測による3連単構築"
+  description: |
+    馬ごとの勝率を予測し、上位3頭を組み合わせることで3連単を構築する。
+    最もシンプルで理解しやすいアプローチ。機械学習の基本的な分類問題として扱う。
+
+  assumptions:
+    - 過去の成績は未来の成績を予測できる
+    - 馬・騎手・調教師の累積データが有効
+    - レース条件（馬場・距離）が影響する
+    - オッズ情報は予測精度を向上させる
+
+algorithm:
+  type: "classification"
+  models:
+    - name: "LightGBM (without odds)"
+      purpose: "レース前の1着確率予測"
+      features:
+        - horse_cumulative_stats
+        - jockey_cumulative_stats
+        - trainer_cumulative_stats
+        - race_conditions
+        - gate_number
+        - horse_number
+      target: "win (1着=1, その他=0)"
+
+    - name: "LightGBM (with odds)"
+      purpose: "オッズ発表後の1着確率予測"
+      features:
+        - (上記すべて)
+        - popularity (人気順位)
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. 各馬の1着確率を予測
+    2. 確率上位3頭で3連単を構築
+       - 1着: 最高確率の馬
+       - 2着: 2番目の馬
+       - 3着: 3番目の馬
+    3. 代替案: 上位3頭の順列（3! = 6通り）から最も確率が高い組み合わせ
+
+implementation:
+  scripts:
+    - path: "analysis/feature_engineering_v2.py"
+      purpose: "特徴量生成"
+    - path: "analysis/train_lightgbm.py"
+      purpose: "モデル訓練"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+
+priority: "high"
+status: "implemented"
+last_updated: "2025-11-15"
+
+performance:
+  experiments: []
+  best_metrics: null
+
+risks:
+  - issue: "クラス不均衡が極端（1/8）"
+    severity: "high"
+    mitigation: "クラス重み付け、SMOTE検討"
+
+  - issue: "3連単の組み合わせ爆発を考慮していない"
+    severity: "medium"
+    mitigation: "上位N頭に絞る、確率閾値を設定"
+
+  - issue: "配当を考慮していない"
+    severity: "medium"
+    mitigation: "期待値ベースの選択に移行"
+
+improvements:
+  - "ランク学習（Learning to Rank）への移行検討"
+  - "アンサンブル学習の導入"
+  - "期待値最適化"
+
+next_steps:
+  - "GPU環境で実験実行"
+  - "性能評価とベンチマーク"
+  - "改善点の特定"
+  - "他作戦との比較"
