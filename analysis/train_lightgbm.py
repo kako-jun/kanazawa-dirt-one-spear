@@ -28,6 +28,38 @@ from datetime import datetime
 # プロジェクトルート
 project_root = Path(__file__).parent.parent
 
+
+def detect_gpu():
+    """
+    GPU利用可能かどうかを検出
+
+    Returns:
+        bool: GPU利用可能ならTrue
+    """
+    try:
+        # LightGBM GPU版がインストールされているかチェック
+        import lightgbm as lgb
+
+        # 簡易的なGPU検出: NVIDIAのGPUをチェック
+        try:
+            import subprocess
+            result = subprocess.run(['nvidia-smi'],
+                                  capture_output=True,
+                                  text=True,
+                                  timeout=5)
+            if result.returncode == 0:
+                print("GPU detected (NVIDIA)")
+                return True
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            pass
+
+        print("GPU not detected, using CPU")
+        return False
+
+    except Exception as e:
+        print(f"Error detecting GPU: {e}")
+        return False
+
 # 出力ディレクトリ
 OUTPUT_DIR = project_root / "analysis" / "output" / "models"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -125,7 +157,7 @@ def time_series_split_by_date(df, n_splits=5):
     return splits
 
 
-def train_model(X_train, y_train, X_valid, y_valid, params=None):
+def train_model(X_train, y_train, X_valid, y_valid, params=None, use_gpu=False):
     """
     LightGBMモデルを訓練
 
@@ -133,6 +165,7 @@ def train_model(X_train, y_train, X_valid, y_valid, params=None):
         X_train, y_train: 訓練データ
         X_valid, y_valid: 検証データ
         params: LightGBMのパラメータ
+        use_gpu: GPUを使用するか
 
     Returns:
         trained model
@@ -150,6 +183,13 @@ def train_model(X_train, y_train, X_valid, y_valid, params=None):
             'verbose': -1,
             'seed': 42
         }
+
+    # GPU設定
+    if use_gpu:
+        params['device'] = 'gpu'
+        params['gpu_platform_id'] = 0
+        params['gpu_device_id'] = 0
+        print("Training with GPU acceleration")
 
     train_data = lgb.Dataset(X_train, label=y_train)
     valid_data = lgb.Dataset(X_valid, label=y_valid, reference=train_data)
@@ -236,6 +276,10 @@ def main():
     """メイン処理"""
     print("=== LightGBM Training ===\n")
 
+    # GPU検出
+    use_gpu = detect_gpu()
+    print()
+
     # 特徴量読み込み
     df = load_features()
 
@@ -257,7 +301,7 @@ def main():
         X_train, X_valid = X_no_odds.iloc[train_idx], X_no_odds.iloc[valid_idx]
         y_train, y_valid = y.iloc[train_idx], y.iloc[valid_idx]
 
-        model = train_model(X_train, y_train, X_valid, y_valid)
+        model = train_model(X_train, y_train, X_valid, y_valid, use_gpu=use_gpu)
         metrics = evaluate_model(model, X_valid, y_valid, f"Valid Fold {fold}")
         cv_metrics_no_odds.append(metrics)
 
@@ -289,7 +333,7 @@ def main():
         X_train, X_valid = X_with_odds.iloc[train_idx], X_with_odds.iloc[valid_idx]
         y_train, y_valid = y.iloc[train_idx], y.iloc[valid_idx]
 
-        model = train_model(X_train, y_train, X_valid, y_valid)
+        model = train_model(X_train, y_train, X_valid, y_valid, use_gpu=use_gpu)
         metrics = evaluate_model(model, X_valid, y_valid, f"Valid Fold {fold}")
         cv_metrics_with_odds.append(metrics)
 
