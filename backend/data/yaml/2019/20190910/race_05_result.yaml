@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:03.533775'
+  extracted_at: '2025-11-15T12:42:59.817373'
   race_type: result
 race_id: '20190910_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 11
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.0'
   popularity: '1'
+  sire: ディープブリランテ
+  dam: セイカアルテナ
+  sire_of_sire: ディープインパクト
+  dam_of_sire: ラヴアンドバブルズ
+  sire_of_dam: メジロマックイーン
+  dam_of_dam: サンデーズシス
+  birth_date: '2016-03-26'
+  farm: シンユウフアーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '8114'
+    combo: '8'
     payout: 120
-    popularity: 162
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 770
@@ -191,9 +202,9 @@ payouts:
     payout: 1980
     popularity: 6
   trifecta:
-    combo: 8-114-84-11
+    combo: 8-11
     payout: 550
-    popularity: 8113
+    popularity: 8
 corner_positions:
   corner_1: 7,8,9,4,11,2,6,3,10
   corner_2: 7,8,9,4,(2,6,11),3

@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:29.745360'
+  extracted_at: '2025-11-15T12:44:58.741293'
   race_type: result
 race_id: '20201018_05'
+track_condition: 良
+weather: 曇
 finish_order:
 - 6
 - 1
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '1'
+  sire: ゴールドシップ
+  dam: パールサイド
+  sire_of_sire: ステイゴールド
+  dam_of_sire: ポイントフラッグ
+  sire_of_dam: Alhaarth
+  dam_of_dam: Prickly Pearl
+  birth_date: '2017-04-18'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -139,9 +150,9 @@ payouts:
     payout: 190
     popularity: 1
   place:
-    combo: '617'
+    combo: '6'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-6
     payout: 220
@@ -159,9 +170,9 @@ payouts:
     payout: 390
     popularity: 1
   trifecta:
-    combo: 1-66-71-7
+    combo: 1-6
     payout: 120
-    popularity: 125
+    popularity: 1
 corner_positions:
   corner_1: 1,7,(5,8),4,3,6
   corner_2: (1,7),5,8,4,6,3

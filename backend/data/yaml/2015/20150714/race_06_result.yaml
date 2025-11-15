@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:25.315240'
+  extracted_at: '2025-11-15T12:32:58.876569'
   race_type: result
 race_id: '20150714_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '2'
+  sire: アサクサデンエン
+  dam: セドゥクティーバ
+  sire_of_sire: Singspiel
+  dam_of_sire: Whitewater Affair
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: ゴールデンチェリー
+  birth_date: '2011-04-14'
+  farm: 内藤牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '7'
   horse_number: 10
@@ -203,9 +214,9 @@ payouts:
     payout: 360
     popularity: 2
   place:
-    combo: '7105'
+    combo: '7'
     payout: 120
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 6-7
     payout: 190
@@ -223,9 +234,9 @@ payouts:
     payout: 1320
     popularity: 3
   trifecta:
-    combo: 7-105-75-10
+    combo: 7-10
     payout: 250
-    popularity: 156
+    popularity: 1
 corner_positions:
   corner_1: 7,8,10,2,6,12,(1,3),(5,9),4,11
   corner_2: 7,8,10,2,6,12,1,3,5,9,4,11

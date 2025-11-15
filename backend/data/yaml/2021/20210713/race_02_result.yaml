@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:43.729056'
+  extracted_at: '2025-11-15T12:45:29.836766'
   race_type: result
 race_id: '20210713_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 4
 - 5
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '38.2'
   popularity: '1'
+  sire: オルフェーヴル
+  dam: クレバークリス
+  sire_of_sire: ステイゴールド
+  dam_of_sire: オリエンタルアート
+  sire_of_dam: クロフネ
+  dam_of_dam: エアクリスティーナ
+  birth_date: '2017-01-25'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -139,9 +150,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '459'
+    combo: '4'
     payout: 120
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 4-5
     payout: 250
@@ -159,9 +170,9 @@ payouts:
     payout: 220
     popularity: 1
   trifecta:
-    combo: 4-54-95-9
+    combo: 4-5
     payout: 130
-    popularity: 149
+    popularity: 1
 corner_positions:
   corner_1: 4,5,1,6,(2,9),7,3,8
   corner_2: 4,(5,1),(6,9)

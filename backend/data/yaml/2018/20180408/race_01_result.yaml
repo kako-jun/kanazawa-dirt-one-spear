@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:18:25.484489'
+  extracted_at: '2025-11-15T12:39:06.400694'
   race_type: result
 race_id: '20180408_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 9
 - 8
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.0'
   popularity: '1'
+  sire: スズカフェニックス
+  dam: トロピカルスイーツ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ローズオブスズカ
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: プチトマト
+  birth_date: '2015-03-08'
+  farm: 本間牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -187,9 +198,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '9811'
+    combo: '9'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 7-7
     payout: 440
@@ -207,9 +218,9 @@ payouts:
     payout: 780
     popularity: 3
   trifecta:
-    combo: 8-99-118-11
+    combo: 8-9
     payout: 220
-    popularity: 314
+    popularity: 3
 corner_positions:
   corner_1: 8,4,11,(1,3,9),(5,10),6,2,7
   corner_2: 8,11,9,4,1,3,(5,10),6,2,7

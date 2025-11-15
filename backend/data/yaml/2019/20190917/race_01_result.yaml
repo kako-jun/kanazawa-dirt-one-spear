@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:04.106650'
+  extracted_at: '2025-11-15T12:43:03.005454'
   race_type: result
 race_id: '20190917_01'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 1
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: クロフネ
+  dam: ニフティハート
+  sire_of_sire: French Deputy
+  dam_of_sire: Blue Avenue
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: ニフティニース
+  birth_date: '2016-05-01'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -155,9 +166,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '512'
+    combo: '5'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-5
     payout: 190
@@ -175,9 +186,9 @@ payouts:
     payout: 190
     popularity: 1
   trifecta:
-    combo: 1-52-51-2
+    combo: 1-5
     payout: 100
-    popularity: 123
+    popularity: 1
 corner_positions:
   corner_1: 3,5,1,4,(2,8),7,6,9
   corner_2: 3,5,1,2,4,8,7,6,9

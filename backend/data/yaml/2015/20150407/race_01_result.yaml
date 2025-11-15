@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:16.415184'
+  extracted_at: '2025-11-15T12:32:14.101684'
   race_type: result
 race_id: '20150407_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 5
 - 1
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.1'
   popularity: '3'
+  sire: ダイワメジャー
+  dam: ブラッシングプリンセス
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: Crafty Prospector
+  dam_of_dam: Princess Laika
+  birth_date: '2009-03-02'
+  farm: （有）社台コーポレーション白老ファーム
+  birthplace: 北海道白老郡白老町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -187,9 +198,9 @@ payouts:
     payout: 670
     popularity: 3
   place:
-    combo: '5110'
+    combo: '5'
     payout: 210
-    popularity: 328
+    popularity: 3
   quinella:
     combo: 1-5
     payout: 710
@@ -207,9 +218,9 @@ payouts:
     payout: 1750
     popularity: 6
   trifecta:
-    combo: 1-55-101-10
+    combo: 1-5
     payout: 160
-    popularity: 22812
+    popularity: 2
 corner_positions:
   corner_1: 10,5,7,1,(2,9),(4,3,11),6,8
   corner_2: 10,5,1,7,4,2,9,11,3,6,8

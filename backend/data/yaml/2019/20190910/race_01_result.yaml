@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:03.415398'
+  extracted_at: '2025-11-15T12:42:59.094707'
   race_type: result
 race_id: '20190910_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: フレンチデピュティ
+  dam: ステラプラド
+  sire_of_sire: Deputy Minister
+  dam_of_sire: Mitterand
+  sire_of_dam: ハーツクライ
+  dam_of_dam: ステラマドリッド
+  birth_date: '2016-04-25'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '8106'
+    combo: '8'
     payout: 130
-    popularity: 164
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 950
@@ -191,9 +202,9 @@ payouts:
     payout: 1410
     popularity: 6
   trifecta:
-    combo: 8-106-86-10
+    combo: 8-10
     payout: 410
-    popularity: 6415
+    popularity: 6
 corner_positions:
   corner_1: 3,4,8,(2,10),(1,5,6),9,7
   corner_2: 3,4,8,(2,10)

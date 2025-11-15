@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:23.144655'
+  extracted_at: '2025-11-15T12:32:49.382463'
   race_type: result
 race_id: '20150621_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 2
@@ -23,6 +25,15 @@ result_details:
   margin: ''
   last_3f: '37.3'
   popularity: '3'
+  sire: キングヘイロー
+  dam: デコトウショウ
+  sire_of_sire: ダンシングブレーヴ
+  dam_of_sire: グッバイヘイロー
+  sire_of_dam: サクラバクシンオー
+  dam_of_dam: バージントウショウ
+  birth_date: '2012-04-15'
+  farm: トウショウ産業株式会社トウショウ牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -59,9 +70,9 @@ payouts:
     payout: 530
     popularity: 3
   place:
-    combo: '1236'
+    combo: '1'
     payout: 230
-    popularity: 5237
+    popularity: 5
   quinella:
     combo: 1-2
     payout: 1090
@@ -79,9 +90,9 @@ payouts:
     payout: 2510
     popularity: 11
   trifecta:
-    combo: 1-21-31-62-32-6
+    combo: 1-2
     payout: 260
-    popularity: 671627
+    popularity: 6
 corner_positions:
   corner_1: 2,9,10,3,6,7,(1,4,8),5
   corner_2: 2,9,10,3,6,7,1,4,5,8

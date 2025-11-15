@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:36.387016'
+  extracted_at: '2025-11-15T12:33:50.981346'
   race_type: result
 race_id: '20151117_01'
+track_condition: 重
+weather: 曇
 finish_order:
 - 5
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: サムライハート
+  dam: メジロビクトリア
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: アフリート
+  dam_of_dam: メジロディッシュ
+  birth_date: '2012-03-23'
+  farm: レイクヴィラファーム
+  birthplace: 北海道虻田郡洞爺湖町
 - finish_position: 2
   gate_number: '7'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 220
     popularity: 1
   place:
-    combo: '5103'
+    combo: '5'
     payout: 120
-    popularity: 261
+    popularity: 2
   quinella:
     combo: 5-7
     payout: 1680
@@ -207,9 +218,9 @@ payouts:
     payout: 3840
     popularity: 12
   trifecta:
-    combo: 5-103-53-10
+    combo: 5-10
     payout: 700
-    popularity: 7311
+    popularity: 7
 corner_positions:
   corner_1: (5,9),(4,10),3,2,6,1,7,11,12
   corner_2: 5,9,(3,10),4,2,1,6,(11,7),12

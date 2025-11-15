@@ -1,8 +1,10 @@
 meta:
   source_file: race_11_result.html
-  extracted_at: '2025-11-14T17:17:41.830958'
+  extracted_at: '2025-11-15T12:34:16.113330'
   race_type: result
 race_id: '20160510_11'
+track_condition: 良
+weather: 雨
 finish_order:
 - 10
 - 11
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '7'
+  sire: ゼンノエルシド
+  dam: ニューウインド
+  sire_of_sire: Caerleon
+  dam_of_sire: Embla
+  sire_of_dam: ラストタイクーン
+  dam_of_dam: ナジーバ
+  birth_date: '2009-04-13'
+  farm: カタオカフアーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -171,9 +182,9 @@ payouts:
     payout: 1900
     popularity: 7
   place:
-    combo: '10118'
+    combo: '10'
     payout: 670
-    popularity: 783
+    popularity: 7
   quinella:
     combo: 8-8
     payout: 8470
@@ -191,9 +202,9 @@ payouts:
     payout: 17210
     popularity: 65
   trifecta:
-    combo: 10-118-108-11
+    combo: 10-11
     payout: 4010
-    popularity: 383137
+    popularity: 38
 corner_positions:
   corner_1: 1,5,7,11,6,(4,8),(2,10),3
   corner_2: 1,5,8,7,11,(6,4),2,10,3

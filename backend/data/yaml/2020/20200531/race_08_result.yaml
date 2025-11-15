@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:19:16.404481'
+  extracted_at: '2025-11-15T12:44:06.383675'
   race_type: result
 race_id: '20200531_08'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.7'
   popularity: '2'
+  sire: アグネスデジタル
+  dam: ルスナイサンバ
+  sire_of_sire: Crafty Prospector
+  dam_of_sire: Chancey Squaw
+  sire_of_dam: キングヘイロー
+  dam_of_dam: オオミーアキノ
+  birth_date: '2017-03-22'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 200
     popularity: 2
   place:
-    combo: '5104'
+    combo: '5'
     payout: 100
-    popularity: 128
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 180
@@ -207,9 +218,9 @@ payouts:
     payout: 280
     popularity: 1
   trifecta:
-    combo: 5-104-54-10
+    combo: 5-10
     payout: 120
-    popularity: 1912
+    popularity: 1
 corner_positions:
   corner_1: 5,9,10,(4,8),2,1,7,3,11,6
   corner_2: 5,10,(9,8)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:02.808925'
+  extracted_at: '2025-11-15T12:46:12.106828'
   race_type: result
 race_id: '20220612_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 6
@@ -22,6 +24,15 @@ result_details:
   margin: ''
   last_3f: '39.7'
   popularity: '8'
+  sire: アポロソニック
+  dam: ライジングネクスト
+  sire_of_sire: Big Brown
+  dam_of_sire: Purely Surprized
+  sire_of_dam: マイネルセレクト
+  dam_of_dam: シルバーシャワーズ
+  birth_date: '2018-02-19'
+  farm: スウィングフィールド牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -43,29 +54,29 @@ payouts:
     payout: 5710
     popularity: 8
   place:
-    combo: '769'
+    combo: '7'
     payout: 1220
-    popularity: 835
+    popularity: 8
   quinella:
-    combo: 6-77-8
+    combo: 6-7
     payout: 8990
-    popularity: 1911
+    popularity: 19
   exacta:
-    combo: 6-77-9
+    combo: 6-7
     payout: 4370
-    popularity: 2325
+    popularity: 23
   wide:
-    combo: 7-67-8
-    payout: 4240
-    popularity: 3618
+    combo: 7-6
+    payout: null
+    popularity: 36
   trio:
-    combo: 7-67-9
+    combo: 7-6
     payout: 11140
-    popularity: 4953
+    popularity: 49
   trifecta:
-    combo: 6-77-96-9
+    combo: 6-7
     payout: 1220
-    popularity: 16276
+    popularity: 16
 corner_positions:
   corner_1: 8,9,7,(1,4),(2,6),5,3
   corner_2: (8,9),7,1,4,5,(6,3),2

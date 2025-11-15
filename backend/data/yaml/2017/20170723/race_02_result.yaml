@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:12.337613'
+  extracted_at: '2025-11-15T12:37:24.246083'
   race_type: result
 race_id: '20170723_02'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 5
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '2'
+  sire: ローエングリン
+  dam: ホリデイインミラノ
+  sire_of_sire: Singspiel
+  dam_of_sire: カーリング
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: スーア
+  birth_date: '2014-02-27'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 500
     popularity: 2
   place:
-    combo: '579'
+    combo: '5'
     payout: 110
-    popularity: 213
+    popularity: 2
   quinella:
     combo: 5-7
     payout: 420
@@ -191,9 +202,9 @@ payouts:
     payout: 1870
     popularity: 8
   trifecta:
-    combo: 5-75-97-9
+    combo: 5-7
     payout: 170
-    popularity: 162
+    popularity: 1
 corner_positions:
   corner_1: 7,10,5,9,8,4,2,6,1,3
   corner_2: (7,10),(5,9),4,8

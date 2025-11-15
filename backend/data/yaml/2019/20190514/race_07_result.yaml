@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:18:52.284356'
+  extracted_at: '2025-11-15T12:42:01.579354'
   race_type: result
 race_id: '20190514_07'
+track_condition: 良
+weather: 曇
 finish_order:
 - 3
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.8'
   popularity: '1'
+  sire: リーチザクラウン
+  dam: ニシノキュベレー
+  sire_of_sire: スペシャルウィーク
+  dam_of_sire: クラウンピース
+  sire_of_dam: サクラバクシンオー
+  dam_of_dam: ニューサイエダッティ
+  birth_date: '2015-04-03'
+  farm: 山田牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 260
     popularity: 1
   place:
-    combo: '3810'
+    combo: '3'
     payout: 150
-    popularity: 159
+    popularity: 1
   quinella:
     combo: 3-7
     payout: 2380
@@ -191,9 +202,9 @@ payouts:
     payout: 2430
     popularity: 11
   trifecta:
-    combo: 3-83-108-10
+    combo: 3-8
     payout: 1020
-    popularity: 123137
+    popularity: 12
 corner_positions:
   corner_1: 4,3,2,9,8,1,10,7,5,6
   corner_2: 4,3,(2,9),8,1,7,5,(6,10)

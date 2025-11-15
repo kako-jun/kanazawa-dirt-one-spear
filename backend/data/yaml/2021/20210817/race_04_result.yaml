@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:19:45.773882'
+  extracted_at: '2025-11-15T12:45:34.463481'
   race_type: result
 race_id: '20210817_04'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 9
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.1'
   popularity: '2'
+  sire: トーセンラー
+  dam: サフランカーネギー
+  sire_of_sire: ディープインパクト
+  dam_of_sire: プリンセスオリビア
+  sire_of_dam: カーネギー
+  dam_of_dam: ヨドノサフラン
+  birth_date: '2018-05-06'
+  farm: 林農場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -171,9 +182,9 @@ payouts:
     payout: 290
     popularity: 2
   place:
-    combo: '194'
+    combo: '1'
     payout: 150
-    popularity: 238
+    popularity: 2
   quinella:
     combo: 1-8
     payout: 240
@@ -191,9 +202,9 @@ payouts:
     payout: 660
     popularity: 2
   trifecta:
-    combo: 1-91-44-9
+    combo: 1-9
     payout: 200
-    popularity: 11923
+    popularity: 1
 corner_positions:
   corner_1: 1,5,(2,9),10,(7,4),8,6,3
   corner_2: 1,5,9,2,10,7,4,8,6,3

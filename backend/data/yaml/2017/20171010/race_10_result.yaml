@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:18:20.280781'
+  extracted_at: '2025-11-15T12:38:24.339178'
   race_type: result
 race_id: '20171010_10'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '2'
+  sire: サウスヴィグラス
+  dam: スプライトダンス
+  sire_of_sire: End Sweep
+  dam_of_sire: Darkest Star
+  sire_of_dam: ダンスインザダーク
+  dam_of_dam: タツプユアトウズ
+  birth_date: '2014-04-26'
+  farm: モリナガファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 420
     popularity: 2
   place:
-    combo: '8104'
+    combo: '8'
     payout: 120
-    popularity: 271
+    popularity: 2
   quinella:
     combo: 7-8
     payout: 2150
@@ -207,9 +218,9 @@ payouts:
     payout: 7550
     popularity: 18
   trifecta:
-    combo: 8-104-84-10
+    combo: 8-10
     payout: 620
-    popularity: 1014
+    popularity: 10
 corner_positions:
   corner_1: 8,4,9,10,1,(5,11),2,7,3,6
   corner_2: 8,4,(1,9,10),5,2,11,7,3,6

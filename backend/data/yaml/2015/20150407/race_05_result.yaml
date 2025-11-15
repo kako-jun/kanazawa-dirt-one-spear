@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:16.533855'
+  extracted_at: '2025-11-15T12:32:14.794055'
   race_type: result
 race_id: '20150407_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 2
 - 4
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '1'
+  sire: スズカマンボ
+  dam: イサミステルス
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スプリングマンボ
+  sire_of_dam: トワイニング
+  dam_of_dam: トップデボネア
+  birth_date: '2009-02-25'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -155,9 +166,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '245'
+    combo: '2'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 2-4
     payout: 670
@@ -175,9 +186,9 @@ payouts:
     payout: 1010
     popularity: 3
   trifecta:
-    combo: 2-42-54-5
+    combo: 2-4
     payout: 160
-    popularity: 312
+    popularity: 3
 corner_positions:
   corner_1: 5,2,(1,4),(3,7),9,6,8
   corner_2: 5,(2,4),1,7,3,9,(6,8)

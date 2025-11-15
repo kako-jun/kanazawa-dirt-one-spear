@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:25.074311'
+  extracted_at: '2025-11-15T12:44:47.858286'
   race_type: result
 race_id: '20200830_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '1'
+  sire: ケープブランコ
+  dam: フレンチトースト
+  sire_of_sire: Galileo
+  dam_of_sire: Laurel Delight
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: ペンタルビー
+  birth_date: '2016-03-06'
+  farm: 笠松牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '351'
+    combo: '3'
     payout: 100
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 220
@@ -191,9 +202,9 @@ payouts:
     payout: 250
     popularity: 1
   trifecta:
-    combo: 3-51-31-5
+    combo: 3-5
     payout: 150
-    popularity: 136
+    popularity: 1
 corner_positions:
   corner_1: 2,(3,10),5,4,1,9,7,6,8
   corner_2: (2,10,3),5,1,4,(6,9),7,8

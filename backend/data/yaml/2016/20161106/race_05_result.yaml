@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:59.081497'
+  extracted_at: '2025-11-15T12:36:00.123273'
   race_type: result
 race_id: '20161106_05'
+track_condition: 重
+weather: 曇
 finish_order:
 - 10
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '1'
+  sire: エンパイアメーカー
+  dam: ヤマカツオーキッド
+  sire_of_sire: Unbridled
+  dam_of_sire: Toussaud
+  sire_of_dam: ダンスインザダーク
+  dam_of_dam: ヤマカツスズラン
+  birth_date: '2013-06-19'
+  farm: フジワラフアーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '1058'
+    combo: '10'
     payout: 100
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 100
@@ -191,9 +202,9 @@ payouts:
     payout: 130
     popularity: 1
   trifecta:
-    combo: 5-108-105-8
+    combo: 5-10
     payout: 100
-    popularity: 1108
+    popularity: 1
 corner_positions:
   corner_1: 5,10,9,1,3,6,8,(2,7)
   corner_2: 5,10,9,1,(6,8),3,7,2

@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:20:25.500977'
+  extracted_at: '2025-11-15T12:47:03.176369'
   race_type: result
 race_id: '20230606_10'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '37.5'
   popularity: '1'
+  sire: レーヴミストラル
+  dam: アルデグロリア
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: レーヴドスカー
+  sire_of_dam: アルデバラン２
+  dam_of_dam: イースタンロマン
+  birth_date: '2020-04-07'
+  farm: 元茂牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '5107'
+    combo: '5'
     payout: 130
-    popularity: 315
+    popularity: 3
   quinella:
     combo: 5-8
     payout: 220
@@ -191,9 +202,9 @@ payouts:
     payout: 300
     popularity: 1
   trifecta:
-    combo: 5-105-77-10
+    combo: 5-10
     payout: 120
-    popularity: 178
+    popularity: 1
 corner_positions:
   corner_1: 8,(7,10),(4,5),(1,3),9,(2,6)
   corner_2: 8,7,10,5,(4,3),1,9,2,6

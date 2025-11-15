@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:27.429151'
+  extracted_at: '2025-11-15T12:33:09.075216'
   race_type: result
 race_id: '20150811_06'
+track_condition: 良
+weather: 曇
 finish_order:
 - 9
 - 11
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '1'
+  sire: キングカメハメハ
+  dam: ローランモンジュー
+  sire_of_sire: Kingmambo
+  dam_of_sire: マンファス
+  sire_of_dam: Montjeu
+  dam_of_dam: Object Of Vertu
+  birth_date: '2010-05-11'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -203,9 +214,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '91110'
+    combo: '9'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 330
@@ -223,9 +234,9 @@ payouts:
     payout: 560
     popularity: 2
   trifecta:
-    combo: 9-119-1010-11
+    combo: 9-11
     payout: 190
-    popularity: 215
+    popularity: 2
 corner_positions:
   corner_1: (9,10),5,11,12,1,7,8,2,3,6,4
   corner_2: 9,10,5,11,12,1,(7,8),2,3,(4,6)

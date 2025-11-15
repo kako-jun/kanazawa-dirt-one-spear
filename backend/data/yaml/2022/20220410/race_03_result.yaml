@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:19:56.832252'
+  extracted_at: '2025-11-15T12:45:59.111742'
   race_type: result
 race_id: '20220410_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 2
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '1'
+  sire: リオンディーズ
+  dam: ユキノマイ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: シーザリオ
+  sire_of_dam: Rock of Gibraltar
+  dam_of_dam: エスカニア
+  birth_date: '2018-02-14'
+  farm: 下河辺牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -155,9 +166,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '321'
+    combo: '3'
     payout: 100
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 460
@@ -175,9 +186,9 @@ payouts:
     payout: 460
     popularity: 3
   trifecta:
-    combo: 2-31-31-2
+    combo: 2-3
     payout: 230
-    popularity: 3515
+    popularity: 3
 corner_positions:
   corner_1: 1,3,(2,7),8,9,4,(5,6)
   corner_2: 1,3,2,9,7,4,5,(6,8)

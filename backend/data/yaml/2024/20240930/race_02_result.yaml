@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:59.757876'
+  extracted_at: '2025-11-15T12:48:20.069827'
   race_type: result
 race_id: '20240930_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 8
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '37.7'
   popularity: '2'
+  sire: ゴールドアクター
+  dam: ハチマンダイボサツ
+  sire_of_sire: スクリーンヒーロー
+  dam_of_sire: ヘイロンシン
+  sire_of_dam: マーベラスサンデー
+  dam_of_dam: アジヤタイリン
+  birth_date: '2021-03-12'
+  farm: 北勝ファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -187,9 +198,9 @@ payouts:
     payout: 320
     popularity: 2
   place:
-    combo: '5811'
+    combo: '5'
     payout: 140
-    popularity: 146
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 1360
@@ -207,9 +218,9 @@ payouts:
     payout: 2640
     popularity: 11
   trifecta:
-    combo: 5-85-118-11
+    combo: 5-8
     payout: 490
-    popularity: 5816
+    popularity: 5
 corner_positions:
   corner_1: 5,8,(2,10),11,(7,9),6,3,1
   corner_2: 5,8,(2,10),9,11,7,3,6,1,4

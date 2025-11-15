@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:13.990733'
+  extracted_at: '2025-11-15T12:43:53.726739'
   race_type: result
 race_id: '20200505_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: カンパニー
+  dam: バプティスタ
+  sire_of_sire: ミラクルアドマイヤ
+  dam_of_sire: ブリリアントベリー
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: ビーバップ
+  birth_date: '2014-05-05'
+  farm: ノーザンファーム
+  birthplace: 北海道勇払郡安平町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '7105'
+    combo: '7'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 400
@@ -191,9 +202,9 @@ payouts:
     payout: 500
     popularity: 3
   trifecta:
-    combo: 7-105-75-10
+    combo: 7-10
     payout: 180
-    popularity: 315
+    popularity: 3
 corner_positions:
   corner_1: 5,7,10,8,1,9,4,(2,6),3
   corner_2: 5,7,10,8,1,6,(2,9),4,3

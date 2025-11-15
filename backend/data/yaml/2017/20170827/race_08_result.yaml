@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:18:15.799069'
+  extracted_at: '2025-11-15T12:37:46.575450'
   race_type: result
 race_id: '20170827_08'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '41.5'
   popularity: '1'
+  sire: エイシンアポロン
+  dam: セイカドミノ
+  sire_of_sire: Giant's Causeway
+  dam_of_sire: Silk And Scarlet
+  sire_of_dam: パラダイスクリーク
+  dam_of_dam: サンデーズシス
+  birth_date: '2014-05-08'
+  farm: シンユウフアーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -155,9 +166,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '7109'
+    combo: '7'
     payout: 110
-    popularity: 176
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 1400
@@ -175,9 +186,9 @@ payouts:
     payout: 6490
     popularity: 16
   trifecta:
-    combo: 7-107-99-10
+    combo: 7-10
     payout: 920
-    popularity: 101124
+    popularity: 10
 corner_positions:
   corner_1: 7,1,4,9,10,(3,6),8,2
   corner_2: 7,1,(4,9)

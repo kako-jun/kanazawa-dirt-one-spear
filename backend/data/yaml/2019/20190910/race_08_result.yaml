@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:19:03.621110'
+  extracted_at: '2025-11-15T12:43:00.667442'
   race_type: result
 race_id: '20190910_08'
+track_condition: 良
+weather: 晴
 finish_order:
 - 9
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '1'
+  sire: クロフネ
+  dam: ミラクルベリー
+  sire_of_sire: French Deputy
+  dam_of_sire: Blue Avenue
+  sire_of_dam: ファルブラヴ
+  dam_of_dam: ミラクルワウ
+  birth_date: '2016-03-12'
+  farm: 前谷　武志
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '9103'
+    combo: '9'
     payout: 110
-    popularity: 135
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 580
@@ -191,9 +202,9 @@ payouts:
     payout: 470
     popularity: 2
   trifecta:
-    combo: 9-103-93-10
+    combo: 9-10
     payout: 260
-    popularity: 2516
+    popularity: 2
 corner_positions:
   corner_1: 2,(3,9),(8,10),(1,5),7,6,4
   corner_2: 2,9,3,10,8,1,(5,6,7)

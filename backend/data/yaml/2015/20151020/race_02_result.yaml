@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:33.939403'
+  extracted_at: '2025-11-15T12:33:39.324227'
   race_type: result
 race_id: '20151020_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 4
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: スターリングローズ
+  dam: ゴーゴースズカ
+  sire_of_sire: アフリート
+  dam_of_sire: コマーズ
+  sire_of_dam: フォーティナイナー
+  dam_of_dam: ダンシングスズカ
+  birth_date: '2013-03-14'
+  farm: 新生ファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -155,9 +166,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '146'
+    combo: '1'
     payout: 110
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-4
     payout: 330
@@ -175,9 +186,9 @@ payouts:
     payout: 480
     popularity: 2
   trifecta:
-    combo: 1-41-64-6
+    combo: 1-4
     payout: 150
-    popularity: 127
+    popularity: 1
 corner_positions:
   corner_1: 1,4,3,6,(2,7),9,8,5
   corner_2: 1,4,3,6,2,(7,9),8,5

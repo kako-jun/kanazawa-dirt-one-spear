@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:18:47.750663'
+  extracted_at: '2025-11-15T12:41:37.182222'
   race_type: result
 race_id: '20190401_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 5
 - 7
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '41.4'
   popularity: '1'
+  sire: ヴァーミリアン
+  dam: ジャムトウショウ
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: スカーレットレディ
+  sire_of_dam: デザートキング
+  dam_of_dam: ダーリントウショウ
+  birth_date: '2016-01-30'
+  farm: つつみ牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '6'
   horse_number: 7
@@ -203,9 +214,9 @@ payouts:
     payout: 220
     popularity: 1
   place:
-    combo: '5710'
+    combo: '5'
     payout: 120
-    popularity: 174
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 270
@@ -223,9 +234,9 @@ payouts:
     payout: 2020
     popularity: 6
   trifecta:
-    combo: 5-75-107-10
+    combo: 5-7
     payout: 530
-    popularity: 5326
+    popularity: 5
 corner_positions:
   corner_1: 5,7,10,(2,8),(3,11),12,6,(1,9),4
   corner_2: '7'

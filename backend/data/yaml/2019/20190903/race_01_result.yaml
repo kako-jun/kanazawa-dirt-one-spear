@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:02.778675'
+  extracted_at: '2025-11-15T12:42:55.950438'
   race_type: result
 race_id: '20190903_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 5
 - 3
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '1'
+  sire: シンボリクリスエス
+  dam: アドマイヤエバート
+  sire_of_sire: Kris S.
+  dam_of_sire: Tee Kay
+  sire_of_dam: ディープインパクト
+  dam_of_dam: ラスティックベル
+  birth_date: '2016-03-23'
+  farm: 日高大洋牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -187,9 +198,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '5312'
+    combo: '5'
     payout: 100
-    popularity: 134
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 500
@@ -207,9 +218,9 @@ payouts:
     payout: 590
     popularity: 2
   trifecta:
-    combo: 3-55-123-12
+    combo: 3-5
     payout: 220
-    popularity: 2512
+    popularity: 2
 corner_positions:
   corner_1: 12,3,4,5,9,10,2,(6,8,11),1
   corner_2: 12,(3,4),(5,9,10),11,8,2,6,1

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:38.205246'
+  extracted_at: '2025-11-15T12:47:30.899488'
   race_type: result
 race_id: '20231022_01'
+track_condition: 重
+weather: 晴
 finish_order:
 - 2
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '37.4'
   popularity: '4'
+  sire: ジャスタウェイ
+  dam: ラヴザットマスタング
+  sire_of_sire: ハーツクライ
+  dam_of_sire: シビル
+  sire_of_dam: Candy Ride
+  dam_of_dam: Proposed
+  birth_date: '2020-03-22'
+  farm: アラキフアーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 1470
     popularity: 4
   place:
-    combo: '2114'
+    combo: '2'
     payout: 240
-    popularity: 514
+    popularity: 5
   quinella:
     combo: 2-8
     payout: 720
@@ -207,9 +218,9 @@ payouts:
     payout: 3620
     popularity: 12
   trifecta:
-    combo: 2-112-44-11
+    combo: 2-11
     payout: 330
-    popularity: 4123
+    popularity: 4
 corner_positions:
   corner_1: 6,11,10,(2,9),3,7,4,(1,5),8
   corner_2: 6,11,10,2,9,(3,7),4,1,5,8

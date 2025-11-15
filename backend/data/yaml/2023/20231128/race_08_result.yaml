@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:20:42.186351'
+  extracted_at: '2025-11-15T12:47:39.995324'
   race_type: result
 race_id: '20231128_08'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 7
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.2'
   popularity: '1'
+  sire: ワールドエース
+  dam: ミサトサウス
+  sire_of_sire: ディープインパクト
+  dam_of_sire: マンデラ
+  sire_of_dam: サウスヴィグラス
+  dam_of_dam: ミサトユニオン
+  birth_date: '2019-04-14'
+  farm: 北光牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -155,9 +166,9 @@ payouts:
     payout: 270
     popularity: 1
   place:
-    combo: '175'
+    combo: '1'
     payout: 190
-    popularity: 354
+    popularity: 3
   quinella:
     combo: 1-7
     payout: 1740
@@ -175,9 +186,9 @@ payouts:
     payout: 2120
     popularity: 9
   trifecta:
-    combo: 1-71-55-7
+    combo: 1-7
     payout: 400
-    popularity: 5413
+    popularity: 5
 corner_positions:
   corner_1: 5,7,2,9,3,1,4,8,6
   corner_2: (5,7),9,2,1,3,4

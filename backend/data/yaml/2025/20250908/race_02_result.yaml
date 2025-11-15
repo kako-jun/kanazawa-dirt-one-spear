@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:21:19.322080'
+  extracted_at: '2025-11-15T12:49:05.099593'
   race_type: result
 race_id: '20250908_02'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 2
 - 1
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '37.3'
   popularity: '1'
+  sire: シルポート
+  dam: ハクサンサマー
+  sire_of_sire: ホワイトマズル
+  dam_of_sire: スペランツァ
+  sire_of_dam: サマーバード
+  dam_of_dam: メンブランツァ
+  birth_date: '2022-04-11'
+  farm: 鮫川　啓一
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '213'
+    combo: '2'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-2
     payout: 240
@@ -191,9 +202,9 @@ payouts:
     payout: 250
     popularity: 1
   trifecta:
-    combo: 1-22-31-3
+    combo: 1-2
     payout: 130
-    popularity: 124
+    popularity: 1
 corner_positions:
   corner_1: 2,3,5,10,1,11,7,(9,4),6
   corner_2: 2,3,5,1,10,11,9,7,4,6

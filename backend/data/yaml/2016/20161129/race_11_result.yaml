@@ -1,8 +1,10 @@
 meta:
   source_file: race_11_result.html
-  extracted_at: '2025-11-14T17:18:01.367363'
+  extracted_at: '2025-11-15T12:36:12.427321'
   race_type: result
 race_id: '20161129_11'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '1'
+  sire: キングカメハメハ
+  dam: ブリリアントノバ
+  sire_of_sire: Kingmambo
+  dam_of_sire: マンファス
+  sire_of_dam: ジェネラス
+  dam_of_dam: ブリリアントミスト
+  birth_date: '2008-03-21'
+  farm: 青藍牧場
+  birthplace: 北海道登別市
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '156'
+    combo: '1'
     payout: 110
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 1-5
     payout: 300
@@ -191,9 +202,9 @@ payouts:
     payout: 330
     popularity: 1
   trifecta:
-    combo: 1-51-65-6
+    combo: 1-5
     payout: 160
-    popularity: 135
+    popularity: 1
 corner_positions:
   corner_1: (1,3),5,9,6,4,8,7,2,10
   corner_2: (1,3),5,6,(4,9),8,7,2,10

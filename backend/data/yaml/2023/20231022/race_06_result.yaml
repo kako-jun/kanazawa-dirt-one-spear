@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:20:38.391380'
+  extracted_at: '2025-11-15T12:47:31.329165'
   race_type: result
 race_id: '20231022_06'
+track_condition: 重
+weather: 晴
 finish_order:
 - 5
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: コパノリッキー
+  dam: ワイズアンサー
+  sire_of_sire: ゴールドアリュール
+  dam_of_sire: コパノニキータ
+  sire_of_dam: サウスヴィグラス
+  dam_of_dam: ニューウインド
+  birth_date: '2020-03-07'
+  farm: カタオカフアーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '5610'
+    combo: '5'
     payout: 120
-    popularity: 136
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 250
@@ -191,9 +202,9 @@ payouts:
     payout: 410
     popularity: 2
   trifecta:
-    combo: 5-65-106-10
+    combo: 5-6
     payout: 180
-    popularity: 156
+    popularity: 1
 corner_positions:
   corner_1: 2,5,1,9,(3,10),4,7,8,6
   corner_2: 2,5,1,9,10,3,6,7,(4,8)

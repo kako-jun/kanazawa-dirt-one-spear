@@ -1,8 +1,10 @@
 meta:
   source_file: race_11_result.html
-  extracted_at: '2025-11-14T17:17:42.859418'
+  extracted_at: '2025-11-15T12:34:21.667780'
   race_type: result
 race_id: '20160522_11'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '1'
+  sire: オンファイア
+  dam: アポロカリビアン
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ウインドインハーヘア
+  sire_of_dam: ブライアンズタイム
+  dam_of_dam: エルフィッシュ
+  birth_date: '2013-04-24'
+  farm: 株式会社カネツ牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '5103'
+    combo: '5'
     payout: 140
-    popularity: 287
+    popularity: 2
   quinella:
     combo: 5-8
     payout: 790
@@ -207,9 +218,9 @@ payouts:
     payout: 4060
     popularity: 9
   trifecta:
-    combo: 5-103-53-10
+    combo: 5-10
     payout: 2170
-    popularity: 16843
+    popularity: 16
 corner_positions:
   corner_1: (5,9,7),8,4,2,3,11,10,6,1
   corner_2: 5,9,7,8,4,2,(3,10),11,6,1

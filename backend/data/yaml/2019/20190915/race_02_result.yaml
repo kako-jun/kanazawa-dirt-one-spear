@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:03.838384'
+  extracted_at: '2025-11-15T12:43:01.806604'
   race_type: result
 race_id: '20190915_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 9
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: サムライハート
+  dam: サバクノバラ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: ワイルドフラワー
+  birth_date: '2013-04-19'
+  farm: ファニーヒルファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '9102'
+    combo: '9'
     payout: 100
-    popularity: 154
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 410
@@ -191,9 +202,9 @@ payouts:
     payout: 530
     popularity: 3
   trifecta:
-    combo: 9-102-92-10
+    combo: 9-10
     payout: 280
-    popularity: 3519
+    popularity: 3
 corner_positions:
   corner_1: 9,10,5,7,1,8,(2,4),(3,6)
   corner_2: 9,10,5,(7,8),1,2,3,6,4

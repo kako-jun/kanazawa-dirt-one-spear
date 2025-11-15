@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:46.067994'
+  extracted_at: '2025-11-15T12:45:35.202150'
   race_type: result
 race_id: '20210822_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 1
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '1'
+  sire: ネオユニヴァース
+  dam: ファーナリー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ポインテッドパス
+  sire_of_dam: Danehill
+  dam_of_dam: Fern
+  birth_date: '2014-03-17'
+  farm: 杵臼牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '179'
+    combo: '1'
     payout: 100
-    popularity: 146
+    popularity: 1
   quinella:
     combo: 1-7
     payout: 300
@@ -191,9 +202,9 @@ payouts:
     payout: 690
     popularity: 3
   trifecta:
-    combo: 1-71-97-9
+    combo: 1-7
     payout: 260
-    popularity: 3416
+    popularity: 3
 corner_positions:
   corner_1: 8,(1,9),3,7,2,6,10,5,4
   corner_2: 1,8,9,3,7,2,6,10,5,4

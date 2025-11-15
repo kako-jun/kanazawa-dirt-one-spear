@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:18.266961'
+  extracted_at: '2025-11-15T12:46:47.056868'
   race_type: result
 race_id: '20221127_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '1'
+  sire: ダイワメジャー
+  dam: メジロカトリーヌ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: メジロライアン
+  dam_of_dam: メジロダーリング
+  birth_date: '2019-02-22'
+  farm: レイクヴィラファーム
+  birthplace: 北海道虻田郡洞爺湖町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 310
     popularity: 1
   place:
-    combo: '7108'
+    combo: '7'
     payout: 130
-    popularity: 185
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 2010
@@ -191,9 +202,9 @@ payouts:
     payout: 12230
     popularity: 37
   trifecta:
-    combo: 7-107-88-10
+    combo: 7-10
     payout: 4810
-    popularity: 25624
+    popularity: 25
 corner_positions:
   corner_1: 3,4,6,1,10,5,7,8,9,2
   corner_2: 3,4,(1,6)

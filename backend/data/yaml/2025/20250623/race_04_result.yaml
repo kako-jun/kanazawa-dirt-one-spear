@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:21:14.192869'
+  extracted_at: '2025-11-15T12:48:53.300843'
   race_type: result
 race_id: '20250623_04'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 10
 - 1
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.1'
   popularity: '3'
+  sire: トゥザグローリー
+  dam: ブリッサ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: ブラックホーク
+  dam_of_dam: ツクバノーブル
+  birth_date: '2018-04-18'
+  farm: ミルファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -171,9 +182,9 @@ payouts:
     payout: 510
     popularity: 3
   place:
-    combo: '1012'
+    combo: '10'
     payout: 210
-    popularity: 362
+    popularity: 3
   quinella:
     combo: 1-8
     payout: 3340
@@ -191,9 +202,9 @@ payouts:
     payout: 9880
     popularity: 24
   trifecta:
-    combo: 1-102-101-2
+    combo: 1-10
     payout: 1830
-    popularity: 2157
+    popularity: 21
 corner_positions:
   corner_1: 1,9,10,2,5,4,3,7,6,8
   corner_2: 1,9,10,2,5,4,(3,7),6,8

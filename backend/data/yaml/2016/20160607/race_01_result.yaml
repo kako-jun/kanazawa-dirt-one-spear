@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:44.326185'
+  extracted_at: '2025-11-15T12:34:28.953711'
   race_type: result
 race_id: '20160607_01'
+track_condition: 良
+weather: 曇
 finish_order:
 - 7
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.8'
   popularity: '1'
+  sire: ヴァーミリアン
+  dam: チアズスワロー
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: スカーレットレディ
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: チアズダンサー
+  birth_date: '2013-02-03'
+  farm: 今　牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '7610'
+    combo: '7'
     payout: 120
-    popularity: 147
+    popularity: 1
   quinella:
     combo: 6-7
     payout: 1810
@@ -191,9 +202,9 @@ payouts:
     payout: 1960
     popularity: 7
   trifecta:
-    combo: 6-77-106-10
+    combo: 6-7
     payout: 520
-    popularity: 51520
+    popularity: 5
 corner_positions:
   corner_1: (3,4),5,7,1,9,6,8,10,2
   corner_2: (3,4),7,5,1,9,6,8,2,10

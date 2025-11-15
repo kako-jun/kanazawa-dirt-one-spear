@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:24.265147'
+  extracted_at: '2025-11-15T12:47:00.487538'
   race_type: result
 race_id: '20230528_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 6
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: ヤマカツエース
+  dam: レーヴマイハート
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: ヤマカツマリリン
+  sire_of_dam: ハービンジャー
+  dam_of_dam: レディベローナ
+  birth_date: '2020-02-18'
+  farm: 静内酒井牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '652'
+    combo: '6'
     payout: 100
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 310
@@ -175,9 +186,9 @@ payouts:
     payout: 480
     popularity: 1
   trifecta:
-    combo: 5-62-62-5
+    combo: 5-6
     payout: 210
-    popularity: 2612
+    popularity: 2
 corner_positions:
   corner_1: 3,4,2,(1,5),7,6,9,8
   corner_2: 3,4,5,2,1,7,6,9,8

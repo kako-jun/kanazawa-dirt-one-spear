@@ -1,8 +1,10 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-14T17:19:18.870263'
+  extracted_at: '2025-11-15T12:44:18.772888'
   race_type: result
 race_id: '20200623_09'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.1'
   popularity: '3'
+  sire: ヘニーヒューズ
+  dam: シャルロッカ
+  sire_of_sire: Hennessy
+  dam_of_sire: Meadow Flyer
+  sire_of_dam: タニノギムレット
+  dam_of_dam: ズブロッカ
+  birth_date: '2016-04-14'
+  farm: 松栄牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 510
     popularity: 3
   place:
-    combo: '5106'
+    combo: '5'
     payout: 150
-    popularity: 342
+    popularity: 3
   quinella:
     combo: 5-8
     payout: 1290
@@ -191,9 +202,9 @@ payouts:
     payout: 1790
     popularity: 7
   trifecta:
-    combo: 5-105-66-10
+    combo: 5-10
     payout: 340
-    popularity: 438
+    popularity: 4
 corner_positions:
   corner_1: 5,10,3,1,2,(6,9),7
   corner_2: (2,5),10,3,1,6,9,7,4

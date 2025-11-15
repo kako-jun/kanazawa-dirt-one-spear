@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:40.007230'
+  extracted_at: '2025-11-15T12:47:35.086579'
   race_type: result
 race_id: '20231107_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '1'
+  sire: ミッキーアイル
+  dam: アイアムカミノマゴ
+  sire_of_sire: ディープインパクト
+  dam_of_sire: スターアイル
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: アイアムザウィナー
+  birth_date: '2020-03-16'
+  farm: 坂東牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '1056'
+    combo: '10'
     payout: 100
-    popularity: 241
+    popularity: 2
   quinella:
     combo: 5-8
     payout: 170
@@ -175,9 +186,9 @@ payouts:
     payout: 260
     popularity: 1
   trifecta:
-    combo: 5-106-105-6
+    combo: 5-10
     payout: 120
-    popularity: 136
+    popularity: 1
 corner_positions:
   corner_1: 10,5,6,3,(4,9),1,7,2
   corner_2: '10'

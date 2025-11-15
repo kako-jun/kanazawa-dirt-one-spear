@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:21:20.878139'
+  extracted_at: '2025-11-15T12:49:08.918217'
   race_type: result
 race_id: '20250923_06'
+track_condition: 良
+weather: 曇
 finish_order:
 - 10
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '1'
+  sire: ゴールドシップ
+  dam: マイネソルシエール
+  sire_of_sire: ステイゴールド
+  dam_of_sire: ポイントフラッグ
+  sire_of_dam: ロージズインメイ
+  dam_of_dam: マイネソーサリス
+  birth_date: '2022-05-06'
+  farm: ビッグレッドファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 190
     popularity: 1
   place:
-    combo: '10111'
+    combo: '10'
     payout: 130
-    popularity: 146
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 640
@@ -207,9 +218,9 @@ payouts:
     payout: 730
     popularity: 2
   trifecta:
-    combo: 10-111-101-11
+    combo: 10-11
     payout: 270
-    popularity: 21116
+    popularity: 2
 corner_positions:
   corner_1: 3,10,11
   corner_2: 3,10,11

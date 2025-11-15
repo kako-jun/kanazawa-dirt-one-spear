@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:44.090967'
+  extracted_at: '2025-11-15T12:34:27.907227'
   race_type: result
 race_id: '20160605_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.9'
   popularity: '1'
+  sire: ボストンハーバー
+  dam: メジロノーブル
+  sire_of_sire: Capote
+  dam_of_sire: Harbor Springs
+  sire_of_dam: ジヤツジアンジエルーチ
+  dam_of_dam: メジロユニオン
+  birth_date: '2005-03-31'
+  farm: へいはた牧場
+  birthplace: 北海道静内郡静内町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 230
     popularity: 1
   place:
-    combo: '1106'
+    combo: '1'
     payout: 150
-    popularity: 164
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 870
@@ -191,9 +202,9 @@ payouts:
     payout: 3620
     popularity: 11
   trifecta:
-    combo: 1-101-66-10
+    combo: 1-10
     payout: 400
-    popularity: 3426
+    popularity: 3
 corner_positions:
   corner_1: 1,9,10,5,4,(3,8),(6,7,2)
   corner_2: 1,9,10,(3,4),8,5,6,7,2

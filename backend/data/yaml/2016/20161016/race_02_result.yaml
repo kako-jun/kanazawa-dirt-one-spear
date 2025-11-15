@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:56.943658'
+  extracted_at: '2025-11-15T12:35:41.220297'
   race_type: result
 race_id: '20161016_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.5'
   popularity: '1'
+  sire: アポロキングダム
+  dam: リバルドソナタ
+  sire_of_sire: Lemon Drop Kid
+  dam_of_sire: Bella Gatto
+  sire_of_dam: クロフネ
+  dam_of_dam: メイデンズブラッシュ
+  birth_date: '2014-04-30'
+  farm: 真壁　信一
+  birthplace: 北海道勇払郡むかわ町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '5102'
+    combo: '5'
     payout: 100
-    popularity: 154
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 180
@@ -191,9 +202,9 @@ payouts:
     payout: 1170
     popularity: 4
   trifecta:
-    combo: 5-102-52-10
+    combo: 5-10
     payout: 570
-    popularity: 6233
+    popularity: 6
 corner_positions:
   corner_1: 2,4,5,9,1,(6,10),7,8,3
   corner_2: 2,4,5,1,9,6,10,7,8,3

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:36.090152'
+  extracted_at: '2025-11-15T12:33:49.563763'
   race_type: result
 race_id: '20151115_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 3
 - 2
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '39.1'
   popularity: '1'
+  sire: トワイニング
+  dam: クリノニケ
+  sire_of_sire: Forty Niner
+  dam_of_sire: Courtly Dee
+  sire_of_dam: ネオユニヴァース
+  dam_of_dam: セヴンゴールドストーンズ
+  birth_date: '2012-06-02'
+  farm: 柏木　一則
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -203,9 +214,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '3212'
+    combo: '3'
     payout: 110
-    popularity: 146
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 970
@@ -223,9 +234,9 @@ payouts:
     payout: 950
     popularity: 5
   trifecta:
-    combo: 2-33-122-12
+    combo: 2-3
     payout: 360
-    popularity: 4917
+    popularity: 4
 corner_positions:
   corner_1: 3,12,2,5,9,6,4,11,1,8,7,10
   corner_2: 3,12,2,5,(9,6),4,1,11,8,(10,7)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:18:00.272712'
+  extracted_at: '2025-11-15T12:36:06.484252'
   race_type: result
 race_id: '20161120_04'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 8
 - 9
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.1'
   popularity: '1'
+  sire: ブラックタイド
+  dam: オシャレナカオリ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ウインドインハーヘア
+  sire_of_dam: ピルサドスキー
+  dam_of_dam: マックスメロディ
+  birth_date: '2013-03-27'
+  farm: 正和山本牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '7'
   horse_number: 9
@@ -187,9 +198,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '8911'
+    combo: '8'
     payout: 100
-    popularity: 127
+    popularity: 1
   quinella:
     combo: 7-7
     payout: 130
@@ -207,9 +218,9 @@ payouts:
     payout: 170
     popularity: 1
   trifecta:
-    combo: 8-98-119-11
+    combo: 8-9
     payout: 100
-    popularity: 168
+    popularity: 1
 corner_positions:
   corner_1: 4,9,5,8,(1,3,6,7),10,11,2
   corner_2: (4,9,8),5,(1,3),6,(11,7),10

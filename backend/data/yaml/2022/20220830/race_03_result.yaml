@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:20:09.984156'
+  extracted_at: '2025-11-15T12:46:27.780170'
   race_type: result
 race_id: '20220830_03'
+track_condition: 良
+weather: 曇
 finish_order:
 - 4
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.2'
   popularity: '1'
+  sire: ワールドエース
+  dam: マッドアバウトユー
+  sire_of_sire: ディープインパクト
+  dam_of_sire: マンデラ
+  sire_of_dam: アルデバラン２
+  dam_of_dam: エイシンメッチェン
+  birth_date: '2019-03-29'
+  farm: オカモトファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '451'
+    combo: '4'
     payout: 100
-    popularity: 134
+    popularity: 1
   quinella:
     combo: 4-5
     payout: 440
@@ -175,9 +186,9 @@ payouts:
     payout: 500
     popularity: 2
   trifecta:
-    combo: 4-51-41-5
+    combo: 4-5
     payout: 240
-    popularity: 3410
+    popularity: 3
 corner_positions:
   corner_1: 1,4,5,2,7,8,9,6,3
   corner_2: 1,4,5,2,7,8,(6,9)

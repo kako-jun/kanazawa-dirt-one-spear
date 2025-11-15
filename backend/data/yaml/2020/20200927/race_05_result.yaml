@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:27.739064'
+  extracted_at: '2025-11-15T12:44:53.993212'
   race_type: result
 race_id: '20200927_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '1'
+  sire: ローズキングダム
+  dam: フレノカトリーヌ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: ローズバド
+  sire_of_dam: クロフネ
+  dam_of_dam: ムーンオブアラバマ
+  birth_date: '2017-04-15'
+  farm: 協栄組合
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '146'
+    combo: '1'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-4
     payout: 310
@@ -191,9 +202,9 @@ payouts:
     payout: 320
     popularity: 1
   trifecta:
-    combo: 1-41-64-6
+    combo: 1-4
     payout: 130
-    popularity: 123
+    popularity: 1
 corner_positions:
   corner_1: 6,1,4,(2,8),7,3,10,5,9
   corner_2: '6'

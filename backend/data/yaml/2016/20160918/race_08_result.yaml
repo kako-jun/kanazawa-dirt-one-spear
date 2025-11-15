@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:17:54.349711'
+  extracted_at: '2025-11-15T12:35:19.461044'
   race_type: result
 race_id: '20160918_08'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 10
 - 9
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '4'
+  sire: ジャイアントレッカー
+  dam: ローランデイラミ
+  sire_of_sire: Giant's Causeway
+  dam_of_sire: Homewrecker
+  sire_of_dam: Daylami
+  dam_of_dam: Sarissa
+  birth_date: '2010-05-14'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 9
@@ -187,9 +198,9 @@ payouts:
     payout: 880
     popularity: 4
   place:
-    combo: '10911'
+    combo: '10'
     payout: 210
-    popularity: 514
+    popularity: 5
   quinella:
     combo: 7-8
     payout: 620
@@ -207,9 +218,9 @@ payouts:
     payout: 2280
     popularity: 8
   trifecta:
-    combo: 9-1010-119-11
+    combo: 9-10
     payout: 470
-    popularity: 653
+    popularity: 6
 corner_positions:
   corner_1: 11,8,7,(1,9),2,10,(4,6),(3,5)
   corner_2: 11,7,(8,9),(1,10),2,4,6,3,5

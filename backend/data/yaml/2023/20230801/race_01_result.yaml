@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:30.527034'
+  extracted_at: '2025-11-15T12:47:14.249656'
   race_type: result
 race_id: '20230801_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 6
 - 1
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: ルーラーシップ
+  dam: サトノサンシャイン
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: ステイゴールド
+  dam_of_dam: ノーブルステラ
+  birth_date: '2020-02-28'
+  farm: ディアレストクラブ
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -155,9 +166,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '619'
+    combo: '6'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-6
     payout: 170
@@ -175,9 +186,9 @@ payouts:
     payout: 200
     popularity: 1
   trifecta:
-    combo: 1-66-91-9
+    combo: 1-6
     payout: 110
-    popularity: 124
+    popularity: 1
 corner_positions:
   corner_1: 4,6,9,1,7,3,5,8,2
   corner_2: 4,6,9,1,7,3,5,2,8

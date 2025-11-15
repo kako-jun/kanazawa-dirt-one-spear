@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:57.621188'
+  extracted_at: '2025-11-15T12:46:00.844452'
   race_type: result
 race_id: '20220419_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 9
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '4'
+  sire: トゥザグローリー
+  dam: ムサ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: ラブリープリンセス
+  birth_date: '2019-02-28'
+  farm: ミルファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 9
@@ -187,9 +198,9 @@ payouts:
     payout: 1090
     popularity: 4
   place:
-    combo: '1092'
+    combo: '10'
     payout: 170
-    popularity: 415
+    popularity: 4
   quinella:
     combo: 7-8
     payout: 290
@@ -207,9 +218,9 @@ payouts:
     payout: 2840
     popularity: 10
   trifecta:
-    combo: 9-102-102-9
+    combo: 9-10
     payout: 240
-    popularity: 3147
+    popularity: 3
 corner_positions:
   corner_1: 10,9,(4,11),(2,6),7,(3,8),5,1
   corner_2: 10,9,(4,11),2,6,(3,7),1,8,5

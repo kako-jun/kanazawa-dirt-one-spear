@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:17:33.013349'
+  extracted_at: '2025-11-15T12:33:35.301186'
   race_type: result
 race_id: '20151011_04'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: デュランダル
+  dam: ミヤギバスター
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: サワヤカプリンセス
+  sire_of_dam: Jade Robbery
+  dam_of_dam: マザーシプトン
+  birth_date: '2012-04-14'
+  farm: 田上　稔
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '179'
+    combo: '1'
     payout: 100
-    popularity: 136
+    popularity: 1
   quinella:
     combo: 1-7
     payout: 430
@@ -191,9 +202,9 @@ payouts:
     payout: 500
     popularity: 2
   trifecta:
-    combo: 1-71-97-9
+    combo: 1-7
     payout: 410
-    popularity: 2714
+    popularity: 2
 corner_positions:
   corner_1: 1,7,9,(2,3),(5,6),10,4,8
   corner_2: 1,7,9,2,3,(5,6),10,(4,8)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:11.280115'
+  extracted_at: '2025-11-15T12:46:30.630375'
   race_type: result
 race_id: '20220913_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 5
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '5'
+  sire: ミッキーアイル
+  dam: カツラドライバー
+  sire_of_sire: ディープインパクト
+  dam_of_sire: スターアイル
+  sire_of_dam: ニホンピロウイナー
+  dam_of_dam: ノーザンマイア
+  birth_date: '2019-04-08'
+  farm: 松田牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -139,9 +150,9 @@ payouts:
     payout: 1710
     popularity: 5
   place:
-    combo: '357'
+    combo: '3'
     payout: 130
-    popularity: 321
+    popularity: 3
   quinella:
     combo: 3-5
     payout: 2250
@@ -159,9 +170,9 @@ payouts:
     payout: 5890
     popularity: 14
   trifecta:
-    combo: 3-53-75-7
+    combo: 3-5
     payout: 270
-    popularity: 741
+    popularity: 7
 corner_positions:
   corner_1: 3,4,7,(5,9),8,2,1
   corner_2: 3,4,7,5,9,8,2,1

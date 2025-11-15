@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:30.903332'
+  extracted_at: '2025-11-15T12:45:01.529226'
   race_type: result
 race_id: '20201101_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '3'
+  sire: ジャスタウェイ
+  dam: タムロブライト
+  sire_of_sire: ハーツクライ
+  dam_of_sire: シビル
+  sire_of_dam: シルバーチャーム
+  dam_of_dam: タムロチェリー
+  birth_date: '2017-03-30'
+  farm: 諏訪牧場
+  birthplace: 青森県上北郡七戸町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 330
     popularity: 3
   place:
-    combo: '546'
+    combo: '5'
     payout: 190
-    popularity: 375
+    popularity: 3
   quinella:
     combo: 4-5
     payout: 2820
@@ -191,9 +202,9 @@ payouts:
     payout: 4930
     popularity: 14
   trifecta:
-    combo: 4-55-64-6
+    combo: 4-5
     payout: 720
-    popularity: 8417
+    popularity: 8
 corner_positions:
   corner_1: 4,(2,5),6,(3,8),9,7,1,10
   corner_2: 4,2,5,3,6,(1,7,8,9)

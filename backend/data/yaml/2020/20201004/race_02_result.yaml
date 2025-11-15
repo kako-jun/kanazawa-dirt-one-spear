@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:28.344510'
+  extracted_at: '2025-11-15T12:44:55.417892'
   race_type: result
 race_id: '20201004_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 3
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.8'
   popularity: '3'
+  sire: ロードカナロア
+  dam: ファイアマーシャル
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: レディブラッサム
+  sire_of_dam: ディープインパクト
+  dam_of_dam: ブッシュファイヤー
+  birth_date: '2017-03-06'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 570
     popularity: 3
   place:
-    combo: '365'
+    combo: '3'
     payout: 120
-    popularity: 312
+    popularity: 3
   quinella:
     combo: 3-6
     payout: 900
@@ -191,9 +202,9 @@ payouts:
     payout: 1750
     popularity: 7
   trifecta:
-    combo: 3-63-55-6
+    combo: 3-6
     payout: 280
-    popularity: 521
+    popularity: 5
 corner_positions:
   corner_1: 3,6,(4,5),(7,10),9,2,8,1
   corner_2: 3,4,6,(5,7,10),9,(2,8)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:18:15.288737'
+  extracted_at: '2025-11-15T12:37:42.639294'
   race_type: result
 race_id: '20170822_01'
+track_condition: 良
+weather: 曇
 finish_order:
 - 2
 - 3
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.3'
   popularity: '1'
+  sire: フィガロ
+  dam: ベルガマスク
+  sire_of_sire: Future Storm
+  dam_of_sire: Karamea
+  sire_of_dam: ネオユニヴァース
+  dam_of_dam: ノースドール
+  birth_date: '2015-04-16'
+  farm: サンシャイン牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '2310'
+    combo: '2'
     payout: 130
-    popularity: 158
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 2070
@@ -191,9 +202,9 @@ payouts:
     payout: 1950
     popularity: 6
   trifecta:
-    combo: 2-32-103-10
+    combo: 2-3
     payout: 600
-    popularity: 71732
+    popularity: 7
 corner_positions:
   corner_1: 2,4,9,3,8,10,1,(6,7),5
   corner_2: 2,4,9,3,8,10,1,7,5,6

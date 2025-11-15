@@ -1,8 +1,10 @@
 meta:
   source_file: race_11_result.html
-  extracted_at: '2025-11-14T17:19:12.294389'
+  extracted_at: '2025-11-15T12:43:45.055745'
   race_type: result
 race_id: '20200414_11'
+track_condition: 重
+weather: 晴
 finish_order:
 - 5
 - 3
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '1'
+  sire: ダイワメジャー
+  dam: シークレットジプシー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: Sea of Secrets
+  dam_of_dam: Miss Utada
+  birth_date: '2014-04-05'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '5310'
+    combo: '5'
     payout: 110
-    popularity: 129
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 520
@@ -191,9 +202,9 @@ payouts:
     payout: 650
     popularity: 1
   trifecta:
-    combo: 3-55-103-10
+    combo: 3-5
     payout: 230
-    popularity: 1833
+    popularity: 1
 corner_positions:
   corner_1: 4,5,3,2,6,(1,10),(8,9),7
   corner_2: 4,5,3,2,6,10,1,9,8,7

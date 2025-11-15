@@ -1,8 +1,10 @@
 meta:
   source_file: race_12_result.html
-  extracted_at: '2025-11-14T17:18:01.697224'
+  extracted_at: '2025-11-15T12:36:14.265123'
   race_type: result
 race_id: '20170402_12'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 2
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '39.6'
   popularity: '9'
+  sire: エンパイアメーカー
+  dam: クライフォザトップ
+  sire_of_sire: Unbridled
+  dam_of_sire: Toussaud
+  sire_of_dam: アドマイヤベガ
+  dam_of_dam: シンデレラロード
+  birth_date: '2013-04-18'
+  farm: 富田牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -203,9 +214,9 @@ payouts:
     payout: 5050
     popularity: 9
   place:
-    combo: '1212'
+    combo: '1'
     payout: 1020
-    popularity: 951
+    popularity: 9
   quinella:
     combo: 1-2
     payout: 7950
@@ -223,9 +234,9 @@ payouts:
     payout: 36150
     popularity: 66
   trifecta:
-    combo: 1-21-122-12
+    combo: 1-2
     payout: 4330
-    popularity: 32238
+    popularity: 32
 corner_positions:
   corner_1: 7,8,12,2,11,4,1,9,10,(6,3)
   corner_2: 7,8,12,2,(1,4),11,9,10,6,3

@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:19:50.544384'
+  extracted_at: '2025-11-15T12:45:45.286481'
   race_type: result
 race_id: '20211005_08'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 2
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: ヴィクトワールピサ
+  dam: ピサノプリヴェ
+  sire_of_sire: ネオユニヴァース
+  dam_of_sire: ホワイトウォーターアフェア
+  sire_of_dam: Hold That Tiger
+  dam_of_dam: ギネビアケイ
+  birth_date: '2018-04-26'
+  farm: 下河辺牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '7210'
+    combo: '7'
     payout: 120
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 2-7
     payout: 430
@@ -191,9 +202,9 @@ payouts:
     payout: 400
     popularity: 2
   trifecta:
-    combo: 2-77-102-10
+    combo: 2-7
     payout: 300
-    popularity: 3822
+    popularity: 3
 corner_positions:
   corner_1: 10,8,2,9,7,(1,5),6,(3,4)
   corner_2: 10,8,2,9,7,1,6,(3,4),5

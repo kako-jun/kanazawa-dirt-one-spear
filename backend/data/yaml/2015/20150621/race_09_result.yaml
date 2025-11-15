@@ -1,8 +1,10 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-14T17:17:23.366572'
+  extracted_at: '2025-11-15T12:32:50.381640'
   race_type: result
 race_id: '20150621_09'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 5
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '3'
+  sire: タイムパラドックス
+  dam: ローモンドガール
+  sire_of_sire: ブライアンズタイム
+  dam_of_sire: ジョリーザザ
+  sire_of_dam: Montbrook
+  dam_of_dam: Lomond Aid
+  birth_date: '2010-02-11'
+  farm: モトスファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -203,9 +214,9 @@ payouts:
     payout: 620
     popularity: 3
   place:
-    combo: '156'
+    combo: '1'
     payout: 200
-    popularity: 536
+    popularity: 5
   quinella:
     combo: 1-5
     payout: 1180
@@ -223,9 +234,9 @@ payouts:
     payout: 3820
     popularity: 20
   trifecta:
-    combo: 1-51-65-6
+    combo: 1-5
     payout: 510
-    popularity: 51315
+    popularity: 5
 corner_positions:
   corner_1: 11,9,3,8,(1,2,12),5,7,6,(4,10)
   corner_2: 11,9,3,8,1,2,12,6,7,5,10,4

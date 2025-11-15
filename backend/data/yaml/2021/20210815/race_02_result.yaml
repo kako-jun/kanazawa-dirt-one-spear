@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:45.398661'
+  extracted_at: '2025-11-15T12:45:33.463281'
   race_type: result
 race_id: '20210815_02'
+track_condition: 重
+weather: 曇
 finish_order:
 - 6
 - 1
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '37.7'
   popularity: '1'
+  sire: ジャスタウェイ
+  dam: ブリリアントライフ
+  sire_of_sire: ハーツクライ
+  dam_of_sire: シビル
+  sire_of_dam: グラスワンダー
+  dam_of_dam: シマノビューティー
+  birth_date: '2018-03-11'
+  farm: 杵臼牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -171,9 +182,9 @@ payouts:
     payout: 210
     popularity: 1
   place:
-    combo: '6110'
+    combo: '6'
     payout: 120
-    popularity: 241
+    popularity: 2
   quinella:
     combo: 1-6
     payout: 700
@@ -191,9 +202,9 @@ payouts:
     payout: 1430
     popularity: 7
   trifecta:
-    combo: 1-66-101-10
+    combo: 1-6
     payout: 310
-    popularity: 429
+    popularity: 4
 corner_positions:
   corner_1: (3,4),6,7,(8,9),1,(5,10),2
   corner_2: 4,6,3,(1,7),8,9,(5,10),2

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:35.040358'
+  extracted_at: '2025-11-15T12:47:23.824861'
   race_type: result
 race_id: '20230919_01'
+track_condition: 重
+weather: 晴
 finish_order:
 - 3
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '2'
+  sire: ドレフォン
+  dam: アグネスマジカル
+  sire_of_sire: Gio Ponti
+  dam_of_sire: Eltimaas
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: ブレッシング
+  birth_date: '2020-04-11'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 370
     popularity: 2
   place:
-    combo: '357'
+    combo: '3'
     payout: 140
-    popularity: 351
+    popularity: 3
   quinella:
     combo: 3-5
     payout: 1130
@@ -175,9 +186,9 @@ payouts:
     payout: 1670
     popularity: 9
   trifecta:
-    combo: 3-53-75-7
+    combo: 3-5
     payout: 310
-    popularity: 521
+    popularity: 5
 corner_positions:
   corner_1: 1,6,7,3,2,5,8
   corner_2: (1,6),3,2,(5,7),8

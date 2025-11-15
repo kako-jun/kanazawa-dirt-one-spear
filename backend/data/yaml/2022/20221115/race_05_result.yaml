@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:17.480786'
+  extracted_at: '2025-11-15T12:46:45.302140'
   race_type: result
 race_id: '20221115_05'
+track_condition: 稍重
+weather: 晴
 finish_order:
 - 2
 - 5
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '1'
+  sire: シルバーステート
+  dam: サクラクローバー
+  sire_of_sire: ディープインパクト
+  dam_of_sire: シルヴァースカヤ
+  sire_of_dam: サウスヴィグラス
+  dam_of_dam: サクラプリファー
+  birth_date: '2019-04-03'
+  farm: 谷岡牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -187,9 +198,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '256'
+    combo: '2'
     payout: 110
-    popularity: 1610
+    popularity: 1
   quinella:
     combo: 2-5
     payout: 1040
@@ -207,9 +218,9 @@ payouts:
     payout: 1870
     popularity: 5
   trifecta:
-    combo: 2-52-65-6
+    combo: 2-5
     payout: 490
-    popularity: 52749
+    popularity: 5
 corner_positions:
   corner_1: 2,3,10,(5,8,9),6,1,(4,7),11
   corner_2: 2,3,5,10,(8,9),6,1,4,7,11

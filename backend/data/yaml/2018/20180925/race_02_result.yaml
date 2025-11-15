@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:41.514531'
+  extracted_at: '2025-11-15T12:41:02.805000'
   race_type: result
 race_id: '20180925_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 8
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: ドリームジャーニー
+  dam: エイシンパンサー
+  sire_of_sire: ステイゴールド
+  dam_of_sire: オリエンタルアート
+  sire_of_dam: コロナドズクエスト
+  dam_of_dam: ナナコフレスコ
+  birth_date: '2015-03-02'
+  farm: 高野牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '8410'
+    combo: '8'
     payout: 100
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 4-7
     payout: 180
@@ -191,9 +202,9 @@ payouts:
     payout: 250
     popularity: 1
   trifecta:
-    combo: 4-88-104-10
+    combo: 4-8
     payout: 180
-    popularity: 2712
+    popularity: 2
 corner_positions:
   corner_1: 10,8,1,4,6,(2,3),9,7,5
   corner_2: 10,8,1,4,6,3,2,9,7,5

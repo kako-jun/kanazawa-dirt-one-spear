@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:19:20.438024'
+  extracted_at: '2025-11-15T12:44:26.422263'
   race_type: result
 race_id: '20200712_03'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 7
 - 3
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.3'
   popularity: '1'
+  sire: ケープブランコ
+  dam: ピアノフィニッシュ
+  sire_of_sire: Galileo
+  dam_of_sire: Laurel Delight
+  sire_of_dam: デュランダル
+  dam_of_dam: グリッターズ
+  birth_date: '2017-05-09'
+  farm: 富塚ファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -155,9 +166,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '735'
+    combo: '7'
     payout: 100
-    popularity: 134
+    popularity: 1
   quinella:
     combo: 3-7
     payout: 160
@@ -175,9 +186,9 @@ payouts:
     payout: 200
     popularity: 1
   trifecta:
-    combo: 3-75-73-5
+    combo: 3-7
     payout: 130
-    popularity: 148
+    popularity: 1
 corner_positions:
   corner_1: 9,6,(8,7),(2,3,5),4,1
   corner_2: 9,(2,6),7,3,(5,1),4,8

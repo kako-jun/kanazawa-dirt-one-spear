@@ -1,8 +1,10 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-14T17:18:43.088233'
+  extracted_at: '2025-11-15T12:41:11.295153'
   race_type: result
 race_id: '20181009_09'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '1'
+  sire: プリサイスエンド
+  dam: サクラエイブル
+  sire_of_sire: End Sweep
+  dam_of_sire: Precisely
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: サクラフューチャー
+  birth_date: '2015-04-06'
+  farm: 中川　欽一
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '3109'
+    combo: '3'
     payout: 110
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 3-8
     payout: 420
@@ -207,9 +218,9 @@ payouts:
     payout: 680
     popularity: 3
   trifecta:
-    combo: 3-103-99-10
+    combo: 3-10
     payout: 330
-    popularity: 3412
+    popularity: 3
 corner_positions:
   corner_1: 10,11,3,9,7,(1,5),8,2,6,4
   corner_2: 10,11,7,3,(9,5),8,1,2,6,4

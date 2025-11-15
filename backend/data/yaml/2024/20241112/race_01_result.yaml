@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:21:04.694284'
+  extracted_at: '2025-11-15T12:48:31.547965'
   race_type: result
 race_id: '20241112_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 6
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '2'
+  sire: ゴールドシップ
+  dam: ドリームエンプレス
+  sire_of_sire: ステイゴールド
+  dam_of_sire: ポイントフラッグ
+  sire_of_dam: Bernstein
+  dam_of_dam: Chinese Empress
+  birth_date: '2021-05-24'
+  farm: ビッグレッドファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -155,9 +166,9 @@ payouts:
     payout: 500
     popularity: 2
   place:
-    combo: '361'
+    combo: '3'
     payout: 130
-    popularity: 237
+    popularity: 2
   quinella:
     combo: 3-6
     payout: 870
@@ -175,9 +186,9 @@ payouts:
     payout: 1550
     popularity: 6
   trifecta:
-    combo: 3-61-31-6
+    combo: 3-6
     payout: 300
-    popularity: 31816
+    popularity: 3
 corner_positions:
   corner_1: (1,2),6,8,4,7,3,9,5
   corner_2: (1,2),6,8,4,7,3,9,5

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:19:23.540679'
+  extracted_at: '2025-11-15T12:44:42.097680'
   race_type: result
 race_id: '20200811_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: ノボジャック
+  dam: ノボプレシャス
+  sire_of_sire: French Deputy
+  dam_of_sire: Flight of Angels
+  sire_of_dam: ゴールドアリュール
+  dam_of_dam: ノボサンシャイン
+  birth_date: '2017-03-01'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 260
     popularity: 1
   place:
-    combo: '158'
+    combo: '1'
     payout: 120
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 1-5
     payout: 430
@@ -175,9 +186,9 @@ payouts:
     payout: 600
     popularity: 1
   trifecta:
-    combo: 1-51-85-8
+    combo: 1-5
     payout: 200
-    popularity: 187
+    popularity: 1
 corner_positions:
   corner_1: 1,4,5,8,3,(9,6),2,7
   corner_2: 1,4,5

@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:11.064480'
+  extracted_at: '2025-11-15T12:46:30.111114'
   race_type: result
 race_id: '20220911_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '1'
+  sire: ルーラーシップ
+  dam: ランデブー
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: ネオユニヴァース
+  dam_of_dam: モーニングタイド
+  birth_date: '2019-02-15'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '146'
+    combo: '1'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 1-4
     payout: 590
@@ -191,9 +202,9 @@ payouts:
     payout: 800
     popularity: 3
   trifecta:
-    combo: 1-41-64-6
+    combo: 1-4
     payout: 250
-    popularity: 319
+    popularity: 3
 corner_positions:
   corner_1: (1,5),6,4,9,10,8,7,3,2
   corner_2: 1,5

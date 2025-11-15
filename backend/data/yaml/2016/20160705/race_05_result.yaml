@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:47.221268'
+  extracted_at: '2025-11-15T12:34:42.568260'
   race_type: result
 race_id: '20160705_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '4'
+  sire: ディープスカイ
+  dam: ドリームワークス
+  sire_of_sire: アグネスタキオン
+  dam_of_sire: アビ
+  sire_of_dam: ドリームウェル
+  dam_of_dam: ワーキングガール
+  birth_date: '2013-04-09'
+  farm: 杵臼牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 630
     popularity: 4
   place:
-    combo: '158'
+    combo: '1'
     payout: 180
-    popularity: 318
+    popularity: 3
   quinella:
     combo: 1-5
     payout: 650
@@ -191,9 +202,9 @@ payouts:
     payout: 1460
     popularity: 5
   trifecta:
-    combo: 1-51-85-8
+    combo: 1-5
     payout: 270
-    popularity: 22319
+    popularity: 2
 corner_positions:
   corner_1: 10,3,7,5,1,9,(2,6),4,8
   corner_2: 10,3,(7,5),1,9,2,6,4,8

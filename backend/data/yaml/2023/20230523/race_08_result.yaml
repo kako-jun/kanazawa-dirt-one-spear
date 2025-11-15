@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:20:24.094583'
+  extracted_at: '2025-11-15T12:47:00.104804'
   race_type: result
 race_id: '20230523_08'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: キングカメハメハ
+  dam: ハイリリー
+  sire_of_sire: Kingmambo
+  dam_of_sire: マンファス
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: テイクミーハイヤー
+  birth_date: '2017-03-27'
+  farm: 追分ファーム
+  birthplace: 北海道勇払郡安平町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '2610'
+    combo: '2'
     payout: 100
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 2-6
     payout: 130
@@ -191,9 +202,9 @@ payouts:
     payout: 330
     popularity: 1
   trifecta:
-    combo: 2-62-106-10
+    combo: 2-6
     payout: 120
-    popularity: 154
+    popularity: 1
 corner_positions:
   corner_1: 3,5,10,(1,6),2,9,(7,8),4
   corner_2: 3,5,10,(1,6),2,9,(4,7,8)

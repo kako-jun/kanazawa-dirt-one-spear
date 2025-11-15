@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:17:25.435222'
+  extracted_at: '2025-11-15T12:32:59.383940'
   race_type: result
 race_id: '20150714_10'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 6
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '3'
+  sire: ダイワメジャー
+  dam: フィーユドノワール
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: クロフネ
+  dam_of_dam: レイサッシュ
+  birth_date: '2009-01-27'
+  farm: 桑田牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 6
@@ -187,9 +198,9 @@ payouts:
     payout: 660
     popularity: 3
   place:
-    combo: '8610'
+    combo: '8'
     payout: 240
-    popularity: 325
+    popularity: 3
   quinella:
     combo: 5-6
     payout: 720
@@ -207,9 +218,9 @@ payouts:
     payout: 3160
     popularity: 10
   trifecta:
-    combo: 6-88-106-10
+    combo: 6-8
     payout: 370
-    popularity: 4138
+    popularity: 4
 corner_positions:
   corner_1: 8,10,12,(5,9),11,4,2,6,3,1
   corner_2: 8,10,12,(5,4),9,11,2,6,3,1

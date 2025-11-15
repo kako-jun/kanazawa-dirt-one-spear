@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:18:46.476735'
+  extracted_at: '2025-11-15T12:41:30.623431'
   race_type: result
 race_id: '20181118_03'
+track_condition: 不良
+weather: 晴
 finish_order:
 - 8
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.3'
   popularity: '6'
+  sire: スターリングローズ
+  dam: サクセスプラン
+  sire_of_sire: アフリート
+  dam_of_sire: コマーズ
+  sire_of_dam: バブルガムフェロー
+  dam_of_dam: サンタママ
+  birth_date: '2016-04-01'
+  farm: 大典牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 1010
     popularity: 6
   place:
-    combo: '8102'
+    combo: '8'
     payout: 240
-    popularity: 532
+    popularity: 5
   quinella:
     combo: 7-8
     payout: 2190
@@ -207,9 +218,9 @@ payouts:
     payout: 3010
     popularity: 13
   trifecta:
-    combo: 8-102-82-10
+    combo: 8-10
     payout: 730
-    popularity: 1285
+    popularity: 12
 corner_positions:
   corner_1: 8,1,5,2,(3,4),11,(10,6),7,9
   corner_2: 8,1,2,5,3,6,4,10,11,7,9

@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:41.545552'
+  extracted_at: '2025-11-15T12:34:14.466251'
   race_type: result
 race_id: '20160510_01'
+track_condition: 良
+weather: 曇
 finish_order:
 - 10
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.3'
   popularity: '1'
+  sire: パイロ
+  dam: ニューヘヴン
+  sire_of_sire: Pulpit
+  dam_of_sire: Wild Vision
+  sire_of_dam: Southern Halo
+  dam_of_dam: Nazarena
+  birth_date: '2013-05-17'
+  farm: グランド牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '1084'
+    combo: '10'
     payout: 110
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 370
@@ -191,9 +202,9 @@ payouts:
     payout: 390
     popularity: 2
   trifecta:
-    combo: 8-104-104-8
+    combo: 8-10
     payout: 250
-    popularity: 3518
+    popularity: 3
 corner_positions:
   corner_1: 1,10,(3,9),5,2,6,4,8,7
   corner_2: 1,10,9,3,(2,5),4,6,8,7

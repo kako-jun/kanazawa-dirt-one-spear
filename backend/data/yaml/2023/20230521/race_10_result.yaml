@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:20:23.790881'
+  extracted_at: '2025-11-15T12:46:59.521018'
   race_type: result
 race_id: '20230521_10'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 9
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.1'
   popularity: '3'
+  sire: タイムパラドックス
+  dam: カリスマブラック
+  sire_of_sire: ブライアンズタイム
+  dam_of_sire: ジョリーザザ
+  sire_of_dam: ブラックタキシード
+  dam_of_dam: シュガーベイビーズ
+  birth_date: '2015-03-06'
+  farm: 白井牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -171,9 +182,9 @@ payouts:
     payout: 1050
     popularity: 3
   place:
-    combo: '1910'
+    combo: '1'
     payout: 140
-    popularity: 214
+    popularity: 2
   quinella:
     combo: 1-8
     payout: 330
@@ -191,9 +202,9 @@ payouts:
     payout: 1320
     popularity: 4
   trifecta:
-    combo: 1-91-109-10
+    combo: 1-9
     payout: 190
-    popularity: 1103
+    popularity: 1
 corner_positions:
   corner_1: 10,9,2,4,(3,5),8,1,(6,7)
   corner_2: 10,9,2,4,3,8,1,5,6,7

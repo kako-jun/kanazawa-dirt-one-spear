@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:53.896790'
+  extracted_at: '2025-11-15T12:48:06.716606'
   race_type: result
 race_id: '20240730_01'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.6'
   popularity: '2'
+  sire: リオンディーズ
+  dam: モンテドーター
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: シーザリオ
+  sire_of_dam: ブライアンズタイム
+  dam_of_dam: カディザデー
+  birth_date: '2018-04-02'
+  farm: 石郷岡　五月
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 350
     popularity: 2
   place:
-    combo: '175'
+    combo: '1'
     payout: 130
-    popularity: 231
+    popularity: 2
   quinella:
     combo: 1-7
     payout: 1240
@@ -191,9 +202,9 @@ payouts:
     payout: 2950
     popularity: 9
   trifecta:
-    combo: 1-71-55-7
+    combo: 1-7
     payout: 540
-    popularity: 724
+    popularity: 7
 corner_positions:
   corner_1: 5,6,7,1,9,4,8,2,10,3
   corner_2: 5,6,7,1,(4,9)

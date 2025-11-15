@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:18:54.535008'
+  extracted_at: '2025-11-15T12:42:12.670060'
   race_type: result
 race_id: '20190609_06'
+track_condition: 重
+weather: 曇
 finish_order:
 - 5
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.2'
   popularity: '1'
+  sire: ホワイトマズル
+  dam: シンプルザベスト
+  sire_of_sire: Dancing Brave
+  dam_of_sire: Fair of the Furze
+  sire_of_dam: Thunder Gulch
+  dam_of_dam: Larida
+  birth_date: '2012-03-28'
+  farm: 坂東牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '5610'
+    combo: '5'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 340
@@ -191,9 +202,9 @@ payouts:
     payout: 360
     popularity: 1
   trifecta:
-    combo: 5-65-106-10
+    combo: 5-6
     payout: 150
-    popularity: 135
+    popularity: 1
 corner_positions:
   corner_1: 10,5,8,6,9,3,4,1,2,7
   corner_2: 10,5,(6,8)

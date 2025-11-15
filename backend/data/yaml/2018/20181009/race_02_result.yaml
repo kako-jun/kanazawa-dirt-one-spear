@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:42.887776'
+  extracted_at: '2025-11-15T12:41:10.221085'
   race_type: result
 race_id: '20181009_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 2
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.8'
   popularity: '1'
+  sire: トーセンホマレボシ
+  dam: カルナヴァレ
+  sire_of_sire: ディープインパクト
+  dam_of_sire: エヴリウィスパー
+  sire_of_dam: ローエングリン
+  dam_of_dam: プットオンジュエル
+  birth_date: '2015-03-11'
+  farm: 岡田牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '129'
+    combo: '1'
     payout: 100
-    popularity: 142
+    popularity: 1
   quinella:
     combo: 1-2
     payout: 490
@@ -191,9 +202,9 @@ payouts:
     payout: 780
     popularity: 3
   trifecta:
-    combo: 1-21-92-9
+    combo: 1-2
     payout: 120
-    popularity: 213
+    popularity: 2
 corner_positions:
   corner_1: 1,9,8,6,(2,5),3,7,4,10
   corner_2: 1,9,8,6,5,2,(3,7),4,10

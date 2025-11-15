@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:46.529102'
+  extracted_at: '2025-11-15T12:34:39.322026'
   race_type: result
 race_id: '20160628_06'
+track_condition: 重
+weather: 曇
 finish_order:
 - 4
 - 6
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.5'
   popularity: '5'
+  sire: トワイニング
+  dam: プリティプリンセス
+  sire_of_sire: Forty Niner
+  dam_of_sire: Courtly Dee
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: サワヤカプリンセス
+  birth_date: '2011-04-06'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -187,9 +198,9 @@ payouts:
     payout: 1250
     popularity: 5
   place:
-    combo: '4610'
+    combo: '4'
     payout: 320
-    popularity: 549
+    popularity: 5
   quinella:
     combo: 4-6
     payout: 1280
@@ -207,9 +218,9 @@ payouts:
     payout: 5910
     popularity: 22
   trifecta:
-    combo: 4-64-106-10
+    combo: 4-6
     payout: 920
-    popularity: 134031
+    popularity: 13
 corner_positions:
   corner_1: 2,3,(1,10),7,4,(11,8),6,(9,5)
   corner_2: 2,3,10,1,4,7,8,11,6,9,5

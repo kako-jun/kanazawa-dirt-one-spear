@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:10.582114'
+  extracted_at: '2025-11-15T12:46:29.157497'
   race_type: result
 race_id: '20220906_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 1
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: アドマイヤムーン
+  dam: パサパ
+  sire_of_sire: エンドスウィープ
+  dam_of_sire: マイケイティーズ
+  sire_of_dam: キングカメハメハ
+  dam_of_dam: スイートマイハート
+  birth_date: '2019-03-27'
+  farm: チャンピオンズファーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '1018'
+    combo: '10'
     payout: 100
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 210
@@ -191,9 +202,9 @@ payouts:
     payout: 360
     popularity: 1
   trifecta:
-    combo: 1-108-101-8
+    combo: 1-10
     payout: 140
-    popularity: 158
+    popularity: 1
 corner_positions:
   corner_1: (2,6),(8,10),(4,9),7,5,1
   corner_2: 2,6,8,10,4,9,(1,5),7

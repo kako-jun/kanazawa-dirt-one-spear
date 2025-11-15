@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:55.180981'
+  extracted_at: '2025-11-15T12:35:26.829984'
   race_type: result
 race_id: '20160927_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 12
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '6'
+  sire: フィガロ
+  dam: グリンタ
+  sire_of_sire: Future Storm
+  dam_of_sire: Karamea
+  sire_of_dam: アラジ
+  dam_of_dam: シャンソニエール
+  birth_date: '2013-03-31'
+  farm: サンシャイン牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -187,9 +198,9 @@ payouts:
     payout: 3780
     popularity: 6
   place:
-    combo: '5123'
+    combo: '5'
     payout: 350
-    popularity: 6101
+    popularity: 6
   quinella:
     combo: 5-8
     payout: 19230
@@ -207,9 +218,9 @@ payouts:
     payout: 489800
     popularity: 82
   trifecta:
-    combo: 5-123-53-12
+    combo: 5-12
     payout: 20230
-    popularity: 36517
+    popularity: 36
 corner_positions:
   corner_1: 10,12,(5,8),7,3,11,4,9,1,2
   corner_2: 10,12,(5,8),(7,3),11,4,9,(1,2)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:36.531060'
+  extracted_at: '2025-11-15T12:33:51.799838'
   race_type: result
 race_id: '20151117_06'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 8
 - 1
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '3'
+  sire: ステイゴールド
+  dam: レイドフラワー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ゴールデンサッシュ
+  sire_of_dam: コマンダーインチーフ
+  dam_of_dam: グロリエラ
+  birth_date: '2012-04-12'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -187,9 +198,9 @@ payouts:
     payout: 290
     popularity: 3
   place:
-    combo: '8111'
+    combo: '8'
     payout: 130
-    popularity: 372
+    popularity: 3
   quinella:
     combo: 1-7
     payout: 7760
@@ -207,9 +218,9 @@ payouts:
     payout: 8430
     popularity: 23
   trifecta:
-    combo: 1-88-111-11
+    combo: 1-8
     payout: 1490
-    popularity: 15316
+    popularity: 15
 corner_positions:
   corner_1: 8,10,11,3,4,1,5,7,(9,6),2
   corner_2: 8,10,11,3,4,1,5,(9,7),6,2

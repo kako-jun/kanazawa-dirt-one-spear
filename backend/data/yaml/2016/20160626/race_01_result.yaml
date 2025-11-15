@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:46.043492'
+  extracted_at: '2025-11-15T12:34:36.891193'
   race_type: result
 race_id: '20160626_01'
+track_condition: 不良
+weather: 晴
 finish_order:
 - 2
 - 4
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '42.1'
   popularity: '5'
+  sire: チーフベアハート
+  dam: トーアミッシェル
+  sire_of_sire: Chief's Crown
+  dam_of_sire: Amelia Bearhart
+  sire_of_dam: フジキセキ
+  dam_of_dam: ショウナンハイネ
+  birth_date: '2013-02-12'
+  farm: トーア牧場
+  birthplace: 北海道虻田郡豊浦町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -155,9 +166,9 @@ payouts:
     payout: 850
     popularity: 5
   place:
-    combo: '249'
+    combo: '2'
     payout: 100
-    popularity: 175
+    popularity: 1
   quinella:
     combo: 2-4
     payout: 2410
@@ -175,9 +186,9 @@ payouts:
     payout: 4620
     popularity: 18
   trifecta:
-    combo: 2-42-94-9
+    combo: 2-4
     payout: 990
-    popularity: 131514
+    popularity: 13
 corner_positions:
   corner_1: 1,2,4,9,5,8,6,(3,7)
   corner_2: 1,2,4,9,8,5,6,7,3

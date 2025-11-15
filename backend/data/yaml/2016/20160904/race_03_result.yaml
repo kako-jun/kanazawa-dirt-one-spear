@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:52.784773'
+  extracted_at: '2025-11-15T12:35:10.923213'
   race_type: result
 race_id: '20160904_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 5
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '2'
+  sire: ソングオブウインド
+  dam: モルフェグラン
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: メモリアルサマー
+  sire_of_dam: ニューイングランド
+  dam_of_dam: ショウハイワイン
+  birth_date: '2013-02-23'
+  farm: 坂本　智広
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -203,9 +214,9 @@ payouts:
     payout: 240
     popularity: 2
   place:
-    combo: '1056'
+    combo: '10'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 140
@@ -223,9 +234,9 @@ payouts:
     payout: 310
     popularity: 2
   trifecta:
-    combo: 5-106-105-6
+    combo: 5-10
     payout: 100
-    popularity: 154
+    popularity: 1
 corner_positions:
   corner_1: 8,10,(3,2,5),7,(1,4),6,9,11,12
   corner_2: 8,10,5,2,(3,4),7,6,1,11,9,12

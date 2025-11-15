@@ -1,8 +1,10 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-14T17:19:09.158336'
+  extracted_at: '2025-11-15T12:43:28.456729'
   race_type: result
 race_id: '20191110_09'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 10
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '41.0'
   popularity: '4'
+  sire: エスポワールシチー
+  dam: スノードロップ
+  sire_of_sire: ゴールドアリュール
+  dam_of_sire: エミネントシチー
+  sire_of_dam: クロフネ
+  dam_of_dam: ソーラートウショウ
+  birth_date: '2015-03-11'
+  farm: 大狩部牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -155,9 +166,9 @@ payouts:
     payout: 1000
     popularity: 4
   place:
-    combo: '2105'
+    combo: '2'
     payout: 370
-    popularity: 519
+    popularity: 5
   quinella:
     combo: 2-8
     payout: 2480
@@ -175,9 +186,9 @@ payouts:
     payout: 7710
     popularity: 21
   trifecta:
-    combo: 2-102-55-10
+    combo: 2-10
     payout: 810
-    popularity: 91816
+    popularity: 9
 corner_positions:
   corner_1: 1,(2,10),4,(3,8,7),9,5
   corner_2: 1,2,10,(3,4,7),5,8,9

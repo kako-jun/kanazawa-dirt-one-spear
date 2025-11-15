@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:18:17.315017'
+  extracted_at: '2025-11-15T12:37:56.931520'
   race_type: result
 race_id: '20170912_01'
+track_condition: 重
+weather: 雨
 finish_order:
 - 8
 - 9
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.6'
   popularity: '1'
+  sire: キングヘイロー
+  dam: ミヤマリンドウ
+  sire_of_sire: ダンシングブレーヴ
+  dam_of_sire: グッバイヘイロー
+  sire_of_dam: ニューイングランド
+  dam_of_dam: ホクショウマリー
+  birth_date: '2014-04-06'
+  farm: 北勝ファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -155,9 +166,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '894'
+    combo: '8'
     payout: 100
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 260
@@ -175,9 +186,9 @@ payouts:
     payout: 340
     popularity: 1
   trifecta:
-    combo: 8-94-84-9
+    combo: 8-9
     payout: 170
-    popularity: 2614
+    popularity: 2
 corner_positions:
   corner_1: 10,8,(2,5),9,3,6,(1,7),4
   corner_2: 8,5,(2,9),3,6,1,(10,4),7

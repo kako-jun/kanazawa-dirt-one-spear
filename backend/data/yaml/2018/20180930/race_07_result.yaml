@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:18:42.001095'
+  extracted_at: '2025-11-15T12:41:05.480478'
   race_type: result
 race_id: '20180930_07'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 4
 - 5
@@ -27,6 +29,15 @@ result_details:
   margin: ''
   last_3f: '37.8'
   popularity: '1'
+  sire: スズカマンボ
+  dam: ドリームシフト
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スプリングマンボ
+  sire_of_dam: コマンダーインチーフ
+  dam_of_dam: オールアバウトスタイル
+  birth_date: '2015-05-05'
+  farm: 豊郷牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -123,9 +134,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '4510'
+    combo: '4'
     payout: 130
-    popularity: 168
+    popularity: 1
   quinella:
     combo: 4-5
     payout: 3960
@@ -143,9 +154,9 @@ payouts:
     payout: 5940
     popularity: 13
   trifecta:
-    combo: 4-54-105-10
+    combo: 4-5
     payout: 1080
-    popularity: 101336
+    popularity: 10
 corner_positions:
   corner_1: 5,8,(6,9),(1,10),4,2,3,7
   corner_2: 5,8,9,(6,10),1,4,2,3

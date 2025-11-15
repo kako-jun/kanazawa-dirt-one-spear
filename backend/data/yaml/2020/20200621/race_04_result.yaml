@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:19:18.422766'
+  extracted_at: '2025-11-15T12:44:16.624507'
   race_type: result
 race_id: '20200621_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 4
 - 1
@@ -24,6 +26,15 @@ result_details:
   margin: ''
   last_3f: '38.2'
   popularity: '1'
+  sire: バトルプラン
+  dam: ヴィヴァント
+  sire_of_sire: Empire Maker
+  dam_of_sire: Flanders
+  sire_of_dam: ハーツクライ
+  dam_of_dam: ジュリエット
+  birth_date: '2018-03-07'
+  farm: サンバマウンテンファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -83,9 +94,9 @@ payouts:
     payout: 250
     popularity: 1
   exacta:
-    combo: 1-44-51-5
+    combo: 1-4
     payout: 100
-    popularity: 123
+    popularity: 1
   wide:
     combo: 1-4-5
     payout: 120

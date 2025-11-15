@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:32.925332'
+  extracted_at: '2025-11-15T12:33:34.748851'
   race_type: result
 race_id: '20151011_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 9
 - 5
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.7'
   popularity: '1'
+  sire: モエレプルトス
+  dam: サイキカンパツ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エターナルビート
+  sire_of_dam: ティンバーカントリー
+  dam_of_dam: ステージプリマ
+  birth_date: '2012-05-11'
+  farm: 田中　春美
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -187,9 +198,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '9511'
+    combo: '9'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 210
@@ -207,9 +218,9 @@ payouts:
     payout: 270
     popularity: 1
   trifecta:
-    combo: 5-99-115-11
+    combo: 5-9
     payout: 170
-    popularity: 1513
+    popularity: 1
 corner_positions:
   corner_1: 5,(2,9),(6,7),11,1,10,(3,4),8
   corner_2: 5,9,2,7,11,6,1,10,3,4,8

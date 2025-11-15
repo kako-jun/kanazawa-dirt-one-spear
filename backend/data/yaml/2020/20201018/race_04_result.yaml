@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:19:29.713721'
+  extracted_at: '2025-11-15T12:44:58.664885'
   race_type: result
 race_id: '20201018_04'
+track_condition: 良
+weather: 曇
 finish_order:
 - 8
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '1'
+  sire: ロードカナロア
+  dam: ハニーメロンチャン
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: レディブラッサム
+  sire_of_dam: サウスヴィグラス
+  dam_of_dam: エピーメロン
+  birth_date: '2017-03-09'
+  farm: 雅　牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 170
     popularity: 1
   place:
-    combo: '8115'
+    combo: '8'
     payout: 110
-    popularity: 142
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 510
@@ -207,9 +218,9 @@ payouts:
     payout: 840
     popularity: 4
   trifecta:
-    combo: 8-115-85-11
+    combo: 8-11
     payout: 240
-    popularity: 314
+    popularity: 3
 corner_positions:
   corner_1: 6,(3,5),11,1,9,2,10,4,7,8
   corner_2: (5,6),3,11,1,9,2,(8,10)

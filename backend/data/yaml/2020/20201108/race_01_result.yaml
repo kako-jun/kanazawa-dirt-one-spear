@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:31.544470'
+  extracted_at: '2025-11-15T12:45:03.108317'
   race_type: result
 race_id: '20201108_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 6
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: キングヘイロー
+  dam: レッドクリフ
+  sire_of_sire: ダンシングブレーヴ
+  dam_of_sire: グッバイヘイロー
+  sire_of_dam: タップダンスシチー
+  dam_of_dam: エンジェルファタル
+  birth_date: '2018-04-11'
+  farm: サンコウ牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '658'
+    combo: '6'
     payout: 100
-    popularity: 159
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 1100
@@ -175,9 +186,9 @@ payouts:
     payout: 880
     popularity: 4
   trifecta:
-    combo: 5-66-85-8
+    combo: 5-6
     payout: 360
-    popularity: 41228
+    popularity: 4
 corner_positions:
   corner_1: 5,6,(2,8,9),3,4,7,1
   corner_2: 5,6,(8,9),2,(3,4),1,7

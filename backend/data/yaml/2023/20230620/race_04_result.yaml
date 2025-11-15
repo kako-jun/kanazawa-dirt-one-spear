@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:20:26.651159'
+  extracted_at: '2025-11-15T12:47:05.819568'
   race_type: result
 race_id: '20230620_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.8'
   popularity: '4'
+  sire: トゥザワールド
+  dam: マルターズガール
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: Boston Harbor
+  dam_of_dam: Silence of Night
+  birth_date: '2017-03-19'
+  farm: 村上　雅規
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 850
     popularity: 4
   place:
-    combo: '7103'
+    combo: '7'
     payout: 210
-    popularity: 521
+    popularity: 5
   quinella:
     combo: 7-8
     payout: 560
@@ -191,9 +202,9 @@ payouts:
     payout: 2850
     popularity: 9
   trifecta:
-    combo: 7-103-73-10
+    combo: 7-10
     payout: 670
-    popularity: 942
+    popularity: 9
 corner_positions:
   corner_1: 3,10,(4,8),(1,6,7),5,2,9
   corner_2: 3,10,4,8,6,1,7,(5,2)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:55.248925'
+  extracted_at: '2025-11-15T12:35:27.135562'
   race_type: result
 race_id: '20160927_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 12
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.8'
   popularity: '1'
+  sire: サムライハート
+  dam: ハセノマジョラム
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: ヘクタープロテクター
+  dam_of_dam: スイートマジョラム
+  birth_date: '2012-04-28'
+  farm: 佐々木牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -203,9 +214,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '10121'
+    combo: '10'
     payout: 100
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 150
@@ -223,9 +234,9 @@ payouts:
     payout: 230
     popularity: 1
   trifecta:
-    combo: 10-121-101-12
+    combo: 10-12
     payout: 120
-    popularity: 196
+    popularity: 1
 corner_positions:
   corner_1: 10,12,2,4,(1,8),3,7,6,11,(9,5)
   corner_2: 10,12,2,1,4,8,3,6,7,(11,5),9

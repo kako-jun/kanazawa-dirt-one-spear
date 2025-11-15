@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:20:19.585540'
+  extracted_at: '2025-11-15T12:46:49.933765'
   race_type: result
 race_id: '20230404_07'
+track_condition: 良
+weather: 晴
 finish_order:
 - 6
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '1'
+  sire: ニシケンモノノフ
+  dam: ペイシャオブワキア
+  sire_of_sire: メイショウボーラー
+  dam_of_sire: グリーンヒルコマチ
+  sire_of_dam: フリオーソ
+  dam_of_dam: スズカクエーサー
+  birth_date: '2020-03-19'
+  farm: 赤石牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '6102'
+    combo: '6'
     payout: 100
-    popularity: 152
+    popularity: 1
   quinella:
     combo: 6-8
     payout: 470
@@ -191,9 +202,9 @@ payouts:
     payout: 950
     popularity: 4
   trifecta:
-    combo: 6-102-62-10
+    combo: 6-10
     payout: 310
-    popularity: 4215
+    popularity: 4
 corner_positions:
   corner_1: 3,6,(1,10),2,7,(5,8),4,9
   corner_2: 3,6,10,1,2,7,5,8,4,9

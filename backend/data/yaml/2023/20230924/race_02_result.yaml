@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:35.447081'
+  extracted_at: '2025-11-15T12:47:24.718795'
   race_type: result
 race_id: '20230924_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: ダノンレジェンド
+  dam: エレガントウーマン
+  sire_of_sire: Macho Uno
+  dam_of_sire: My Goodness
+  sire_of_dam: ロードカナロア
+  dam_of_dam: エレガントトーク
+  birth_date: '2020-05-10'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '243'
+    combo: '2'
     payout: 100
-    popularity: 162
+    popularity: 1
   quinella:
     combo: 2-4
     payout: 1250
@@ -191,9 +202,9 @@ payouts:
     payout: 1580
     popularity: 3
   trifecta:
-    combo: 2-42-33-4
+    combo: 2-4
     payout: 200
-    popularity: 213
+    popularity: 2
 corner_positions:
   corner_1: 2,3,7,9,(5,8),(1,10),4,6
   corner_2: 2,3,9,7,1,5,4,10,8,6

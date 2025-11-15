@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:20:53.270146'
+  extracted_at: '2025-11-15T12:48:05.156776'
   race_type: result
 race_id: '20240723_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 6
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '39.7'
   popularity: '2'
+  sire: エピファネイア
+  dam: エピックマジック
+  sire_of_sire: シンボリクリスエス
+  dam_of_sire: シーザリオ
+  sire_of_dam: テレグノシス
+  dam_of_dam: マジックペイントブラッシュ
+  birth_date: '2021-02-06'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -139,9 +150,9 @@ payouts:
     payout: 300
     popularity: 2
   place:
-    combo: '569'
+    combo: '5'
     payout: 130
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 5-6
     payout: 1050
@@ -159,9 +170,9 @@ payouts:
     payout: 1090
     popularity: 4
   trifecta:
-    combo: 5-65-96-9
+    combo: 5-6
     payout: 290
-    popularity: 21114
+    popularity: 2
 corner_positions:
   corner_1: 5,8,4,1,7,6,9,2
   corner_2: 5,(1,8),4,7,6,(2,9)

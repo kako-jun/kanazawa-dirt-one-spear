@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:43.550398'
+  extracted_at: '2025-11-15T12:47:43.075962'
   race_type: result
 race_id: '20240415_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 3
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '1'
+  sire: ダノンシャーク
+  dam: ガーデンショット
+  sire_of_sire: ディープインパクト
+  dam_of_sire: カーラパワー
+  sire_of_dam: アサクサデンエン
+  dam_of_dam: ガーデンシティー
+  birth_date: '2021-03-17'
+  farm: マルシチ牧場
+  birthplace: 青森県三戸郡五戸町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -187,9 +198,9 @@ payouts:
     payout: 220
     popularity: 1
   place:
-    combo: '234'
+    combo: '2'
     payout: 140
-    popularity: 291
+    popularity: 2
   quinella:
     combo: 2-3
     payout: 4010
@@ -207,9 +218,9 @@ payouts:
     payout: 5130
     popularity: 12
   trifecta:
-    combo: 2-32-43-4
+    combo: 2-3
     payout: 900
-    popularity: 10115
+    popularity: 10
 corner_positions:
   corner_1: 3,6,11,2,4,(5,8),1,10,7,9
   corner_2: 3,6,11,2,1,4,5,10,8

@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:20:25.982272'
+  extracted_at: '2025-11-15T12:47:04.318952'
   race_type: result
 race_id: '20230613_03'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 1
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '3'
+  sire: ウインバリアシオン
+  dam: タムロマンサーナ
+  sire_of_sire: ハーツクライ
+  dam_of_sire: スーパーバレリーナ
+  sire_of_dam: ジェネラス
+  dam_of_dam: ミスグローリー
+  birth_date: '2019-03-15'
+  farm: 野々宮牧場
+  birthplace: 青森県十和田市
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -155,9 +166,9 @@ payouts:
     payout: 430
     popularity: 3
   place:
-    combo: '512'
+    combo: '5'
     payout: 130
-    popularity: 214
+    popularity: 2
   quinella:
     combo: 1-5
     payout: 500
@@ -175,9 +186,9 @@ payouts:
     payout: 1220
     popularity: 2
   trifecta:
-    combo: 1-52-51-2
+    combo: 1-5
     payout: 240
-    popularity: 146
+    popularity: 1
 corner_positions:
   corner_1: 1,2,3,6,4,7,5,(8,9)
   corner_2: 1,2,6,3,5,4,7,8,9

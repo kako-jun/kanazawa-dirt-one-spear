@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:29.409016'
+  extracted_at: '2025-11-15T12:39:38.246766'
   race_type: result
 race_id: '20180520_02'
+track_condition: 重
+weather: 晴
 finish_order:
 - 10
 - 3
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: ヴァーミリアン
+  dam: スズランコマンダー
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: スカーレットレディ
+  sire_of_dam: スエヒロコマンダー
+  dam_of_dam: エターナルローズ
+  birth_date: '2015-02-02'
+  farm: 株式会社カネツ牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -187,9 +198,9 @@ payouts:
     payout: 210
     popularity: 1
   place:
-    combo: '1034'
+    combo: '10'
     payout: 110
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 3-8
     payout: 450
@@ -207,9 +218,9 @@ payouts:
     payout: 630
     popularity: 1
   trifecta:
-    combo: 3-104-103-4
+    combo: 3-10
     payout: 280
-    popularity: 2712
+    popularity: 2
 corner_positions:
   corner_1: 2,3,4,(5,6),(1,9),8,10,7,11
   corner_2: 2,3

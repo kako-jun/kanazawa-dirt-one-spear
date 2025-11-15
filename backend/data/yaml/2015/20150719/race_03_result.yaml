@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:25.580760'
+  extracted_at: '2025-11-15T12:32:59.934308'
   race_type: result
 race_id: '20150719_03'
+track_condition: 不良
+weather: 晴
 finish_order:
 - 4
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '3'
+  sire: コンデュイット
+  dam: シーズグレイス
+  sire_of_sire: Dalakhani
+  dam_of_sire: Well Head
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: ザンベージ
+  birth_date: '2011-05-31'
+  farm: 三城牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 430
     popularity: 3
   place:
-    combo: '461'
+    combo: '4'
     payout: 120
-    popularity: 261
+    popularity: 2
   quinella:
     combo: 4-6
     payout: 1500
@@ -191,9 +202,9 @@ payouts:
     payout: 2100
     popularity: 9
   trifecta:
-    combo: 4-61-41-6
+    combo: 4-6
     payout: 540
-    popularity: 9112
+    popularity: 9
 corner_positions:
   corner_1: 1,4,(2,6),10,3,8,(5,9),7
   corner_2: 1,4,(2,6),10,3,8,9,7,5

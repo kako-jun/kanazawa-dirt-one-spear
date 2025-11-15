@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:35.572640'
+  extracted_at: '2025-11-15T12:40:24.043887'
   race_type: result
 race_id: '20180724_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.5'
   popularity: '3'
+  sire: ナカヤマフェスタ
+  dam: コーラルビュー
+  sire_of_sire: ステイゴールド
+  dam_of_sire: ディアウィンク
+  sire_of_dam: キングヘイロー
+  dam_of_dam: ホウヨウマリン
+  birth_date: '2015-05-01'
+  farm: 豊洋牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 510
     popularity: 3
   place:
-    combo: '5109'
+    combo: '5'
     payout: 150
-    popularity: 362
+    popularity: 3
   quinella:
     combo: 5-8
     payout: 1670
@@ -207,9 +218,9 @@ payouts:
     payout: 5510
     popularity: 18
   trifecta:
-    combo: 5-105-99-10
+    combo: 5-10
     payout: 1330
-    popularity: 15313
+    popularity: 15
 corner_positions:
   corner_1: 3,10,1,11,9,(5,6),4,8,(2,7)
   corner_2: 3,10,1,11,9,5,6,(4,2),8,7

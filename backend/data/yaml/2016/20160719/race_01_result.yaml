@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:48.502512'
+  extracted_at: '2025-11-15T12:34:48.840057'
   race_type: result
 race_id: '20160719_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 12
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '2'
+  sire: アポロキングダム
+  dam: ヴィーナスゴスペル
+  sire_of_sire: Lemon Drop Kid
+  dam_of_sire: Bella Gatto
+  sire_of_dam: スペシャルウィーク
+  dam_of_dam: ウインピット
+  birth_date: '2013-05-15'
+  farm: 佐藤　静子
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -203,9 +214,9 @@ payouts:
     payout: 430
     popularity: 2
   place:
-    combo: '10121'
+    combo: '10'
     payout: 130
-    popularity: 312
+    popularity: 3
   quinella:
     combo: 7-8
     payout: 230
@@ -223,9 +234,9 @@ payouts:
     payout: 800
     popularity: 3
   trifecta:
-    combo: 10-121-101-12
+    combo: 10-12
     payout: 150
-    popularity: 231
+    popularity: 2
 corner_positions:
   corner_1: 7,12,1,10,11,8,5,(6,4),3,2,9
   corner_2: 7,(12,1),10,11,5,4,8,(3,6),2,9

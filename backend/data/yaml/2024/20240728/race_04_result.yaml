@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:20:53.637480'
+  extracted_at: '2025-11-15T12:48:06.052160'
   race_type: result
 race_id: '20240728_04'
+track_condition: 良
+weather: 曇
 finish_order:
 - 4
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: モーリス
+  dam: ボカイウヴァ
+  sire_of_sire: スクリーンヒーロー
+  dam_of_sire: メジロフランシス
+  sire_of_dam: Teofilo
+  dam_of_dam: Breath of Love
+  birth_date: '2019-03-02'
+  farm: パカパカファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '4810'
+    combo: '4'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 4-7
     payout: 270
@@ -191,9 +202,9 @@ payouts:
     payout: 360
     popularity: 1
   trifecta:
-    combo: 4-84-108-10
+    combo: 4-8
     payout: 130
-    popularity: 134
+    popularity: 1
 corner_positions:
   corner_1: 9,(4,10),6,5,8,(2,3,7),1
   corner_2: 4,9,10,6,(5,8)

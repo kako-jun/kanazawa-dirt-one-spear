@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:19.379411'
+  extracted_at: '2025-11-15T12:46:49.613048'
   race_type: result
 race_id: '20230404_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.4'
   popularity: '1'
+  sire: ミッキーアイル
+  dam: ルピナスベル
+  sire_of_sire: ディープインパクト
+  dam_of_sire: スターアイル
+  sire_of_dam: ホワイトマズル
+  dam_of_dam: ペラフィネ
+  birth_date: '2020-02-07'
+  farm: ヒダカフアーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '1042'
+    combo: '10'
     payout: 160
-    popularity: 1510
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 910
@@ -191,9 +202,9 @@ payouts:
     payout: 1610
     popularity: 7
   trifecta:
-    combo: 4-102-102-4
+    combo: 4-10
     payout: 520
-    popularity: 62233
+    popularity: 6
 corner_positions:
   corner_1: 2,(5,10),1,9,4,7,3,(6,8)
   corner_2: 2,10,(1,9),5,4,(3,7),8,6

@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:19:04.753879'
+  extracted_at: '2025-11-15T12:43:06.163519'
   race_type: result
 race_id: '20190924_10'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 2
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.5'
   popularity: '7'
+  sire: ネオユニヴァース
+  dam: ヒシラプソディー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ポインテッドパス
+  sire_of_dam: エルコンドルパサー
+  dam_of_dam: ヒシモナーク
+  birth_date: '2013-04-12'
+  farm: 中村　雅明
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -155,9 +166,9 @@ payouts:
     payout: 1070
     popularity: 7
   place:
-    combo: '123'
+    combo: '1'
     payout: 250
-    popularity: 562
+    popularity: 5
   quinella:
     combo: 1-2
     payout: 3010
@@ -175,9 +186,9 @@ payouts:
     payout: 7180
     popularity: 39
   trifecta:
-    combo: 1-21-32-3
+    combo: 1-2
     payout: 1320
-    popularity: 23188
+    popularity: 23
 corner_positions:
   corner_1: 3,6,7,9,5,1,8,2
   corner_2: 3,6,7,(5,9),1,8,2
