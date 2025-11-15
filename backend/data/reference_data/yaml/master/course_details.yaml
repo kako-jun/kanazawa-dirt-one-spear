@@ -1,0 +1,65 @@
+metadata:
+  source: https://www.keiba.go.jp/guide/course/
+  fetched_at: '2025-11-15'
+  description: 金沢競馬場のコース詳細情報
+
+venue:
+  name: 金沢競馬場
+  name_en: Kanazawa Racecourse
+  location: 石川県金沢市
+
+course:
+  surface: ダート
+  direction: 右回り
+  lap_distance: 1200  # 1周の距離(m)
+
+  dimensions:
+    straight_length: 286  # 直線距離(m)
+    straight_to_goal: 236  # ゴールまでの直線(m)
+    width: 20  # 幅員(m)
+    elevation: 平坦  # 高低差
+
+  characteristics:
+    corners: 4  # コーナー数
+    corner_pockets: true  # 4つのコーナーすべてにポケットあり
+    full_gate: 12  # フルゲート(最大出走頭数)
+
+  shape:
+    type: 楕円
+    description: 1周1200mの右回りコース、4つのコーナーすべてにポケットが設けられている
+
+distances:
+  # 金沢競馬場で使用される距離
+  - distance: 900
+    description: 短距離
+    start_position: スタンド前
+  - distance: 1300
+    description: 短距離
+    start_position: 向正面
+  - distance: 1400
+    description: 短距離
+    start_position: 向正面
+  - distance: 1500
+    description: マイル
+    start_position: 向正面
+  - distance: 1700
+    description: 中距離
+    start_position: ポケット
+  - distance: 1900
+    description: 中距離
+    start_position: ポケット
+  - distance: 2000
+    description: 中距離
+    start_position: ポケット
+  - distance: 2100
+    description: 中距離
+    start_position: ポケット
+  - distance: 2600
+    description: 長距離
+    start_position: ポケット
+
+notes:
+  - 右回りコースのため、内枠が有利とされる
+  - 直線が286mと比較的長いため、差し・追込も可能
+  - ダート専用コースで馬場状態の影響を受けやすい
+  - ポケットスタートでは枠順の影響が大きい
