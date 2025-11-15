@@ -206,6 +206,16 @@ def import_deba_yaml(yaml_path: Path, session: Session) -> bool:
             if broodmare_sire_name:
                 broodmare_sire_id = get_or_create_horse(session, broodmare_sire_name, is_runner=False)
 
+            # 4世代血統の名前（文字列として保存）
+            sire_of_sire_name = horse_data.get('sire_of_sire', None)
+            dam_of_sire_name = horse_data.get('dam_of_sire', None)
+            sire_of_dam_name = horse_data.get('sire_of_dam', None)
+            dam_of_dam_name = horse_data.get('dam_of_dam', None)
+
+            # 生産情報
+            farm = horse_data.get('farm', None)
+            birthplace = horse_data.get('birthplace', None)
+
             # 血統馬を確定してからFKを設定
             session.flush()
 
@@ -219,6 +229,24 @@ def import_deba_yaml(yaml_path: Path, session: Session) -> bool:
                 horse.sire_id = sire_id
                 horse.dam_id = dam_id
                 horse.broodmare_sire_id = broodmare_sire_id
+                # 血統の馬名（文字列）- 未設定の場合のみ更新
+                if sire_name and not horse.sire_name:
+                    horse.sire_name = sire_name
+                if dam_name and not horse.dam_name:
+                    horse.dam_name = dam_name
+                if sire_of_sire_name and not horse.sire_of_sire_name:
+                    horse.sire_of_sire_name = sire_of_sire_name
+                if dam_of_sire_name and not horse.dam_of_sire_name:
+                    horse.dam_of_sire_name = dam_of_sire_name
+                if sire_of_dam_name and not horse.sire_of_dam_name:
+                    horse.sire_of_dam_name = sire_of_dam_name
+                if dam_of_dam_name and not horse.dam_of_dam_name:
+                    horse.dam_of_dam_name = dam_of_dam_name
+                # 生産情報 - 未設定の場合のみ更新
+                if farm and not horse.farm:
+                    horse.farm = farm
+                if birthplace and not horse.birthplace:
+                    horse.birthplace = birthplace
 
             # 騎手・調教師をマスタに登録
             jockey_name = horse_data.get('jockey', '不明')
@@ -439,6 +467,17 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
                     margin = detail.get('margin', None)
                     last_3f = detail.get('last_3f', None)
 
+                    # 血統情報を抽出
+                    sire = detail.get('sire', None)
+                    dam = detail.get('dam', None)
+                    sire_of_sire = detail.get('sire_of_sire', None)
+                    dam_of_sire = detail.get('dam_of_sire', None)
+                    sire_of_dam = detail.get('sire_of_dam', None)
+                    dam_of_dam = detail.get('dam_of_dam', None)
+                    farm = detail.get('farm', None)
+                    birthplace = detail.get('birthplace', None)
+                    birth_date_str = detail.get('birth_date', None)
+
                     if not horse_name:
                         continue
 
@@ -461,22 +500,73 @@ def import_result_yaml(yaml_path: Path, session: Session) -> bool:
                                     horse.age = age
                                 if gender and not horse.gender:
                                     horse.gender = gender
+                                # 血統情報を更新（未設定の場合のみ）
+                                if sire and not horse.sire_name:
+                                    horse.sire_name = sire
+                                if dam and not horse.dam_name:
+                                    horse.dam_name = dam
+                                if sire_of_sire and not horse.sire_of_sire_name:
+                                    horse.sire_of_sire_name = sire_of_sire
+                                if dam_of_sire and not horse.dam_of_sire_name:
+                                    horse.dam_of_sire_name = dam_of_sire
+                                if sire_of_dam and not horse.sire_of_dam_name:
+                                    horse.sire_of_dam_name = sire_of_dam
+                                if dam_of_dam and not horse.dam_of_dam_name:
+                                    horse.dam_of_dam_name = dam_of_dam
+                                if farm and not horse.farm:
+                                    horse.farm = farm
+                                if birthplace and not horse.birthplace:
+                                    horse.birthplace = birthplace
                         else:
                             # エントリーがない場合は馬名で検索（フォールバック）
                             horse = session.query(DBHorse).filter_by(name=horse_name).first()
-                            if horse and age and gender:
+                            if horse:
                                 if age and not horse.age:
                                     horse.age = age
                                 if gender and not horse.gender:
                                     horse.gender = gender
+                                # 血統情報を更新（未設定の場合のみ）
+                                if sire and not horse.sire_name:
+                                    horse.sire_name = sire
+                                if dam and not horse.dam_name:
+                                    horse.dam_name = dam
+                                if sire_of_sire and not horse.sire_of_sire_name:
+                                    horse.sire_of_sire_name = sire_of_sire
+                                if dam_of_sire and not horse.dam_of_sire_name:
+                                    horse.dam_of_sire_name = dam_of_sire
+                                if sire_of_dam and not horse.sire_of_dam_name:
+                                    horse.sire_of_dam_name = sire_of_dam
+                                if dam_of_dam and not horse.dam_of_dam_name:
+                                    horse.dam_of_dam_name = dam_of_dam
+                                if farm and not horse.farm:
+                                    horse.farm = farm
+                                if birthplace and not horse.birthplace:
+                                    horse.birthplace = birthplace
                     else:
                         # 馬番がない場合は馬名で検索
                         horse = session.query(DBHorse).filter_by(name=horse_name).first()
-                        if horse and age and gender:
+                        if horse:
                             if age and not horse.age:
                                 horse.age = age
                             if gender and not horse.gender:
                                 horse.gender = gender
+                            # 血統情報を更新（未設定の場合のみ）
+                            if sire and not horse.sire_name:
+                                horse.sire_name = sire
+                            if dam and not horse.dam_name:
+                                horse.dam_name = dam
+                            if sire_of_sire and not horse.sire_of_sire_name:
+                                horse.sire_of_sire_name = sire_of_sire
+                            if dam_of_sire and not horse.dam_of_sire_name:
+                                horse.dam_of_sire_name = dam_of_sire
+                            if sire_of_dam and not horse.sire_of_dam_name:
+                                horse.sire_of_dam_name = sire_of_dam
+                            if dam_of_dam and not horse.dam_of_dam_name:
+                                horse.dam_of_dam_name = dam_of_dam
+                            if farm and not horse.farm:
+                                horse.farm = farm
+                            if birthplace and not horse.birthplace:
+                                horse.birthplace = birthplace
 
                     # race_performanceを登録
                     if horse and horse_number:

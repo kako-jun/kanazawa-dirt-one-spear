@@ -476,6 +476,149 @@ def _parse_deba(soup: BeautifulSoup, race_date: datetime, race_number: int, html
     }
 
 
+def _extract_horse_pedigree_info(soup: BeautifulSoup, horse_name: str) -> Dict:
+    """
+    レース結果HTMLから特定の馬の血統情報と生年月日を抽出
+
+    HTML構造:
+    <tr><td>馬名</td><td rowspan=4>馬名データ</td><td rowspan=2>父</td><td rowspan=2>父馬名</td><td>父</td><td colspan=3>父の父</td></tr>
+    <tr><td>母</td><td colspan=3>父の母</td></tr>
+    <tr><td rowspan=2>母</td><td rowspan=2>母馬名</td><td>父</td><td colspan=3>母の父</td></tr>
+    <tr><td>母</td><td colspan=3>母の母</td></tr>
+    <tr><td>調教師</td><td>...</td><td>生年月日</td><td>2013年3月18日</td><td>生産牧場</td><td>...</td></tr>
+    <tr><td>馬主</td><td colspan=3>...</td><td>産地</td><td>...</td></tr>
+
+    Args:
+        soup: BeautifulSoup object
+        horse_name: 馬名
+
+    Returns:
+        血統情報と生年月日の辞書
+    """
+    pedigree_info = {}
+
+    try:
+        # 「馬　情　報」を含む<td class="dbtitle">を探す
+        # 複数見つかった場合は、行数が最も少ない（= 最もネストされた）テーブルを使用
+        horse_info_tables = []
+        for table in soup.find_all('table'):
+            # class="dbtitle"のセルで「馬　情　報」を含むものを探す
+            title_cells = table.find_all('td', class_='dbtitle')
+            for cell in title_cells:
+                if '馬　情　報' in cell.get_text():
+                    rows = table.find_all('tr')
+                    # 行数が10行以下の実際の馬情報テーブルのみを対象
+                    if len(rows) <= 10:
+                        horse_info_tables.append((table, len(rows)))
+                    break
+
+        # 行数が最も少ないテーブルを優先（最もネストされたテーブル = 実際のデータテーブル）
+        horse_info_tables.sort(key=lambda x: x[1])
+
+        # 該当する馬名のテーブルを見つける
+        for table, row_count in horse_info_tables:
+            table_text = table.get_text()
+            if horse_name not in table_text:
+                continue
+
+            # 馬名が含まれるテーブルが見つかった
+            rows = table.find_all('tr')
+
+            sire = None  # 父
+            dam = None  # 母
+            sire_of_sire = None  # 父の父
+            dam_of_sire = None  # 父の母
+            sire_of_dam = None  # 母の父
+            dam_of_dam = None  # 母の母
+            birth_date = None  # 生年月日
+            farm = None  # 生産牧場
+            birthplace = None  # 産地
+
+            # テーブル構造に基づいて直接抽出
+            # 行1: 父、父の父
+            # 行2: 父の母
+            # 行3: 母、母の父
+            # 行4: 母の母
+            # 行5: 調教師、生年月日、生産牧場
+            # 行6: 馬主、産地
+
+            pedigree_rows = []
+            for row in rows:
+                if row.find('td', string=lambda t: t and '馬　情　報' in t):
+                    # ヘッダー行なのでスキップ
+                    continue
+                pedigree_rows.append(row)
+
+            if len(pedigree_rows) >= 6:
+                # 行1 (index 0): 父と父の父
+                row1_cells = pedigree_rows[0].find_all('td')
+                # <td>馬名</td><td rowspan=4>馬名</td><td rowspan=2>父</td><td rowspan=2>父馬名</td><td>父</td><td colspan=3>父の父</td>
+                if len(row1_cells) >= 6:
+                    sire = row1_cells[3].get_text(strip=True)
+                    sire_of_sire = row1_cells[5].get_text(strip=True)
+
+                # 行2 (index 1): 父の母
+                row2_cells = pedigree_rows[1].find_all('td')
+                # <td>母</td><td colspan=3>父の母</td>
+                if len(row2_cells) >= 2:
+                    dam_of_sire = row2_cells[1].get_text(strip=True)
+
+                # 行3 (index 2): 母と母の父
+                row3_cells = pedigree_rows[2].find_all('td')
+                # <td rowspan=2>母</td><td rowspan=2>母馬名</td><td>父</td><td colspan=3>母の父</td>
+                if len(row3_cells) >= 4:
+                    dam = row3_cells[1].get_text(strip=True)
+                    sire_of_dam = row3_cells[3].get_text(strip=True)
+
+                # 行4 (index 3): 母の母
+                row4_cells = pedigree_rows[3].find_all('td')
+                # <td>母</td><td colspan=3>母の母</td>
+                if len(row4_cells) >= 2:
+                    dam_of_dam = row4_cells[1].get_text(strip=True)
+
+                # 行5 (index 4): 生年月日と生産牧場
+                row5_cells = pedigree_rows[4].find_all('td')
+                # <td>調教師</td><td>...</td><td>生年月日</td><td>2013年3月18日</td><td>生産牧場</td><td>...</td>
+                for i, cell in enumerate(row5_cells):
+                    cell_text = cell.get_text(strip=True)
+                    if cell_text == '生年月日' and i + 1 < len(row5_cells):
+                        birth_date_text = row5_cells[i + 1].get_text(strip=True)
+                        # 「2013年3月18日」形式を「2013-03-18」に変換
+                        match = re.match(r'(\d{4})年(\d{1,2})月(\d{1,2})日', birth_date_text)
+                        if match:
+                            year, month, day = match.groups()
+                            birth_date = f"{year}-{int(month):02d}-{int(day):02d}"
+                    if cell_text == '生産牧場' and i + 1 < len(row5_cells):
+                        farm = row5_cells[i + 1].get_text(strip=True)
+
+                # 行6 (index 5): 産地
+                row6_cells = pedigree_rows[5].find_all('td')
+                # <td>馬主</td><td colspan=3>...</td><td>産地</td><td>...</td>
+                for i, cell in enumerate(row6_cells):
+                    cell_text = cell.get_text(strip=True)
+                    if cell_text == '産地' and i + 1 < len(row6_cells):
+                        birthplace = row6_cells[i + 1].get_text(strip=True)
+
+            # データをまとめる
+            pedigree_info = {
+                'sire': sire,
+                'dam': dam,
+                'sire_of_sire': sire_of_sire,
+                'dam_of_sire': dam_of_sire,
+                'sire_of_dam': sire_of_dam,
+                'dam_of_dam': dam_of_dam,
+                'birth_date': birth_date,
+                'farm': farm,
+                'birthplace': birthplace,
+            }
+            break
+
+    except Exception as e:
+        print(f"血統情報抽出エラー ({horse_name}): {e}")
+
+    return pedigree_info
+
+
 def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, html_path: Path) -> Dict:
     """結果HTMLをパース（NARScraperのロジックを流用）"""
 
@@ -510,11 +653,12 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
                             finish_order.append(horse_no)
 
                             # 詳細情報を抽出
+                            horse_name = cols[3].get_text(strip=True)  # 馬名
                             horse_detail = {
                                 'finish_position': pos,
                                 'gate_number': cols[1].get_text(strip=True),  # 枠番
                                 'horse_number': horse_no,
-                                'horse_name': cols[3].get_text(strip=True),  # 馬名
+                                'horse_name': horse_name,
                                 'stable': cols[4].get_text(strip=True),  # 所属
                                 'sex_age': cols[5].get_text(strip=True),  # 性齢
                                 'weight_carried': cols[6].get_text(strip=True),  # 負担重量
@@ -527,6 +671,12 @@ def _parse_result(soup: BeautifulSoup, race_date: datetime, race_number: int, ht
                                 'last_3f': cols[13].get_text(strip=True),  # 上り3F
                                 'popularity': cols[14].get_text(strip=True),  # 人気
                             }
+
+                            # 血統情報と生年月日を抽出して追加
+                            pedigree_info = _extract_horse_pedigree_info(soup, horse_name)
+                            if pedigree_info:
+                                horse_detail.update(pedigree_info)
+
                             result_details.append(horse_detail)
 
     except Exception as e:
