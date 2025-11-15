@@ -32,6 +32,11 @@ class DBJockey(Base):
     name = Column(String, nullable=False, unique=True, index=True, comment="騎手名")
     name_normalized = Column(String, nullable=True, index=True, comment="正規化名 (所属除去)")
 
+    # マスターデータ（マイグレーションで追加）
+    birth_date = Column(String, nullable=True, comment="生年月日")
+    furigana = Column(String, nullable=True, comment="ふりがな")
+    gender = Column(String, nullable=True, comment="性別")
+
 
 class DBTrainer(Base):
     """調教師マスタテーブル"""
@@ -63,6 +68,16 @@ class DBHorse(Base):
     dam_id = Column(String, ForeignKey("horses.horse_id"), nullable=True, index=True, comment="母馬ID")
     broodmare_sire_id = Column(String, ForeignKey("horses.horse_id"), nullable=True, index=True, comment="母父ID")
     breeder = Column(String, nullable=True, comment="生産者")
+
+    # 血統情報（非正規化：名前文字列）- マイグレーションで追加
+    sire_name = Column(String, nullable=True, comment="父馬名")
+    dam_name = Column(String, nullable=True, comment="母馬名")
+    sire_of_sire_name = Column(String, nullable=True, comment="父父名")
+    dam_of_sire_name = Column(String, nullable=True, comment="父母名")
+    sire_of_dam_name = Column(String, nullable=True, comment="母父名")
+    dam_of_dam_name = Column(String, nullable=True, comment="母母名")
+    farm = Column(String, nullable=True, comment="生産牧場")
+    birthplace = Column(String, nullable=True, comment="産地")
 
     # フラグ
     is_runner = Column(Boolean, default=False, nullable=False, comment="出走経験あり")
