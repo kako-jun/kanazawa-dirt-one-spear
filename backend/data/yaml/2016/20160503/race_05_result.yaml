@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:41.016325'
+  extracted_at: '2025-11-15T12:34:12.150657'
   race_type: result
 race_id: '20160503_05'
+track_condition: 良
+weather: 曇
 finish_order:
 - 4
 - 1
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '2'
+  sire: サイレントディール
+  dam: クラビッグレディ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: フェアリードール
+  sire_of_dam: ブラックタイアフェアー
+  dam_of_dam: クラシャトル
+  birth_date: '2013-04-30'
+  farm: 倉見牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -155,9 +166,9 @@ payouts:
     payout: 430
     popularity: 2
   place:
-    combo: '412'
+    combo: '4'
     payout: 170
-    popularity: 324
+    popularity: 3
   quinella:
     combo: 1-4
     payout: 290
@@ -175,9 +186,9 @@ payouts:
     payout: 740
     popularity: 3
   trifecta:
-    combo: 1-42-41-2
+    combo: 1-4
     payout: 160
-    popularity: 241
+    popularity: 2
 corner_positions:
   corner_1: 1,4,7,2,3,5,9,8,6
   corner_2: 1,4,7,(2,3),(5,9),8,6

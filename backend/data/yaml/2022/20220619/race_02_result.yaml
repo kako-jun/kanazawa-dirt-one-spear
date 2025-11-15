@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:03.423355'
+  extracted_at: '2025-11-15T12:46:13.501241'
   race_type: result
 race_id: '20220619_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.3'
   popularity: '4'
+  sire: ベルシャザール
+  dam: テラザパピヨン
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: マルカキャンディ
+  sire_of_dam: トワイニング
+  dam_of_dam: パピヨンフラッグ
+  birth_date: '2019-03-25'
+  farm: レースホース牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 1000
     popularity: 4
   place:
-    combo: '8109'
+    combo: '8'
     payout: 340
-    popularity: 594
+    popularity: 5
   quinella:
     combo: 7-8
     payout: 3390
@@ -207,9 +218,9 @@ payouts:
     payout: 25210
     popularity: 53
   trifecta:
-    combo: 8-108-99-10
+    combo: 8-10
     payout: 790
-    popularity: 8516
+    popularity: 8
 corner_positions:
   corner_1: 1,10,9,2,7,(6,11),3,4,5,8
   corner_2: (1,10),9,7,2,6,3,11,4,5,8

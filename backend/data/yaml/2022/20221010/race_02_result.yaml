@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:13.658786'
+  extracted_at: '2025-11-15T12:46:35.982873'
   race_type: result
 race_id: '20221010_02'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 5
 - 8
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: キタサンブラック
+  dam: レディフォグホーン
+  sire_of_sire: ブラックタイド
+  dam_of_sire: シュガーハート
+  sire_of_dam: Zavata
+  dam_of_dam: Titia
+  birth_date: '2019-02-25'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '8'
   horse_number: 8
@@ -155,9 +166,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '586'
+    combo: '5'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 390
@@ -175,9 +186,9 @@ payouts:
     payout: 600
     popularity: 1
   trifecta:
-    combo: 5-85-66-8
+    combo: 5-8
     payout: 140
-    popularity: 124
+    popularity: 1
 corner_positions:
   corner_1: 7,8,2,(5,6),4,1,9,3
   corner_2: (7,8),6,(2,5),4

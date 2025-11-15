@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:57.619518'
+  extracted_at: '2025-11-15T12:35:46.889194'
   race_type: result
 race_id: '20161023_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 3
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '1'
+  sire: ステイゴールド
+  dam: アルフェッカ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ゴールデンサッシュ
+  sire_of_dam: ダンシングブレーヴ
+  dam_of_dam: タケショウティアラ
+  birth_date: '2013-05-22'
+  farm: 富菜牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -155,9 +166,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '5310'
+    combo: '5'
     payout: 110
-    popularity: 135
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 310
@@ -175,9 +186,9 @@ payouts:
     payout: 490
     popularity: 1
   trifecta:
-    combo: 3-55-103-10
+    combo: 3-5
     payout: 220
-    popularity: 2310
+    popularity: 2
 corner_positions:
   corner_1: 10,3,7,8,(5,9),2,6,4
   corner_2: 10,3,7,5,8,9,2,6,4

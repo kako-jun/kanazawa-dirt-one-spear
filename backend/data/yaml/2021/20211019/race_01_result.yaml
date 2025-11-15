@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:51.647467'
+  extracted_at: '2025-11-15T12:45:47.634097'
   race_type: result
 race_id: '20211019_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.6'
   popularity: '1'
+  sire: ロードカナロア
+  dam: チェルビム
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: レディブラッサム
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: カーリーエンジェル
+  birth_date: '2017-03-18'
+  farm: 奥山　博
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '1075'
+    combo: '10'
     payout: 100
-    popularity: 128
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 170
@@ -191,9 +202,9 @@ payouts:
     payout: 330
     popularity: 1
   trifecta:
-    combo: 7-105-105-7
+    combo: 7-10
     payout: 120
-    popularity: 1139
+    popularity: 1
 corner_positions:
   corner_1: 10,2,9,(5,7),6,8,1,3,4
   corner_2: 10,2,7,5,9,6,8,3,1,4

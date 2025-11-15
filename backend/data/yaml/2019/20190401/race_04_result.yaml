@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:18:47.721159'
+  extracted_at: '2025-11-15T12:41:36.831249'
   race_type: result
 race_id: '20190401_04'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 11
 - 10
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '5'
+  sire: ゴールドアリュール
+  dam: バクシンヒロイン
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ニキーヤ
+  sire_of_dam: サクラバクシンオー
+  dam_of_dam: カズサヒロイン
+  birth_date: '2016-03-29'
+  farm: 佐竹　学
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -155,9 +166,9 @@ payouts:
     payout: 950
     popularity: 5
   place:
-    combo: '11102'
+    combo: '11'
     payout: 220
-    popularity: 531
+    popularity: 5
   quinella:
     combo: 8-8
     payout: 1310
@@ -175,9 +186,9 @@ payouts:
     payout: 4090
     popularity: 17
   trifecta:
-    combo: 10-112-112-10
+    combo: 10-11
     payout: 490
-    popularity: 582
+    popularity: 5
 corner_positions:
   corner_1: 11,8,9,2,3,10,1,4,7,6
   corner_2: 11,8,9,(2,3,10),1,4,(6,7)

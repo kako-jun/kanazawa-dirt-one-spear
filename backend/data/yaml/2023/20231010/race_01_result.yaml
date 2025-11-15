@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:37.137435'
+  extracted_at: '2025-11-15T12:47:28.539124'
   race_type: result
 race_id: '20231010_01'
+track_condition: 重
+weather: 雨
 finish_order:
 - 3
 - 2
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '37.7'
   popularity: '2'
+  sire: ベーカバド
+  dam: トーアティアレ
+  sire_of_sire: Cape Cross
+  dam_of_sire: Behkara
+  sire_of_dam: ゴールドアリュール
+  dam_of_dam: トーアスカイヴュー
+  birth_date: '2020-05-05'
+  farm: トーア牧場
+  birthplace: 北海道虻田郡豊浦町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -203,9 +214,9 @@ payouts:
     payout: 330
     popularity: 2
   place:
-    combo: '3210'
+    combo: '3'
     payout: 140
-    popularity: 254
+    popularity: 2
   quinella:
     combo: 2-3
     payout: 1120
@@ -223,9 +234,9 @@ payouts:
     payout: 2180
     popularity: 10
   trifecta:
-    combo: 2-33-102-10
+    combo: 2-3
     payout: 380
-    popularity: 635
+    popularity: 6
 corner_positions:
   corner_1: (8,10),(5,2),12,3,(1,7),9,(4,6),11
   corner_2: 8,10,2,5,3,(1,9),12,7,(4,6),11

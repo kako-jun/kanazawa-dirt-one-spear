@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:04.524091'
+  extracted_at: '2025-11-15T12:43:05.153922'
   race_type: result
 race_id: '20190924_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 6
 - 1
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '37.2'
   popularity: '1'
+  sire: マツリダゴッホ
+  dam: アテナブルー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ペイパーレイン
+  sire_of_dam: ジャングルポケット
+  dam_of_dam: セイントセーラ
+  birth_date: '2014-05-05'
+  farm: 有限会社　ケンブリッジバレー
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -155,9 +166,9 @@ payouts:
     payout: 210
     popularity: 1
   place:
-    combo: '614'
+    combo: '6'
     payout: 130
-    popularity: 152
+    popularity: 1
   quinella:
     combo: 1-6
     payout: 1800
@@ -175,9 +186,9 @@ payouts:
     payout: 2300
     popularity: 7
   trifecta:
-    combo: 1-64-61-4
+    combo: 1-6
     payout: 520
-    popularity: 815
+    popularity: 8
 corner_positions:
   corner_3: (4,6),(5,9),1,2,3,7,8
   corner_4: 6,4,1,(5,9),2,3,7,8

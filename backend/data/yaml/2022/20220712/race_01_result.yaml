@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:05.650026'
+  extracted_at: '2025-11-15T12:46:18.441763'
   race_type: result
 race_id: '20220712_01'
+track_condition: 重
+weather: 曇
 finish_order:
 - 2
 - 3
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.5'
   popularity: '1'
+  sire: アドマイヤムーン
+  dam: キタノリツメイ
+  sire_of_sire: エンドスウィープ
+  dam_of_sire: マイケイティーズ
+  sire_of_dam: アイルハヴアナザー
+  dam_of_dam: リーベストラウム
+  birth_date: '2019-05-27'
+  farm: ミルファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '2310'
+    combo: '2'
     payout: 100
-    popularity: 135
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 310
@@ -191,9 +202,9 @@ payouts:
     payout: 320
     popularity: 2
   trifecta:
-    combo: 2-32-103-10
+    combo: 2-3
     payout: 160
-    popularity: 2411
+    popularity: 2
 corner_positions:
   corner_1: 2,8,9,5,3,10,1,7,4,6
   corner_2: '2'

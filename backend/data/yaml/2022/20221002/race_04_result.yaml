@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:20:13.057708'
+  extracted_at: '2025-11-15T12:46:34.545547'
   race_type: result
 race_id: '20221002_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.2'
   popularity: '1'
+  sire: モーリス
+  dam: タケショウナデシコ
+  sire_of_sire: スクリーンヒーロー
+  dam_of_sire: メジロフランシス
+  sire_of_dam: スペシャルウィーク
+  dam_of_dam: スーティー
+  birth_date: '2019-04-04'
+  farm: 杵臼牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '576'
+    combo: '5'
     payout: 120
-    popularity: 147
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 1220
@@ -191,9 +202,9 @@ payouts:
     payout: 1250
     popularity: 4
   trifecta:
-    combo: 5-75-66-7
+    combo: 5-7
     payout: 340
-    popularity: 21329
+    popularity: 2
 corner_positions:
   corner_1: 2,5,6,10,1,8,7,3,4,9
   corner_2: 2,(5,6),10,1,7,8,(3,4),9

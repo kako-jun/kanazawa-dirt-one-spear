@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:03.692537'
+  extracted_at: '2025-11-15T12:46:14.069618'
   race_type: result
 race_id: '20220621_01'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 8
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '37.9'
   popularity: '1'
+  sire: エスポワールシチー
+  dam: ゴールドジャパン
+  sire_of_sire: ゴールドアリュール
+  dam_of_sire: エミネントシチー
+  sire_of_dam: スターリングローズ
+  dam_of_dam: ロンドリーナ
+  birth_date: '2019-04-03'
+  farm: 北勝ファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 8
@@ -155,9 +166,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '583'
+    combo: '5'
     payout: 110
-    popularity: 136
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 280
@@ -175,9 +186,9 @@ payouts:
     payout: 710
     popularity: 3
   trifecta:
-    combo: 5-83-53-8
+    combo: 5-8
     payout: 240
-    popularity: 3514
+    popularity: 3
 corner_positions:
   corner_1: 5,9,2,1,8,3,6,7,4
   corner_2: 5,(2,9),1,(3,8),6

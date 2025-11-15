@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:21:03.401394'
+  extracted_at: '2025-11-15T12:48:28.643975'
   race_type: result
 race_id: '20241102_02'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 2
 - 3
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.1'
   popularity: '1'
+  sire: トゥザワールド
+  dam: ラベンダーメモリー
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: ナカヤマフェスタ
+  dam_of_dam: ケイアイステルス
+  birth_date: '2021-04-24'
+  farm: 中脇　満
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -155,9 +166,9 @@ payouts:
     payout: 200
     popularity: 1
   place:
-    combo: '234'
+    combo: '2'
     payout: 110
-    popularity: 136
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 430
@@ -175,9 +186,9 @@ payouts:
     payout: 670
     popularity: 3
   trifecta:
-    combo: 2-32-43-4
+    combo: 2-3
     payout: 230
-    popularity: 31720
+    popularity: 3
 corner_positions:
   corner_1: 2,9,8,3,6,4,1,7,5
   corner_2: 2,9,(3,8),6,4,1,(5,7)

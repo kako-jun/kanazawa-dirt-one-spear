@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:17:49.104362'
+  extracted_at: '2025-11-15T12:34:51.719244'
   race_type: result
 race_id: '20160724_10'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '2'
+  sire: アドマイヤジャパン
+  dam: メモリーズオブユー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ビワハイジ
+  sire_of_dam: Gulch
+  dam_of_dam: Saddlers Gal
+  birth_date: '2012-04-30'
+  farm: 三好牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 310
     popularity: 2
   place:
-    combo: '1109'
+    combo: '1'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 240
@@ -191,9 +202,9 @@ payouts:
     payout: 870
     popularity: 2
   trifecta:
-    combo: 1-101-99-10
+    combo: 1-10
     payout: 230
-    popularity: 123
+    popularity: 1
 corner_positions:
   corner_1: 1,8,5,10,(3,9),2,6,(4,7)
   corner_2: 1,8,10,5,9,3,7,2,6,4

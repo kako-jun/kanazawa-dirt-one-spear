@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:17:40.747841'
+  extracted_at: '2025-11-15T12:34:11.075008'
   race_type: result
 race_id: '20160501_08'
+track_condition: 良
+weather: 曇
 finish_order:
 - 2
 - 4
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: カネヒキリ
+  dam: スターダーラ
+  sire_of_sire: フジキセキ
+  dam_of_sire: ライフアウトゼア
+  sire_of_dam: Theatrical
+  dam_of_dam: Lydara
+  birth_date: '2012-05-10'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -155,9 +166,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '246'
+    combo: '2'
     payout: 130
-    popularity: 178
+    popularity: 1
   quinella:
     combo: 2-4
     payout: 1640
@@ -175,9 +186,9 @@ payouts:
     payout: 1560
     popularity: 4
   trifecta:
-    combo: 2-42-64-6
+    combo: 2-4
     payout: 520
-    popularity: 61834
+    popularity: 6
 corner_positions:
   corner_1: 2,3,6,1,4,7,8,5,9
   corner_2: 2,3,6,1,4,7,(9,8,5)

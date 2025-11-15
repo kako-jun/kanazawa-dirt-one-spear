@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:17:41.719165'
+  extracted_at: '2025-11-15T12:34:15.726118'
   race_type: result
 race_id: '20160510_07'
+track_condition: 良
+weather: 曇
 finish_order:
 - 8
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.3'
   popularity: '5'
+  sire: フィガロ
+  dam: エーグルドゥース
+  sire_of_sire: Future Storm
+  dam_of_sire: Karamea
+  sire_of_dam: アフリート
+  dam_of_dam: ワイルドシーン
+  birth_date: '2013-03-22'
+  farm: サンシャイン牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 2160
     popularity: 5
   place:
-    combo: '8109'
+    combo: '8'
     payout: 350
-    popularity: 536
+    popularity: 5
   quinella:
     combo: 7-8
     payout: 1050
@@ -207,9 +218,9 @@ payouts:
     payout: 4650
     popularity: 17
   trifecta:
-    combo: 8-108-99-10
+    combo: 8-10
     payout: 1000
-    popularity: 101911
+    popularity: 10
 corner_positions:
   corner_1: 9,10,7,4,8,6,5,11,2,3,1
   corner_2: 9,10,7,4,8,6,5,11,3,2,1

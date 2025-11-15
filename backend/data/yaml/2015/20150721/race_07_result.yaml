@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:17:26.062109'
+  extracted_at: '2025-11-15T12:33:02.451261'
   race_type: result
 race_id: '20150721_07'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.3'
   popularity: '1'
+  sire: デュランダル
+  dam: スズキャンドル
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: サワヤカプリンセス
+  sire_of_dam: ジャングルポケット
+  dam_of_dam: イフアイソーデザイア
+  birth_date: '2011-05-21'
+  farm: 新井　弘幸
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 210
     popularity: 1
   place:
-    combo: '5109'
+    combo: '5'
     payout: 110
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 390
@@ -191,9 +202,9 @@ payouts:
     payout: 910
     popularity: 2
   trifecta:
-    combo: 5-105-99-10
+    combo: 5-10
     payout: 260
-    popularity: 1310
+    popularity: 1
 corner_positions:
   corner_1: 5,(9,10),1,6,(2,8),7,3,4
   corner_2: 5,(9,10),1,2,(7,6),(3,8),4

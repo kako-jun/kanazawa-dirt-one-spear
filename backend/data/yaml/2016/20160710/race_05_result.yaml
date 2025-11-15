@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:47.569156'
+  extracted_at: '2025-11-15T12:34:44.256561'
   race_type: result
 race_id: '20160710_05'
+track_condition: 不良
+weather: 晴
 finish_order:
 - 5
 result_details:
@@ -21,15 +23,24 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '1'
+  sire: スクリーンヒーロー
+  dam: プアプー
+  sire_of_sire: グラスワンダー
+  dam_of_sire: ランニングヒロイン
+  sire_of_dam: Dashing Blade
+  dam_of_dam: Plains Indian
+  birth_date: '2013-03-09'
+  farm: 荒谷　輝和
+  birthplace: 北海道日高郡新ひだか町
 payouts:
   win:
-    combo: '58'
+    combo: '5'
     payout: 130
-    popularity: 17
+    popularity: 1
   place:
-    combo: '5811'
+    combo: '5'
     payout: 100
-    popularity: 154
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 2960
@@ -39,17 +50,17 @@ payouts:
     payout: 3000
     popularity: 10
   wide:
-    combo: 5-77-5
+    combo: 5-7
     payout: 2430
-    popularity: 1825
+    popularity: 18
   trio:
-    combo: 5-88-5
+    combo: 5-8
     payout: 1630
-    popularity: 1423
+    popularity: 14
   trifecta:
-    combo: 5-85-118-11
+    combo: 5-8
     payout: 700
-    popularity: 10316
+    popularity: 10
 corner_positions:
   corner_1: 1,10,11,(2,3),5,9,8,4,6,7
   corner_2: (1,10),11,(2,5),8,3,9,4,7,6

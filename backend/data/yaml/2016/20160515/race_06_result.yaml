@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:42.025625'
+  extracted_at: '2025-11-15T12:34:16.976666'
   race_type: result
 race_id: '20160515_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '3'
+  sire: アドマイヤマックス
+  dam: ダスティーミラー
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ダイナシユート
+  sire_of_dam: エルコンドルパサー
+  dam_of_dam: カーペディエム
+  birth_date: '2012-03-05'
+  farm: 川向高橋育成牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 660
     popularity: 3
   place:
-    combo: '5610'
+    combo: '5'
     payout: 210
-    popularity: 314
+    popularity: 3
   quinella:
     combo: 5-6
     payout: 400
@@ -191,9 +202,9 @@ payouts:
     payout: 1140
     popularity: 4
   trifecta:
-    combo: 5-65-106-10
+    combo: 5-6
     payout: 180
-    popularity: 294
+    popularity: 2
 corner_positions:
   corner_1: 6,(3,10),1,8,5,4,7,9,2
   corner_2: 6,3,10,1,8,5,4,(7,9),2

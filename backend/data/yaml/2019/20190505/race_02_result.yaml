@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:51.123803'
+  extracted_at: '2025-11-15T12:41:54.821238'
   race_type: result
 race_id: '20190505_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.7'
   popularity: '1'
+  sire: モンテロッソ
+  dam: メイプルロード
+  sire_of_sire: Dubawi
+  dam_of_sire: Porto Roca
+  sire_of_dam: ジェニュイン
+  dam_of_dam: メイプルダンス
+  birth_date: '2016-03-31'
+  farm: 成隆牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 250
     popularity: 1
   place:
-    combo: '362'
+    combo: '3'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 3-6
     payout: 610
@@ -191,9 +202,9 @@ payouts:
     payout: 990
     popularity: 3
   trifecta:
-    combo: 3-62-32-6
+    combo: 3-6
     payout: 270
-    popularity: 314
+    popularity: 3
 corner_positions:
   corner_1: 3,4,(8,9),6,1,5,2,7,10
   corner_2: 3,4,9,8,6,1,5

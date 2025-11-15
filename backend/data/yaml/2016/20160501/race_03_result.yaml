@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:40.610155'
+  extracted_at: '2025-11-15T12:34:10.294206'
   race_type: result
 race_id: '20160501_03'
+track_condition: 稍重
+weather: 曇
 finish_order:
 - 1
 - 6
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '41.8'
   popularity: '1'
+  sire: エンパイアメーカー
+  dam: ミュージー
+  sire_of_sire: Unbridled
+  dam_of_sire: Toussaud
+  sire_of_dam: El Prado
+  dam_of_dam: Foible
+  birth_date: '2012-03-15'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -155,9 +166,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '162'
+    combo: '1'
     payout: 110
-    popularity: 143
+    popularity: 1
   quinella:
     combo: 1-6
     payout: 940
@@ -175,9 +186,9 @@ payouts:
     payout: 1270
     popularity: 6
   trifecta:
-    combo: 1-61-22-6
+    combo: 1-6
     payout: 310
-    popularity: 4212
+    popularity: 4
 corner_positions:
   corner_1: (1,6,7),3,4,2,(5,8),9
   corner_2: 7,6,1,2,3,4,(5,8),9

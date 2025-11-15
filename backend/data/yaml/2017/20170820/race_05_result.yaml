@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:18:15.020541'
+  extracted_at: '2025-11-15T12:37:41.258540'
   race_type: result
 race_id: '20170820_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '1'
+  sire: サムライハート
+  dam: マチカネムラムスメ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: Silver Hawk
+  dam_of_dam: エキゾティックソース
+  birth_date: '2014-03-10'
+  farm: 村上牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '3115'
+    combo: '3'
     payout: 120
-    popularity: 138
+    popularity: 1
   quinella:
     combo: 3-8
     payout: 550
@@ -207,9 +218,9 @@ payouts:
     payout: 1730
     popularity: 10
   trifecta:
-    combo: 3-113-55-11
+    combo: 3-11
     payout: 460
-    popularity: 3635
+    popularity: 3
 corner_positions:
   corner_1: 11,10,3,(5,8,9),(2,4,7),6,1
   corner_2: 11,10,3,(8,9),5,4,2,6,1,7

@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:51.595091'
+  extracted_at: '2025-11-15T12:48:01.172315'
   race_type: result
 race_id: '20240707_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.2'
   popularity: '1'
+  sire: ストロングリターン
+  dam: キャサリンアイドル
+  sire_of_sire: シンボリクリスエス
+  dam_of_sire: コートアウト
+  sire_of_dam: バブルガムフェロー
+  dam_of_dam: タイキポーラ
+  birth_date: '2017-03-08'
+  farm: タニグチ牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '5810'
+    combo: '5'
     payout: 100
-    popularity: 127
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 170
@@ -191,9 +202,9 @@ payouts:
     payout: 400
     popularity: 1
   trifecta:
-    combo: 5-85-108-10
+    combo: 5-8
     payout: 160
-    popularity: 1313
+    popularity: 1
 corner_positions:
   corner_1: 5,10,4,7,8,1,(2,3),6,9
   corner_2: 5,10,4,7,(1,8),2,3,6,9

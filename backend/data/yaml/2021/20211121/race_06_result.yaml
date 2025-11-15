@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:19:54.945710'
+  extracted_at: '2025-11-15T12:45:55.017357'
   race_type: result
 race_id: '20211121_06'
+track_condition: 良
+weather: 曇
 finish_order:
 - 2
 - 4
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '37.4'
   popularity: '3'
+  sire: スターリングローズ
+  dam: アリアローズ
+  sire_of_sire: アフリート
+  dam_of_sire: コマーズ
+  sire_of_dam: ローエングリン
+  dam_of_dam: フロリアリア
+  birth_date: '2015-03-03'
+  farm: 中央牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -139,9 +150,9 @@ payouts:
     payout: 520
     popularity: 3
   place:
-    combo: '246'
+    combo: '2'
     payout: 180
-    popularity: 451
+    popularity: 4
   quinella:
     combo: 2-4
     payout: 4640
@@ -159,9 +170,9 @@ payouts:
     payout: 5050
     popularity: 20
   trifecta:
-    combo: 2-42-64-6
+    combo: 2-4
     payout: 1020
-    popularity: 1327
+    popularity: 13
 corner_positions:
   corner_1: 2,5,(1,3,7),4,8,6
   corner_2: 2,(1,5),(3,7),4,8,6

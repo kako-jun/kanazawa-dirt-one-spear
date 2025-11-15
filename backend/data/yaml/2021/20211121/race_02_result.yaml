@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:54.841945'
+  extracted_at: '2025-11-15T12:45:54.788102'
   race_type: result
 race_id: '20211121_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 1
 - 2
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '5'
+  sire: ダイワメジャー
+  dam: アナモリ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: トワイニング
+  dam_of_dam: エクシードワン
+  birth_date: '2018-02-28'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -155,9 +166,9 @@ payouts:
     payout: 1430
     popularity: 5
   place:
-    combo: '125'
+    combo: '1'
     payout: 450
-    popularity: 562
+    popularity: 5
   quinella:
     combo: 1-2
     payout: 8340
@@ -175,9 +186,9 @@ payouts:
     payout: 20350
     popularity: 38
   trifecta:
-    combo: 1-21-52-5
+    combo: 1-2
     payout: 2230
-    popularity: 191014
+    popularity: 19
 corner_positions:
   corner_1: 4,7,(8,5),(1,2),3,(6,9)
   corner_2: 4,7,5,(1,2,8),3,6,9

@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:17:48.079550'
+  extracted_at: '2025-11-15T12:34:46.714729'
   race_type: result
 race_id: '20160712_10'
+track_condition: 良
+weather: 曇
 finish_order:
 - 8
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '2'
+  sire: デュランダル
+  dam: ミヤギバスター
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: サワヤカプリンセス
+  sire_of_dam: Jade Robbery
+  dam_of_dam: マザーシプトン
+  birth_date: '2012-04-14'
+  farm: 田上　稔
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 370
     popularity: 2
   place:
-    combo: '8101'
+    combo: '8'
     payout: 140
-    popularity: 241
+    popularity: 2
   quinella:
     combo: 7-8
     payout: 980
@@ -191,9 +202,9 @@ payouts:
     payout: 5530
     popularity: 19
   trifecta:
-    combo: 8-101-81-10
+    combo: 8-10
     payout: 950
-    popularity: 1217
+    popularity: 12
 corner_positions:
   corner_1: 8,7,9,10,4,(2,6),(3,5),1
   corner_2: 8,7,9,4,10,(2,6),3,(5,1)

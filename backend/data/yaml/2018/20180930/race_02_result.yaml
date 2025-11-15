@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:41.852563'
+  extracted_at: '2025-11-15T12:41:04.548881'
   race_type: result
 race_id: '20180930_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 5
 - 3
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.7'
   popularity: '2'
+  sire: オルフェーヴル
+  dam: ロリーフォードリー
+  sire_of_sire: ステイゴールド
+  dam_of_sire: オリエンタルアート
+  sire_of_dam: Oratorio
+  dam_of_dam: Heart Stopping
+  birth_date: '2015-03-02'
+  farm: 有限会社　吉田ファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -187,9 +198,9 @@ payouts:
     payout: 300
     popularity: 2
   place:
-    combo: '5310'
+    combo: '5'
     payout: 130
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 770
@@ -207,9 +218,9 @@ payouts:
     payout: 1300
     popularity: 5
   trifecta:
-    combo: 3-55-103-10
+    combo: 3-5
     payout: 330
-    popularity: 2618
+    popularity: 2
 corner_positions:
   corner_1: (3,6),5,8,11,(2,7),10,4,9,1
   corner_2: (3,6),5,8,2,11,7,10,(4,1),9

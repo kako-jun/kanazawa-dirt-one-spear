@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:17.316370'
+  extracted_at: '2025-11-15T12:44:10.924563'
   race_type: result
 race_id: '20200609_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 9
 - 10
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.2'
   popularity: '3'
+  sire: ノヴェリスト
+  dam: コーディリア
+  sire_of_sire: Monsun
+  dam_of_sire: Night Lagoon
+  sire_of_dam: シンボリクリスエス
+  dam_of_dam: コードネーム
+  birth_date: '2016-03-08'
+  farm: 追分ファーム
+  birthplace: 北海道勇払郡安平町
 - finish_position: 2
   gate_number: '7'
   horse_number: 10
@@ -203,9 +214,9 @@ payouts:
     payout: 520
     popularity: 3
   place:
-    combo: '91012'
+    combo: '9'
     payout: 210
-    popularity: 3712
+    popularity: 3
   quinella:
     combo: 7-7
     payout: 8110
@@ -223,9 +234,9 @@ payouts:
     payout: 11630
     popularity: 34
   trifecta:
-    combo: 9-109-1210-12
+    combo: 9-10
     payout: 1460
-    popularity: 135165
+    popularity: 13
 corner_positions:
   corner_1: 11,12,10,5,7,4,9,3,8,(1,2),6
   corner_2: 12,11,10,4,5,(7,9),3,(2,8),6,1

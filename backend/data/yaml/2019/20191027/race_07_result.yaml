@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:19:07.881371'
+  extracted_at: '2025-11-15T12:43:21.762087'
   race_type: result
 race_id: '20191027_07'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 5
 - 9
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '40.8'
   popularity: '6'
+  sire: ストーミングホーム
+  dam: フィールドスピカ
+  sire_of_sire: Machiavellian
+  dam_of_sire: Try to Catch Me
+  sire_of_dam: パラダイスクリーク
+  dam_of_dam: フィールドブーケ
+  birth_date: '2016-03-26'
+  farm: ダイヤモンドファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -139,9 +150,9 @@ payouts:
     payout: 3650
     popularity: 6
   place:
-    combo: '5910'
+    combo: '5'
     payout: 280
-    popularity: 624
+    popularity: 6
   quinella:
     combo: 5-8
     payout: 1990
@@ -159,9 +170,9 @@ payouts:
     payout: 10220
     popularity: 26
   trifecta:
-    combo: 5-95-109-10
+    combo: 5-9
     payout: 750
-    popularity: 10144
+    popularity: 10
 corner_positions:
   corner_1: 5,(3,9),10,6,1,2,(8,7)
   corner_2: (5,9),(3,10),6,1,8,2,7

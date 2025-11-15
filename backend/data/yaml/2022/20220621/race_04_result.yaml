@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:20:03.820229'
+  extracted_at: '2025-11-15T12:46:14.287267'
   race_type: result
 race_id: '20220621_04'
+track_condition: 良
+weather: 曇
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.4'
   popularity: '2'
+  sire: ロードカナロア
+  dam: チェルビム
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: レディブラッサム
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: カーリーエンジェル
+  birth_date: '2017-03-18'
+  farm: 奥山　博
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 280
     popularity: 2
   place:
-    combo: '7108'
+    combo: '7'
     payout: 110
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 390
@@ -191,9 +202,9 @@ payouts:
     payout: 890
     popularity: 2
   trifecta:
-    combo: 7-107-88-10
+    combo: 7-10
     payout: 200
-    popularity: 12520
+    popularity: 1
 corner_positions:
   corner_1: 10,7,(3,8),2,6,4,(1,9),5
   corner_2: '10'

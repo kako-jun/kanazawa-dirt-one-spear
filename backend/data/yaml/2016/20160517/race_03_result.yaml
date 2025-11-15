@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:42.260552'
+  extracted_at: '2025-11-15T12:34:18.632056'
   race_type: result
 race_id: '20160517_03'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.5'
   popularity: '1'
+  sire: ダイワメジャー
+  dam: パーティミニスター
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: Deputy Minister
+  dam_of_dam: Party Cited
+  birth_date: '2013-04-28'
+  farm: 佐藤牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '1085'
+    combo: '10'
     payout: 100
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 150
@@ -191,9 +202,9 @@ payouts:
     payout: 220
     popularity: 1
   trifecta:
-    combo: 8-105-105-8
+    combo: 8-10
     payout: 130
-    popularity: 139
+    popularity: 1
 corner_positions:
   corner_1: 8,3,10,4,(5,6),9,1,2,7
   corner_2: 8,3,10,(4,6),5

@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:21:10.494079'
+  extracted_at: '2025-11-15T12:48:44.650834'
   race_type: result
 race_id: '20250513_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.0'
   popularity: '2'
+  sire: ワールドエース
+  dam: シーイズドーター
+  sire_of_sire: ディープインパクト
+  dam_of_sire: マンデラ
+  sire_of_dam: ヨハネスブルグ
+  dam_of_dam: シーイズトウショウ
+  birth_date: '2021-03-08'
+  farm: 明治牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 280
     popularity: 2
   place:
-    combo: '1083'
+    combo: '10'
     payout: 120
-    popularity: 135
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 530
@@ -191,9 +202,9 @@ payouts:
     payout: 1500
     popularity: 4
   trifecta:
-    combo: 8-103-103-8
+    combo: 8-10
     payout: 390
-    popularity: 3613
+    popularity: 3
 corner_positions:
   corner_1: 1,5,6,8,10,4,(3,9),2,7
   corner_2: 1,5,8,6,10,4,(3,9),2,7

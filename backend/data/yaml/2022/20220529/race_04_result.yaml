@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:20:01.598402'
+  extracted_at: '2025-11-15T12:46:09.445913'
   race_type: result
 race_id: '20220529_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 6
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '38.3'
   popularity: '1'
+  sire: ザサンデーフサイチ
+  dam: ダンスミュージカル
+  sire_of_sire: ダンスインザダーク
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: ダンシングブレーヴ
+  dam_of_dam: メタモルフォース
+  birth_date: '2017-03-23'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -139,9 +150,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '365'
+    combo: '3'
     payout: 110
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 3-6
     payout: 430
@@ -159,9 +170,9 @@ payouts:
     payout: 370
     popularity: 2
   trifecta:
-    combo: 3-63-55-6
+    combo: 3-6
     payout: 250
-    popularity: 4812
+    popularity: 4
 corner_positions:
   corner_1: 4,5,2,3,9,8,7,6
   corner_2: 4,5,(2,9),3,6,(7,8)

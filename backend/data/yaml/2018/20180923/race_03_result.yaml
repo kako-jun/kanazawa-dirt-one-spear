@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:18:41.220335'
+  extracted_at: '2025-11-15T12:41:01.223800'
   race_type: result
 race_id: '20180923_03'
+track_condition: 重
+weather: 晴
 finish_order:
 - 1
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '3'
+  sire: ゼンノロブロイ
+  dam: ゴールドレリック
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ローミンレイチェル
+  sire_of_dam: Kingmambo
+  dam_of_dam: Gold Bust
+  birth_date: '2015-01-28'
+  farm: 笠松牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 390
     popularity: 3
   place:
-    combo: '1105'
+    combo: '1'
     payout: 170
-    popularity: 329
+    popularity: 3
   quinella:
     combo: 1-8
     payout: 550
@@ -207,9 +218,9 @@ payouts:
     payout: 1970
     popularity: 6
   trifecta:
-    combo: 1-101-55-10
+    combo: 1-10
     payout: 210
-    popularity: 21821
+    popularity: 2
 corner_positions:
   corner_1: 1,10,(6,9),(5,8,11),7,2,3,4
   corner_2: 1,10,6,9,5,8,11,7,3,4,2

@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:17:24.883551'
+  extracted_at: '2025-11-15T12:32:56.919456'
   race_type: result
 race_id: '20150707_04'
+track_condition: 良
+weather: 曇
 finish_order:
 - 11
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.5'
   popularity: '5'
+  sire: エスプリシーズ
+  dam: マイネミニヨン
+  sire_of_sire: カコイーシーズ
+  dam_of_sire: スマコバレディ
+  sire_of_dam: アグネスデジタル
+  dam_of_dam: マイネフランシー
+  birth_date: '2012-04-28'
+  farm: 山内牧場
+  birthplace: 青森県八戸市
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 1310
     popularity: 5
   place:
-    combo: '11105'
+    combo: '11'
     payout: 330
-    popularity: 534
+    popularity: 5
   quinella:
     combo: 8-8
     payout: 3800
@@ -207,9 +218,9 @@ payouts:
     payout: 13080
     popularity: 34
   trifecta:
-    combo: 10-115-115-10
+    combo: 10-11
     payout: 910
-    popularity: 101311
+    popularity: 10
 corner_positions:
   corner_1: 9,10,11,2,(5,6),1,4,7,3,8
   corner_2: 9,10,11,2,6,5,1

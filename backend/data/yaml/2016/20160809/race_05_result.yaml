@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:50.377537'
+  extracted_at: '2025-11-15T12:34:58.461074'
   race_type: result
 race_id: '20160809_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '2'
+  sire: チャクラ
+  dam: マヤノプリヤ
+  sire_of_sire: マヤノトップガン
+  dam_of_sire: カーロッサ
+  sire_of_dam: フサイチコンコルド
+  dam_of_dam: タイシンリリイ
+  birth_date: '2010-01-17'
+  farm: 北島牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 330
     popularity: 2
   place:
-    combo: '81110'
+    combo: '8'
     payout: 160
-    popularity: 268
+    popularity: 2
   quinella:
     combo: 7-8
     payout: 820
@@ -207,9 +218,9 @@ payouts:
     payout: 2560
     popularity: 8
   trifecta:
-    combo: 8-118-1010-11
+    combo: 8-11
     payout: 1050
-    popularity: 142226
+    popularity: 14
 corner_positions:
   corner_1: 11,8,(1,10),6,(7,9),3,5,2,4
   corner_2: 11,8,10,(1,6,9),7,3,5,2,4

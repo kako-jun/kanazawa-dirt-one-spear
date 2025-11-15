@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:20.383708'
+  extracted_at: '2025-11-15T12:44:26.120475'
   race_type: result
 race_id: '20200712_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 3
 - 6
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '5'
+  sire: トランセンド
+  dam: エナジーハート
+  sire_of_sire: ワイルドラッシュ
+  dam_of_sire: シネマスコープ
+  sire_of_dam: サクラバクシンオー
+  dam_of_dam: タガノルビー
+  birth_date: '2017-03-31'
+  farm: 宮内牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -155,9 +166,9 @@ payouts:
     payout: 680
     popularity: 5
   place:
-    combo: '369'
+    combo: '3'
     payout: 120
-    popularity: 163
+    popularity: 1
   quinella:
     combo: 3-6
     payout: 4400
@@ -175,9 +186,9 @@ payouts:
     payout: 4380
     popularity: 24
   trifecta:
-    combo: 3-63-96-9
+    combo: 3-6
     payout: 990
-    popularity: 1428
+    popularity: 14
 corner_positions:
   corner_1: 4,7,(3,9),(6,8),5,1,2
   corner_2: 4,7,3,(6,9),8,5,1,2

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:20:33.562783'
+  extracted_at: '2025-11-15T12:47:20.814365'
   race_type: result
 race_id: '20230903_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '1'
+  sire: ジョーカプチーノ
+  dam: パドブレ
+  sire_of_sire: マンハッタンカフェ
+  dam_of_sire: ジョープシケ
+  sire_of_dam: ホワイトマズル
+  dam_of_dam: リオクラーロ
+  birth_date: '2020-03-31'
+  farm: ミルファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '274'
+    combo: '2'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 2-7
     payout: 230
@@ -191,9 +202,9 @@ payouts:
     payout: 340
     popularity: 1
   trifecta:
-    combo: 2-72-44-7
+    combo: 2-7
     payout: 170
-    popularity: 1513
+    popularity: 1
 corner_positions:
   corner_1: 7,2,3,6,4,(8,9),1,5,10
   corner_2: 7,2,6,3,4,8,9,1,5,10

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:17:46.178714'
+  extracted_at: '2025-11-15T12:34:37.463003'
   race_type: result
 race_id: '20160626_06'
+track_condition: 不良
+weather: 晴
 finish_order:
 - 4
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '1'
+  sire: ブラックホーク
+  dam: ドーパミン
+  sire_of_sire: Nureyev
+  dam_of_sire: Silver Lane
+  sire_of_dam: フジキセキ
+  dam_of_dam: ゴールデンペレク
+  birth_date: '2012-04-21'
+  farm: 芳住　鉄兵
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 260
     popularity: 1
   place:
-    combo: '4107'
+    combo: '4'
     payout: 140
-    popularity: 179
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 490
@@ -191,9 +202,9 @@ payouts:
     payout: 3420
     popularity: 13
   trifecta:
-    combo: 4-104-77-10
+    combo: 4-10
     payout: 700
-    popularity: 52935
+    popularity: 5
 corner_positions:
   corner_1: 5,9,7,4,8,3,1,6,2,10
   corner_2: 5,9,7,4,8,3,(1,10),(2,6)

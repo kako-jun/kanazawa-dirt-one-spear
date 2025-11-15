@@ -1,8 +1,10 @@
 meta:
   source_file: race_11_result.html
-  extracted_at: '2025-11-14T17:17:29.569580'
+  extracted_at: '2025-11-15T12:33:18.751480'
   race_type: result
 race_id: '20150901_11'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 2
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '4'
+  sire: キングカメハメハ
+  dam: ヒカルキャンディー
+  sire_of_sire: Kingmambo
+  dam_of_sire: マンファス
+  sire_of_dam: アグネスタキオン
+  dam_of_dam: ヒカルバイオレット
+  birth_date: '2010-04-25'
+  farm: 登別上水牧場
+  birthplace: 北海道登別市
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -171,9 +182,9 @@ payouts:
     payout: 480
     popularity: 4
   place:
-    combo: '125'
+    combo: '1'
     payout: 140
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-2
     payout: 870
@@ -191,9 +202,9 @@ payouts:
     payout: 1820
     popularity: 5
   trifecta:
-    combo: 1-21-52-5
+    combo: 1-2
     payout: 320
-    popularity: 432
+    popularity: 4
 corner_positions:
   corner_1: 5,7,8,(2,1),4,9,3,10,6
   corner_2: 5,7,8,1,2,4,9,3,10,6

@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:17:53.879895'
+  extracted_at: '2025-11-15T12:35:16.891558'
   race_type: result
 race_id: '20160913_04'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '3'
+  sire: マツリダゴッホ
+  dam: ピュアウインド
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ペイパーレイン
+  sire_of_dam: デザートキング
+  dam_of_dam: ローレルキラリン
+  birth_date: '2012-03-29'
+  farm: 小島牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 630
     popularity: 3
   place:
-    combo: '1043'
+    combo: '10'
     payout: 150
-    popularity: 341
+    popularity: 3
   quinella:
     combo: 4-8
     payout: 2310
@@ -191,9 +202,9 @@ payouts:
     payout: 3590
     popularity: 15
   trifecta:
-    combo: 4-103-103-4
+    combo: 4-10
     payout: 680
-    popularity: 842
+    popularity: 8
 corner_positions:
   corner_1: 3,6,(4,9),(2,10),(1,5,8),7
   corner_2: 3,(6,10),4,9,2,(1,5),8,7

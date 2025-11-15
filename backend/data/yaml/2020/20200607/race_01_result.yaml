@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:19:16.901768'
+  extracted_at: '2025-11-15T12:44:08.949751'
   race_type: result
 race_id: '20200607_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 11
 - 12
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '1'
+  sire: ゴールドシップ
+  dam: ゲイリーピクシー
+  sire_of_sire: ステイゴールド
+  dam_of_sire: ポイントフラッグ
+  sire_of_dam: Rahy
+  dam_of_dam: フアイブフランス
+  birth_date: '2017-05-05'
+  farm: 武田　修一
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -203,9 +214,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '11127'
+    combo: '11'
     payout: 100
-    popularity: 165
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 970
@@ -223,9 +234,9 @@ payouts:
     payout: 1100
     popularity: 5
   trifecta:
-    combo: 11-127-117-12
+    combo: 11-12
     payout: 410
-    popularity: 5321
+    popularity: 5
 corner_positions:
   corner_1: 11,(6,12),(7,10),5,(3,4,9),(1,8),2
   corner_2: 11,12,10,7,6,5,9,(3,4),8,1,2

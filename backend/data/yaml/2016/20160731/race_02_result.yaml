@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:49.592474'
+  extracted_at: '2025-11-15T12:34:54.234239'
   race_type: result
 race_id: '20160731_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.2'
   popularity: '1'
+  sire: ベーカバド
+  dam: コトノハ
+  sire_of_sire: Cape Cross
+  dam_of_sire: Behkara
+  sire_of_dam: フジキセキ
+  dam_of_dam: ファーガーズプロスペクト
+  birth_date: '2013-02-15'
+  farm: 芳住　鉄兵
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '10118'
+    combo: '10'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 300
@@ -207,9 +218,9 @@ payouts:
     payout: 430
     popularity: 1
   trifecta:
-    combo: 10-118-108-11
+    combo: 10-11
     payout: 200
-    popularity: 234
+    popularity: 2
 corner_positions:
   corner_1: 11,10,6,1,12,(5,7),8,4,(2,9)
   corner_2: 11,10,6,1,12,5,7,(4,8),2,9

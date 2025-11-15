@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:20:13.119938'
+  extracted_at: '2025-11-15T12:46:34.705881'
   race_type: result
 race_id: '20221002_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 12
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '3'
+  sire: アドマイヤムーン
+  dam: アークティックシルク
+  sire_of_sire: エンドスウィープ
+  dam_of_sire: マイケイティーズ
+  sire_of_dam: Selkirk
+  dam_of_dam: Cape Verdi
+  birth_date: '2018-04-11'
+  farm: ダーレー・ジャパン・ファーム有限会社
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -203,9 +214,9 @@ payouts:
     payout: 780
     popularity: 3
   place:
-    combo: '8121'
+    combo: '8'
     payout: 230
-    popularity: 418
+    popularity: 4
   quinella:
     combo: 6-8
     payout: 420
@@ -223,9 +234,9 @@ payouts:
     payout: 2890
     popularity: 7
   trifecta:
-    combo: 8-121-81-12
+    combo: 8-12
     payout: 340
-    popularity: 22511
+    popularity: 2
 corner_positions:
   corner_1: 8,12,1,4,(2,7),5,6,9,3,11,10
   corner_2: 8,12,1,4,2,7,5,(3,6),9,11,10

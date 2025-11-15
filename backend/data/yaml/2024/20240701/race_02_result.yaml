@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:20:50.837532'
+  extracted_at: '2025-11-15T12:47:59.520981'
   race_type: result
 race_id: '20240701_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 1
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '37.6'
   popularity: '1'
+  sire: ゴールドアクター
+  dam: ゴールドタイリン
+  sire_of_sire: スクリーンヒーロー
+  dam_of_sire: ヘイロンシン
+  sire_of_dam: ネオユニヴァース
+  dam_of_dam: アジヤタイリン
+  birth_date: '2020-03-31'
+  farm: 北勝ファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -187,9 +198,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '10111'
+    combo: '10'
     payout: 110
-    popularity: 127
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 270
@@ -207,9 +218,9 @@ payouts:
     payout: 270
     popularity: 1
   trifecta:
-    combo: 1-1010-111-11
+    combo: 1-10
     payout: 150
-    popularity: 1515
+    popularity: 1
 corner_positions:
   corner_1: 1,10,(2,9,11),8,6,3,7,5,4
   corner_2: 1,10,2,11,9,8,6,3,4,7,5

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:18:44.718233'
+  extracted_at: '2025-11-15T12:41:20.174961'
   race_type: result
 race_id: '20181028_06'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 4
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '1'
+  sire: オルフェーヴル
+  dam: ロイヤルインパクト
+  sire_of_sire: ステイゴールド
+  dam_of_sire: オリエンタルアート
+  sire_of_dam: ディープインパクト
+  dam_of_dam: シーキングロイヤル
+  birth_date: '2015-02-10'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '4112'
+    combo: '4'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 190
@@ -207,9 +218,9 @@ payouts:
     payout: 410
     popularity: 1
   trifecta:
-    combo: 4-112-42-11
+    combo: 4-11
     payout: 120
-    popularity: 137
+    popularity: 1
 corner_positions:
   corner_1: 2,9,4,11,3,5,8,1,7,10,6
   corner_2: 2,(4,9),11,3,8,5,(1,10),7,6

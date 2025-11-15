@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:22.097160'
+  extracted_at: '2025-11-15T12:44:34.739521'
   race_type: result
 race_id: '20200728_02'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 5
 - 7
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.1'
   popularity: '1'
+  sire: ネオユニヴァース
+  dam: スマーティーシスター
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ポインテッドパス
+  sire_of_dam: Smarty Jones
+  dam_of_dam: Magic Valentine
+  birth_date: '2017-03-15'
+  farm: 日西牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -155,9 +166,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '573'
+    combo: '5'
     payout: 120
-    popularity: 178
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 1020
@@ -175,9 +186,9 @@ payouts:
     payout: 1070
     popularity: 4
   trifecta:
-    combo: 5-73-53-7
+    combo: 5-7
     payout: 450
-    popularity: 51025
+    popularity: 5
 corner_positions:
   corner_1: 2,5,7,9,3,(4,8),6,1
   corner_2: 2,4,5,7,3,9,6,8,1

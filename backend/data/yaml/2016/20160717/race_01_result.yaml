@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:48.161136'
+  extracted_at: '2025-11-15T12:34:47.086892'
   race_type: result
 race_id: '20160717_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 4
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.2'
   popularity: '1'
+  sire: ブラックタイド
+  dam: アジアンビューティ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ウインドインハーヘア
+  sire_of_dam: ニホンピロウイナー
+  dam_of_dam: ダイナチヤイナ
+  birth_date: '2013-04-10'
+  farm: ファニーヒルファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -155,9 +166,9 @@ payouts:
     payout: 210
     popularity: 1
   place:
-    combo: '148'
+    combo: '1'
     payout: 110
-    popularity: 134
+    popularity: 1
   quinella:
     combo: 1-4
     payout: 330
@@ -175,9 +186,9 @@ payouts:
     payout: 570
     popularity: 1
   trifecta:
-    combo: 1-41-84-8
+    combo: 1-4
     payout: 190
-    popularity: 176
+    popularity: 1
 corner_positions:
   corner_1: 8,4,7,9,2,(5,1),3,6
   corner_2: (8,4),9,1,(7,2),5,3,6

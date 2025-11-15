@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:20:19.163919'
+  extracted_at: '2025-11-15T12:46:49.163429'
   race_type: result
 race_id: '20230402_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 4
 - 8
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.4'
   popularity: '1'
+  sire: ラブリーデイ
+  dam: ラヴマリッジ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: ポップコーンジャズ
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: チャペルラヴァー
+  birth_date: '2018-03-30'
+  farm: 北島牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '8'
   horse_number: 8
@@ -155,9 +166,9 @@ payouts:
     payout: 220
     popularity: 1
   place:
-    combo: '487'
+    combo: '4'
     payout: 130
-    popularity: 129
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 230
@@ -175,9 +186,9 @@ payouts:
     payout: 620
     popularity: 2
   trifecta:
-    combo: 4-84-77-8
+    combo: 4-8
     payout: 220
-    popularity: 21920
+    popularity: 2
 corner_positions:
   corner_1: 4,(3,8),7,1,6,2,5,9
   corner_2: 4,8,3,(1,7,6)

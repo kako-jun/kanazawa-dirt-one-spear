@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:21:19.352064'
+  extracted_at: '2025-11-15T12:49:05.192034'
   race_type: result
 race_id: '20250908_03'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 3
 - 6
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '38.9'
   popularity: '1'
+  sire: グァンチャーレ
+  dam: イイデメモリー
+  sire_of_sire: スクリーンヒーロー
+  dam_of_sire: チュウオーサーヤ
+  sire_of_dam: ゴールドアリュール
+  dam_of_dam: パレガルニエ
+  birth_date: '2022-04-19'
+  farm: 山岡ファーム
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '5'
   horse_number: 6
@@ -203,9 +214,9 @@ payouts:
     payout: 360
     popularity: 1
   place:
-    combo: '3610'
+    combo: '3'
     payout: 150
-    popularity: 324
+    popularity: 3
   quinella:
     combo: 3-5
     payout: 470
@@ -223,9 +234,9 @@ payouts:
     payout: 1050
     popularity: 2
   trifecta:
-    combo: 3-63-106-10
+    combo: 3-6
     payout: 210
-    popularity: 153
+    popularity: 1
 corner_positions:
   corner_1: 3,6,1,10,(5,7,11),12,8,4,2,9
   corner_2: 3,6,1,10,5,7,11,12,8,4,2,9

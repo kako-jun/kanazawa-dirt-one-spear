@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:16.692517'
+  extracted_at: '2025-11-15T12:46:43.215894'
   race_type: result
 race_id: '20221108_01'
+track_condition: 稍重
+weather: 曇
 finish_order:
 - 10
 - 3
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '1'
+  sire: ワールドエース
+  dam: レインボーリップル
+  sire_of_sire: ディープインパクト
+  dam_of_sire: マンデラ
+  sire_of_dam: Rainbow Quest
+  dam_of_dam: Nazoo
+  birth_date: '2019-04-04'
+  farm: 三嶋牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '3'
   horse_number: 3
@@ -203,9 +214,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '1036'
+    combo: '10'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 3-7
     payout: 140
@@ -223,9 +234,9 @@ payouts:
     payout: 230
     popularity: 1
   trifecta:
-    combo: 3-106-103-6
+    combo: 3-10
     payout: 100
-    popularity: 124
+    popularity: 1
 corner_positions:
   corner_1: 3,5,10,11,12,(4,8),1,9,6,(2,7)
   corner_2: (3,10),5,11,4,(8,12),(1,9),6,2,7

@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:20:26.710736'
+  extracted_at: '2025-11-15T12:47:05.950618'
   race_type: result
 race_id: '20230620_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 4
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '1'
+  sire: トゥザグローリー
+  dam: テツムーン
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: アドマイヤムーン
+  dam_of_dam: シアトルビューティ
+  birth_date: '2019-04-26'
+  farm: 櫛桁牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '546'
+    combo: '5'
     payout: 100
-    popularity: 127
+    popularity: 1
   quinella:
     combo: 4-5
     payout: 200
@@ -191,9 +202,9 @@ payouts:
     payout: 230
     popularity: 1
   trifecta:
-    combo: 4-55-64-6
+    combo: 4-5
     payout: 150
-    popularity: 1816
+    popularity: 1
 corner_positions:
   corner_1: 5,4,9,10,6,7,(1,8),3
   corner_2: 5,(4,9,10)

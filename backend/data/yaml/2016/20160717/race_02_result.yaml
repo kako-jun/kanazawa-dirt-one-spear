@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:48.189679'
+  extracted_at: '2025-11-15T12:34:47.240634'
   race_type: result
 race_id: '20160717_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 7
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '42.6'
   popularity: '1'
+  sire: サウスヴィグラス
+  dam: シーズアトムボイ
+  sire_of_sire: End Sweep
+  dam_of_sire: Darkest Star
+  sire_of_dam: サマーサスピション
+  dam_of_dam: シャコンヌ
+  birth_date: '2013-03-27'
+  farm: 川向高橋育成牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '7108'
+    combo: '7'
     payout: 110
-    popularity: 129
+    popularity: 1
   quinella:
     combo: 6-8
     payout: 260
@@ -207,9 +218,9 @@ payouts:
     payout: 450
     popularity: 1
   trifecta:
-    combo: 7-107-88-10
+    combo: 7-10
     payout: 170
-    popularity: 11823
+    popularity: 1
 corner_positions:
   corner_1: 7,8,9,10,1,3,5,4,2,(6,11)
   corner_2: (7,9),8,(1,10),3,5,(4,2),6,11

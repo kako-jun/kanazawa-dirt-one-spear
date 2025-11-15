@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:06.915445'
+  extracted_at: '2025-11-15T12:43:16.138666'
   race_type: result
 race_id: '20191015_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 3
 - 9
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '1'
+  sire: ゴールドアリュール
+  dam: カネトシパリッシュ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ニキーヤ
+  sire_of_dam: Tapit
+  dam_of_dam: Invermay
+  birth_date: '2016-03-31'
+  farm: 高昭牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 9
@@ -187,9 +198,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '3910'
+    combo: '3'
     payout: 100
-    popularity: 134
+    popularity: 1
   quinella:
     combo: 3-7
     payout: 570
@@ -207,9 +218,9 @@ payouts:
     payout: 560
     popularity: 2
   trifecta:
-    combo: 3-93-109-10
+    combo: 3-9
     payout: 230
-    popularity: 2310
+    popularity: 2
 corner_positions:
   corner_1: (4,6),(5,7),3,10,11,9,2,(1,8)
   corner_2: 6,7,(4,3),5,10,2,9,11,8,1

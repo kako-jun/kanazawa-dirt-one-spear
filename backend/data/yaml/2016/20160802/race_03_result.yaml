@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:49.977844'
+  extracted_at: '2025-11-15T12:34:56.700700'
   race_type: result
 race_id: '20160802_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 4
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.2'
   popularity: '4'
+  sire: サムライハート
+  dam: マウタン
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: エアグルーヴ
+  sire_of_dam: ダミスター
+  dam_of_dam: リアルエクセレント
+  birth_date: '2012-05-10'
+  farm: 山田牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -187,9 +198,9 @@ payouts:
     payout: 1010
     popularity: 4
   place:
-    combo: '7410'
+    combo: '7'
     payout: 260
-    popularity: 618
+    popularity: 6
   quinella:
     combo: 4-6
     payout: 870
@@ -207,9 +218,9 @@ payouts:
     payout: 3080
     popularity: 12
   trifecta:
-    combo: 4-77-104-10
+    combo: 4-7
     payout: 410
-    popularity: 42718
+    popularity: 4
 corner_positions:
   corner_1: 4,11,6,(3,10),(1,8),(5,9),7,2
   corner_2: 4,11,6,(3,10),8,1,(5,9),7,2

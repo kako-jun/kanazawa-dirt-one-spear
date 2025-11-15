@@ -1,8 +1,10 @@
 meta:
   source_file: race_07_result.html
-  extracted_at: '2025-11-14T17:19:46.205016'
+  extracted_at: '2025-11-15T12:45:35.598476'
   race_type: result
 race_id: '20210822_07'
+track_condition: 良
+weather: 曇
 finish_order:
 - 3
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '37.7'
   popularity: '1'
+  sire: メイショウボーラー
+  dam: グラールホーリー
+  sire_of_sire: タイキシャトル
+  dam_of_sire: ナイスレイズ
+  sire_of_dam: アフリート
+  dam_of_dam: オオシマダリア
+  birth_date: '2015-04-11'
+  farm: 庄野牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '3511'
+    combo: '3'
     payout: 110
-    popularity: 173
+    popularity: 1
   quinella:
     combo: 3-5
     payout: 1700
@@ -191,9 +202,9 @@ payouts:
     payout: 2410
     popularity: 8
   trifecta:
-    combo: 3-53-115-11
+    combo: 3-5
     payout: 670
-    popularity: 8217
+    popularity: 8
 corner_positions:
   corner_1: 3,5,(4,11),(7,10),6,1,9,8,2
   corner_2: 3,5,4,11,(6,7),10,9,1,2,8

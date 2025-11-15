@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:41.944966'
+  extracted_at: '2025-11-15T12:34:16.559400'
   race_type: result
 race_id: '20160515_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '1'
+  sire: パーソナルラッシュ
+  dam: キョウワセイラン
+  sire_of_sire: Wild Rush
+  dam_of_sire: Personally
+  sire_of_dam: タイキシャトル
+  dam_of_dam: キョウワホウセキ
+  birth_date: '2013-04-20'
+  farm: 辻　和明
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '172'
+    combo: '1'
     payout: 100
-    popularity: 143
+    popularity: 1
   quinella:
     combo: 1-7
     payout: 750
@@ -191,9 +202,9 @@ payouts:
     payout: 890
     popularity: 4
   trifecta:
-    combo: 1-71-22-7
+    combo: 1-7
     payout: 470
-    popularity: 629
+    popularity: 6
 corner_positions:
   corner_1: 1,7,4,3,6,(2,10),5,8,9
   corner_2: 1,7,(3,4),(2,6),10,5,8,9

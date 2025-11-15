@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:35.535580'
+  extracted_at: '2025-11-15T12:47:24.932751'
   race_type: result
 race_id: '20230924_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 5
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '2'
+  sire: ハクサンムーン
+  dam: アオイサンライズ
+  sire_of_sire: アドマイヤムーン
+  dam_of_sire: チリエージェ
+  sire_of_dam: ステイゴールド
+  dam_of_dam: シルバートレイン
+  birth_date: '2020-04-14'
+  farm: 鮫川　啓一
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -155,9 +166,9 @@ payouts:
     payout: 240
     popularity: 2
   place:
-    combo: '154'
+    combo: '1'
     payout: 110
-    popularity: 213
+    popularity: 2
   quinella:
     combo: 1-5
     payout: 130
@@ -175,9 +186,9 @@ payouts:
     payout: 270
     popularity: 2
   trifecta:
-    combo: 1-51-44-5
+    combo: 1-5
     payout: 120
-    popularity: 142
+    popularity: 1
 corner_positions:
   corner_1: 1,5,8,9,4,2,7,3,6
   corner_2: 1,5,(8,9)

@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:18:09.257951'
+  extracted_at: '2025-11-15T12:37:03.645469'
   race_type: result
 race_id: '20170620_03'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 9
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '38.5'
   popularity: '1'
+  sire: バンブーエール
+  dam: ギャラクティコ
+  sire_of_sire: アフリート
+  dam_of_sire: レインボーウッド
+  sire_of_dam: マンハッタンカフェ
+  dam_of_dam: ティコティコタック
+  birth_date: '2014-03-19'
+  farm: バンブー牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -155,9 +166,9 @@ payouts:
     payout: 160
     popularity: 1
   place:
-    combo: '594'
+    combo: '5'
     payout: 120
-    popularity: 135
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 700
@@ -175,9 +186,9 @@ payouts:
     payout: 840
     popularity: 3
   trifecta:
-    combo: 5-94-54-9
+    combo: 5-9
     payout: 320
-    popularity: 2521
+    popularity: 2
 corner_positions:
   corner_1: 8,9,4,7,3,1,(2,6),5
   corner_2: 8,9,7,4,3,1,6,5,2

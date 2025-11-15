@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:36.416294'
+  extracted_at: '2025-11-15T12:33:51.125616'
   race_type: result
 race_id: '20151117_02'
+track_condition: 重
+weather: 雨
 finish_order:
 - 5
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.7'
   popularity: '3'
+  sire: ゼンノロブロイ
+  dam: フォレストゾーン
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ローミンレイチェル
+  sire_of_dam: Forest Wildcat
+  dam_of_dam: Give Me Liberty
+  birth_date: '2012-02-25'
+  farm: 新冠橋本牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 470
     popularity: 3
   place:
-    combo: '5111'
+    combo: '5'
     payout: 150
-    popularity: 319
+    popularity: 3
   quinella:
     combo: 5-8
     payout: 910
@@ -207,9 +218,9 @@ payouts:
     payout: 1650
     popularity: 6
   trifecta:
-    combo: 5-111-51-11
+    combo: 5-11
     payout: 420
-    popularity: 43023
+    popularity: 4
 corner_positions:
   corner_1: 5,(7,11),(1,6,10),2,8,9,3,4
   corner_2: 5,11,1,7,6,10,2,8,9,3,4

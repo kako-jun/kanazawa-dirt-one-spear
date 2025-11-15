@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:54.146199'
+  extracted_at: '2025-11-15T12:35:18.560856'
   race_type: result
 race_id: '20160918_01'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 5
 - 9
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.9'
   popularity: '1'
+  sire: ディープブリランテ
+  dam: アンムート
+  sire_of_sire: ディープインパクト
+  dam_of_sire: ラヴアンドバブルズ
+  sire_of_dam: グラスワンダー
+  dam_of_dam: アンダンテ
+  birth_date: '2014-04-29'
+  farm: 山口　忠彦
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 9
@@ -171,9 +182,9 @@ payouts:
     payout: 170
     popularity: 1
   place:
-    combo: '5910'
+    combo: '5'
     payout: 100
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 160
@@ -191,9 +202,9 @@ payouts:
     payout: 170
     popularity: 1
   trifecta:
-    combo: 5-95-109-10
+    combo: 5-9
     payout: 110
-    popularity: 164
+    popularity: 1
 corner_positions:
   corner_1: 5,(1,10),(4,8,9),6,(2,3),7
   corner_2: 5,(10,8,9),1,4,6,(2,3),7

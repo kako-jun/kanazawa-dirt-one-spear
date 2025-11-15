@@ -1,8 +1,10 @@
 meta:
   source_file: race_06_result.html
-  extracted_at: '2025-11-14T17:19:03.562107'
+  extracted_at: '2025-11-15T12:43:00.008635'
   race_type: result
 race_id: '20190910_06'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '1'
+  sire: ジャスタウェイ
+  dam: シタール
+  sire_of_sire: ハーツクライ
+  dam_of_sire: シビル
+  sire_of_dam: Fusaichi Pegasus
+  dam_of_dam: Rose Park
+  birth_date: '2016-05-13'
+  farm: 松浦牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 150
     popularity: 1
   place:
-    combo: '5107'
+    combo: '5'
     payout: 110
-    popularity: 127
+    popularity: 1
   quinella:
     combo: 5-8
     payout: 300
@@ -191,9 +202,9 @@ payouts:
     payout: 360
     popularity: 1
   trifecta:
-    combo: 5-105-77-10
+    combo: 5-10
     payout: 170
-    popularity: 11017
+    popularity: 1
 corner_positions:
   corner_1: 4,8,(9,10),3,5,7,(1,2),6
   corner_2: (4,8,9,10),5,7,3,1,2,6

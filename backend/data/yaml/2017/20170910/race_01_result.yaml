@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:18:16.970326'
+  extracted_at: '2025-11-15T12:37:53.640292'
   race_type: result
 race_id: '20170910_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 2
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '39.6'
   popularity: '1'
+  sire: マツリダゴッホ
+  dam: プレシャスドロップ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ペイパーレイン
+  sire_of_dam: フレンチデピュティ
+  dam_of_dam: ザラストドロップ
+  birth_date: '2011-04-14'
+  farm: 岡田スタツド
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -139,9 +150,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '523'
+    combo: '5'
     payout: 100
-    popularity: 163
+    popularity: 1
   quinella:
     combo: 2-5
     payout: 960
@@ -159,9 +170,9 @@ payouts:
     payout: 1050
     popularity: 5
   trifecta:
-    combo: 2-53-52-3
+    combo: 2-5
     payout: 550
-    popularity: 7216
+    popularity: 7
 corner_positions:
   corner_1: 2,5,8,9,3,4,(1,7),6
   corner_2: 2,5,8,9,3,1,4,7

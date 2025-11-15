@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:39.618120'
+  extracted_at: '2025-11-15T12:47:34.268155'
   race_type: result
 race_id: '20231105_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 2
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '37.9'
   popularity: '1'
+  sire: ミッキーアイル
+  dam: ゴールデンムーン
+  sire_of_sire: ディープインパクト
+  dam_of_sire: スターアイル
+  sire_of_dam: アドマイヤムーン
+  dam_of_dam: トップサンキスト
+  birth_date: '2019-03-18'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -187,9 +198,9 @@ payouts:
     payout: 190
     popularity: 1
   place:
-    combo: '529'
+    combo: '5'
     payout: 100
-    popularity: 213
+    popularity: 2
   quinella:
     combo: 2-5
     payout: 200
@@ -207,9 +218,9 @@ payouts:
     payout: 470
     popularity: 1
   trifecta:
-    combo: 2-55-92-9
+    combo: 2-5
     payout: 140
-    popularity: 142
+    popularity: 1
 corner_positions:
   corner_1: 5,7,10,(3,9,11),4,(6,2),8,1
   corner_2: 5,7,9,10,3,(4,6,11),2,8,1

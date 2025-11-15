@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:22.184561'
+  extracted_at: '2025-11-15T12:44:35.143296'
   race_type: result
 race_id: '20200728_05'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '2'
+  sire: ダンカーク
+  dam: ブリリアントライフ
+  sire_of_sire: Unbridled's Song
+  dam_of_sire: Secret Status
+  sire_of_dam: グラスワンダー
+  dam_of_dam: シマノビューティー
+  birth_date: '2016-04-24'
+  farm: 杵臼牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 420
     popularity: 2
   place:
-    combo: '7109'
+    combo: '7'
     payout: 140
-    popularity: 231
+    popularity: 2
   quinella:
     combo: 7-8
     payout: 380
@@ -191,9 +202,9 @@ payouts:
     payout: 2860
     popularity: 12
   trifecta:
-    combo: 7-107-99-10
+    combo: 7-10
     payout: 470
-    popularity: 513
+    popularity: 5
 corner_positions:
   corner_1: 1,7,5,10,9,6,(2,8),3,4
   corner_2: 1,7,5,10,9,6,8,2,3,4

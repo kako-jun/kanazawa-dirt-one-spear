@@ -1,8 +1,10 @@
 meta:
   source_file: race_09_result.html
-  extracted_at: '2025-11-14T17:18:44.810419'
+  extracted_at: '2025-11-15T12:41:20.592047'
   race_type: result
 race_id: '20181028_09'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 1
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '1'
+  sire: ストリートセンス
+  dam: サンデーローザ
+  sire_of_sire: Street Cry
+  dam_of_sire: Bedazzle
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: アスクローザ
+  birth_date: '2014-05-18'
+  farm: 清水牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '1510'
+    combo: '1'
     payout: 100
-    popularity: 154
+    popularity: 1
   quinella:
     combo: 1-5
     payout: 830
@@ -191,9 +202,9 @@ payouts:
     payout: 760
     popularity: 3
   trifecta:
-    combo: 1-51-105-10
+    combo: 1-5
     payout: 280
-    popularity: 31423
+    popularity: 3
 corner_positions:
   corner_1: 9,2,6,(1,8),10,5,4,(3,7)
   corner_2: 9,2,6,1,8,5,10,(3,4),7

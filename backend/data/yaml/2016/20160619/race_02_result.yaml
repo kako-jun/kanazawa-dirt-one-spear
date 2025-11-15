@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:45.383588'
+  extracted_at: '2025-11-15T12:34:33.577360'
   race_type: result
 race_id: '20160619_02'
+track_condition: 良
+weather: 曇
 finish_order:
 - 5
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '4'
+  sire: オレハマッテルゼ
+  dam: ベルグチケット
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: カーリーエンジェル
+  sire_of_dam: ウイニングチケット
+  dam_of_dam: ベルグストーム
+  birth_date: '2013-03-16'
+  farm: ミルファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 950
     popularity: 4
   place:
-    combo: '5810'
+    combo: '5'
     payout: 320
-    popularity: 5411
+    popularity: 5
   quinella:
     combo: 5-7
     payout: 2630
@@ -191,9 +202,9 @@ payouts:
     payout: 5580
     popularity: 18
   trifecta:
-    combo: 5-85-108-10
+    combo: 5-8
     payout: 500
-    popularity: 44146
+    popularity: 4
 corner_positions:
   corner_1: 10,(4,5),11,9,3,2,7,8,6,1
   corner_2: 10,5,9,4,11,2,7

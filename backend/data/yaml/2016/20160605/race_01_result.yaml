@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:43.975570'
+  extracted_at: '2025-11-15T12:34:27.316004'
   race_type: result
 race_id: '20160605_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 9
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '1'
+  sire: タニノギムレット
+  dam: タニノティアラ
+  sire_of_sire: ブライアンズタイム
+  dam_of_sire: タニノクリスタル
+  sire_of_dam: サンデーサイレンス
+  dam_of_dam: タニノブーケ
+  birth_date: '2011-05-07'
+  farm: 土田　陽介
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '9108'
+    combo: '9'
     payout: 100
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 230
@@ -191,9 +202,9 @@ payouts:
     payout: 290
     popularity: 1
   trifecta:
-    combo: 9-108-98-10
+    combo: 9-10
     payout: 110
-    popularity: 134
+    popularity: 1
 corner_positions:
   corner_1: 8,9,10,6,1,2,7,(3,5),4
   corner_2: 8,9,10,1,6

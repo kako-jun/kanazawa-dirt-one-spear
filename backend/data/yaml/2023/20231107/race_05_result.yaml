@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:40.122352'
+  extracted_at: '2025-11-15T12:47:35.345164'
   race_type: result
 race_id: '20231107_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 8
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.9'
   popularity: '1'
+  sire: レッドファルクス
+  dam: ヴァルキリー
+  sire_of_sire: スウェプトオーヴァーボード
+  dam_of_sire: ベルモット
+  sire_of_dam: ダンスインザダーク
+  dam_of_dam: ポットアカデミー
+  birth_date: '2020-04-03'
+  farm: 松木　加代
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '8107'
+    combo: '8'
     payout: 100
-    popularity: 143
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 220
@@ -191,9 +202,9 @@ payouts:
     payout: 1490
     popularity: 6
   trifecta:
-    combo: 8-107-87-10
+    combo: 8-10
     payout: 420
-    popularity: 5111
+    popularity: 5
 corner_positions:
   corner_1: 2,7,3,10,5,8,6,11,1,9
   corner_2: 2,7,(3,10),(5,8),6

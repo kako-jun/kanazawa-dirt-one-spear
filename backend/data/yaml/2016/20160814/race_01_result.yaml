@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:50.613937'
+  extracted_at: '2025-11-15T12:34:59.718837'
   race_type: result
 race_id: '20160814_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 2
 - 1
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '1'
+  sire: ネオユニヴァース
+  dam: メロディペリオット
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ポインテッドパス
+  sire_of_dam: リアルシヤダイ
+  dam_of_dam: メロデイスキー
+  birth_date: '2013-06-08'
+  farm: 清水牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -139,9 +150,9 @@ payouts:
     payout: 180
     popularity: 1
   place:
-    combo: '216'
+    combo: '2'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 1-2
     payout: 250
@@ -159,9 +170,9 @@ payouts:
     payout: 330
     popularity: 1
   trifecta:
-    combo: 1-22-61-6
+    combo: 1-2
     payout: 150
-    popularity: 214
+    popularity: 2
 corner_positions:
   corner_1: 2,3,1,6,9,8,4,5
   corner_2: 2,3,1,6,8

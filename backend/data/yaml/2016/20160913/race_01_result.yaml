@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:17:53.755330'
+  extracted_at: '2025-11-15T12:35:16.180625'
   race_type: result
 race_id: '20160913_01'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 4
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.6'
   popularity: '3'
+  sire: ビービーガルダン
+  dam: ビービーラッハーン
+  sire_of_sire: チーフベアハート
+  dam_of_sire: オールザチャット
+  sire_of_dam: シンボリクリスエス
+  dam_of_dam: レディベローナ
+  birth_date: '2013-04-26'
+  farm: 坂東牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -187,9 +198,9 @@ payouts:
     payout: 790
     popularity: 3
   place:
-    combo: '10411'
+    combo: '10'
     payout: 180
-    popularity: 325
+    popularity: 3
   quinella:
     combo: 4-7
     payout: 700
@@ -207,9 +218,9 @@ payouts:
     payout: 2020
     popularity: 7
   trifecta:
-    combo: 4-1010-114-11
+    combo: 4-10
     payout: 360
-    popularity: 3155
+    popularity: 3
 corner_positions:
   corner_1: 10,12,(3,4,11),(2,5),(1,8),6,9
   corner_2: 10,12,(3,11),4,5,2,8,(1,6),9

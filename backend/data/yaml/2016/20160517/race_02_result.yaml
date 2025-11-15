@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:42.231898'
+  extracted_at: '2025-11-15T12:34:18.460869'
   race_type: result
 race_id: '20160517_02'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 10
 - 4
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '1'
+  sire: サクラバクシンオー
+  dam: トリプルリーチ
+  sire_of_sire: サクラユタカオー
+  dam_of_sire: サクラハゴロモ
+  sire_of_dam: スペシャルウィーク
+  dam_of_dam: トリプルワウ
+  birth_date: '2009-03-25'
+  farm: 猿倉牧場
+  birthplace: 北海道様似郡様似町
 - finish_position: 2
   gate_number: '4'
   horse_number: 4
@@ -187,9 +198,9 @@ payouts:
     payout: 100
     popularity: 1
   place:
-    combo: '1045'
+    combo: '10'
     payout: 110
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 250
@@ -207,9 +218,9 @@ payouts:
     payout: 270
     popularity: 1
   trifecta:
-    combo: 4-105-104-5
+    combo: 4-10
     payout: 170
-    popularity: 1410
+    popularity: 1
 corner_positions:
   corner_1: 10,6,5,7,9,2,4,11,3,8,1
   corner_2: 10,6,5,7,2,4,3,9,11,8,1

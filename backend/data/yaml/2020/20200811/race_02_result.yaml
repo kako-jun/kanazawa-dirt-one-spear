@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:19:23.427347'
+  extracted_at: '2025-11-15T12:44:41.283829'
   race_type: result
 race_id: '20200811_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.3'
   popularity: '2'
+  sire: ジャスタウェイ
+  dam: ナドー
+  sire_of_sire: ハーツクライ
+  dam_of_sire: シビル
+  sire_of_dam: Soave
+  dam_of_dam: Halix
+  birth_date: '2017-01-21'
+  farm: （有）社台コーポレーション白老ファーム
+  birthplace: 北海道白老郡白老町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 270
     popularity: 2
   place:
-    combo: '7101'
+    combo: '7'
     payout: 140
-    popularity: 234
+    popularity: 2
   quinella:
     combo: 7-8
     payout: 800
@@ -191,9 +202,9 @@ payouts:
     payout: 1150
     popularity: 5
   trifecta:
-    combo: 7-101-71-10
+    combo: 7-10
     payout: 250
-    popularity: 356
+    popularity: 3
 corner_positions:
   corner_1: 5,(3,7),1,(2,6,9),(10,8),4
   corner_2: 5,(3,7),(1,6),2,9,8,10,4

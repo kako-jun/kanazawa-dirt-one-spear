@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:18:43.899987'
+  extracted_at: '2025-11-15T12:41:15.509385'
   race_type: result
 race_id: '20181021_01'
+track_condition: 重
+weather: 晴
 finish_order:
 - 4
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '38.4'
   popularity: '1'
+  sire: タイキシャトル
+  dam: シンシンパッション
+  sire_of_sire: Devil's Bag
+  dam_of_sire: Welsh Muffin
+  sire_of_dam: ヘクタープロテクター
+  dam_of_dam: ビューチフルロマン
+  birth_date: '2015-03-21'
+  farm: 藤本牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 120
     popularity: 1
   place:
-    combo: '4113'
+    combo: '4'
     payout: 100
-    popularity: 126
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 220
@@ -207,9 +218,9 @@ payouts:
     payout: 330
     popularity: 1
   trifecta:
-    combo: 4-113-43-11
+    combo: 4-11
     payout: 170
-    popularity: 1912
+    popularity: 1
 corner_positions:
   corner_1: 11,4,10,2,7,3,9,(1,6),(5,8)
   corner_2: 11,4,10,2,7,3,9,6,1,8,5

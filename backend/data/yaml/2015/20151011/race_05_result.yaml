@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:33.042295'
+  extracted_at: '2025-11-15T12:33:35.535399'
   race_type: result
 race_id: '20151011_05'
+track_condition: 不良
+weather: 雨
 finish_order:
 - 1
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '41.8'
   popularity: '1'
+  sire: タニノギムレット
+  dam: イージーラフター
+  sire_of_sire: ブライアンズタイム
+  dam_of_sire: タニノクリスタル
+  sire_of_dam: Jade Robbery
+  dam_of_dam: Laughsome
+  birth_date: '2012-05-15'
+  farm: 幾千世牧場
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 190
     popularity: 1
   place:
-    combo: '1103'
+    combo: '1'
     payout: 100
-    popularity: 172
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 720
@@ -207,9 +218,9 @@ payouts:
     payout: 4050
     popularity: 12
   trifecta:
-    combo: 1-101-33-10
+    combo: 1-10
     payout: 1140
-    popularity: 16110
+    popularity: 16
 corner_positions:
   corner_1: 3,5,1,10,7,(2,11),6,8,4,9
   corner_2: 3,(1,5),10,7,2,11,6,8,4,9

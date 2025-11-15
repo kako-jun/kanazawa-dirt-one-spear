@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:17:27.347524'
+  extracted_at: '2025-11-15T12:33:08.628287'
   race_type: result
 race_id: '20150811_03'
+track_condition: 良
+weather: 曇
 finish_order:
 - 1
 - 6
@@ -28,6 +30,15 @@ result_details:
   margin: ''
   last_3f: '40.9'
   popularity: '2'
+  sire: ソングオブウインド
+  dam: モルフェスペシャル
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: メモリアルサマー
+  sire_of_dam: スペシャルウィーク
+  dam_of_dam: ハリケーンキャット
+  birth_date: '2013-04-14'
+  farm: 川向高橋育成牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -103,6 +114,15 @@ result_details:
   margin: ４
   last_3f: '44.0'
   popularity: '6'
+  sire: ソングオブウインド
+  dam: モルフェスペシャル
+  sire_of_sire: エルコンドルパサー
+  dam_of_sire: メモリアルサマー
+  sire_of_dam: スペシャルウィーク
+  dam_of_dam: ハリケーンキャット
+  birth_date: '2013-04-14'
+  farm: 川向高橋育成牧場
+  birthplace: 北海道沙流郡平取町
 - finish_position: 7
   gate_number: '3'
   horse_number: 3
@@ -139,9 +159,9 @@ payouts:
     payout: 440
     popularity: 2
   place:
-    combo: '165'
+    combo: '1'
     payout: 100
-    popularity: 124
+    popularity: 1
   quinella:
     combo: 1-6
     payout: 180
@@ -151,9 +171,9 @@ payouts:
     payout: 680
     popularity: 2
   wide:
-    combo: 1-61-55-6
+    combo: 1-6
     payout: 130
-    popularity: 163
+    popularity: 1
   trio:
     combo: 1-5-6
     payout: 470

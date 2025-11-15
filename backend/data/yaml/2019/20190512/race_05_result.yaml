@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:18:51.863823'
+  extracted_at: '2025-11-15T12:41:58.761264'
   race_type: result
 race_id: '20190512_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 9
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '41.4'
   popularity: '1'
+  sire: スクリーンヒーロー
+  dam: バルフューレント
+  sire_of_sire: グラスワンダー
+  dam_of_sire: ランニングヒロイン
+  sire_of_dam: ファスリエフ
+  dam_of_dam: コリンナ
+  birth_date: '2015-04-06'
+  farm: 増本牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '9104'
+    combo: '9'
     payout: 110
-    popularity: 142
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 1350
@@ -191,9 +202,9 @@ payouts:
     payout: 1250
     popularity: 4
   trifecta:
-    combo: 9-104-94-10
+    combo: 9-10
     payout: 320
-    popularity: 239
+    popularity: 2
 corner_positions:
   corner_1: 6,1,9,8,7,2,3,4,10,5
   corner_2: 6,1,9,(2,8),7,3,4,5,10

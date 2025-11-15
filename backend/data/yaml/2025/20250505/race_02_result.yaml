@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:21:09.397199'
+  extracted_at: '2025-11-15T12:48:42.163999'
   race_type: result
 race_id: '20250505_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 4
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.3'
   popularity: '1'
+  sire: リオンディーズ
+  dam: マーヴェリックス
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: シーザリオ
+  sire_of_dam: Smart Strike
+  dam_of_dam: エルノヴァ
+  birth_date: '2018-05-21'
+  farm: フジワラフアーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '4101'
+    combo: '4'
     payout: 120
-    popularity: 175
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 420
@@ -191,9 +202,9 @@ payouts:
     payout: 960
     popularity: 5
   trifecta:
-    combo: 4-101-41-10
+    combo: 4-10
     payout: 340
-    popularity: 6229
+    popularity: 6
 corner_positions:
   corner_1: 1,10,2,6,7,4,5,3,9,8
   corner_2: 1,10,2,(6,7),4,5,3,9,8

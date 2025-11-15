@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:19:48.380748'
+  extracted_at: '2025-11-15T12:45:40.524767'
   race_type: result
 race_id: '20210914_03'
+track_condition: 良
+weather: 曇
 finish_order:
 - 3
 - 6
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.7'
   popularity: '2'
+  sire: ヨハネスブルグ
+  dam: ファーレサルティ
+  sire_of_sire: Hennessy
+  dam_of_sire: Myth
+  sire_of_dam: ダンスインザダーク
+  dam_of_dam: ケイティーズファースト
+  birth_date: '2018-02-25'
+  farm: 桑田フアーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '6'
   horse_number: 6
@@ -171,9 +182,9 @@ payouts:
     payout: 300
     popularity: 2
   place:
-    combo: '3610'
+    combo: '3'
     payout: 110
-    popularity: 216
+    popularity: 2
   quinella:
     combo: 3-6
     payout: 230
@@ -191,9 +202,9 @@ payouts:
     payout: 540
     popularity: 3
   trifecta:
-    combo: 3-63-106-10
+    combo: 3-6
     payout: 130
-    popularity: 1124
+    popularity: 1
 corner_positions:
   corner_1: 3,6,10,(1,5),2,4,8,(7,9)
   corner_2: 3,6,10,5,(1,2),4,8,7,9

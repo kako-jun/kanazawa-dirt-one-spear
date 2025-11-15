@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:20:16.228078'
+  extracted_at: '2025-11-15T12:46:42.111686'
   race_type: result
 race_id: '20221101_10'
+track_condition: 稍重
+weather: 雨
 finish_order:
 - 4
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.0'
   popularity: '1'
+  sire: トゥザワールド
+  dam: プリンセスハルカ
+  sire_of_sire: キングカメハメハ
+  dam_of_sire: トゥザヴィクトリー
+  sire_of_dam: ハーツクライ
+  dam_of_dam: カツラヘネシー
+  birth_date: '2019-04-25'
+  farm: 坂東ファーム
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '4102'
+    combo: '4'
     payout: 100
-    popularity: 139
+    popularity: 1
   quinella:
     combo: 4-8
     payout: 260
@@ -207,9 +218,9 @@ payouts:
     payout: 630
     popularity: 2
   trifecta:
-    combo: 4-102-42-10
+    combo: 4-10
     payout: 240
-    popularity: 21429
+    popularity: 2
 corner_positions:
   corner_1: 1,8,(5,7),6,4,(2,11),(3,10),9
   corner_2: 1,8,7,5,(4,6),11,2,3,10,9

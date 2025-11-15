@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:17:34.666476'
+  extracted_at: '2025-11-15T12:33:42.750139'
   race_type: result
 race_id: '20151027_05'
+track_condition: 良
+weather: 晴
 finish_order:
 - 3
 - 2
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '42.0'
   popularity: '1'
+  sire: ジャイアントレッカー
+  dam: ヴォルケーノ
+  sire_of_sire: Giant's Causeway
+  dam_of_sire: Homewrecker
+  sire_of_dam: シエイデイハイツ
+  dam_of_dam: カツラ２
+  birth_date: '2011-04-25'
+  farm: 様似共栄牧場
+  birthplace: 北海道様似郡様似町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -187,9 +198,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '3210'
+    combo: '3'
     payout: 130
-    popularity: 174
+    popularity: 1
   quinella:
     combo: 2-3
     payout: 2530
@@ -207,9 +218,9 @@ payouts:
     payout: 3480
     popularity: 11
   trifecta:
-    combo: 2-33-102-10
+    combo: 2-3
     payout: 660
-    popularity: 8320
+    popularity: 8
 corner_positions:
   corner_1: (4,9),(3,11),5,(1,8,10),2,7,6
   corner_2: 9,4,3,11,5,(1,8),(2,10),7,6

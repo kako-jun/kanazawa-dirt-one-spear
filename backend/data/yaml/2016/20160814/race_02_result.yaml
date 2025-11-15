@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:17:50.642308'
+  extracted_at: '2025-11-15T12:34:59.863072'
   race_type: result
 race_id: '20160814_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 11
 - 2
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.9'
   popularity: '1'
+  sire: ダイワメジャー
+  dam: ワインレッド
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: A.P. Indy
+  dam_of_dam: フェアレストケープ
+  birth_date: '2013-03-01'
+  farm: 有限会社　吉田ファーム
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -187,9 +198,9 @@ payouts:
     payout: 170
     popularity: 1
   place:
-    combo: '11210'
+    combo: '11'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 2-8
     payout: 230
@@ -207,9 +218,9 @@ payouts:
     payout: 500
     popularity: 1
   trifecta:
-    combo: 2-1110-112-10
+    combo: 2-11
     payout: 110
-    popularity: 125
+    popularity: 1
 corner_positions:
   corner_1: (11,1),(10,2),5,6,9,3,7,8,4
   corner_2: 1,(11,2),10,5,6,8,9,3,4,7

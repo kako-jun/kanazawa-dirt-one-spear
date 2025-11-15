@@ -1,8 +1,10 @@
 meta:
   source_file: race_02_result.html
-  extracted_at: '2025-11-14T17:18:32.943687'
+  extracted_at: '2025-11-15T12:40:07.222777'
   race_type: result
 race_id: '20180626_02'
+track_condition: 良
+weather: 晴
 finish_order:
 - 8
 - 10
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '2'
+  sire: ローレルゲレイロ
+  dam: ケイウンコスモ
+  sire_of_sire: キングヘイロー
+  dam_of_sire: ビッグテンビー
+  sire_of_dam: ジェニュイン
+  dam_of_dam: コスモグローリ
+  birth_date: '2014-02-02'
+  farm: 村上　雅規
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -171,9 +182,9 @@ payouts:
     payout: 400
     popularity: 2
   place:
-    combo: '8101'
+    combo: '8'
     payout: 170
-    popularity: 421
+    popularity: 4
   quinella:
     combo: 7-8
     payout: 400
@@ -191,9 +202,9 @@ payouts:
     payout: 1630
     popularity: 2
   trifecta:
-    combo: 8-101-81-10
+    combo: 8-10
     payout: 390
-    popularity: 254
+    popularity: 2
 corner_positions:
   corner_1: 8,10,6,(3,7),9,5,2,4,1
   corner_2: 8,10,9,(3,6),(2,5,7),1,4

@@ -1,8 +1,10 @@
 meta:
   source_file: race_08_result.html
-  extracted_at: '2025-11-14T17:17:32.811292'
+  extracted_at: '2025-11-15T12:33:34.041069'
   race_type: result
 race_id: '20151006_08'
+track_condition: 良
+weather: 晴
 finish_order:
 - 4
 - 10
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '39.3'
   popularity: '2'
+  sire: ダイワメジャー
+  dam: ジョリブロンド
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: トニービン
+  dam_of_dam: ブラッシングブロンド
+  birth_date: '2010-04-11'
+  farm: 若林牧場
+  birthplace: 北海道新冠郡新冠町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -187,9 +198,9 @@ payouts:
     payout: 370
     popularity: 2
   place:
-    combo: '4102'
+    combo: '4'
     payout: 160
-    popularity: 246
+    popularity: 2
   quinella:
     combo: 4-8
     payout: 1540
@@ -207,9 +218,9 @@ payouts:
     payout: 3420
     popularity: 14
   trifecta:
-    combo: 4-102-42-10
+    combo: 4-10
     payout: 680
-    popularity: 101418
+    popularity: 10
 corner_positions:
   corner_1: 10,1,9,(4,7),(2,8),3,6,5,11
   corner_2: 10,1,(4,9),7,2,8,3,6,5,11

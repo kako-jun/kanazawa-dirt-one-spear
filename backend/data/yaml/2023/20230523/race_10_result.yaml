@@ -1,8 +1,10 @@
 meta:
   source_file: race_10_result.html
-  extracted_at: '2025-11-14T17:20:24.153509'
+  extracted_at: '2025-11-15T12:47:00.245730'
   race_type: result
 race_id: '20230523_10'
+track_condition: 良
+weather: 晴
 finish_order:
 - 7
 - 5
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.9'
   popularity: '1'
+  sire: ロジユニヴァース
+  dam: ロジフェローズ
+  sire_of_sire: ネオユニヴァース
+  dam_of_sire: アコースティクス
+  sire_of_dam: タニノギムレット
+  dam_of_dam: スイートフェローズ
+  birth_date: '2018-03-14'
+  farm: ノーザンファーム
+  birthplace: 北海道勇払郡安平町
 - finish_position: 2
   gate_number: '5'
   horse_number: 5
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '752'
+    combo: '7'
     payout: 110
-    popularity: 125
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 210
@@ -191,9 +202,9 @@ payouts:
     payout: 240
     popularity: 1
   trifecta:
-    combo: 5-72-72-5
+    combo: 5-7
     payout: 160
-    popularity: 256
+    popularity: 2
 corner_positions:
   corner_1: 5,7,(2,10),1,3,8,(4,9),6
   corner_2: 5,2,7,10,3,1,8,4,9,6

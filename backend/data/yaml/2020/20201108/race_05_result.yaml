@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:19:31.648245'
+  extracted_at: '2025-11-15T12:45:03.328549'
   race_type: result
 race_id: '20201108_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 9
 - 8
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '38.8'
   popularity: '1'
+  sire: ダイワメジャー
+  dam: ダイヤモンドディーバ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: スカーレットブーケ
+  sire_of_dam: Dansili
+  dam_of_dam: Vivianna
+  birth_date: '2017-03-09'
+  farm: ノーザンファーム
+  birthplace: 北海道勇払郡安平町
 - finish_position: 2
   gate_number: '7'
   horse_number: 8
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '9810'
+    combo: '9'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 7-8
     payout: 400
@@ -191,9 +202,9 @@ payouts:
     payout: 490
     popularity: 2
   trifecta:
-    combo: 8-99-108-10
+    combo: 8-9
     payout: 160
-    popularity: 215
+    popularity: 2
 corner_positions:
   corner_1: 8,9,10,(5,7),6,3,1,(2,4)
   corner_2: '8'

@@ -1,8 +1,10 @@
 meta:
   source_file: race_05_result.html
-  extracted_at: '2025-11-14T17:20:50.925101'
+  extracted_at: '2025-11-15T12:47:59.726972'
   race_type: result
 race_id: '20240701_05'
+track_condition: 不良
+weather: 曇
 finish_order:
 - 5
 - 7
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '39.6'
   popularity: '1'
+  sire: ドレフォン
+  dam: ヴォレダンルシエル
+  sire_of_sire: Gio Ponti
+  dam_of_sire: Eltimaas
+  sire_of_dam: キングカメハメハ
+  dam_of_dam: ピンクパピヨン
+  birth_date: '2020-02-10'
+  farm: ヒサイファーム
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '7'
   horse_number: 7
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '5710'
+    combo: '5'
     payout: 100
-    popularity: 123
+    popularity: 1
   quinella:
     combo: 5-7
     payout: 230
@@ -191,9 +202,9 @@ payouts:
     payout: 270
     popularity: 1
   trifecta:
-    combo: 5-75-107-10
+    combo: 5-7
     payout: 160
-    popularity: 135
+    popularity: 1
 corner_positions:
   corner_1: 5,10,1,4,7,3,2,8,9,6
   corner_2: 5,10,1,7,(3,4),2,8,(9,6)

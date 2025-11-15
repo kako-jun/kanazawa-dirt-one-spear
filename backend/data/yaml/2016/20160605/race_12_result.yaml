@@ -1,8 +1,10 @@
 meta:
   source_file: race_12_result.html
-  extracted_at: '2025-11-14T17:17:44.293975'
+  extracted_at: '2025-11-15T12:34:28.842191'
   race_type: result
 race_id: '20160605_12'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.1'
   popularity: '3'
+  sire: ヴリル
+  dam: グレイスアッパー
+  sire_of_sire: Sunday Silence
+  dam_of_sire: Phantom Creek
+  sire_of_dam: ブラックタイアフェアー
+  dam_of_dam: アッパー
+  birth_date: '2011-03-25'
+  farm: 成隆牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 780
     popularity: 3
   place:
-    combo: '1119'
+    combo: '1'
     payout: 310
-    popularity: 326
+    popularity: 3
   quinella:
     combo: 1-8
     payout: 1550
@@ -207,9 +218,9 @@ payouts:
     payout: 5170
     popularity: 16
   trifecta:
-    combo: 1-111-99-11
+    combo: 1-11
     payout: 630
-    popularity: 71712
+    popularity: 7
 corner_positions:
   corner_1: 1,11,6,(2,3,4,8),9,7,5,10
   corner_2: 1,(6,11),(2,8),(3,4),(9,7),5,10

@@ -1,8 +1,10 @@
 meta:
   source_file: race_04_result.html
-  extracted_at: '2025-11-14T17:19:56.246893'
+  extracted_at: '2025-11-15T12:45:57.938081'
   race_type: result
 race_id: '20220403_04'
+track_condition: 良
+weather: 晴
 finish_order:
 - 5
 - 1
@@ -30,6 +32,15 @@ result_details:
   margin: ''
   last_3f: '43.9'
   popularity: '1'
+  sire: ミッキーアイル
+  dam: ハッピーウェーブ
+  sire_of_sire: ディープインパクト
+  dam_of_sire: スターアイル
+  sire_of_dam: ゴールドアリュール
+  dam_of_dam: ゴシップクイーン
+  birth_date: '2019-04-22'
+  farm: 社台ファーム
+  birthplace: 北海道千歳市
 - finish_position: 2
   gate_number: '1'
   horse_number: 1
@@ -171,9 +182,9 @@ payouts:
     payout: 110
     popularity: 1
   place:
-    combo: '517'
+    combo: '5'
     payout: 100
-    popularity: 142
+    popularity: 1
   quinella:
     combo: 1-5
     payout: 790
@@ -191,9 +202,9 @@ payouts:
     payout: 700
     popularity: 4
   trifecta:
-    combo: 1-55-71-7
+    combo: 1-5
     payout: 290
-    popularity: 4311
+    popularity: 4
 corner_positions:
   corner_1: 3,5,1,7,(4,8),2,10,(9,6)
   corner_2: 3,5

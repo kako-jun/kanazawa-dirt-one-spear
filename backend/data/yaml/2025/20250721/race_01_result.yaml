@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:21:17.282226'
+  extracted_at: '2025-11-15T12:49:00.475227'
   race_type: result
 race_id: '20250721_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 12
@@ -32,6 +34,15 @@ result_details:
   margin: ''
   last_3f: '38.3'
   popularity: '3'
+  sire: キタサンブラック
+  dam: スマートシモーヌ
+  sire_of_sire: ブラックタイド
+  dam_of_sire: シュガーハート
+  sire_of_dam: ドリームジャーニー
+  dam_of_dam: ティファイファイ
+  birth_date: '2021-04-11'
+  farm: 静内山田牧場
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 12
@@ -203,9 +214,9 @@ payouts:
     payout: 770
     popularity: 3
   place:
-    combo: '10127'
+    combo: '10'
     payout: 230
-    popularity: 415
+    popularity: 4
   quinella:
     combo: 7-8
     payout: 640
@@ -223,9 +234,9 @@ payouts:
     payout: 2420
     popularity: 11
   trifecta:
-    combo: 10-127-107-12
+    combo: 10-12
     payout: 440
-    popularity: 4137
+    popularity: 4
 corner_positions:
   corner_1: 10,7,2,11,12,1,5,4,9,8,3,6
   corner_2: 10,7,2,11,1,12,5,4,9,8,3,6

@@ -1,8 +1,10 @@
 meta:
   source_file: race_03_result.html
-  extracted_at: '2025-11-14T17:18:45.858154'
+  extracted_at: '2025-11-15T12:41:26.491941'
   race_type: result
 race_id: '20181111_03'
+track_condition: 重
+weather: 曇
 finish_order:
 - 1
 - 10
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.7'
   popularity: '1'
+  sire: スクリーンヒーロー
+  dam: イシブミ
+  sire_of_sire: グラスワンダー
+  dam_of_sire: ランニングヒロイン
+  sire_of_dam: トニービン
+  dam_of_dam: アムダリア
+  birth_date: '2015-05-13'
+  farm: 鳥谷　勝彦
+  birthplace: 北海道日高郡新ひだか町
 - finish_position: 2
   gate_number: '8'
   horse_number: 10
@@ -155,9 +166,9 @@ payouts:
     payout: 130
     popularity: 1
   place:
-    combo: '1102'
+    combo: '1'
     payout: 100
-    popularity: 132
+    popularity: 1
   quinella:
     combo: 1-8
     payout: 200
@@ -175,9 +186,9 @@ payouts:
     payout: 300
     popularity: 1
   trifecta:
-    combo: 1-101-22-10
+    combo: 1-10
     payout: 170
-    popularity: 215
+    popularity: 2
 corner_positions:
   corner_1: 1,2,10,7,5,9,(4,8),6
   corner_2: 1,10,2,7,5,9,4,8,6

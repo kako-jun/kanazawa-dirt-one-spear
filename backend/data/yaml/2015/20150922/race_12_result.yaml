@@ -1,8 +1,10 @@
 meta:
   source_file: race_12_result.html
-  extracted_at: '2025-11-14T17:17:31.576276'
+  extracted_at: '2025-11-15T12:33:28.013313'
   race_type: result
 race_id: '20150922_12'
+track_condition: 良
+weather: 晴
 finish_order:
 - 10
 - 11
@@ -31,6 +33,15 @@ result_details:
   margin: ''
   last_3f: '40.0'
   popularity: '1'
+  sire: ゼンノロブロイ
+  dam: ミスアリバイ
+  sire_of_sire: サンデーサイレンス
+  dam_of_sire: ローミンレイチェル
+  sire_of_dam: El Prado
+  dam_of_dam: Lignify
+  birth_date: '2011-02-22'
+  farm: 富田牧場
+  birthplace: 北海道浦河郡浦河町
 - finish_position: 2
   gate_number: '8'
   horse_number: 11
@@ -187,9 +198,9 @@ payouts:
     payout: 140
     popularity: 1
   place:
-    combo: '10111'
+    combo: '10'
     payout: 100
-    popularity: 1310
+    popularity: 1
   quinella:
     combo: 8-8
     payout: 760
@@ -207,9 +218,9 @@ payouts:
     payout: 710
     popularity: 2
   trifecta:
-    combo: 10-111-101-11
+    combo: 10-11
     payout: 380
-    popularity: 51732
+    popularity: 5
 corner_positions:
   corner_1: 9,10,11,5,8,7,3,6,2,4,1
   corner_2: 9,(5,10),11,8,3,7,2,6,1,4

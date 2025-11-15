@@ -1,8 +1,10 @@
 meta:
   source_file: race_01_result.html
-  extracted_at: '2025-11-14T17:20:23.893698'
+  extracted_at: '2025-11-15T12:46:59.652603'
   race_type: result
 race_id: '20230523_01'
+track_condition: 良
+weather: 晴
 finish_order:
 - 1
 - 2
@@ -29,6 +31,15 @@ result_details:
   margin: ''
   last_3f: '39.3'
   popularity: '1'
+  sire: フリオーソ
+  dam: ダンシングクイーン
+  sire_of_sire: ブライアンズタイム
+  dam_of_sire: ファーザ
+  sire_of_dam: Giant's Causeway
+  dam_of_dam: パーフェクトワールド
+  birth_date: '2020-04-13'
+  farm: 若林　順一
+  birthplace: 北海道沙流郡日高町
 - finish_position: 2
   gate_number: '2'
   horse_number: 2
@@ -155,9 +166,9 @@ payouts:
     payout: 170
     popularity: 1
   place:
-    combo: '127'
+    combo: '1'
     payout: 110
-    popularity: 145
+    popularity: 1
   quinella:
     combo: 1-2
     payout: 720
@@ -175,9 +186,9 @@ payouts:
     payout: 900
     popularity: 4
   trifecta:
-    combo: 1-21-72-7
+    combo: 1-2
     payout: 290
-    popularity: 3610
+    popularity: 3
 corner_positions:
   corner_1: (5,7),2,(6,8),9,3,1,4
   corner_2: 7,5,2,6,8,3,9,1
