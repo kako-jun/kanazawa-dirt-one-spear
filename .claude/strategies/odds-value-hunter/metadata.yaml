@@ -1,0 +1,134 @@
+strategy_id: "odds-value-hunter"
+display_name: "穴馬ハンター"
+display_name_en: "Odds Value Hunter"
+version: "1.0.0"
+
+hypothesis:
+  title: "オッズと実力の乖離を突く"
+  description: |
+    人気（オッズ）と実際の実力に乖離がある馬を発見し、
+    高配当の3連単を狙う。過小評価されている馬（バリューホース）を
+    AIが客観的に判定し、期待値の高い馬券を選択する。
+
+  assumptions:
+    - 人間の予想には集団バイアスがあり、過小評価馬が存在する
+    - AIの客観的予測は人間とは異なる視点を持つ
+    - オッズと実力の乖離が大きい馬は期待値が高い
+    - 高配当を狙うことで回収率を最大化できる
+
+algorithm:
+  type: "value_betting"
+  models:
+    - name: "Expected Value Estimator"
+      purpose: "期待値（EV）の計算"
+      formula: |
+        EV(horse) = P(win) × Payout - Cost
+        where:
+          P(win) = AI予測の勝率
+          Payout = 配当（オッズから逆算）
+          Cost = 馬券購入金額
+
+    - name: "Odds Bias Detector"
+      purpose: "オッズバイアスの検出"
+      method: |
+        1. AIの予測勝率とオッズから計算した勝率を比較
+        2. 乖離が大きい馬を検出
+        3. 乖離率 = (AI予測勝率 - オッズ勝率) / オッズ勝率
+
+    - name: "LightGBM Win Probability"
+      purpose: "客観的な勝率予測"
+      features:
+        - horse_cumulative_stats
+        - jockey_cumulative_stats
+        - trainer_cumulative_stats
+        - race_conditions
+        - gate_number
+        - horse_number
+        - rest_days
+        # NOTE: オッズは使わない（バイアスを避ける）
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. オッズなしモデルで各馬の勝率を予測
+       AI予測: horse_A=25%, horse_B=18%, horse_C=12%
+
+    2. オッズから暗黙の勝率を逆算
+       オッズ勝率: horse_A=30%, horse_B=15%, horse_C=8%
+
+    3. 乖離率を計算
+       horse_A: (25-30)/30 = -16.7%（過大評価）
+       horse_B: (18-15)/15 = +20.0%（過小評価！）
+       horse_C: (12-8)/8 = +50.0%（大穴！）
+
+    4. 期待値を計算
+       horse_B: 0.18 × (100/15) - 100 = +20円
+       horse_C: 0.12 × (100/8) - 100 = +50円
+
+    5. 期待値が正で最大の組み合わせを選択
+       推奨: C-B-A など（大穴狙い）
+
+implementation:
+  scripts:
+    - path: "analysis/odds_value_hunter/calculate_ev.py"
+      purpose: "期待値計算"
+    - path: "analysis/odds_value_hunter/detect_bias.py"
+      purpose: "オッズバイアス検出"
+    - path: "analysis/odds_value_hunter/backtest_ev.py"
+      purpose: "期待値戦略のバックテスト"
+    - path: "analysis/odds_value_hunter/predict_value_bet.py"
+      purpose: "本番用の期待値ベース予想"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+      - payouts
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+      - stat_odds_range  # オッズ帯別成績（過去のバイアス分析用）
+
+priority: "high"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - recovery_rate: "> 100%"  # 回収率100%超えが目標
+    - hit_rate: "> 3%"  # 的中率は低くてもOK
+    - avg_payout: "> 10000円"  # 平均配当を高く
+
+risks:
+  - issue: "的中率が低い可能性"
+    severity: "high"
+    mitigation: "期待値が正の馬券のみを購入、確率閾値を設定"
+
+  - issue: "オッズが最終確定前に変動する"
+    severity: "medium"
+    mitigation: "オッズ確定直前に予想を更新"
+
+  - issue: "AI予測が外れた場合の損失が大きい"
+    severity: "medium"
+    mitigation: "複数パターンの馬券を購入、リスク分散"
+
+  - issue: "バリューホースが本当に存在するか不明"
+    severity: "high"
+    mitigation: "過去データでバックテスト、期待値の検証"
+
+improvements:
+  - "複数レースでのポートフォリオ最適化"
+  - "Kelly基準による賭け金最適化"
+  - "オッズ変動予測（発表直後 vs 確定直前）"
+
+next_steps:
+  - "過去データでオッズバイアスの存在を検証"
+  - "期待値計算スクリプト実装"
+  - "バックテストで回収率を測定"
+  - "basic-win-probとの比較（的中率 vs 回収率）"
