@@ -1,0 +1,127 @@
+strategy_id: "ensemble-hybrid"
+display_name: "アンサンブル統合型"
+display_name_en: "Ensemble Hybrid"
+version: "1.0.0"
+
+hypothesis:
+  title: "複数の作戦を組み合わせて精度向上"
+  description: |
+    単一の作戦には必ず弱点がある。複数の作戦の予測を組み合わせることで、
+    互いの弱点を補完し、安定性と精度を同時に向上させる。
+    機械学習におけるアンサンブル学習の原理を作戦レベルで適用。
+
+  assumptions:
+    - 各作戦は異なる視点で予測しており、独立性がある
+    - 複数の予測を統合することでノイズを平滑化できる
+    - スタッキング手法で最適な重み付けを学習できる
+    - 作戦間の相関が低いほど効果が高い
+    - 集合知は個別の知より優れる（Wisdom of Crowds）
+
+algorithm:
+  type: "meta_learning + stacking"
+  models:
+    - name: "Voting Ensemble"
+      purpose: "複数作戦の多数決"
+      method: |
+        各作戦の予測順位を統合:
+        - Hard Voting: 1着予測が多い馬を選択
+        - Soft Voting: 予測確率の平均で順位付け
+
+    - name: "Weighted Ensemble"
+      purpose: "重み付き統合"
+      method: |
+        各作戦の性能に応じて重み付け:
+        weight = accuracy / sum(all_accuracies)
+        final_score = Σ(weight_i × prediction_i)
+
+    - name: "Stacking Meta-Learner"
+      purpose: "メタモデルで最適統合"
+      method: |
+        Level 1: 各作戦の予測（特徴量として使用）
+        Level 2: LightGBMで最終予測
+        メタ特徴量 = [
+          basic_win_prob_prediction,
+          learning_to_rank_prediction,
+          odds_value_hunter_prediction,
+          combo_affinity_prediction,
+          condition_specialist_prediction,
+        ]
+
+  prediction_method: |
+    1. 各作戦で予測を実行
+       - basic-win-prob: 馬A=0.25, 馬B=0.18, ...
+       - learning-to-rank: 馬A=rank1, 馬B=rank2, ...
+       - odds-value-hunter: 馬C=EV+50, 馬A=EV+20, ...
+
+    2. 予測を統合（Soft Voting）
+       combined_score = (
+         0.3 × basic_win_prob_score +
+         0.3 × learning_to_rank_score +
+         0.2 × odds_value_hunter_score +
+         0.1 × combo_affinity_score +
+         0.1 × condition_specialist_score
+       )
+
+    3. スコアでソートして上位3頭を選択
+
+    4. 3連単構築
+
+implementation:
+  scripts:
+    - path: "analysis/ensemble_hybrid/collect_predictions.py"
+      purpose: "各作戦の予測を収集"
+    - path: "analysis/ensemble_hybrid/voting_ensemble.py"
+      purpose: "投票アンサンブル"
+    - path: "analysis/ensemble_hybrid/weighted_ensemble.py"
+      purpose: "重み付きアンサンブル"
+    - path: "analysis/ensemble_hybrid/stacking_meta_learner.py"
+      purpose: "スタッキングメタ学習"
+    - path: "analysis/ensemble_hybrid/optimize_weights.py"
+      purpose: "最適重み探索"
+
+  required_tables:
+    base:
+      - (各作戦が必要とするテーブル)
+    derived:
+      - strategy_predictions  # 各作戦の予測結果（要作成）
+
+priority: "high"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate: "> 最良単一作戦の1.2倍"
+    - stability: "低分散"
+
+risks:
+  - issue: "各作戦の実装が前提条件"
+    severity: "high"
+    mitigation: "優先度高の作戦を先に実装"
+
+  - issue: "作戦間の相関が高いと効果減"
+    severity: "medium"
+    mitigation: "相関分析、独立性の高い作戦を選択"
+
+  - issue: "計算コストが高い"
+    severity: "low"
+    mitigation: "並列処理、キャッシュ活用"
+
+  - issue: "過学習のリスク"
+    severity: "medium"
+    mitigation: "時系列交差検証、正則化"
+
+improvements:
+  - "動的な重み調整（最近の性能で重み変更）"
+  - "信頼度ベースの統合（確信度が高い作戦を重視）"
+  - "状況別の作戦選択（条件が揃った時は特化作戦を重視）"
+  - "ニューラルネットワークでのメタ学習"
+
+next_steps:
+  - "各作戦の実装完了を待つ"
+  - "予測結果を統一フォーマットで保存"
+  - "投票アンサンブルから実装"
+  - "スタッキング実装"
+  - "最適重み探索"
