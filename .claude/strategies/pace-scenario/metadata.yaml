@@ -1,0 +1,141 @@
+strategy_id: "pace-scenario"
+display_name: "展開予想型"
+display_name_en: "Pace Scenario"
+version: "1.0.0"
+
+hypothesis:
+  title: "レース展開を予測して脚質選択"
+  description: |
+    レースのペース（逃げ馬が多い、差し馬が多いなど）を予測し、
+    展開が向く脚質の馬を選択する。競馬は相対的な競技であり、
+    周囲の馬との兼ね合いで結果が変わる。
+
+  assumptions:
+    - レース展開（ペース）は結果に大きく影響する
+    - 逃げ馬が多いレースは差し馬有利、逃げ馬が少ないレースは逃げ馬有利
+    - 脚質（逃げ・先行・差し・追込）はコーナー通過順から推定可能
+    - ペース予測は可能（過去の脚質傾向から）
+    - 展開が向いた馬は普段以上の力を発揮する
+
+algorithm:
+  type: "pace_prediction + classification"
+  models:
+    - name: "Pace Predictor"
+      purpose: "レースペースの予測"
+      method: |
+        1. 各馬の脚質を推定
+           - 1-2コーナー通過順が上位 → 逃げ・先行
+           - 3-4コーナーから追い上げ → 差し・追込
+        2. レース全体のペースを予測
+           - 逃げ・先行が多い → ハイペース
+           - 差し・追込が多い → スローペース
+
+    - name: "Running Style Classifier"
+      purpose: "脚質の推定"
+      features:
+        - corner_1_position (1コーナー通過順)
+        - corner_2_position (2コーナー通過順)
+        - corner_3_position (3コーナー通過順)
+        - corner_4_position (4コーナー通過順)
+        - finish_position (最終着順)
+        - last_3f_time (上がり3ハロン)
+      output: "running_style (逃げ/先行/差し/追込)"
+
+    - name: "LightGBM with Pace Features"
+      purpose: "展開を考慮した勝率予測"
+      features:
+        - (basic-win-probと同様の基本特徴量)
+        - running_style (推定脚質)
+        - predicted_pace (予測ペース: ハイ/平均/スロー)
+        - pace_advantage (展開向き度: -1〜+1)
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. 各馬の脚質を推定
+       horse_1: 逃げ
+       horse_2: 先行
+       horse_3: 差し
+       horse_4: 追込
+
+    2. レース全体のペースを予測
+       逃げ・先行: 2頭 → やや少ない → スローペース予測
+
+    3. 展開向き度を計算
+       horse_1（逃げ）: スローペース → 展開向き (+1)
+       horse_3（差し）: スローペース → 展開不向き (-1)
+
+    4. 展開特徴量を含めて勝率予測
+       model.predict(features + pace_features)
+
+    5. 展開が向いた馬を重視して3連単構築
+
+implementation:
+  scripts:
+    - path: "analysis/pace_scenario/estimate_running_style.py"
+      purpose: "脚質推定（コーナー通過順から）"
+    - path: "analysis/pace_scenario/predict_pace.py"
+      purpose: "レースペース予測"
+    - path: "analysis/pace_scenario/calculate_pace_advantage.py"
+      purpose: "展開向き度の計算"
+    - path: "analysis/pace_scenario/train_pace_model.py"
+      purpose: "LightGBM訓練"
+    - path: "analysis/pace_scenario/predict_pace_trifecta.py"
+      purpose: "3連単予想"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances  # corner_1〜4_positionが必須！
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+    derived:
+      - running_style_history  # 脚質履歴（要作成）
+
+priority: "low"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate_when_pace_advantage: "> 8%"  # 展開向き時の的中率
+
+risks:
+  - issue: "コーナー通過順データが欠損している可能性"
+    severity: "high"
+    mitigation: "データ確認、欠損が多ければ作戦を見送り"
+
+  - issue: "脚質推定が不正確"
+    severity: "medium"
+    mitigation: "手動でサンプルを確認、推定ロジックを改善"
+
+  - issue: "ペース予測が難しい"
+    severity: "medium"
+    mitigation: "単純化（逃げ馬の数のみで判定）"
+
+  - issue: "データ不足（地方競馬で脚質分析が少ない）"
+    severity: "medium"
+    mitigation: "中央競馬のノウハウを参考に"
+
+  - issue: "実装が複雑"
+    severity: "low"
+    mitigation: "段階的に実装、まずは脚質推定から"
+
+improvements:
+  - "ラップタイム分析（前半・後半の速度）"
+  - "騎手の脚質傾向（この騎手は逃げが多い、など）"
+  - "馬の脚質適性学習（本来は差し馬だが今回は先行、など）"
+  - "展開パターンのクラスタリング"
+
+next_steps:
+  - "race_performancesテーブルのcorner_1〜4_positionデータを確認"
+  - "脚質推定ロジック実装"
+  - "ペース予測ロジック実装"
+  - "basic-win-probとの比較"

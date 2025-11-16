@@ -1,0 +1,116 @@
+strategy_id: "combo-affinity"
+display_name: "相性重視"
+display_name_en: "Combo Affinity"
+version: "1.0.0"
+
+hypothesis:
+  title: "馬×騎手の相性が勝敗を分ける"
+  description: |
+    馬と騎手の組み合わせ（コンビ）には相性がある。
+    過去の実績から「この馬にはこの騎手」という黄金コンビを発見し、
+    相性の良いコンビが揃ったレースで勝負する作戦。
+
+  assumptions:
+    - 馬と騎手には相性がある（信頼関係、騎乗スタイルの一致など）
+    - 相性が良いコンビは安定した成績を残す
+    - stat_horse_jockey_comboテーブルに有効な情報がある
+    - 調教師×騎手の相性も重要
+    - 厩舎内での連携が結果に影響する
+
+algorithm:
+  type: "feature_engineering + classification"
+  models:
+    - name: "Combo Score Calculator"
+      purpose: "コンビスコアの計算"
+      features:
+        - horse_jockey_combo_win_rate (馬×騎手の勝率)
+        - horse_jockey_combo_races (過去の組み合わせ回数)
+        - horse_jockey_combo_avg_finish (平均着順)
+        - trainer_jockey_combo_win_rate (調教師×騎手の勝率)
+        - is_stable_jockey (厩舎所属騎手フラグ)
+
+    - name: "LightGBM with Combo Features"
+      purpose: "コンビ情報を含めた勝率予測"
+      features:
+        - (basic-win-probと同様の基本特徴量)
+        - combo_score (上記のコンビスコア)
+        - combo_experience (組み合わせ経験回数)
+        - combo_recent_form (直近のコンビ成績)
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. 各馬×騎手のコンビスコアを計算
+       combo_score = (
+         0.5 × horse_jockey_win_rate +
+         0.3 × trainer_jockey_win_rate +
+         0.2 × is_stable_jockey_bonus
+       )
+
+    2. コンビスコアを特徴量に加えて勝率予測
+       model.predict(features + combo_score)
+
+    3. 相性が良いコンビが複数ある場合は重視
+       例: コンビスコア0.3以上が3頭 → そのレースは狙い目
+
+    4. 上位3頭で3連単を構築
+
+implementation:
+  scripts:
+    - path: "analysis/combo_affinity/calculate_combo_score.py"
+      purpose: "コンビスコア計算"
+    - path: "analysis/combo_affinity/feature_engineering.py"
+      purpose: "コンビ関連特徴量生成"
+    - path: "analysis/combo_affinity/train_combo_model.py"
+      purpose: "LightGBM訓練"
+    - path: "analysis/combo_affinity/predict_combo_trifecta.py"
+      purpose: "3連単予想"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+      - stat_horse_jockey_combo  # 最重要！
+      - stat_recent_form_jockey  # 直近のコンビ成績用
+
+priority: "medium"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate: "> 5%"  # 安定した的中率
+    - consistency: "low variance"  # 安定性重視
+
+risks:
+  - issue: "コンビの経験回数が少ない場合、データ不足"
+    severity: "medium"
+    mitigation: "経験回数の閾値を設定、調教師×騎手で補完"
+
+  - issue: "相性が偶然の可能性（サンプルサイズ問題）"
+    severity: "medium"
+    mitigation: "統計的有意性検定、最低回数の設定"
+
+  - issue: "basic-win-probとの差異が小さい可能性"
+    severity: "low"
+    mitigation: "実験で効果を検証、差がなければ統合"
+
+improvements:
+  - "馬×調教師の相性も考慮"
+  - "厩舎内の人間関係データ（所属騎手、主戦騎手）"
+  - "騎乗依頼のパターン学習（珍しい組み合わせ＝本気？）"
+
+next_steps:
+  - "stat_horse_jockey_comboテーブルの分析"
+  - "コンビスコア計算ロジック実装"
+  - "特徴量エンジニアリング"
+  - "basic-win-probとの比較"
