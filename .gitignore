@@ -79,5 +79,9 @@ backend/.env
 backend/*.db
 backend/*.sqlite
 
+# Data directory (contains large database files from releases)
+data/
+!data/.gitkeep
+
 # Serena MCP
 .serena/
