@@ -1,0 +1,136 @@
+strategy_id: "triplet-combination"
+display_name: "トリプレット組み合わせ型"
+display_name_en: "Triplet Combination"
+version: "1.0.0"
+
+hypothesis:
+  title: "3頭の組み合わせを直接スコアリング"
+  description: |
+    馬を個別に評価するのではなく、**3頭セットの組み合わせ**として直接評価する。
+    「この3頭が揃うと強い」「相性が良い組み合わせ」など、
+    3頭の相互作用・シナジーを捉えることで、3連単に最適化された予測を実現。
+    万馬券の『隠れた組み合わせ』をAIが発見する。
+
+  assumptions:
+    - 馬同士には相性・相互作用がある（単独の実力の足し算ではない）
+    - 3頭の組み合わせには「シナジー」が存在する
+    - レース展開は3頭の組み合わせで決まる（ペース・位置取り）
+    - 336通りの組み合わせを全て評価し、スコア上位を選択
+    - オッズとスコアの乖離が大きい組み合わせが万馬券の鍵
+
+algorithm:
+  type: "triplet_scoring + combinatorial_optimization"
+  models:
+    - name: "Triplet Synergy Scorer"
+      purpose: "3頭セットのシナジースコア計算"
+      features:
+        - triplet_features (3頭の組み合わせ特徴量)
+        - average_speed (3頭の平均スピード)
+        - pace_balance (ペースバランス: 逃げ/差しの分布)
+        - gate_position_spread (枠番の分散)
+        - combined_jockey_skill (騎手スキルの合計)
+        - historical_cooccurrence (過去の共演回数)
+
+    - name: "Triplet Network (Neural Network)"
+      purpose: "ディープラーニングで組み合わせ学習"
+      architecture: |
+        Input: 3頭の特徴量ベクトル [horse1_vec, horse2_vec, horse3_vec]
+        Layer1: Concatenate → [combined_vec]
+        Layer2: Dense(128) → ReLU
+        Layer3: Dense(64) → ReLU
+        Layer4: Dense(32) → ReLU
+        Output: Dense(1) → Sigmoid (3連単成立確率)
+
+    - name: "Combinatorial Search"
+      purpose: "全組み合わせを評価して最適化"
+      method: |
+        1. レース内の全馬からC(n, 3) × 3! の組み合わせを生成
+           例: 8頭立て → 56 × 6 = 336通り
+        2. 各組み合わせをTriplet Scorerで評価
+        3. スコア上位を選択
+        4. オッズとスコアの乖離が大きい組み合わせを優先（万馬券狙い）
+
+  prediction_method: |
+    1. レース内の全馬を取得
+
+    2. 全ての3連単組み合わせを生成（336通り）
+       例: [(馬A, 馬B, 馬C), (馬A, 馬B, 馬D), ...]
+
+    3. 各組み合わせをスコアリング
+       score = triplet_synergy_scorer(triplet)
+
+    4. オッズ（人気組み合わせ）とスコアの乖離を計算
+       bias = score - odds_implied_probability
+       ev = score × estimated_payout - 100
+
+    5. 期待値が最も高い組み合わせを選択
+       特に「高スコア×高配当」を優先（万馬券狙い）
+
+    6. 3連単: トップスコアの組み合わせ
+
+implementation:
+  scripts:
+    - path: "analysis/triplet_combination/generate_triplets.py"
+      purpose: "全組み合わせ生成"
+    - path: "analysis/triplet_combination/calculate_synergy.py"
+      purpose: "シナジースコア計算"
+    - path: "analysis/triplet_combination/train_triplet_network.py"
+      purpose: "Triplet Network訓練"
+    - path: "analysis/triplet_combination/combinatorial_search.py"
+      purpose: "組み合わせ最適化"
+    - path: "analysis/triplet_combination/find_undervalued_triplets.py"
+      purpose: "過小評価組み合わせ発見（万馬券狙い）"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+      - payouts
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+    derived:
+      - triplet_history  # 3頭組み合わせ履歴（要作成）
+
+priority: "high"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate: "> 8%"
+    - 万馬券_hit_rate: "> 3%"
+    - ev: "> 0"  # 期待値プラス
+
+risks:
+  - issue: "計算量が膨大（336通り × レース数）"
+    severity: "high"
+    mitigation: "事前フィルタリング、GPU並列化"
+
+  - issue: "訓練データ不足（3頭の組み合わせは膨大）"
+    severity: "medium"
+    mitigation: "転移学習、類似組み合わせでデータ拡張"
+
+  - issue: "過学習のリスク"
+    severity: "medium"
+    mitigation: "正則化、ドロップアウト、交差検証"
+
+improvements:
+  - "Graph Neural Network（馬をノード、関係をエッジ）"
+  - "Attention機構で重要な組み合わせ要素を学習"
+  - "強化学習で最適組み合わせ探索"
+  - "複数買い最適化（上位N組を購入）"
+
+next_steps:
+  - "全組み合わせ生成ロジック実装"
+  - "シナジースコア計算"
+  - "Triplet Network実装（PyTorch/TensorFlow）"
+  - "過小評価組み合わせ発見"
+  - "basic-win-probとの比較"

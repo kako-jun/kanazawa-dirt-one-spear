@@ -1,0 +1,128 @@
+strategy_id: "condition-specialist"
+display_name: "条件スペシャリスト"
+display_name_en: "Condition Specialist"
+version: "1.0.0"
+
+hypothesis:
+  title: "馬場・距離の適性が決定的"
+  description: |
+    馬には得意な馬場状態や距離がある。
+    条件が合致した時に能力を最大限発揮する「条件スペシャリスト」を見つけ、
+    その馬が得意な条件のレースで勝負する作戦。
+
+  assumptions:
+    - 馬場状態（良・稍重・重・不良）への適性は馬ごとに異なる
+    - 距離適性（短距離・中距離・長距離）は重要な要素
+    - 得意条件が揃った時、馬は普段以上の力を発揮する
+    - 条件別統計テーブルに有効な情報がある
+    - 不得意条件では人気でも凡走する可能性がある
+
+algorithm:
+  type: "feature_engineering + rule_based + classification"
+  models:
+    - name: "Condition Affinity Score"
+      purpose: "条件適性スコアの計算"
+      features:
+        - horse_track_condition_win_rate (馬×馬場状態の勝率)
+        - horse_distance_category_win_rate (馬×距離カテゴリの勝率)
+        - jockey_track_condition_win_rate (騎手×馬場状態の勝率)
+        - jockey_distance_category_win_rate (騎手×距離カテゴリの勝率)
+        - trainer_track_condition_win_rate (調教師×馬場状態の勝率)
+        - trainer_distance_category_win_rate (調教師×距離カテゴリの勝率)
+
+    - name: "LightGBM with Condition Features"
+      purpose: "条件適性を含めた勝率予測"
+      features:
+        - (basic-win-probと同様の基本特徴量)
+        - condition_affinity_score (上記の条件適性スコア)
+        - is_favorite_condition (得意条件フラグ)
+        - condition_experience (その条件での経験回数)
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. 今回のレース条件を取得
+       track_condition = "稍重"
+       distance_category = "1400m" → "短距離"
+
+    2. 各馬の条件適性スコアを計算
+       score = (
+         0.4 × horse_track_condition_win_rate +
+         0.4 × horse_distance_category_win_rate +
+         0.1 × jockey_track_condition_win_rate +
+         0.1 × jockey_distance_category_win_rate
+       )
+
+    3. 得意条件フラグを設定
+       is_favorite_condition = (score > 0.2)
+
+    4. 条件スコアを特徴量に加えて勝率予測
+       model.predict(features + condition_affinity_score)
+
+    5. 得意条件が揃った馬を重視
+       例: 条件スコア0.3以上の馬がいれば優先
+
+implementation:
+  scripts:
+    - path: "analysis/condition_specialist/calculate_condition_score.py"
+      purpose: "条件適性スコア計算"
+    - path: "analysis/condition_specialist/feature_engineering.py"
+      purpose: "条件関連特徴量生成"
+    - path: "analysis/condition_specialist/train_condition_model.py"
+      purpose: "LightGBM訓練"
+    - path: "analysis/condition_specialist/predict_condition_trifecta.py"
+      purpose: "3連単予想"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+      - stat_horse_track_condition  # 最重要！
+      - stat_horse_distance_category  # 最重要！
+      - stat_jockey_track_condition
+      - stat_jockey_distance_category
+      - stat_trainer_track_condition
+      - stat_trainer_distance_category
+
+priority: "medium"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate_when_condition_matched: "> 10%"  # 得意条件の時の的中率
+    - precision: "high"  # 得意条件判定の精度
+
+risks:
+  - issue: "条件が揃うレースが少ない可能性"
+    severity: "medium"
+    mitigation: "条件の定義を緩和、複数条件を組み合わせ"
+
+  - issue: "データ不足（特定条件の経験が少ない）"
+    severity: "medium"
+    mitigation: "最低経験回数を設定、累積統計で補完"
+
+  - issue: "過学習のリスク"
+    severity: "low"
+    mitigation: "交差検証、正則化"
+
+improvements:
+  - "天候との組み合わせ（雨×重馬場など）"
+  - "季節・月別の適性（夏競馬得意など）"
+  - "コース形状（直線長、コーナー数）"
+  - "複合条件の学習（稍重×1400m など）"
+
+next_steps:
+  - "条件別統計テーブルの分析"
+  - "条件適性スコア計算ロジック実装"
+  - "得意条件の定義と閾値設定"
+  - "basic-win-probとの比較"

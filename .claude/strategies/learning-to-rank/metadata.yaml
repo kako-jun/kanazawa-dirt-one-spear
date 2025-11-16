@@ -1,0 +1,109 @@
+strategy_id: "learning-to-rank"
+display_name: "順位予想型"
+display_name_en: "Learning to Rank"
+version: "1.0.0"
+
+hypothesis:
+  title: "順位を直接予測する"
+  description: |
+    勝率予測ではなく、レース内での順位を直接予測することで
+    3連単の精度を向上させる。ランキング学習は相対的な順位付けに特化しており、
+    3連単予想という課題に理論的に最適なアプローチ。
+
+  assumptions:
+    - 順位情報は勝率より3連単予想に適している
+    - ランキング学習で馬同士の相対関係を学習できる
+    - レース内での相対比較が重要（絶対的な強さではない）
+    - LambdaMART/LambdaRankは順位予測のベストプラクティス
+
+algorithm:
+  type: "ranking"
+  models:
+    - name: "LightGBM Ranker (without odds)"
+      purpose: "レース前の順位予測"
+      features:
+        - horse_cumulative_stats (勝率、複勝率、平均着順)
+        - jockey_cumulative_stats (勝率、複勝率)
+        - trainer_cumulative_stats (勝率、複勝率)
+        - race_conditions (馬場状態、距離カテゴリ)
+        - gate_number
+        - horse_number
+        - rest_days (休養日数)
+      target: "rank (1, 2, 3, ..., 8)"
+      objective: "lambdarank"
+
+    - name: "LightGBM Ranker (with odds)"
+      purpose: "オッズ発表後の順位予測"
+      features:
+        - (上記すべて)
+        - popularity (人気順位)
+      target: "rank (1, 2, 3, ..., 8)"
+      objective: "lambdarank"
+
+  prediction_method: |
+    1. レース内の全馬をグループとして順位スコアを予測
+    2. スコアが高い順に並べ替え
+    3. 上位3頭を選択:
+       - 1着: スコア最高
+       - 2着: スコア2位
+       - 3着: スコア3位
+    4. 3連単構築: 1-2-3
+
+implementation:
+  scripts:
+    - path: "analysis/learning_to_rank/feature_engineering.py"
+      purpose: "特徴量生成（グループID付き）"
+    - path: "analysis/learning_to_rank/train_ranker.py"
+      purpose: "LightGBM Ranker訓練"
+    - path: "analysis/learning_to_rank/evaluate_ranker.py"
+      purpose: "性能評価（NDCG, MAP）"
+    - path: "analysis/learning_to_rank/predict_trifecta.py"
+      purpose: "3連単予想"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+
+priority: "high"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  comparison_with:
+    - basic-win-prob
+
+risks:
+  - issue: "LightGBM Rankerの学習データ準備が複雑"
+    severity: "medium"
+    mitigation: "group_id, query_idの適切な設定（race_idを使用）"
+
+  - issue: "評価指標（NDCG, MAP）の理解が必要"
+    severity: "low"
+    mitigation: "ドキュメント作成、可視化"
+
+  - issue: "basic-win-probより計算コストが高い可能性"
+    severity: "low"
+    mitigation: "グループごとの処理を最適化"
+
+improvements:
+  - "上位N頭の確率分布を考慮した複数パターン生成"
+  - "ペア単位の相対比較（Pairwise Ranking）の検討"
+  - "アンサンブル（Ranker + Classifier）"
+
+next_steps:
+  - "特徴量エンジニアリング（レース単位のgroup_id付き）"
+  - "LightGBM Ranker実装"
+  - "時系列交差検証"
+  - "basic-win-probとの比較実験"
+  - "NDCG@3（上位3頭の精度）を主要指標とする"
