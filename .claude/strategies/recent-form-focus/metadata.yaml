@@ -1,0 +1,122 @@
+strategy_id: "recent-form-focus"
+display_name: "直近成績重視型"
+display_name_en: "Recent Form Focus"
+version: "1.0.0"
+
+hypothesis:
+  title: "直近の調子が最も重要"
+  description: |
+    累積統計より直近の成績（フォーム）が現在の実力を反映する。
+    「今、調子が良い」馬・騎手・調教師を重視することで
+    精度の高い予測ができる。時間的に近いデータほど価値が高い。
+
+  assumptions:
+    - 馬のコンディションは変動する（ピーク期、低迷期がある）
+    - 直近のパフォーマンスが現在の実力を反映
+    - 古いデータは現在との関連性が低い
+    - 時系列の重み付けが重要（Exponential Decay）
+    - 騎手・調教師の調子も結果に影響
+
+algorithm:
+  type: "time_weighted + classification"
+  models:
+    - name: "Exponential Weighted Moving Average"
+      purpose: "時間的減衰を考慮した成績計算"
+      formula: |
+        weight(days_ago) = exp(-λ × days_ago)
+        recent_win_rate = Σ(win × weight) / Σ(weight)
+        λ = 0.01 (約100日で半減)
+
+    - name: "Streak Detector"
+      purpose: "連勝・連敗の検出"
+      features:
+        - consecutive_wins (連勝数)
+        - consecutive_losses (連敗数)
+        - recent_3_races_result (直近3戦の結果)
+        - improving_trend (成績向上傾向フラグ)
+
+    - name: "LightGBM with Recent Form Features"
+      purpose: "直近成績を重視した勝率予測"
+      features:
+        - recent_30days_win_rate (30日以内の勝率)
+        - recent_60days_win_rate (60日以内の勝率)
+        - recent_90days_win_rate (90日以内の勝率)
+        - consecutive_wins
+        - days_since_last_win
+        - improving_trend
+        - jockey_recent_form
+        - trainer_recent_form
+      target: "win (1着=1, その他=0)"
+
+  prediction_method: |
+    1. 直近成績を計算（時間的減衰を考慮）
+       例: 直近30日の勝率、直近3戦の結果
+
+    2. トレンド検出
+       - 連勝中 → ボーナス
+       - 連敗中 → ペナルティ
+       - 成績向上中 → ボーナス
+
+    3. 直近特徴量を含めて勝率予測
+       model.predict(features + recent_form_features)
+
+    4. 調子が良い馬を優先して3連単構築
+
+implementation:
+  scripts:
+    - path: "analysis/recent_form_focus/calculate_recent_stats.py"
+      purpose: "直近成績計算"
+    - path: "analysis/recent_form_focus/detect_streaks.py"
+      purpose: "連勝・連敗検出"
+    - path: "analysis/recent_form_focus/exponential_weighting.py"
+      purpose: "時間的減衰重み付け"
+    - path: "analysis/recent_form_focus/train_model.py"
+      purpose: "LightGBM訓練"
+
+  required_tables:
+    base:
+      - races
+      - horses
+      - jockeys
+      - trainers
+      - entries
+      - race_performances
+    stats:
+      - stat_horse_cumulative
+      - stat_jockey_cumulative
+      - stat_trainer_cumulative
+
+priority: "medium"
+status: "planned"
+last_updated: "2025-11-16"
+
+performance:
+  experiments: []
+  best_metrics: null
+  target_metrics:
+    - hit_rate: "> 6%"
+    - streak_detection_accuracy: "> 80%"
+
+risks:
+  - issue: "直近のデータが少ない馬がいる"
+    severity: "medium"
+    mitigation: "累積統計で補完、最低レース数の設定"
+
+  - issue: "偶然の連勝を過大評価"
+    severity: "medium"
+    mitigation: "統計的有意性検定、サンプルサイズ考慮"
+
+  - issue: "長期休養明けの馬を過小評価"
+    severity: "low"
+    mitigation: "休養期間も特徴量として考慮"
+
+improvements:
+  - "休養明けの調子予測（復帰レースの扱い）"
+  - "季節性を考慮（夏場の調子など）"
+  - "騎手交代の影響分析"
+
+next_steps:
+  - "直近成績計算ロジック実装"
+  - "時間的減衰の最適なλ探索"
+  - "連勝・連敗検出"
+  - "basic-win-probとの比較"
