@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -12,12 +13,18 @@ export default function Header() {
         {/* ロゴエリア */}
         <div className="py-6 border-b-2 border-retro-wheat">
           <Link href="/" className="block">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-center sm:text-left">
-              金沢ダート一本槍
-            </h1>
-            <p className="text-sm sm:text-base text-center sm:text-left mt-2 opacity-90">
-              AIが選ぶ三連単一点予想
-            </p>
+            <div className="flex flex-col items-center gap-2">
+              <Image
+                src="/images/kanazawa-dart-logo.webp"
+                alt="金沢ダート一本槍 Kanazawa Dart 1 Spear"
+                width={900}
+                height={173}
+                priority
+                className="max-w-[900px] w-full h-auto drop-shadow-md"
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 720px, 900px"
+              />
+              <p className="sr-only">AIが選ぶ三連単一点予想</p>
+            </div>
           </Link>
         </div>
 
