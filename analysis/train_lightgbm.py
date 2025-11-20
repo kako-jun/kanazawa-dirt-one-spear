@@ -136,8 +136,7 @@ def time_series_split_by_date(df, n_splits=5):
         train/validのインデックスのリスト
     """
     df = df.sort_values('race_date').reset_index(drop=True)
-    unique_dates = df['race_date'].unique()
-    unique_dates.sort()
+    unique_dates = np.sort(df['race_date'].unique())
 
     n_dates = len(unique_dates)
     split_size = n_dates // (n_splits + 1)
