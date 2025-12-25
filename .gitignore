@@ -76,7 +76,7 @@ env/
 
 # Backend specific
 backend/.env
-backend/*.db
+backend/**/*.db
 backend/*.sqlite
 
 # Serena MCP
