@@ -11,16 +11,17 @@ import pandas as pd
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
-def generate_all_triplets_for_race(race_id, db):
+def generate_all_triplets_for_race(race_id, conn):
     """
     レース内の全ての3連単組み合わせを生成
 
     Args:
         race_id: レースID
-        db: Database session
+        conn: sqlite3 connection
 
     Returns:
         list of triplets
@@ -37,7 +38,7 @@ def generate_all_triplets_for_race(race_id, db):
     ORDER BY horse_number
     """
 
-    horses = pd.read_sql(query, db.connection(), params=(race_id,))
+    horses = pd.read_sql_query(query, conn, params=(race_id,))
 
     if len(horses) < 3:
         print(f"⚠️  レース{race_id}: 馬が3頭未満")
@@ -60,12 +61,12 @@ def generate_all_triplets():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         # 全レースを取得
-        query = "SELECT DISTINCT id FROM races ORDER BY id LIMIT 100"  # テスト用に100レースに限定
-        race_ids = pd.read_sql(query, db.connection())['id'].tolist()
+        query = "SELECT DISTINCT race_id FROM races ORDER BY race_id LIMIT 100"  # テスト用に100レースに限定
+        race_ids = pd.read_sql_query(query, conn)['race_id'].tolist()
 
         print(f"対象レース数: {len(race_ids):,}件")
         print()
@@ -73,7 +74,7 @@ def generate_all_triplets():
         all_triplets = []
 
         for race_id in race_ids:
-            triplets = generate_all_triplets_for_race(race_id, db)
+            triplets = generate_all_triplets_for_race(race_id, conn)
 
             for triplet in triplets:
                 all_triplets.append({
@@ -96,7 +97,7 @@ def generate_all_triplets():
         return df
 
     finally:
-        db.close()
+        conn.close()
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ export default function StrategyDialogue09NoOddsPure() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「これは哲学的な実験だよ！
               オッズ（人間の予想）を一切見ずに、客観的データだけで予想する。
               『AIは大穴を知らない』。全ての馬を平等に、データだけで評価するの。」
@@ -28,7 +28,7 @@ export default function StrategyDialogue09NoOddsPure() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「僕が見てるのは、過去成績・血統・騎手・馬場・距離...
               オッズは完全に無視。
               人間が50倍の大穴と思ってる馬でも、僕が『勝率20%』と判断すれば本命にする。
@@ -43,7 +43,7 @@ export default function StrategyDialogue09NoOddsPure() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「メリットは『見落とされた馬』を発見できること。
               デメリットは『人間の集合知』を捨ててること。
               作戦10のオッズ考慮型と比較して、どちらが優れてるか実験中だよ😊」

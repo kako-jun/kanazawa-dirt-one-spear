@@ -170,7 +170,7 @@ export default function StatsPage() {
                           : 'text-retro-dark-gray'
 
                   return (
-                    <div key={condition} className="text-center p-4 bg-white rounded-lg">
+                    <div key={condition} className="text-center p-4 bg-retro-sepia rounded-lg">
                       <div className="text-sm text-retro-brown mb-1">{condition}</div>
                       <div className={`text-3xl font-bold font-mono ${colorClass}`}>
                         {percentage}%
@@ -269,7 +269,7 @@ export default function StatsPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {raceStats &&
                 Object.entries(raceStats.gate_win_rates).map(([gate, winRate]) => (
-                  <div key={gate} className="text-center p-4 bg-white rounded-lg">
+                  <div key={gate} className="text-center p-4 bg-retro-sepia rounded-lg">
                     <div className="text-sm text-retro-brown mb-1">{gate}</div>
                     <div className="text-3xl font-bold font-mono text-retro-dark-gray">
                       {winRate.toFixed(1)}%
@@ -294,19 +294,19 @@ export default function StatsPage() {
                   単勝（100円あたり）
                 </h3>
                 <div className="space-y-2">
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">平均配当</span>
                     <span className="font-mono font-bold text-retro-gold">
                       ¥{payoutStats?.avg_win.toLocaleString()}
                     </span>
                   </div>
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">最高配当</span>
                     <span className="font-mono font-bold text-retro-crimson">
                       ¥{payoutStats?.max_win.toLocaleString()}
                     </span>
                   </div>
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">最低配当</span>
                     <span className="font-mono font-bold text-retro-dark-gray">
                       ¥{payoutStats?.min_win.toLocaleString()}
@@ -321,19 +321,19 @@ export default function StatsPage() {
                   三連単（100円あたり）
                 </h3>
                 <div className="space-y-2">
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">平均配当</span>
                     <span className="font-mono font-bold text-retro-gold">
                       ¥{payoutStats?.avg_trifecta.toLocaleString()}
                     </span>
                   </div>
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">最高配当</span>
                     <span className="font-mono font-bold text-retro-crimson">
                       ¥{payoutStats?.max_trifecta.toLocaleString()}
                     </span>
                   </div>
-                  <div className="flex justify-between p-3 bg-white rounded">
+                  <div className="flex justify-between p-3 bg-retro-sepia rounded">
                     <span className="text-sm text-retro-brown">最低配当</span>
                     <span className="font-mono font-bold text-retro-dark-gray">
                       ¥{payoutStats?.min_trifecta.toLocaleString()}
@@ -350,7 +350,7 @@ export default function StatsPage() {
               データから見る金沢競馬の特徴
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">📊</span>
                   <div>
@@ -364,7 +364,7 @@ export default function StatsPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🌞</span>
                   <div>
@@ -378,7 +378,7 @@ export default function StatsPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🎯</span>
                   <div>
@@ -392,7 +392,7 @@ export default function StatsPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🎪</span>
                   <div>
@@ -406,7 +406,7 @@ export default function StatsPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">💰</span>
                   <div>
@@ -420,7 +420,7 @@ export default function StatsPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-white rounded-lg">
+              <div className="p-4 bg-retro-sepia rounded-lg">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🏇</span>
                   <div>

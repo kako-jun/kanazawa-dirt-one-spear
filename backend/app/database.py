@@ -1,14 +1,15 @@
-from sqlalchemy import create_engine, Column, String, Integer, Float, Boolean, DateTime, Text, ForeignKey, JSON
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
-from datetime import datetime
 import os
+from datetime import datetime
+from pathlib import Path
+
+from sqlalchemy import create_engine, Column, String, Integer, Float, Boolean, DateTime, Text, ForeignKey, JSON
+from sqlalchemy.orm import DeclarativeBase, sessionmaker, relationship
 
 # データベースファイルのパス
-from pathlib import Path
 DB_DIR = Path(__file__).parent.parent / "data"
 DB_DIR.mkdir(exist_ok=True)
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DB_DIR}/kanazawa_dirt_one_spear.db")
+DB_PATH = DB_DIR / "kanazawa_dirt_one_spear.db"
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DB_PATH}")
 
 engine = create_engine(
     DATABASE_URL,
@@ -16,7 +17,10 @@ engine = create_engine(
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
+
+
+class Base(DeclarativeBase):
+    pass
 
 
 # データベースモデル

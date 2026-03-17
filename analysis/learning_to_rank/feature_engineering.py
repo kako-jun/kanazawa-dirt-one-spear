@@ -17,7 +17,8 @@ import numpy as np
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
 def extract_features_for_ranking():
@@ -37,14 +38,14 @@ def extract_features_for_ranking():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         # SQL: レースごとの馬の成績と統計を結合
         query = """
         SELECT
-            r.id as race_id,
-            r.race_date,
+            r.race_id,
+            r.date as race_date,
             r.track_condition,
             r.distance,
             CASE
@@ -55,14 +56,14 @@ def extract_features_for_ranking():
             END as distance_category,
 
             rp.horse_id,
-            rp.jockey_id,
-            rp.trainer_id,
-            rp.finish_position as rank,  -- ターゲット
+            e.jockey_id,
+            e.trainer_id,
+            rp.finish_position as rank,
             rp.popularity,
             rp.gate_number,
             rp.horse_number,
 
-            -- 馬の累積統計
+            -- 馬の累積統計（時系列リーク防止）
             sh.total_races as horse_total_races,
             sh.win_rate as horse_win_rate,
             sh.place_rate as horse_place_rate,
@@ -79,15 +80,34 @@ def extract_features_for_ranking():
             st.place_rate as trainer_place_rate
 
         FROM race_performances rp
-        JOIN races r ON rp.race_id = r.id
-        LEFT JOIN stat_horse_cumulative sh ON rp.horse_id = sh.horse_id
-        LEFT JOIN stat_jockey_cumulative sj ON rp.jockey_id = sj.jockey_id
-        LEFT JOIN stat_trainer_cumulative st ON rp.trainer_id = st.trainer_id
+        JOIN races r ON rp.race_id = r.race_id
+        JOIN entries e ON rp.entry_id = e.entry_id
+        LEFT JOIN stat_horse_cumulative sh ON (
+            sh.horse_id = rp.horse_id
+            AND sh.as_of_date = (
+                SELECT MAX(as_of_date) FROM stat_horse_cumulative
+                WHERE horse_id = rp.horse_id AND as_of_date < r.date
+            )
+        )
+        LEFT JOIN stat_jockey_cumulative sj ON (
+            sj.jockey_id = e.jockey_id
+            AND sj.as_of_date = (
+                SELECT MAX(as_of_date) FROM stat_jockey_cumulative
+                WHERE jockey_id = e.jockey_id AND as_of_date < r.date
+            )
+        )
+        LEFT JOIN stat_trainer_cumulative st ON (
+            st.trainer_id = e.trainer_id
+            AND st.as_of_date = (
+                SELECT MAX(as_of_date) FROM stat_trainer_cumulative
+                WHERE trainer_id = e.trainer_id AND as_of_date < r.date
+            )
+        )
         WHERE rp.finish_position IS NOT NULL
-        ORDER BY r.race_date, rp.race_id, rp.finish_position
+        ORDER BY r.date, rp.race_id, rp.finish_position
         """
 
-        df = pd.read_sql(query, db.connection())
+        df = pd.read_sql_query(query, conn)
         print(f"✅ データ取得完了: {len(df):,}件")
         print(f"   レース数: {df['race_id'].nunique():,}件")
         print(f"   期間: {df['race_date'].min()} 〜 {df['race_date'].max()}")
@@ -136,7 +156,7 @@ def extract_features_for_ranking():
         return df[['group_id', 'race_id', 'horse_id', 'rank'] + feature_columns]
 
     finally:
-        db.close()
+        conn.close()
 
 
 def save_features(df, output_path):

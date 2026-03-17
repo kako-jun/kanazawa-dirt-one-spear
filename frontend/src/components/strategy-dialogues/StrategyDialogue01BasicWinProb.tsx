@@ -24,7 +24,7 @@ export default function StrategyDialogue01BasicWinProb() {
             <div className="font-bold text-retro-brown mb-1 text-sm">
               アヤメ（統計分析担当）
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「まずは基本中の基本から！各馬が1着になる確率を予測して、
               その上位3頭を『1着-2着-3着』として3連単予想を組み立てる方法だよ。
               <br /><br />
@@ -43,7 +43,7 @@ export default function StrategyDialogue01BasicWinProb() {
             <div className="font-bold text-retro-brown mb-1 text-sm">
               アルゴ（AI擬人化）
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「僕が使ってるのは<strong className="text-retro-blue">LightGBM</strong>という機械学習モデル。
               決定木を何百本も組み合わせて予測する手法だ。
               <br /><br />
@@ -63,7 +63,7 @@ export default function StrategyDialogue01BasicWinProb() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1 text-sm">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「ただし大きな問題点があるの！
               <br /><br />
               <span className="text-retro-crimson font-bold">問題1: クラス不均衡</span>

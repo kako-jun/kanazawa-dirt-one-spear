@@ -13,7 +13,8 @@ import numpy as np
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
 def estimate_running_style(c1, c2, c3, c4, finish_position):
@@ -65,7 +66,7 @@ def analyze_running_styles():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         query = """
@@ -83,7 +84,7 @@ def analyze_running_styles():
         ORDER BY race_id, corner_1_position
         """
 
-        df = pd.read_sql(query, db.connection())
+        df = pd.read_sql_query(query, conn)
         print(f"✅ データ取得完了: {len(df):,}件")
 
         if len(df) == 0:
@@ -125,7 +126,7 @@ def analyze_running_styles():
         return df
 
     finally:
-        db.close()
+        conn.close()
 
 
 if __name__ == "__main__":

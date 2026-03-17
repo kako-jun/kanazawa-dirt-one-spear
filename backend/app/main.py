@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
@@ -9,21 +10,32 @@ from app.database import init_db, get_db
 from app import crud
 from app.predictor import generate_simple_prediction
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # 起動時処理
+    init_db()
+    yield
+    # 終了時処理（必要なら追加）
+
+
 app = FastAPI(
     title="金沢ダート一本槍 API",
     description="Kanazawa Dirt One Spear - 金沢競馬AI予想システム",
     version="0.1.0",
+    lifespan=lifespan,
 )
 
-# データベース初期化
-@app.on_event("startup")
-def startup_event():
-    init_db()
-
 # CORS設定
+# allow_credentials=True と allow_origins=["*"] の組み合わせはブラウザが拒否する（CORS仕様）
+# 開発中は localhost のみ許可する。本番ではオリジンを明示的に指定すること
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

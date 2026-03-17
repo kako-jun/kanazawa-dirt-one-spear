@@ -14,7 +14,7 @@ export default function StrategyDialogue03OddsValueHunter() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「『オッズと実力の乖離を突く』作戦だよ！
               人間は有名騎手や前走1着の馬を過大評価しがち。
               逆に、地味だけど実力がある馬は過小評価される。
@@ -29,7 +29,7 @@ export default function StrategyDialogue03OddsValueHunter() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「僕がデータから見た『本当の勝率15%』の馬が、
               オッズでは人気薄の50倍になってることがある。
               それが狙い目だ。期待値で言えば、100円が750円のリターン。
@@ -44,7 +44,7 @@ export default function StrategyDialogue03OddsValueHunter() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「これは『バリュー投資』って考え方ね。株式投資でも同じ。
               みんなが見落としてる優良銘柄を探す。
               当たれば高配当！でも外れリスクも高いから、諸刃の剣だよ😅」

@@ -11,10 +11,12 @@ export default function LatestPredictionSection({ race, prediction }: LatestPred
     return (
       <section className="py-12 md:py-16 bg-retro-sepia">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown text-center mb-8">
-            次回レース AI予想
-          </h2>
-          <div className="newspaper-card max-w-2xl mx-auto p-6 md:p-8 text-center text-retro-brown">
+          <div className="text-center mb-8">
+            <h2 className="showa-section-title text-2xl md:text-3xl">
+              次回レース AI予想
+            </h2>
+          </div>
+          <div className="betting-slip max-w-2xl mx-auto p-6 md:p-8 text-center text-retro-brown">
             <p>予想はまだ生成されていません</p>
             <p className="text-sm mt-2 opacity-75">レースデータが登録され次第、予想を生成します</p>
           </div>
@@ -37,125 +39,176 @@ export default function LatestPredictionSection({ race, prediction }: LatestPred
   return (
     <section className="py-12 md:py-16 bg-retro-sepia">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown text-center mb-8">
-          次回レース AI予想
-        </h2>
+        {/* セクションタイトル */}
+        <div className="text-center mb-8">
+          <h2 className="showa-section-title text-2xl md:text-3xl">
+            次回レース AI予想
+          </h2>
+        </div>
 
-        <div className="newspaper-card max-w-2xl mx-auto p-6 md:p-8">
-          {/* レース情報 */}
-          <div className="text-center mb-6">
-            <p className="text-lg md:text-xl font-bold text-retro-dark-gray">
-              {dateStr}（{dayOfWeek}）
-            </p>
-            <p className="text-base md:text-lg text-retro-brown mt-1">
-              第{race.race_number}R {race.name}
-            </p>
-            <p className="text-sm text-retro-brown mt-1">
-              {race.distance}m · {race.track_condition} · {race.weather}
-            </p>
-          </div>
+        {/* 馬券スタイルのカード */}
+        <div className="max-w-2xl mx-auto">
+          <div className="betting-slip p-6 md:p-8 rounded-sm">
+            {/* 馬券ヘッダー — レース情報 */}
+            <div className="text-center mb-6 pb-4 border-b-2 border-dashed border-retro-wheat-dark">
+              {/* "競" スタンプ風 */}
+              <div className="inline-block mb-3 px-3 py-1 text-xs font-bold font-mono tracking-widest border-2 border-retro-brown text-retro-brown opacity-70">
+                金沢競馬
+              </div>
+              <p className="text-xl md:text-2xl font-serif font-bold text-retro-brown-dark">
+                {dateStr}（{dayOfWeek}）
+              </p>
+              <p className="text-base md:text-lg text-retro-brown mt-1 font-bold">
+                第{race.race_number}R {race.name}
+              </p>
+              <p className="text-sm text-retro-brown-light mt-1 font-mono">
+                {race.distance}m · {race.track_condition} · {race.weather}
+              </p>
+            </div>
 
-          {/* 一本槍ビジュアル */}
-          <div className="flex flex-col items-center my-8">
-            <div className="relative">
-              {/* 穂先（本命） */}
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-retro-crimson text-white rounded-lg flex items-center justify-center text-3xl md:text-4xl font-mono font-bold shadow-retro">
-                  {prediction.first}
+            {/* 一本槍ビジュアル */}
+            <div className="flex flex-col items-center my-8">
+              <div className="relative flex flex-col items-center">
+                {/* 槍の穂先 */}
+                <div
+                  className="w-0 h-0 mb-3"
+                  style={{
+                    borderLeft: '18px solid transparent',
+                    borderRight: '18px solid transparent',
+                    borderBottom: '36px solid #3D1C0E',
+                    filter: 'drop-shadow(2px 2px 2px rgba(0,0,0,0.4))'
+                  }}
+                />
+
+                {/* 1着 */}
+                <div className="flex flex-col items-center mb-4">
+                  <div
+                    className="place-badge-1 w-20 h-20 md:w-24 md:h-24 rounded flex flex-col items-center justify-center text-4xl md:text-5xl font-mono font-black"
+                    style={{ borderRadius: '4px' }}
+                  >
+                    <span>{prediction.first}</span>
+                  </div>
+                  <span className="text-xs mt-2 text-retro-brown font-bold font-mono tracking-wide">
+                    穂先（本命）
+                  </span>
                 </div>
-                <span className="text-sm mt-2 text-retro-brown font-bold">
-                  穂先（本命）
+
+                {/* 柄（軸） */}
+                <div
+                  className="w-3 h-8 bg-retro-brown-dark mb-3"
+                  style={{ boxShadow: '1px 0 0 rgba(255,255,255,0.1), -1px 0 0 rgba(0,0,0,0.3)' }}
+                />
+
+                {/* 相手・穴馬 */}
+                <div className="flex justify-center gap-4">
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="place-badge-2 w-14 h-14 md:w-16 md:h-16 rounded flex flex-col items-center justify-center text-2xl md:text-3xl font-mono font-black"
+                      style={{ borderRadius: '4px' }}
+                    >
+                      {prediction.second}
+                    </div>
+                    <span className="text-xs mt-1 text-center text-retro-brown font-mono">相手</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="place-badge-3 w-14 h-14 md:w-16 md:h-16 rounded flex flex-col items-center justify-center text-2xl md:text-3xl font-mono font-black"
+                      style={{ borderRadius: '4px' }}
+                    >
+                      {prediction.third}
+                    </div>
+                    <span className="text-xs mt-1 text-center text-retro-brown font-mono">穴馬</span>
+                  </div>
+                </div>
+
+                {/* 柄の下部 */}
+                <div
+                  className="mx-auto mt-2"
+                  style={{
+                    width: '10px',
+                    height: '60px',
+                    background: 'linear-gradient(180deg, #3D1C0E 0%, #5A2D1A 60%, #4A2018 100%)',
+                    boxShadow: '2px 0 0 rgba(255,255,255,0.1), -1px 0 0 rgba(0,0,0,0.4)',
+                    borderRadius: '0 0 3px 3px'
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* LED電光掲示板 — 三連単予想 */}
+            <div className="led-display text-center mb-6 rounded-sm">
+              <div className="text-xs mb-2 opacity-70 tracking-widest">三連単予想</div>
+              <div className="text-3xl md:text-4xl font-bold tracking-[0.5em] led-flicker">
+                {predictionStr}
+              </div>
+            </div>
+
+            {/* 信頼度 */}
+            <div className="text-center mb-6">
+              <div className="text-sm text-retro-brown mb-2 font-bold">信頼度</div>
+              <div className="flex items-center justify-center gap-2">
+                <div className="flex gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <span
+                      key={star}
+                      className={`text-2xl ${
+                        star <= Math.floor(confidencePercent / 20)
+                          ? 'text-retro-gold'
+                          : 'text-retro-wheat-dark'
+                      }`}
+                      style={star <= Math.floor(confidencePercent / 20) ? {
+                        textShadow: '0 0 4px rgba(201,146,10,0.5)'
+                      } : {}}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
+                <span className="text-2xl font-black text-retro-crimson font-mono"
+                  style={{ textShadow: '1px 1px 0 rgba(139,0,0,0.5)' }}>
+                  {confidencePercent}%
                 </span>
               </div>
+            </div>
 
-              {/* 団子（相手） */}
-              <div className="flex justify-center gap-4 mt-4">
-                <div>
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-retro-brown text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-mono font-bold">
-                    {prediction.second}
-                  </div>
-                  <span className="text-xs mt-1 block text-center">相手</span>
-                </div>
-                <div>
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-retro-brown text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-mono font-bold">
-                    {prediction.third}
-                  </div>
-                  <span className="text-xs mt-1 block text-center">穴馬</span>
-                </div>
+            {/* 予想根拠 */}
+            <div className="border-t-2 border-dashed border-retro-wheat-dark pt-6">
+              <h3 className="font-bold text-retro-brown mb-3 text-center text-sm tracking-wide">
+                — 予想根拠 —
+              </h3>
+              <div className="space-y-2">
+                <p className="text-sm md:text-base font-mono">
+                  <span className="text-retro-crimson font-bold">✓</span>{' '}
+                  モデルバージョン: {prediction.model_version}
+                </p>
+                <p className="text-sm md:text-base font-mono">
+                  <span className="text-retro-crimson font-bold">✓</span>{' '}
+                  過去のレースデータから算出
+                </p>
+                <p className="text-sm md:text-base font-mono">
+                  <span className="text-retro-crimson font-bold">✓</span>{' '}
+                  馬場状態「{race.track_condition}」を考慮
+                </p>
               </div>
-
-              {/* 柄 */}
-              <div className="mx-auto w-2 h-16 bg-retro-brown mt-2"></div>
             </div>
-          </div>
 
-          {/* 予想表示 */}
-          <div className="led-display text-center mb-6">
-            <div className="text-sm mb-2">三連単予想</div>
-            <div className="text-2xl md:text-3xl font-bold tracking-wider">
-              {predictionStr}
+            {/* アクションボタン */}
+            <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href="/ai"
+                className="px-6 py-3 bg-retro-blue text-white rounded font-bold text-center hover:bg-retro-blue-light transition-colors border-2 border-retro-blue text-sm"
+                style={{ boxShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}
+              >
+                詳細を見る
+              </a>
+              <a
+                href="/ai"
+                className="px-6 py-3 bg-retro-green text-white rounded font-bold text-center hover:bg-opacity-90 transition-colors border-2 border-retro-green text-sm"
+                style={{ boxShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}
+              >
+                買い目シミュレーション
+              </a>
             </div>
-          </div>
-
-          {/* 信頼度 */}
-          <div className="text-center mb-6">
-            <div className="text-sm text-retro-brown mb-2">信頼度</div>
-            <div className="flex items-center justify-center gap-2">
-              <div className="flex gap-1">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <span
-                    key={star}
-                    className={`text-2xl ${
-                      star <= Math.floor(confidencePercent / 20)
-                        ? 'text-retro-gold'
-                        : 'text-gray-300'
-                    }`}
-                  >
-                    ★
-                  </span>
-                ))}
-              </div>
-              <span className="text-xl font-bold text-retro-crimson">
-                {confidencePercent}%
-              </span>
-            </div>
-          </div>
-
-          {/* 予想根拠 */}
-          <div className="border-t-2 border-retro-brown pt-6">
-            <h3 className="font-bold text-retro-brown mb-3 text-center">
-              予想根拠
-            </h3>
-            <div className="space-y-2">
-              <p className="text-sm md:text-base">
-                <span className="text-retro-crimson font-bold">✓</span>{' '}
-                モデルバージョン: {prediction.model_version}
-              </p>
-              <p className="text-sm md:text-base">
-                <span className="text-retro-crimson font-bold">✓</span>{' '}
-                過去のレースデータから算出
-              </p>
-              <p className="text-sm md:text-base">
-                <span className="text-retro-crimson font-bold">✓</span>{' '}
-                馬場状態「{race.track_condition}」を考慮
-              </p>
-            </div>
-          </div>
-
-          {/* アクションボタン */}
-          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="/ai"
-              className="px-6 py-3 bg-retro-blue text-white rounded-lg font-bold text-center hover:bg-opacity-90 transition-colors"
-            >
-              詳細を見る
-            </a>
-            <a
-              href="/ai"
-              className="px-6 py-3 bg-retro-green text-white rounded-lg font-bold text-center hover:bg-opacity-90 transition-colors"
-            >
-              買い目シミュレーション
-            </a>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ from datetime import datetime
 from scipy.stats import chisquare
 
 # データベースパス
-DB_PATH = Path(__file__).parent.parent / "backend" / "kanazawa_dirt_one_spear.db"
+DB_PATH = Path(__file__).parent.parent / "backend" / "data" / "kanazawa_dirt_one_spear.db"
 
 # ベンフォードの法則による期待分布
 BENFORDS_DISTRIBUTION = {

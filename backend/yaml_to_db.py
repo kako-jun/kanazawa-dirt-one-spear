@@ -637,14 +637,17 @@ def _parse_sex_age(sex_age_str: Optional[str]) -> tuple:
 
 
 def _parse_int(value: Any) -> Optional[int]:
-    """安全な整数変換"""
+    """安全な整数変換（負数対応）"""
     try:
         if value is None:
             return None
         if isinstance(value, int):
             return value
+        if isinstance(value, float):
+            return int(value)
         if isinstance(value, str):
-            cleaned = value.replace('+', '').replace('-', '').strip()
+            # '+' プレフィックスのみ除去。'-' は符号として保持
+            cleaned = value.replace('+', '').strip()
             return int(cleaned) if cleaned else None
         return None
     except:

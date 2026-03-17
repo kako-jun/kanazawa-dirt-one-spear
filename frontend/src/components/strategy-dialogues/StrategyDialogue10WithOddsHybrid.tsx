@@ -14,7 +14,7 @@ export default function StrategyDialogue10WithOddsHybrid() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「作戦9の対極。オッズ（人間の集合知）も特徴量として使う。
               客観的データ + 人間の予想 = ハイブリッド予想。
               人間の知恵には意味があるという立場だ。」
@@ -28,7 +28,7 @@ export default function StrategyDialogue10WithOddsHybrid() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「オッズには『現地の情報』『調教の評判』『馬体の状態』とか、
               データに現れない情報が反映されてる可能性があるの。
               それを活用すれば、精度が上がるかも...
@@ -43,7 +43,7 @@ export default function StrategyDialogue10WithOddsHybrid() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「統計的には、オッズ考慮型の方が的中率は高くなる傾向。
               でも、配当が下がるから回収率は微妙。
               作戦9と作戦10、どっちが最終的に儲かるか...

@@ -11,10 +11,11 @@ import numpy as np
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
-def calculate_condition_affinity(horse_id, track_condition, distance_category, db):
+def calculate_condition_affinity(horse_id, track_condition, distance_category, conn):
     """
     条件適性スコアを計算
 
@@ -22,7 +23,7 @@ def calculate_condition_affinity(horse_id, track_condition, distance_category, d
         horse_id: 馬ID
         track_condition: 馬場状態
         distance_category: 距離カテゴリ
-        db: Database session
+        conn: sqlite3 connection
 
     Returns:
         condition_score: 0-1のスコア
@@ -33,7 +34,7 @@ def calculate_condition_affinity(horse_id, track_condition, distance_category, d
     FROM stat_horse_track_condition
     WHERE horse_id = ? AND track_condition = ?
     """
-    track_result = db.execute(query_track, (horse_id, track_condition)).fetchone()
+    track_result = conn.execute(query_track, (horse_id, track_condition)).fetchone()
 
     if track_result is None or track_result[2] < 2:
         track_win_rate = 0.0
@@ -46,7 +47,7 @@ def calculate_condition_affinity(horse_id, track_condition, distance_category, d
     FROM stat_horse_distance_category
     WHERE horse_id = ? AND distance_category = ?
     """
-    distance_result = db.execute(query_distance, (horse_id, distance_category)).fetchone()
+    distance_result = conn.execute(query_distance, (horse_id, distance_category)).fetchone()
 
     if distance_result is None or distance_result[2] < 2:
         distance_win_rate = 0.0
@@ -67,7 +68,7 @@ def analyze_all_condition_affinities():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         # 馬場状態別成績
@@ -84,7 +85,7 @@ def analyze_all_condition_affinities():
         ORDER BY win_rate DESC
         """
 
-        df_track = pd.read_sql(query, db.connection())
+        df_track = pd.read_sql_query(query, conn)
         print(f"✅ 馬場状態別データ取得: {len(df_track):,}件")
 
         # 距離カテゴリ別成績
@@ -101,7 +102,7 @@ def analyze_all_condition_affinities():
         ORDER BY win_rate DESC
         """
 
-        df_distance = pd.read_sql(query_distance, db.connection())
+        df_distance = pd.read_sql_query(query_distance, conn)
         print(f"✅ 距離カテゴリ別データ取得: {len(df_distance):,}件")
         print()
 
@@ -127,7 +128,7 @@ def analyze_all_condition_affinities():
         return df_track, df_distance
 
     finally:
-        db.close()
+        conn.close()
 
 
 if __name__ == "__main__":

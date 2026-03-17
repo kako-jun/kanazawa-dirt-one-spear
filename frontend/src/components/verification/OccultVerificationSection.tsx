@@ -156,7 +156,7 @@ export default function OccultVerificationSection() {
                   </div>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg mb-3">
+                <div className="bg-retro-sepia p-4 rounded-lg mb-3">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
                     <div className="text-sm">
                       <span className="font-bold text-retro-brown">検証方法: </span>
@@ -210,7 +210,7 @@ export default function OccultVerificationSection() {
               </div>
               <div className="flex-1">
                 <div className="font-bold text-retro-brown mb-1 text-sm">アヤメ</div>
-                <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+                <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
                   「オカルトって馬鹿にできないの。もしかしたら本当に効果があるかもしれないから、
                   統計でちゃんと検証してる。『満月で荒れる』は迷信だったけど、
                   『雨で内枠有利』や『休養明けは不利』は本当だった！
@@ -230,7 +230,7 @@ export default function OccultVerificationSection() {
               </div>
               <div className="flex-1">
                 <div className="font-bold text-retro-brown mb-1 text-sm">アルゴ</div>
-                <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+                <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
                   「僕は偏見を持たない。どんな仮説も公平に検証する。
                   <br /><br />
                   効果があれば予想に取り入れ、なければ捨てる。それだけだ。
@@ -251,25 +251,25 @@ export default function OccultVerificationSection() {
             📚 統計用語ミニ解説
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-            <div className="p-3 bg-white rounded">
+            <div className="p-3 bg-retro-sepia rounded">
               <div className="font-bold text-retro-blue mb-1">p値とは？</div>
               <div className="text-xs text-retro-dark-gray">
                 「偶然でこの結果が出る確率」。0.05以下なら「偶然じゃない＝本当の効果がある」と判断。
               </div>
             </div>
-            <div className="p-3 bg-white rounded">
+            <div className="p-3 bg-retro-sepia rounded">
               <div className="font-bold text-retro-blue mb-1">サンプルサイズ（n）</div>
               <div className="text-xs text-retro-dark-gray">
                 検証に使ったデータの数。多いほど信頼性が高い。少ないと偶然の影響を受けやすい。
               </div>
             </div>
-            <div className="p-3 bg-white rounded">
+            <div className="p-3 bg-retro-sepia rounded">
               <div className="font-bold text-retro-blue mb-1">Cohen's d</div>
               <div className="text-xs text-retro-dark-gray">
                 効果の大きさを示す指標。0.2=小、0.5=中、0.8=大。検証004では0.42（中程度の効果）。
               </div>
             </div>
-            <div className="p-3 bg-white rounded">
+            <div className="p-3 bg-retro-sepia rounded">
               <div className="font-bold text-retro-blue mb-1">カイ二乗検定/t検定</div>
               <div className="text-xs text-retro-dark-gray">
                 統計的な差があるか調べる手法。カイ二乗はカテゴリ、t検定は数値データ用。

@@ -13,7 +13,8 @@ import numpy as np
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
 def calculate_ev(win_probability, odds, bet_amount=100):
@@ -73,40 +74,49 @@ def load_race_data_with_odds():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    # SQLAlchemy Session の connection() は非推奨 / 動作不安定なため、sqlite3 を直接使用
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         query = """
         SELECT
-            r.id as race_id,
-            r.race_date,
+            r.race_id,
+            r.date as race_date,
             r.track_condition,
             r.distance,
 
             rp.horse_id,
             rp.horse_number,
             rp.finish_position,
-            rp.popularity,  -- 人気順位
+            rp.popularity,
 
-            -- 馬の累積統計
+            -- 馬の累積統計（時系列リーク防止のため race_date 以前の直近統計を使用）
             sh.win_rate as horse_win_rate,
             sh.place_rate as horse_place_rate
 
         FROM race_performances rp
-        JOIN races r ON rp.race_id = r.id
-        LEFT JOIN stat_horse_cumulative sh ON rp.horse_id = sh.horse_id
+        JOIN races r ON rp.race_id = r.race_id
+        LEFT JOIN stat_horse_cumulative sh ON (
+            sh.horse_id = rp.horse_id
+            AND sh.as_of_date = (
+                SELECT MAX(as_of_date)
+                FROM stat_horse_cumulative
+                WHERE horse_id = rp.horse_id
+                AND as_of_date < r.date
+            )
+        )
         WHERE rp.popularity IS NOT NULL
-        ORDER BY r.race_date, rp.race_id, rp.popularity
+        ORDER BY r.date, rp.race_id, rp.popularity
         """
 
-        df = pd.read_sql(query, db.connection())
+        df = pd.read_sql_query(query, conn)
         print(f"✅ データ取得完了: {len(df):,}件")
         print()
 
         return df
 
     finally:
-        db.close()
+        conn.close()
 
 
 def estimate_odds_from_popularity(popularity, num_horses=8):

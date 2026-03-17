@@ -187,7 +187,7 @@ export default function RacecoursePage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {access.map((item, index) => (
-                <div key={index} className="bg-white p-5 rounded-lg">
+                <div key={index} className="bg-retro-sepia p-5 rounded-lg">
                   <h3 className="text-lg font-bold text-retro-brown mb-3">
                     {item.method}
                   </h3>
@@ -228,7 +228,7 @@ export default function RacecoursePage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {schedule.map((item, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg text-center">
+                <div key={index} className="bg-retro-sepia p-4 rounded-lg text-center">
                   <div className="font-bold text-retro-brown mb-2">{item.day}</div>
                   <div className="text-xs text-retro-dark-gray">{item.note}</div>
                 </div>
@@ -247,14 +247,14 @@ export default function RacecoursePage() {
               入場料
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg">
+              <div className="bg-retro-sepia p-6 rounded-lg">
                 <div className="text-lg font-bold text-retro-brown mb-3">一般</div>
                 <div className="text-4xl font-mono font-bold text-retro-green mb-2">
                   ¥100
                 </div>
                 <div className="text-sm text-retro-dark-gray">大人（20歳以上）</div>
               </div>
-              <div className="bg-white p-6 rounded-lg">
+              <div className="bg-retro-sepia p-6 rounded-lg">
                 <div className="text-lg font-bold text-retro-brown mb-3">
                   中学生以下
                 </div>
@@ -282,7 +282,7 @@ export default function RacecoursePage() {
                 金沢競馬場を未来に残すため、馬券購入で応援しましょう。
               </p>
 
-              <div className="bg-white p-6 rounded-lg">
+              <div className="bg-retro-sepia p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-retro-brown mb-4">
                   応援購入のススメ
                 </h3>
@@ -362,25 +362,25 @@ export default function RacecoursePage() {
               データで見る金沢競馬（2015-2025年）
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-white p-4 rounded-lg text-center">
+              <div className="bg-retro-sepia p-4 rounded-lg text-center">
                 <div className="text-sm text-retro-brown mb-2">総レース数</div>
                 <div className="text-3xl font-bold font-mono text-retro-dark-gray">
                   8,718
                 </div>
               </div>
-              <div className="bg-white p-4 rounded-lg text-center">
+              <div className="bg-retro-sepia p-4 rounded-lg text-center">
                 <div className="text-sm text-retro-brown mb-2">出走馬数</div>
                 <div className="text-3xl font-bold font-mono text-retro-blue">
                   12,924
                 </div>
               </div>
-              <div className="bg-white p-4 rounded-lg text-center">
+              <div className="bg-retro-sepia p-4 rounded-lg text-center">
                 <div className="text-sm text-retro-brown mb-2">騎手数</div>
                 <div className="text-3xl font-bold font-mono text-retro-green">
                   281
                 </div>
               </div>
-              <div className="bg-white p-4 rounded-lg text-center">
+              <div className="bg-retro-sepia p-4 rounded-lg text-center">
                 <div className="text-sm text-retro-brown mb-2">年間開催日</div>
                 <div className="text-3xl font-bold font-mono text-retro-crimson">
                   約73日

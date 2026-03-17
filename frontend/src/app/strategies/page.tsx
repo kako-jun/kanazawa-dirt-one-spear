@@ -94,7 +94,7 @@ export default function StrategiesPage() {
                     <th className="p-3 text-center">特徴</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white">
+                <tbody className="bg-retro-sepia">
                   <tr className="border-b">
                     <td className="p-3">1. 王道・勝率予測型</td>
                     <td className="p-3 text-center">

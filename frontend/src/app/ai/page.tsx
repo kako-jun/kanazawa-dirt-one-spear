@@ -24,7 +24,7 @@ export default function AIPage() {
               <span className="font-bold text-retro-crimson">三連単を1点のみ予想</span>
               する大胆なスタイルです。複数の買い目を提案せず、AIが最も自信を持つ組み合わせだけを提示します。
             </p>
-            <div className="bg-white p-4 rounded-lg">
+            <div className="bg-retro-sepia p-4 rounded-sm">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-3xl">🎯</span>
                 <div className="font-bold text-retro-brown">
@@ -48,7 +48,7 @@ export default function AIPage() {
 
             <div className="space-y-4">
               {/* LightGBM */}
-              <div className="bg-white p-5 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="text-lg font-bold text-retro-blue mb-3 flex items-center gap-2">
                   <span>🌳</span>
                   LightGBM（勾配ブースティング）
@@ -69,7 +69,7 @@ export default function AIPage() {
               </div>
 
               {/* ディープラーニング（将来実装予定） */}
-              <div className="bg-white p-5 rounded-lg opacity-60">
+              <div className="bg-retro-sepia p-4 rounded-sm opacity-60">
                 <h3 className="text-lg font-bold text-retro-crimson mb-3 flex items-center gap-2">
                   <span>🧠</span>
                   ディープラーニング（実装予定）
@@ -96,7 +96,7 @@ export default function AIPage() {
               学習データ
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <div className="text-sm text-retro-brown mb-2 font-bold">
                   データ期間
                 </div>
@@ -105,7 +105,7 @@ export default function AIPage() {
                 </div>
                 <div className="text-xs text-gray-600 mt-1">約11年分</div>
               </div>
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <div className="text-sm text-retro-brown mb-2 font-bold">
                   総レース数
                 </div>
@@ -124,7 +124,7 @@ export default function AIPage() {
             </h2>
 
             <div className="space-y-3">
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="font-bold text-retro-brown mb-2 flex items-center gap-2">
                   <span>🏇</span>
                   馬の情報
@@ -135,7 +135,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="font-bold text-retro-brown mb-2 flex items-center gap-2">
                   <span>👨‍🦱</span>
                   騎手の情報
@@ -146,7 +146,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="font-bold text-retro-brown mb-2 flex items-center gap-2">
                   <span>👔</span>
                   調教師の情報
@@ -156,7 +156,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 rounded-lg">
+              <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="font-bold text-retro-brown mb-2 flex items-center gap-2">
                   <span>🏟️</span>
                   レースの情報
@@ -167,7 +167,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 rounded-lg border-2 border-retro-gold">
+              <div className="bg-retro-sepia p-4 rounded-sm border-2 border-retro-gold">
                 <h3 className="font-bold text-retro-brown mb-2 flex items-center gap-2">
                   <span>💰</span>
                   オッズ情報（実験中）
@@ -198,7 +198,7 @@ export default function AIPage() {
                 これを繰り返すことで、実際の運用時の精度を正確に測定します。
               </p>
 
-              <div className="bg-white p-4 rounded-lg text-xs font-mono">
+              <div className="bg-retro-sepia p-4 rounded-sm text-xs font-mono">
                 <div className="mb-2 text-retro-brown font-bold">検証スケジュール例</div>
                 <div className="space-y-1 text-retro-dark-gray">
                   <div>2015-2019年で学習 → 2020年で予想テスト</div>
@@ -228,7 +228,7 @@ export default function AIPage() {
             </h2>
 
             <div className="space-y-3">
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-retro-sepia rounded-sm">
                 <div className="text-4xl">🔥</div>
                 <div>
                   <div className="font-bold text-retro-crimson mb-1">
@@ -240,7 +240,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-retro-sepia rounded-sm">
                 <div className="text-4xl">👍</div>
                 <div>
                   <div className="font-bold text-retro-gold mb-1">
@@ -252,7 +252,7 @@ export default function AIPage() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-retro-sepia rounded-sm">
                 <div className="text-4xl">🤔</div>
                 <div>
                   <div className="font-bold text-retro-blue mb-1">
@@ -287,7 +287,7 @@ export default function AIPage() {
                   <div className="font-bold text-retro-brown mb-1">
                     アヤメ（統計分析担当）
                   </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+                  <div className="bg-retro-sepia p-4 rounded-sm shadow-sm text-sm text-retro-dark-gray leading-relaxed">
                     「LightGBMっていうのはね、決定木っていう『質問の連鎖』で答えを導くモデルなの。
                     例えば『この馬は1500m以上得意？』→『馬場は良？』→『騎手の勝率15%以上？』
                     ってどんどん絞り込んでいくイメージだよ！」
@@ -304,7 +304,7 @@ export default function AIPage() {
                   <div className="font-bold text-retro-brown mb-1">
                     アルゴ（AI擬人化）
                   </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+                  <div className="bg-retro-sepia p-4 rounded-sm shadow-sm text-sm text-retro-dark-gray leading-relaxed">
                     「僕が予想する時は、8,718レース分のパターンを瞬時に分析してるんだ。
                     人間には見えない微細な傾向も捉えられる。
                     でも、100%当たるわけじゃない。競馬には運もあるからね。」
@@ -319,7 +319,7 @@ export default function AIPage() {
                 </div>
                 <div className="flex-1">
                   <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+                  <div className="bg-retro-sepia p-4 rounded-sm shadow-sm text-sm text-retro-dark-gray leading-relaxed">
                     「三連単の的中率は、データ上では約3-5%程度が理論値。
                     AIでもこれを大きく超えるのは難しいの。
                     だから『一本槍』で勝負するのは、実はとても勇気のいる戦略なんだよね😊」

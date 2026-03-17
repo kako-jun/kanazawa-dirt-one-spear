@@ -14,7 +14,7 @@ export default function StrategyDialogue07TrifectaPattern() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「ちょっと視点を変えた作戦だよ！
               『1-3-5』『2-4-7』みたいな三連単の組み合わせパターンを直接学習するの。
               『内-中-外』『人気-中穴-大穴』みたいなパターンが存在するかも...って発想。」
@@ -28,7 +28,7 @@ export default function StrategyDialogue07TrifectaPattern() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「過去8,718レースの三連単パターンを分析。
               例えば『1着は内枠、2着は人気馬、3着は穴馬』って組み合わせが多い...
               みたいな傾向を見つけ出す。
@@ -43,7 +43,7 @@ export default function StrategyDialogue07TrifectaPattern() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「リスクは『組み合わせ爆発』。
               8頭立てでも336通りの三連単がある。
               パターンが多すぎて学習が難しいかも...

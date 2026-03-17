@@ -11,17 +11,18 @@ import numpy as np
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
-def calculate_combo_score(horse_id, jockey_id, db):
+def calculate_combo_score(horse_id, jockey_id, conn):
     """
     馬×騎手のコンビスコアを計算
 
     Args:
         horse_id: 馬ID
         jockey_id: 騎手ID
-        db: Database session
+        conn: sqlite3 connection
 
     Returns:
         combo_score: 0-1のスコア
@@ -37,7 +38,7 @@ def calculate_combo_score(horse_id, jockey_id, db):
     WHERE horse_id = ? AND jockey_id = ?
     """
 
-    result = db.execute(query, (horse_id, jockey_id)).fetchone()
+    result = conn.execute(query, (horse_id, jockey_id)).fetchone()
 
     if result is None or result[2] < 3:  # 経験回数が3回未満
         return 0.0
@@ -66,7 +67,7 @@ def analyze_all_combos():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         query = """
@@ -82,7 +83,7 @@ def analyze_all_combos():
         ORDER BY win_rate DESC
         """
 
-        df = pd.read_sql(query, db.connection())
+        df = pd.read_sql_query(query, conn)
         print(f"✅ コンビデータ取得: {len(df):,}件")
         print()
 
@@ -118,7 +119,7 @@ def analyze_all_combos():
         return df
 
     finally:
-        db.close()
+        conn.close()
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ export default function StrategyDialogue05ConditionSpecialist() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「『この条件なら強い！』って馬を探す作戦だよ。
               例えば、重馬場×1500mだと勝率30%の馬がいる。
               良馬場では10%なのに、条件が合うと化けるの。
@@ -29,7 +29,7 @@ export default function StrategyDialogue05ConditionSpecialist() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「統計テーブルから『馬場別勝率』『距離別勝率』『季節別勝率』を取得。
               今日のレース条件と照らし合わせて、
               『今日の条件ならこの馬だ』って判断する。
@@ -44,7 +44,7 @@ export default function StrategyDialogue05ConditionSpecialist() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「問題は、条件が合わないレースでは精度が下がること。
               『今日は該当する馬がいない』ってケースもある。
               でも、ハマった時の的中率は他の作戦より高いから、

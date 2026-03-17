@@ -3,8 +3,21 @@ from typing import List, Optional
 from datetime import datetime
 import uuid
 
-from app.database import DBRace, DBEntry, DBHorse, DBPrediction, DBResult
+from app.database import DBRace, DBEntry, DBHorse, DBPrediction, DBResult, DBJockey
 from app.models import Race, Entry, Horse, Prediction, Result, ResultSubmit
+
+
+# Jockey helper
+def get_or_create_jockey_id(db: Session, jockey_name: str) -> str:
+    """騎手名からjockey_idを取得、存在しなければ作成"""
+    import re
+    jockey_id = f"jockey_{jockey_name}"
+    existing = db.query(DBJockey).filter(DBJockey.jockey_id == jockey_id).first()
+    if not existing:
+        normalized = re.sub(r'\([^)]*\)', '', jockey_name).strip()
+        db.add(DBJockey(jockey_id=jockey_id, name=jockey_name, name_normalized=normalized))
+        db.flush()
+    return jockey_id
 
 
 # Horse CRUD
@@ -46,13 +59,14 @@ def create_race(db: Session, race: Race) -> DBRace:
 
     # エントリー作成
     for entry in race.entries:
+        jockey_id = get_or_create_jockey_id(db, entry.jockey)
         db_entry = DBEntry(
             entry_id=entry.entry_id,
             race_id=race.race_id,
             horse_id=entry.horse.horse_id,
+            jockey_id=jockey_id,
             gate_number=entry.gate_number,
             horse_number=entry.horse_number,
-            jockey=entry.jockey,
             weight=entry.weight,
             odds=entry.odds,
             past_results=entry.past_results,
@@ -85,11 +99,18 @@ def get_race(db: Session, race_id: str) -> Optional[Race]:
 def db_race_to_model(db: Session, db_race: DBRace) -> Race:
     entries = []
     for db_entry in db_race.entries:
+        # horse relationship may be None if the FK row is missing
+        if db_entry.horse is None:
+            continue
         horse = Horse(
             horse_id=db_entry.horse.horse_id,
             name=db_entry.horse.name,
-            age=db_entry.horse.age,
-            gender=db_entry.horse.gender,
+            age=db_entry.horse.age or 0,
+            gender=db_entry.horse.gender or "不明",
+        )
+        # jockey relationship may be None if FK row missing; fall back to jockey_id string
+        jockey_name = (
+            db_entry.jockey.name if db_entry.jockey else db_entry.jockey_id or "不明"
         )
         entry = Entry(
             entry_id=db_entry.entry_id,
@@ -97,7 +118,7 @@ def db_race_to_model(db: Session, db_race: DBRace) -> Race:
             horse=horse,
             gate_number=db_entry.gate_number,
             horse_number=db_entry.horse_number,
-            jockey=db_entry.jockey,
+            jockey=jockey_name,
             weight=db_entry.weight,
             odds=db_entry.odds,
             past_results=db_entry.past_results or [],
@@ -129,7 +150,16 @@ def get_prediction(db: Session, race_id: str) -> Optional[Prediction]:
     db_prediction = db.query(DBPrediction).filter(DBPrediction.race_id == race_id).first()
     if not db_prediction:
         return None
-    return Prediction(**db_prediction.__dict__)
+    return Prediction(
+        prediction_id=db_prediction.prediction_id,
+        race_id=db_prediction.race_id,
+        predicted_at=db_prediction.predicted_at,
+        first=db_prediction.first,
+        second=db_prediction.second,
+        third=db_prediction.third,
+        confidence=db_prediction.confidence,
+        model_version=db_prediction.model_version,
+    )
 
 
 # Result CRUD
@@ -171,9 +201,26 @@ def create_result(db: Session, result_submit: ResultSubmit) -> Result:
     db.commit()
     db.refresh(db_result)
 
-    return Result(**db_result.__dict__)
+    return _db_result_to_model(db_result)
+
+
+def _db_result_to_model(db_result: DBResult) -> Result:
+    return Result(
+        result_id=db_result.result_id,
+        race_id=db_result.race_id,
+        first=db_result.first,
+        second=db_result.second,
+        third=db_result.third,
+        payout_trifecta=db_result.payout_trifecta,
+        prediction_hit=db_result.prediction_hit,
+        purchased=db_result.purchased,
+        bet_amount=db_result.bet_amount,
+        return_amount=db_result.return_amount,
+        recorded_at=db_result.recorded_at,
+        memo=db_result.memo,
+    )
 
 
 def get_results(db: Session) -> List[Result]:
     db_results = db.query(DBResult).order_by(DBResult.recorded_at.desc()).all()
-    return [Result(**db_result.__dict__) for db_result in db_results]
+    return [_db_result_to_model(r) for r in db_results]

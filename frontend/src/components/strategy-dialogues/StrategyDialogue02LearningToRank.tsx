@@ -14,7 +14,7 @@ export default function StrategyDialogue02LearningToRank() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「作戦1の問題点に気づいた。『勝つか負けるか』じゃなくて、
               『何着になるか』を直接予測すべきだ。
               ランキング学習という手法で、レース内の順位を予測する。」
@@ -28,7 +28,7 @@ export default function StrategyDialogue02LearningToRank() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「LambdaMARTっていう、Googleの検索ランキングにも使われてる技術なの。
               馬を『検索結果』に見立てて、順位をつける。
               『この馬は2着相当、あの馬は5着相当』って直接判断できるのが強み！」
@@ -42,7 +42,7 @@ export default function StrategyDialogue02LearningToRank() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「理論的には、3連単予想に最も適したアプローチだ。
               ただし、データの準備が複雑で、計算コストも高い。
               でも、精度が上がるなら試す価値は十分にある。」

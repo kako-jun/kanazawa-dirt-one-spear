@@ -14,7 +14,7 @@ export default function StrategyDialogue06PaceScenario() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「これは上級者向けの作戦だ。
               レース展開（ペース）を予測して、それに合った脚質の馬を選ぶ。
               例えば『スローペース→差し馬有利』『ハイペース→逃げ馬不利』って具合に。」
@@ -28,7 +28,7 @@ export default function StrategyDialogue06PaceScenario() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アヤメ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「脚質っていうのは『逃げ・先行・差し・追込』の4タイプ。
               コーナー通過順位から推定できるの。
               逃げ馬が多いレースはハイペースになりやすいから、
@@ -43,7 +43,7 @@ export default function StrategyDialogue06PaceScenario() {
           </div>
           <div className="flex-1">
             <div className="font-bold text-retro-brown mb-1">アルゴ</div>
-            <div className="bg-white p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
+            <div className="bg-retro-sepia p-4 rounded-lg shadow-sm text-sm text-retro-dark-gray leading-relaxed">
               「課題は、脚質判定が難しいこと。
               データが不足してるから、まだ実験段階だ。
               でも、ハマれば強力な予想ができるはず。」

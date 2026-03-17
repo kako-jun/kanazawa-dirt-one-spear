@@ -50,88 +50,76 @@ export default function ResultForm({
     }
   }
 
+  const inputClass = "w-full p-3 border-2 border-retro-brown rounded-sm bg-retro-sepia text-retro-brown-dark font-mono focus:outline-none focus:border-retro-gold"
+  const selectClass = "w-full p-3 border-2 border-retro-brown rounded-sm bg-retro-sepia text-retro-brown-dark text-base font-bold font-mono focus:outline-none focus:border-retro-gold"
+  const labelClass = "block text-xs text-retro-brown font-bold font-mono mb-1"
+
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 bg-yellow-600 text-white p-6 rounded-t-lg">
-          <h2 className="text-2xl font-bold">レース結果を記録</h2>
-          <p className="text-sm mt-1">{race.name} - 第{race.race_number}R</p>
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
+      <div
+        className="max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-sm"
+        style={{
+          background: '#EDE0C4',
+          border: '3px solid #3D1C0E',
+          borderBottom: '6px solid #2A1008',
+          boxShadow: '8px 8px 0 rgba(0,0,0,0.5)'
+        }}
+      >
+        {/* ヘッダー看板 */}
+        <div className="sticky top-0 showa-sign p-5 rounded-t-sm">
+          <h2
+            className="text-xl font-serif font-black text-retro-wheat"
+            style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
+          >
+            レース結果を記録
+          </h2>
+          <p className="text-xs text-retro-wheat opacity-70 mt-1 font-mono">
+            {race.name} — 第{race.race_number}R
+          </p>
         </div>
 
         <form onSubmit={handleSubmit} className="p-6">
           {/* 着順入力 */}
           <div className="mb-6">
-            <h3 className="font-bold text-lg mb-3">着順</h3>
+            <h3 className="font-serif font-black text-retro-brown-dark text-base mb-3">着順</h3>
             <div className="grid grid-cols-3 gap-4">
-              <div>
-                <label className="block text-sm text-gray-600 mb-1">
-                  1着
-                </label>
-                <select
-                  value={first}
-                  onChange={(e) => setFirst(parseInt(e.target.value))}
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg text-lg font-bold"
-                  required
-                >
-                  {race.entries.map((entry) => (
-                    <option key={entry.horse_number} value={entry.horse_number}>
-                      {entry.horse_number}番 {entry.horse.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm text-gray-600 mb-1">
-                  2着
-                </label>
-                <select
-                  value={second}
-                  onChange={(e) => setSecond(parseInt(e.target.value))}
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg text-lg font-bold"
-                  required
-                >
-                  {race.entries.map((entry) => (
-                    <option key={entry.horse_number} value={entry.horse_number}>
-                      {entry.horse_number}番 {entry.horse.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm text-gray-600 mb-1">
-                  3着
-                </label>
-                <select
-                  value={third}
-                  onChange={(e) => setThird(parseInt(e.target.value))}
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg text-lg font-bold"
-                  required
-                >
-                  {race.entries.map((entry) => (
-                    <option key={entry.horse_number} value={entry.horse_number}>
-                      {entry.horse_number}番 {entry.horse.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              {[
+                { label: '1着', value: first, setter: setFirst },
+                { label: '2着', value: second, setter: setSecond },
+                { label: '3着', value: third, setter: setThird },
+              ].map(({ label, value, setter }) => (
+                <div key={label}>
+                  <label className={labelClass}>{label}</label>
+                  <select
+                    value={value}
+                    onChange={(e) => setter(parseInt(e.target.value))}
+                    className={selectClass}
+                    required
+                  >
+                    {race.entries.map((entry) => (
+                      <option key={entry.horse_number} value={entry.horse_number}>
+                        {entry.horse_number}番 {entry.horse.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ))}
             </div>
           </div>
 
           {/* 3連単配当 */}
           <div className="mb-6">
-            <label className="block font-bold text-lg mb-2">
-              3連単配当（100円あたり）
+            <label className="block font-serif font-black text-retro-brown-dark text-base mb-2">
+              三連単配当（100円あたり）
             </label>
             <input
               type="number"
               value={payout}
               onChange={(e) => setPayout(e.target.value)}
               placeholder="例: 12340"
-              className="w-full p-3 border-2 border-gray-300 rounded-lg"
+              className={inputClass}
             />
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-xs text-retro-brown opacity-60 mt-1 font-mono">
               ※配当がわかる場合は入力してください
             </p>
           </div>
@@ -143,22 +131,22 @@ export default function ResultForm({
                 type="checkbox"
                 checked={purchased}
                 onChange={(e) => setPurchased(e.target.checked)}
-                className="w-6 h-6"
+                className="w-5 h-5 accent-retro-crimson"
               />
-              <span className="font-bold text-lg">実際に購入した</span>
+              <span className="font-serif font-bold text-retro-brown-dark">実際に購入した</span>
             </label>
           </div>
 
-          {/* 購入金額（購入した場合のみ） */}
+          {/* 購入金額 */}
           {purchased && (
-            <div className="mb-6 ml-9">
-              <label className="block font-bold mb-2">購入金額（円）</label>
+            <div className="mb-6 ml-8">
+              <label className="block font-bold text-retro-brown-dark mb-2 font-serif">購入金額（円）</label>
               <input
                 type="number"
                 value={betAmount}
                 onChange={(e) => setBetAmount(e.target.value)}
                 placeholder="例: 100"
-                className="w-full p-3 border-2 border-gray-300 rounded-lg"
+                className={inputClass}
                 required
               />
             </div>
@@ -166,7 +154,7 @@ export default function ResultForm({
 
           {/* メモ */}
           <div className="mb-6">
-            <label className="block font-bold text-lg mb-2">
+            <label className="block font-serif font-black text-retro-brown-dark text-base mb-2">
               メモ・感想（任意）
             </label>
             <textarea
@@ -174,7 +162,7 @@ export default function ResultForm({
               onChange={(e) => setMemo(e.target.value)}
               placeholder="レースの感想や反省点など"
               rows={3}
-              className="w-full p-3 border-2 border-gray-300 rounded-lg"
+              className={inputClass}
             />
           </div>
 
@@ -183,14 +171,23 @@ export default function ResultForm({
             <button
               type="button"
               onClick={onCancel}
-              className="flex-1 px-6 py-3 bg-gray-300 text-gray-700 rounded-lg font-bold hover:bg-gray-400 transition-colors"
+              className="flex-1 px-6 py-3 font-bold rounded-sm transition-colors text-retro-wheat border-2 border-retro-dark-gray"
+              style={{
+                background: 'linear-gradient(180deg, #3A4E4C 0%, #2A3A38 100%)',
+                boxShadow: '2px 2px 0 rgba(0,0,0,0.3)'
+              }}
               disabled={submitting}
             >
               キャンセル
             </button>
             <button
               type="submit"
-              className="flex-1 px-6 py-3 bg-yellow-600 text-white rounded-lg font-bold hover:bg-yellow-700 transition-colors disabled:bg-gray-400"
+              className="flex-1 px-6 py-3 font-black rounded-sm transition-colors text-retro-wheat border-2 border-retro-brown-dark disabled:opacity-50"
+              style={{
+                background: 'linear-gradient(180deg, #C9920A 0%, #8B6500 100%)',
+                boxShadow: '2px 2px 0 rgba(0,0,0,0.3)',
+                textShadow: '1px 1px 2px rgba(0,0,0,0.5)'
+              }}
               disabled={submitting}
             >
               {submitting ? '登録中...' : '登録する'}

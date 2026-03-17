@@ -8,10 +8,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-retro-brown text-retro-sepia shadow-retro">
+    <header className="showa-sign text-retro-wheat shadow-sign">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ロゴエリア */}
-        <div className="py-6 border-b-2 border-retro-wheat">
+        <div className="py-5 border-b-2 border-retro-gold-dark">
           <Link href="/" className="block">
             <div className="flex flex-col items-center gap-2">
               <Image
@@ -29,46 +29,31 @@ export default function Header() {
         </div>
 
         {/* ナビゲーション */}
-        <nav className="py-4">
+        <nav className="py-3">
           {/* デスクトップメニュー */}
-          <div className="hidden md:flex items-center justify-center gap-6">
-            <Link
-              href="/"
-              className="px-4 py-2 font-bold hover:bg-retro-wheat hover:text-retro-brown rounded transition-colors"
-            >
-              ホーム
-            </Link>
-            <Link
-              href="/ai"
-              className="px-4 py-2 font-bold hover:bg-retro-wheat hover:text-retro-brown rounded transition-colors"
-            >
-              AI予想
-            </Link>
-            <Link
-              href="/stats"
-              className="px-4 py-2 font-bold hover:bg-retro-wheat hover:text-retro-brown rounded transition-colors"
-            >
-              統計
-            </Link>
-            <Link
-              href="/racecourse"
-              className="px-4 py-2 font-bold hover:bg-retro-wheat hover:text-retro-brown rounded transition-colors"
-            >
-              競馬場
-            </Link>
-            <Link
-              href="/history"
-              className="px-4 py-2 font-bold hover:bg-retro-wheat hover:text-retro-brown rounded transition-colors"
-            >
-              履歴
-            </Link>
+          <div className="hidden md:flex items-center justify-center gap-1">
+            {[
+              { href: '/', label: 'ホーム' },
+              { href: '/ai', label: 'AI予想' },
+              { href: '/stats', label: '統計' },
+              { href: '/racecourse', label: '競馬場' },
+              { href: '/history', label: '履歴' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="px-5 py-2 font-bold text-retro-wheat hover:bg-retro-brown-light hover:text-retro-sepia rounded transition-colors border border-transparent hover:border-retro-gold-dark text-sm tracking-wide"
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
 
           {/* モバイルメニューボタン */}
           <div className="md:hidden flex justify-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="px-4 py-2 bg-retro-wheat text-retro-brown font-bold rounded"
+              className="px-6 py-2 bg-retro-brown-light text-retro-wheat font-bold rounded border-2 border-retro-brown-dark text-sm"
               aria-label="メニューを開く"
             >
               {mobileMenuOpen ? '✕ 閉じる' : '☰ メニュー'}
@@ -77,42 +62,23 @@ export default function Header() {
 
           {/* モバイルメニュー */}
           {mobileMenuOpen && (
-            <div className="md:hidden mt-4 flex flex-col gap-2 bg-retro-wheat rounded-lg p-4">
-              <Link
-                href="/"
-                className="px-4 py-3 font-bold text-retro-brown hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                ホーム
-              </Link>
-              <Link
-                href="/ai"
-                className="px-4 py-3 font-bold text-retro-brown hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                AI予想
-              </Link>
-              <Link
-                href="/stats"
-                className="px-4 py-3 font-bold text-retro-brown hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                統計
-              </Link>
-              <Link
-                href="/racecourse"
-                className="px-4 py-3 font-bold text-retro-brown hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                競馬場
-              </Link>
-              <Link
-                href="/history"
-                className="px-4 py-3 font-bold text-retro-brown hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                履歴
-              </Link>
+            <div className="md:hidden mt-3 flex flex-col gap-1 bg-retro-brown-dark rounded border-2 border-retro-brown p-3">
+              {[
+                { href: '/', label: 'ホーム' },
+                { href: '/ai', label: 'AI予想' },
+                { href: '/stats', label: '統計' },
+                { href: '/racecourse', label: '競馬場' },
+                { href: '/history', label: '履歴' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="px-4 py-3 font-bold text-retro-wheat hover:bg-retro-brown hover:text-retro-sepia rounded transition-colors text-center text-sm"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
           )}
         </nav>

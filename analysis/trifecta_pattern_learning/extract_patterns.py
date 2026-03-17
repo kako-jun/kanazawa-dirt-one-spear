@@ -12,7 +12,8 @@ from collections import Counter
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root / "backend"))
 
-from app.database import SessionLocal, DB_PATH
+import sqlite3
+from app.database import DB_PATH
 
 
 def extract_trifecta_patterns():
@@ -23,36 +24,36 @@ def extract_trifecta_patterns():
     print(f"DB: {DB_PATH}")
     print()
 
-    db = SessionLocal()
+    conn = sqlite3.connect(DB_PATH)
 
     try:
         # 過去の3連単結果を取得
         query = """
         SELECT
-            r.id as race_id,
-            r.race_date,
+            r.race_id,
+            r.date as race_date,
             r.track_condition,
             r.distance,
 
             -- 1-2-3着の人気順位
             (SELECT popularity FROM race_performances
-             WHERE race_id = r.id AND finish_position = 1) as first_popularity,
+             WHERE race_id = r.race_id AND finish_position = 1) as first_popularity,
             (SELECT popularity FROM race_performances
-             WHERE race_id = r.id AND finish_position = 2) as second_popularity,
+             WHERE race_id = r.race_id AND finish_position = 2) as second_popularity,
             (SELECT popularity FROM race_performances
-             WHERE race_id = r.id AND finish_position = 3) as third_popularity,
+             WHERE race_id = r.race_id AND finish_position = 3) as third_popularity,
 
             -- 3連単配当
             (SELECT payout FROM payouts
-             WHERE race_id = r.id AND payout_type = 'trifecta'
+             WHERE race_id = r.race_id AND payout_type = 'trifecta'
              LIMIT 1) as trifecta_payout
 
         FROM races r
-        WHERE r.id IN (SELECT DISTINCT race_id FROM race_performances WHERE finish_position <= 3)
-        ORDER BY r.race_date
+        WHERE r.race_id IN (SELECT DISTINCT race_id FROM race_performances WHERE finish_position <= 3)
+        ORDER BY r.date
         """
 
-        df = pd.read_sql(query, db.connection())
+        df = pd.read_sql_query(query, conn)
         print(f"✅ データ取得: {len(df):,}レース")
         print()
 
@@ -105,7 +106,7 @@ def extract_trifecta_patterns():
         return df
 
     finally:
-        db.close()
+        conn.close()
 
 
 if __name__ == "__main__":

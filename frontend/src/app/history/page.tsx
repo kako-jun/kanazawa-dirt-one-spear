@@ -158,7 +158,7 @@ export default function HistoryPage() {
               className={`px-4 py-2 rounded-lg font-bold transition-colors ${
                 filter === 'all'
                   ? 'bg-retro-brown text-white'
-                  : 'bg-white text-retro-brown border-2 border-retro-brown'
+                  : 'bg-retro-sepia text-retro-brown border-2 border-retro-brown'
               }`}
             >
               全て ({results.length})
@@ -168,7 +168,7 @@ export default function HistoryPage() {
               className={`px-4 py-2 rounded-lg font-bold transition-colors ${
                 filter === 'hit'
                   ? 'bg-retro-crimson text-white'
-                  : 'bg-white text-retro-crimson border-2 border-retro-crimson'
+                  : 'bg-retro-sepia text-retro-crimson border-2 border-retro-crimson'
               }`}
             >
               的中 ({hitCount})
@@ -177,8 +177,8 @@ export default function HistoryPage() {
               onClick={() => setFilter('miss')}
               className={`px-4 py-2 rounded-lg font-bold transition-colors ${
                 filter === 'miss'
-                  ? 'bg-gray-600 text-white'
-                  : 'bg-white text-gray-600 border-2 border-gray-600'
+                  ? 'bg-retro-dark-gray text-retro-wheat'
+                  : 'bg-retro-sepia text-retro-dark-gray border-2 border-retro-dark-gray'
               }`}
             >
               不的中 ({totalResults - hitCount})
@@ -188,7 +188,7 @@ export default function HistoryPage() {
               className={`px-4 py-2 rounded-lg font-bold transition-colors ${
                 filter === 'purchased'
                   ? 'bg-retro-blue text-white'
-                  : 'bg-white text-retro-blue border-2 border-retro-blue'
+                  : 'bg-retro-sepia text-retro-blue border-2 border-retro-blue'
               }`}
             >
               実購入 ({purchasedResults.length})
@@ -213,7 +213,7 @@ export default function HistoryPage() {
                   return (
                     <div
                       key={result.result_id}
-                      className="border-2 border-retro-brown rounded-lg p-4 bg-white"
+                      className="border-2 border-retro-brown rounded-sm p-4 bg-retro-sepia"
                     >
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
                         {/* 左側：レース情報 */}
@@ -252,7 +252,7 @@ export default function HistoryPage() {
                               的中!
                             </div>
                           ) : (
-                            <span className="text-gray-500">不的中</span>
+                            <span className="text-retro-brown opacity-50 font-mono text-sm">不的中</span>
                           )}
                         </div>
                       </div>

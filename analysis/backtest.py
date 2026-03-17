@@ -51,8 +51,8 @@ def load_test_data(train_cutoff_date='2024-01-01'):
     """
     conn = get_connection()
 
-    # 特徴量生成と同じクエリ（test期間のみ）
-    query = f"""
+    # パラメータ化クエリでSQLインジェクションを防ぐ
+    query = """
     SELECT
         -- 基本情報
         rp.performance_id,
@@ -125,12 +125,12 @@ def load_test_data(train_cutoff_date='2024-01-01'):
     )
 
     WHERE rp.finish_position IS NOT NULL
-      AND r.date >= '{train_cutoff_date}'
+      AND r.date >= ?
     ORDER BY r.date, r.race_id, rp.horse_number
     """
 
     print(f"Loading test data (from {train_cutoff_date})...")
-    df = pd.read_sql_query(query, conn)
+    df = pd.read_sql_query(query, conn, params=(train_cutoff_date,))
     df['race_date'] = pd.to_datetime(df['race_date'])
     conn.close()
 
@@ -243,14 +243,14 @@ def get_trifecta_payout(race_id):
         配当額（円）, None if not found
     """
     conn = get_connection()
-    query = f"""
+    query = """
     SELECT payout
     FROM payouts
-    WHERE race_id = '{race_id}'
+    WHERE race_id = ?
       AND payout_type = 'trifecta'
     LIMIT 1
     """
-    result = pd.read_sql_query(query, conn)
+    result = pd.read_sql_query(query, conn, params=(race_id,))
     conn.close()
 
     if len(result) > 0:

@@ -12,7 +12,7 @@ from datetime import datetime
 import json
 
 # データベースパス
-DB_PATH = Path(__file__).parent.parent / "backend" / "kanazawa_dirt_one_spear.db"
+DB_PATH = Path(__file__).parent.parent / "backend" / "data" / "kanazawa_dirt_one_spear.db"
 
 
 def get_connection():

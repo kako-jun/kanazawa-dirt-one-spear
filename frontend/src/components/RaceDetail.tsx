@@ -39,7 +39,7 @@ export default function RaceDetail({ race, onBack }: RaceDetailProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50">
+    <div className="min-h-screen bg-retro-sepia">
       {/* 結果登録フォーム */}
       {showResultForm && (
         <ResultForm
@@ -52,12 +52,12 @@ export default function RaceDetail({ race, onBack }: RaceDetailProps) {
         />
       )}
 
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-yellow-600 to-orange-600 text-white p-6">
+      {/* ヘッダー — 昭和看板スタイル */}
+      <div className="showa-sign p-6">
         <div className="flex items-center justify-between mb-4">
           <button
             onClick={onBack}
-            className="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors"
+            className="px-4 py-2 text-retro-wheat font-bold text-sm rounded border border-retro-wheat opacity-70 hover:opacity-100 transition-opacity font-mono"
             aria-label="レース一覧に戻る"
           >
             ← 戻る
@@ -65,82 +65,99 @@ export default function RaceDetail({ race, onBack }: RaceDetailProps) {
 
           <button
             onClick={() => setShowResultForm(true)}
-            className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold transition-colors flex items-center gap-2"
+            className="px-5 py-2 font-bold text-sm rounded text-retro-wheat border-2 border-retro-green"
+            style={{
+              background: 'linear-gradient(180deg, #2E6B2E 0%, #1E4A1E 100%)',
+              boxShadow: '2px 2px 0 rgba(0,0,0,0.4)'
+            }}
           >
-            <span>📝</span>
-            <span>結果を記録する</span>
+            結果を記録する
           </button>
         </div>
 
         <div className="flex items-center gap-4 mb-2">
-          <div className="bg-white text-yellow-600 px-4 py-2 rounded-full text-xl font-bold">
+          <div
+            className="horse-number-badge text-lg px-4 py-2 rounded"
+            style={{ width: 'auto', height: 'auto', fontSize: '1.1rem' }}
+          >
             {race.race_number}R
           </div>
-          <h1 className="text-3xl font-bold">{race.name}</h1>
+          <h1
+            className="text-2xl md:text-3xl font-serif font-black text-retro-wheat"
+            style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
+          >
+            {race.name}
+          </h1>
         </div>
 
-        <div className="flex gap-6 text-sm">
-          <div>📅 {formatDate(race.date)}</div>
-          <div>📏 {race.distance}m ダート</div>
-          <div>🌤️ {race.weather}</div>
-          <div>🏇 馬場: {race.track_condition}</div>
+        <div className="flex flex-wrap gap-4 text-sm text-retro-wheat opacity-80 font-mono">
+          <div>{formatDate(race.date)}</div>
+          <div>{race.distance}m ダート</div>
+          <div>{race.weather}</div>
+          <div>馬場: {race.track_condition}</div>
         </div>
       </div>
 
       {/* 予想表示 */}
       {loading && (
         <div className="flex items-center justify-center py-20">
-          <div className="text-xl text-gray-600">予想を生成中...</div>
+          <div className="text-base text-retro-brown font-mono">予想を生成中...</div>
         </div>
       )}
 
       {error && (
         <div className="flex items-center justify-center py-20">
-          <div className="text-xl text-red-600">{error}</div>
+          <div className="text-base text-retro-crimson font-mono">{error}</div>
         </div>
       )}
 
       {prediction && (
-        <SpearPrediction
-          prediction={prediction}
-          entries={race.entries}
-        />
+        <div className="bg-retro-sepia">
+          <SpearPrediction
+            prediction={prediction}
+            entries={race.entries}
+          />
+        </div>
       )}
 
       {/* 出馬表 */}
-      <div className="p-6 mt-8">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">出馬表</h2>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <table className="w-full">
-            <thead className="bg-yellow-600 text-white">
+      <div className="p-6 mt-4">
+        <div className="mb-4 flex items-center gap-3">
+          <h2
+            className="showa-section-title text-xl"
+          >
+            出走表
+          </h2>
+        </div>
+        <div className="rounded-sm overflow-hidden" style={{ boxShadow: '4px 4px 0 rgba(0,0,0,0.2)' }}>
+          <table className="race-card-table">
+            <thead>
               <tr>
-                <th className="p-3 text-left">枠</th>
-                <th className="p-3 text-left">馬番</th>
-                <th className="p-3 text-left">馬名</th>
-                <th className="p-3 text-left">性齢</th>
-                <th className="p-3 text-left">騎手</th>
-                <th className="p-3 text-left">斤量</th>
-                <th className="p-3 text-left">オッズ</th>
+                <th>枠</th>
+                <th>馬番</th>
+                <th>馬名</th>
+                <th>性齢</th>
+                <th>騎手</th>
+                <th>斤量</th>
+                <th>オッズ</th>
               </tr>
             </thead>
             <tbody>
-              {race.entries.map((entry, index) => (
-                <tr
-                  key={entry.entry_id}
-                  className={`border-b ${
-                    index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
-                  } hover:bg-yellow-50`}
-                >
-                  <td className="p-3">{entry.gate_number}</td>
-                  <td className="p-3 font-bold">{entry.horse_number}</td>
-                  <td className="p-3 font-bold">{entry.horse.name}</td>
-                  <td className="p-3">
-                    {entry.horse.gender}
-                    {entry.horse.age}
+              {race.entries.map((entry) => (
+                <tr key={entry.entry_id}>
+                  <td>{entry.gate_number}</td>
+                  <td>
+                    <span className="horse-number-badge w-8 h-8 text-sm">
+                      {entry.horse_number}
+                    </span>
                   </td>
-                  <td className="p-3">{entry.jockey}</td>
-                  <td className="p-3">{entry.weight}kg</td>
-                  <td className="p-3">
+                  <td className="font-serif font-bold">{entry.horse.name}</td>
+                  <td className="font-mono text-xs">
+                    {entry.horse.gender}{entry.horse.age}
+                  </td>
+                  <td>{entry.jockey}</td>
+                  <td className="font-mono">{entry.weight}kg</td>
+                  <td className="font-mono text-retro-gold font-bold">
                     {entry.odds ? `${entry.odds.toFixed(1)}倍` : '-'}
                   </td>
                 </tr>
