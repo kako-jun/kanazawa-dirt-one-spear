@@ -71,7 +71,7 @@
 
 ディレクトリ構造:
 ```
-.claude/strategies/
+docs/strategies/
   {strategy_id}/
     metadata.yaml     # 作戦メタデータ
     README.md         # 説明文書
@@ -118,7 +118,7 @@
 
 ## Phase 3: フロントエンド実装
 
-参照: `.claude/presentation/frontend.md`
+参照: `docs/presentation/frontend.md`
 
 ### 未実装
 - [ ] Next.js セットアップ

@@ -27,7 +27,7 @@
 - 作戦実装時に毎回SQLを書くのは非効率
 
 **何を作るか？**
-- 18個の統計テーブル（.claude/database/stats_tables_design.md参照）
+- 18個の統計テーブル（docs/database/stats_tables_design.md参照）
   - 累積成績（馬・騎手・調教師）
   - 組み合わせ統計（馬×騎手、馬×馬場など）
   - 条件別統計（距離適性、枠番成績など）
@@ -113,7 +113,7 @@
 5. 安定性（標準偏差）
 
 **比較方法:**
-- 時系列交差検証（.claude/analysis/prediction.md参照）
+- 時系列交差検証（docs/analysis/prediction.md参照）
 - 過去データで各作戦を検証
 - 作戦間の性能比較表を作成
 
@@ -124,7 +124,7 @@
 ### ディレクトリ構造
 
 ```
-.claude/strategies/
+docs/strategies/
   {strategy_id}/
     metadata.yaml      # 作戦メタデータ（仮説、アルゴリズム、リスク）
     README.md          # 説明文書

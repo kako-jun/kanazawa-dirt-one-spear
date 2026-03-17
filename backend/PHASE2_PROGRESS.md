@@ -104,7 +104,7 @@ uv run python integrate_jockey_master.py
 
 **統計テーブル構築** (`build_stats_tables.py`)
 
-`.claude/phase2_strategy.md` で定義された18の統計テーブル:
+`docs/phase2_strategy.md` で定義された18の統計テーブル:
 
 1. stat_jockey_overall: 騎手総合成績
 2. stat_jockey_distance: 騎手距離別成績
@@ -158,7 +158,7 @@ backend/
 
 **次回セッション開始時の確認事項**:
 1. DB再構築が必要（血統データ投入のため）
-2. 統計テーブル定義の確認（`.claude/phase2_strategy.md`）
+2. 統計テーブル定義の確認（`docs/phase2_strategy.md`）
 3. build_stats_tables.py の実装開始
 
 ---

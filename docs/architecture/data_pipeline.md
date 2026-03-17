@@ -22,7 +22,7 @@ backend/
 analysis/
 └── *.py              # 分析スクリプト
 
-.claude/
+docs/
 └── **/*.md           # ドキュメント
 ```
 

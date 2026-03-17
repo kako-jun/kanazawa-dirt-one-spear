@@ -21,27 +21,27 @@
 
 ## ドキュメント構成
 
-プロジェクトの詳細ドキュメントは `.claude/` ディレクトリに集約されています。
+プロジェクトの詳細ドキュメントは `docs/` ディレクトリに集約されています。
 
 ### 📊 データ収集 (data-collection/)
 
 **どうやって情報を集めるか**
 
-- `.claude/data-collection/data_acquisition_plan.md` - データ収集戦略全般
-- `.claude/data-collection/scraping_notes.md` - スクレイピング実装メモ
+- `docs/data-collection/data_acquisition_plan.md` - データ収集戦略全般
+- `docs/data-collection/scraping_notes.md` - スクレイピング実装メモ
 
 ### 🔬 分析手法 (analysis/)
 
 **どうやって分析するか**
 
-- `.claude/analysis/prediction.md` - AI予想手法（LightGBM/Deep Learning、オッズバイアス実験、時系列検証）
-- `.claude/analysis/analysis.md` - 統計分析手法（公平性検証、オカルト検証、馬タイプクラスタリング、ユニーク特徴量）
+- `docs/analysis/prediction.md` - AI予想手法（LightGBM/Deep Learning、オッズバイアス実験、時系列検証）
+- `docs/analysis/analysis.md` - 統計分析手法（公平性検証、オカルト検証、馬タイプクラスタリング、ユニーク特徴量）
 
 ### 🎨 プレゼンテーション (presentation/)
 
 **どうやって見せるか**
 
-- `.claude/presentation/frontend.md` - フロントエンド設計（レトロデザイン、購入促進、愛着機能、競馬場統計）
+- `docs/presentation/frontend.md` - フロントエンド設計（レトロデザイン、購入促進、愛着機能、競馬場統計）
 
 ---
 

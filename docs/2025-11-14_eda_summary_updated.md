@@ -294,4 +294,4 @@
 **関連ドキュメント**:
 - `docs/2025-11-14_analysis_summary.md`（基本統計）
 - `docs/eda/2025-11-14_additional_eda.md`（詳細EDA）
-- `.claude/analysis/prediction.md`（予想手法）
+- `docs/analysis/prediction.md`（予想手法）

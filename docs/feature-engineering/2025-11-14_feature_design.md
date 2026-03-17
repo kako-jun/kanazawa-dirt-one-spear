@@ -9,7 +9,7 @@
 
 ### 1. オッズを使わない理由
 
-`.claude/analysis/prediction.md`の哲学に基づき、まず**オッズを完全に無視したモデル**を構築する。
+`docs/analysis/prediction.md`の哲学に基づき、まず**オッズを完全に無視したモデル**を構築する。
 
 **目的**:
 - 人間の集団心理バイアスに影響されない純粋なAI判断
@@ -203,7 +203,7 @@ def calculate_horse_stats(self, horse_id, up_to_date):
 
 ## データセット分割戦略
 
-時系列クロスバリデーションを使用（`.claude/analysis/prediction.md`参照）。
+時系列クロスバリデーションを使用（`docs/analysis/prediction.md`参照）。
 
 ### TimeSeriesSplit方式
 
@@ -263,4 +263,4 @@ def calculate_horse_stats(self, horse_id, up_to_date):
 ---
 
 **作成者**: Claude
-**参考ドキュメント**: `.claude/analysis/prediction.md`, `.claude/analysis/analysis.md`
+**参考ドキュメント**: `docs/analysis/prediction.md`, `docs/analysis/analysis.md`
