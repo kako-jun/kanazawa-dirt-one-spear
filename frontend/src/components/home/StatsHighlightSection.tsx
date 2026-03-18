@@ -49,7 +49,7 @@ export default function StatsHighlightSection({ statistics }: StatsHighlightSect
           {/* カード2: 総予想数 */}
           <div className="aged-paper-card p-6 rounded-sm">
             <div className="text-xs mb-3 text-retro-brown font-bold tracking-widest uppercase font-mono">
-              AI予想数
+              予想数
             </div>
             <div
               className="text-4xl md:text-5xl font-black font-mono text-retro-blue mb-2"
@@ -58,14 +58,14 @@ export default function StatsHighlightSection({ statistics }: StatsHighlightSect
               {totalPredictions.toLocaleString()}
             </div>
             <div className="text-xs text-retro-brown opacity-70 font-mono">
-              AIによる予想生成数
+              オッズ順モデルによる予想生成数
             </div>
           </div>
 
           {/* カード3: 的中率 */}
           <div className="aged-paper-card p-6 rounded-sm">
             <div className="text-xs mb-3 text-retro-brown font-bold tracking-widest uppercase font-mono">
-              AI的中率
+              的中率
             </div>
             <div
               className="text-4xl md:text-5xl font-black font-mono text-retro-crimson mb-2"

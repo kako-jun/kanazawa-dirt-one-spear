@@ -109,9 +109,16 @@ export default function StatsPage() {
 
       <main className="flex-1 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown mb-8">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown mb-4">
             金沢競馬 統計データ
           </h1>
+
+          {/* サンプルデータ注意書き */}
+          <div className="bg-retro-gold/20 border-2 border-retro-gold p-4 rounded-lg mb-8">
+            <p className="text-sm text-retro-brown font-bold">
+              ※ このページのデータはサンプル（仮データ）です。実際の統計APIが接続され次第、リアルデータに切り替わります。
+            </p>
+          </div>
 
           {/* 概要サマリー */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -439,7 +446,7 @@ export default function StatsPage() {
           {/* データ期間 */}
           <div className="text-center text-sm text-retro-brown">
             <p>※ データ期間: 2015年1月 〜 2025年11月</p>
-            <p className="mt-1">※ レース結果データベースに基づく統計分析</p>
+            <p className="mt-1">※ 現在表示中のデータはサンプル値です。統計APIの実装後にリアルデータへ切り替わります。</p>
           </div>
         </div>
       </main>

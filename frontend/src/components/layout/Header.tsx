@@ -23,7 +23,7 @@ export default function Header() {
                 className="max-w-[900px] w-full h-auto drop-shadow-md"
                 sizes="(max-width: 640px) 90vw, (max-width: 1024px) 720px, 900px"
               />
-              <p className="sr-only">AIが選ぶ三連単一点予想</p>
+              <p className="sr-only">データ分析で選ぶ三連単一点予想</p>
             </div>
           </Link>
         </div>
@@ -34,7 +34,7 @@ export default function Header() {
           <div className="hidden md:flex items-center justify-center gap-1">
             {[
               { href: '/', label: 'ホーム' },
-              { href: '/ai', label: 'AI予想' },
+              { href: '/ai', label: 'オッズ順予想' },
               { href: '/stats', label: '統計' },
               { href: '/racecourse', label: '競馬場' },
               { href: '/history', label: '履歴' },
@@ -65,7 +65,7 @@ export default function Header() {
             <div className="md:hidden mt-3 flex flex-col gap-1 bg-retro-brown-dark rounded border-2 border-retro-brown p-3">
               {[
                 { href: '/', label: 'ホーム' },
-                { href: '/ai', label: 'AI予想' },
+                { href: '/ai', label: 'オッズ順予想' },
                 { href: '/stats', label: '統計' },
                 { href: '/racecourse', label: '競馬場' },
                 { href: '/history', label: '履歴' },

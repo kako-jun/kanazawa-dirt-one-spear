@@ -74,7 +74,7 @@ export default function Home() {
         {/* メインビジュアル */}
         <HeroSection />
 
-        {/* 最新AI予想 */}
+        {/* 最新オッズ順予想 */}
         <LatestPredictionSection
           race={latestRace}
           prediction={latestPrediction}

@@ -1,6 +1,7 @@
 """
-シンプルな予想モデル
-後でLightGBMに置き換える予定
+オッズ順ルールベース予想モデル
+オッズ（人気順）に基づいて三連単を予想する。
+将来的にLightGBM等の機械学習モデルに置き換える予定。
 """
 from typing import List
 import random

@@ -13,7 +13,7 @@ export default function LatestPredictionSection({ race, prediction }: LatestPred
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="showa-section-title text-2xl md:text-3xl">
-              次回レース AI予想
+              次回レース オッズ順予想
             </h2>
           </div>
           <div className="betting-slip max-w-2xl mx-auto p-6 md:p-8 text-center text-retro-brown">
@@ -42,7 +42,7 @@ export default function LatestPredictionSection({ race, prediction }: LatestPred
         {/* セクションタイトル */}
         <div className="text-center mb-8">
           <h2 className="showa-section-title text-2xl md:text-3xl">
-            次回レース AI予想
+            次回レース オッズ順予想
           </h2>
         </div>
 

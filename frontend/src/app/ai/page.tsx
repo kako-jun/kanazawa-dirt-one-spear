@@ -11,7 +11,7 @@ export default function AIPage() {
       <main className="flex-1 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown mb-8">
-            AI予想の仕組み
+            予想の仕組み
           </h1>
 
           {/* 概要 */}
@@ -20,9 +20,9 @@ export default function AIPage() {
               一本槍スタイルとは
             </h2>
             <p className="text-retro-dark-gray mb-4 leading-relaxed">
-              金沢ダート一本槍は、AIが
+              金沢ダート一本槍は、データ分析により
               <span className="font-bold text-retro-crimson">三連単を1点のみ予想</span>
-              する大胆なスタイルです。複数の買い目を提案せず、AIが最も自信を持つ組み合わせだけを提示します。
+              する大胆なスタイルです。複数の買い目を提案せず、最も有力な組み合わせだけを提示します。
             </p>
             <div className="bg-retro-sepia p-4 rounded-sm">
               <div className="flex items-center gap-3 mb-2">
@@ -33,7 +33,7 @@ export default function AIPage() {
               </div>
               <ul className="space-y-2 text-sm text-retro-dark-gray ml-12">
                 <li>✓ 複数点買いは資金効率が悪化</li>
-                <li>✓ AIの判断を最も信頼できる1点に集約</li>
+                <li>✓ データ分析の結果を最も信頼できる1点に集約</li>
                 <li>✓ シンプルで分かりやすい</li>
                 <li>✓ 当たれば高配当</li>
               </ul>
@@ -47,11 +47,32 @@ export default function AIPage() {
             </h2>
 
             <div className="space-y-4">
-              {/* LightGBM */}
+              {/* 現行モデル: オッズ順 */}
               <div className="bg-retro-sepia p-4 rounded-sm">
                 <h3 className="text-lg font-bold text-retro-blue mb-3 flex items-center gap-2">
+                  <span>📊</span>
+                  現行モデル: オッズ順ルールベース
+                </h3>
+                <p className="text-sm text-retro-dark-gray mb-3 leading-relaxed">
+                  現在の予想は、オッズ（人気順）に基づくシンプルなルールベースモデルです。
+                  <br />
+                  人気上位3頭をそのまま三連単の予想として提示しています。
+                </p>
+                <div className="bg-retro-wheat p-3 rounded text-xs">
+                  <div className="font-bold text-retro-brown mb-2">特徴</div>
+                  <ul className="space-y-1 text-retro-dark-gray">
+                    <li>• シンプルで分かりやすい</li>
+                    <li>• オッズが反映する市場の知恵を活用</li>
+                    <li>• 今後、機械学習モデル（LightGBM等）に置き換え予定</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* LightGBM（将来実装予定） */}
+              <div className="bg-retro-sepia p-4 rounded-sm opacity-60">
+                <h3 className="text-lg font-bold text-retro-blue mb-3 flex items-center gap-2">
                   <span>🌳</span>
-                  LightGBM（勾配ブースティング）
+                  LightGBM（勾配ブースティング）— 実装予定
                 </h3>
                 <p className="text-sm text-retro-dark-gray mb-3 leading-relaxed">
                   決定木という「質問の連鎖」で答えを導く機械学習モデル。
@@ -120,7 +141,7 @@ export default function AIPage() {
           {/* 使用する特徴量 */}
           <div className="newspaper-card p-6 mb-8">
             <h2 className="text-2xl font-serif font-bold text-retro-brown mb-4">
-              AIが見ている情報（特徴量）
+              予想に使う情報（特徴量）— 将来のMLモデル用
             </h2>
 
             <div className="space-y-3">
@@ -305,9 +326,9 @@ export default function AIPage() {
                     アルゴ（AI擬人化）
                   </div>
                   <div className="bg-retro-sepia p-4 rounded-sm shadow-sm text-sm text-retro-dark-gray leading-relaxed">
-                    「僕が予想する時は、8,718レース分のパターンを瞬時に分析してるんだ。
-                    人間には見えない微細な傾向も捉えられる。
-                    でも、100%当たるわけじゃない。競馬には運もあるからね。」
+                    「今の予想モデルは、オッズ（人気順）をベースにしたシンプルなルールなんだ。
+                    将来的には8,718レース分のパターンを学習したAIモデルに進化させる予定。
+                    でも、どんなモデルでも100%当たるわけじゃない。競馬には運もあるからね。」
                   </div>
                 </div>
               </div>
@@ -335,7 +356,7 @@ export default function AIPage() {
               ⚠️ 重要な注意事項
             </h2>
             <ul className="space-y-2 text-sm text-retro-dark-gray">
-              <li>✓ AI予想は参考情報です。必ず当たるわけではありません。</li>
+              <li>✓ 予想は参考情報です。必ず当たるわけではありません。</li>
               <li>✓ 馬券購入は自己責任で行ってください。</li>
               <li>✓ 余剰資金の範囲内で楽しみましょう。</li>
               <li>✓ ギャンブル依存にご注意ください。</li>

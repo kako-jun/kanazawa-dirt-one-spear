@@ -5,7 +5,7 @@ export default function CharacterDialogueSection() {
         {/* セクションタイトル */}
         <div className="text-center mb-4">
           <h2 className="showa-section-title text-2xl md:text-3xl">
-            AI予想の10の作戦
+            予想の10の作戦
           </h2>
         </div>
         <p className="text-center text-retro-brown opacity-70 mb-8 text-sm font-mono">

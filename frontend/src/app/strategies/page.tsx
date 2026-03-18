@@ -22,7 +22,7 @@ export default function StrategiesPage() {
       <main className="flex-1 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-serif font-bold text-retro-brown mb-4">
-            AI予想の10の作戦
+            予想の10の作戦
           </h1>
           <p className="text-retro-dark-gray mb-8 leading-relaxed">
             金沢ダート一本槍は、複数の予想アプローチを実験しています。

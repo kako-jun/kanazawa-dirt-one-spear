@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="金沢ダート一本槍 API",
-    description="Kanazawa Dirt One Spear - 金沢競馬AI予想システム",
+    description="Kanazawa Dirt One Spear - 金沢競馬データ分析予想システム",
     version="0.1.0",
     lifespan=lifespan,
 )
@@ -47,7 +47,7 @@ app.add_middleware(
 async def root():
     return {
         "message": "金沢ダート一本槍 API",
-        "description": "金沢競馬AI予想システム - 趣味・無料・応援目的",
+        "description": "金沢競馬データ分析予想システム - 趣味・無料・応援目的",
         "version": "0.1.0"
     }
 

@@ -31,7 +31,7 @@ export default function HeroSection() {
               </h2>
               <p className="text-xl md:text-3xl font-serif font-bold text-retro-gold mt-2"
                 style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(201,146,10,0.3)' }}>
-                AIが選ぶ、本命の一本槍
+                データが選ぶ、本命の一本槍
               </p>
             </div>
 
@@ -46,7 +46,7 @@ export default function HeroSection() {
           {/* サブテキスト */}
           <div className="max-w-2xl mx-auto space-y-3 mb-8">
             <p className="text-base md:text-lg leading-relaxed opacity-90">
-              金沢競馬に特化したAI予想システム。
+              金沢競馬に特化したデータ分析予想システム。
               <br className="hidden sm:inline" />
               膨大なデータから導き出す、三連単の一点予想。
             </p>
@@ -61,7 +61,7 @@ export default function HeroSection() {
               href="/ai"
               className="retro-button px-8 py-4 rounded text-lg font-black inline-block min-w-[200px]"
             >
-              最新のAI予想を見る
+              最新のオッズ順予想を見る
             </a>
             <a
               href="/stats"
