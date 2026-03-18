@@ -1,14 +1,26 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 from datetime import datetime
 from sqlalchemy.orm import Session
 
+import os
+
 from app.models import Race, Prediction, Statistics, Result, ResultSubmit
 from app.database import init_db, get_db
 from app import crud
 from app.predictor import generate_simple_prediction
+
+
+def verify_admin_token(request):
+    """Verify admin API token from x-admin-token header"""
+    expected = os.environ.get("ADMIN_API_TOKEN")
+    if not expected:
+        raise HTTPException(status_code=500, detail="ADMIN_API_TOKEN not configured")
+    token = request.headers.get("x-admin-token")
+    if token != expected:
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
 
 @asynccontextmanager
@@ -173,15 +185,17 @@ async def get_statistics(db: Session = Depends(get_db)):
 
 # 管理用API
 @app.post("/api/admin/races", response_model=Race)
-async def create_race_endpoint(race: Race, db: Session = Depends(get_db)):
+async def create_race_endpoint(request: Request, race: Race, db: Session = Depends(get_db)):
     """レースを登録"""
+    verify_admin_token(request)
     db_race = crud.create_race(db, race)
     return crud.get_race(db, db_race.race_id)
 
 
 @app.post("/api/admin/predictions/{race_id}", response_model=Prediction)
-async def generate_prediction_endpoint(race_id: str, db: Session = Depends(get_db)):
+async def generate_prediction_endpoint(request: Request, race_id: str, db: Session = Depends(get_db)):
     """予想を生成"""
+    verify_admin_token(request)
     race = crud.get_race(db, race_id)
     if not race:
         raise HTTPException(status_code=404, detail="レースが見つかりません")
