@@ -130,6 +130,16 @@ npm run dev
 
 ---
 
+## CI/CD
+
+- **CI**: `.github/workflows/ci.yml` - push/PR to main triggers frontend (npm ci + build + lint) and backend (ruff check + format + pytest)
+- **Deploy**: Cloudflare Pages Git integration (push to main = auto deploy). CF dashboard config: build cmd `cd frontend && npm run build`, output `frontend/out`
+- **API deploy**: wrangler CLI manual deploy (future)
+- **Pre-commit**: Husky + lint-staged at repo root (eslint+prettier for frontend, ruff format for backend)
+- **Note**: GitHub Pages `deploy.yml` removed, `basePath` logic removed from `next.config.js`
+
+---
+
 ## 開発方針
 
 - **情報欠落厳禁**: 試行錯誤の過程もすべて記録
