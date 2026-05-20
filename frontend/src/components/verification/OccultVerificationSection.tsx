@@ -264,7 +264,7 @@ export default function OccultVerificationSection() {
               </div>
             </div>
             <div className="p-3 bg-retro-sepia rounded">
-              <div className="font-bold text-retro-blue mb-1">Cohen's d</div>
+              <div className="font-bold text-retro-blue mb-1">Cohen&apos;s d</div>
               <div className="text-xs text-retro-dark-gray">
                 効果の大きさを示す指標。0.2=小、0.5=中、0.8=大。検証004では0.42（中程度の効果）。
               </div>
